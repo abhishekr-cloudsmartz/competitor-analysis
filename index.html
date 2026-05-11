@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CloudSmartz — Competitive Intelligence</title>
+<style>
+:root {
+  --bg: #090d18; --surface: #111827; --card: #1a2236;
+  --border: rgba(255,255,255,0.07); --accent: #3b82f6; --green: #10b981;
+  --red: #ef4444; --yellow: #f59e0b; --orange: #f97316; --purple: #8b5cf6;
+  --text: #f1f5f9; --muted: #94a3b8; --dim: #475569;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.6; min-height: 100vh; }
+
+.header { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border-bottom: 1px solid var(--border); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.header h1 { font-size: 20px; font-weight: 700; letter-spacing: -0.4px; }
+.header h1 span { color: var(--accent); }
+.header p { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.badge { display: inline-block; padding: 3px 9px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+.badge-blue { background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd; }
+.badge-green { background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.25); color: #6ee7b7; }
+.badge-yellow { background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.25); color: #fcd34d; }
+.badge-red { background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.25); color: #fca5a5; }
+.badge-orange { background: rgba(249,115,22,0.12); border: 1px solid rgba(249,115,22,0.25); color: #fdba74; }
+
+.nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 28px; display: flex; gap: 2px; overflow-x: auto; }
+.nav-btn { background: none; border: none; color: var(--muted); padding: 13px 16px; cursor: pointer; font-size: 13px; font-weight: 500; border-bottom: 2px solid transparent; white-space: nowrap; transition: all 0.15s; }
+.nav-btn:hover { color: var(--text); }
+.nav-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+.main { display: flex; height: calc(100vh - 104px); overflow: hidden; }
+.sidebar { width: 220px; flex-shrink: 0; background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; padding: 16px 0; }
+.sidebar-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--dim); padding: 0 16px 8px; }
+.date-btn { width: 100%; background: none; border: none; text-align: left; padding: 8px 16px; cursor: pointer; font-size: 13px; color: var(--muted); transition: all 0.15s; border-left: 3px solid transparent; display: flex; justify-content: space-between; align-items: center; }
+.date-btn:hover { background: rgba(255,255,255,0.03); color: var(--text); }
+.date-btn.active { color: var(--text); background: rgba(59,130,246,0.08); border-left-color: var(--accent); }
+.date-btn .sig-count { font-size: 10px; }
+.date-btn.has-signals .sig-count { color: var(--yellow); }
+.date-btn:not(.has-signals) .sig-count { color: var(--dim); }
+
+.pane { flex: 1; overflow-y: auto; padding: 24px 28px; }
+.view { display: none; }
+.view.active { display: block; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin-bottom: 14px; }
+.card h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--dim); margin-bottom: 12px; }
+
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+@media(max-width:900px) { .g2,.g3 { grid-template-columns:1fr; } }
+
+.tbl { width: 100%; border-collapse: collapse; }
+.tbl th { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--dim); padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--border); }
+.tbl td { padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 13px; vertical-align: top; }
+.tbl tr:last-child td { border-bottom: none; }
+.tbl tr:hover td { background: rgba(255,255,255,0.015); }
+.you-row td { background: rgba(16,185,129,0.04); }
+.you-row td:first-child { border-left: 3px solid var(--green); padding-left: 7px; }
+
+.bar { display: flex; align-items: center; gap: 8px; }
+.bar-bg { flex:1; height:5px; background:rgba(255,255,255,0.06); border-radius:3px; overflow:hidden; }
+.bar-fill { height:100%; border-radius:3px; }
+.bar-lbl { font-size:11px; color:var(--muted); min-width:55px; text-align:right; }
+
+.dot { width:9px; height:9px; border-radius:50%; display:inline-block; }
+.dot-h { background:var(--green); }
+.dot-m { background:var(--yellow); }
+.dot-l { background:rgba(255,255,255,0.18); }
+.dot-n { background:rgba(239,68,68,0.35); }
+
+.ch-grid { display:grid; grid-template-columns: 170px repeat(6,1fr); border-radius:8px; overflow:hidden; border:1px solid var(--border); }
+.ch-hd { background:rgba(255,255,255,0.035); padding:9px 10px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--dim); border-bottom:1px solid var(--border); display:flex; align-items:center; }
+.ch-you-hd { color:var(--green) !important; }
+.ch-cell { padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.03); display:flex; align-items:center; justify-content:center; }
+.ch-lbl { justify-content:flex-start; font-weight:600; font-size:12px; color:var(--muted); }
+.ch-you { background:rgba(16,185,129,0.04); }
+.ch-last { border-bottom:none; }
+
+.sig { display:flex; align-items:flex-start; gap:10px; padding:9px 0; border-bottom:1px solid rgba(255,255,255,0.035); }
+.sig:last-child { border-bottom:none; }
+.sig-ico { width:26px; height:26px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:12px; flex-shrink:0; margin-top:1px; }
+.ico-g { background:rgba(16,185,129,0.12); }
+.ico-b { background:rgba(59,130,246,0.12); }
+.ico-y { background:rgba(245,158,11,0.12); }
+.ico-r { background:rgba(239,68,68,0.12); }
+.sig strong { font-size:13px; display:block; }
+.sig span { font-size:12px; color:var(--muted); }
+
+/* Brief styles */
+.brief-date { font-size:20px; font-weight:700; letter-spacing:-0.4px; margin-bottom:4px; }
+.brief-meta { font-size:12px; color:var(--muted); margin-bottom:18px; }
+.top-signal { background:rgba(245,158,11,0.07); border:1px solid rgba(245,158,11,0.2); border-radius:9px; padding:12px 16px; margin-bottom:16px; }
+.ts-label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--yellow); margin-bottom:4px; }
+.finding-row { display:flex; gap:8px; padding:5px 0; font-size:13px; border-bottom:1px solid rgba(255,255,255,0.03); }
+.finding-row:last-child { border-bottom:none; }
+.fkey { color:var(--muted); min-width:80px; flex-shrink:0; }
+.nothing { color:var(--dim); font-size:12px; font-style:italic; padding:4px 0; }
+.action-box { background:rgba(59,130,246,0.06); border:1px solid rgba(59,130,246,0.18); border-radius:9px; padding:12px 16px; margin-top:14px; }
+.a-label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--accent); margin-bottom:4px; }
+.pulse-card { margin-top:14px; }
+
+.empty { text-align:center; padding:60px 20px; color:var(--dim); }
+.empty .e-icon { font-size:40px; margin-bottom:12px; }
+.empty .e-title { font-size:16px; font-weight:600; color:var(--muted); margin-bottom:6px; }
+
+ul.cl { list-style:none; padding:0; }
+ul.cl li { padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.04); font-size:13px; display:flex; align-items:flex-start; gap:8px; }
+ul.cl li::before { content:"→"; color:var(--accent); flex-shrink:0; }
+ul.cl li:last-child { border-bottom:none; }
+
+.divider { height:1px; background:var(--border); margin:18px 0; }
+.sec-title { font-size:17px; font-weight:700; letter-spacing:-0.3px; margin-bottom:4px; }
+.sec-sub { font-size:12px; color:var(--muted); margin-bottom:16px; }
+.legend { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:12px; }
+.legend-i { display:flex; align-items:center; gap:5px; font-size:12px; color:var(--muted); }
+.kpi-row { display:flex; gap:18px; flex-wrap:wrap; margin:14px 0; }
+.kpi .v { font-size:20px; font-weight:700; }
+.kpi .l { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:0.4px; }
+.notice { background:rgba(59,130,246,0.07); border:1px solid rgba(59,130,246,0.18); border-radius:8px; padding:11px 15px; font-size:13px; color:#93c5fd; margin-bottom:18px; }
+.loading { text-align:center; padding:40px; color:var(--muted); font-size:13px; }
+
+::-webkit-scrollbar { width:5px; height:5px; }
+::-webkit-scrollbar-track { background:transparent; }
+::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.08); border-radius:3px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>CloudSmartz — <span>Competitive Intelligence</span></h1>
+    <p>Amartus · Orchest · CSG International · Netcracker · Amdocs &nbsp;|&nbsp; B2B Telecom / BSS / NaaS</p>
+  </div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+    <span class="badge badge-green" id="last-updated">Loading...</span>
+    <span class="badge badge-blue">Weekday Updates</span>
+  </div>
+</div>
+
+<div class="nav">
+  <button class="nav-btn active" onclick="showView('overview')">Overview</button>
+  <button class="nav-btn" onclick="showView('daily')">Daily Briefs</button>
+  <button class="nav-btn" onclick="showView('amartus')">Amartus</button>
+  <button class="nav-btn" onclick="showView('orchest')">Orchest</button>
+  <button class="nav-btn" onclick="showView('csg')">CSG</button>
+  <button class="nav-btn" onclick="showView('netcracker')">Netcracker</button>
+  <button class="nav-btn" onclick="showView('amdocs')">Amdocs</button>
+</div>
+
+<div class="main">
+  <div class="sidebar" id="sidebar" style="display:none;">
+    <div class="sidebar-label">History</div>
+    <div id="date-list"><div class="loading">Loading...</div></div>
+  </div>
+  <div class="pane" id="pane">
+
+    <!-- OVERVIEW -->
+    <div class="view active" id="view-overview">
+      <div class="notice"><strong>Reading this:</strong> Overview = static channel benchmark. Daily Briefs = incremental delta, one entry per weekday. Competitor tabs = deep profiles. Git history = full rollback to any date.</div>
+      <div class="sec-title">LinkedIn Presence — Follower Benchmark</div>
+      <div class="sec-sub">Audience size on the primary B2B channel. Your real peers are Amartus and Orchest.</div>
+      <div class="card">
+        <table class="tbl">
+          <thead><tr><th>#</th><th>Company</th><th>LinkedIn Followers</th><th>Relative Scale</th><th>Size / Revenue</th><th>Tier</th></tr></thead>
+          <tbody>
+            <tr><td style="color:var(--dim);font-size:12px">1</td><td><strong>Amdocs</strong></td><td style="font-weight:700;color:var(--red)">1,275,295</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:100%;background:var(--red)"></div></div><span class="bar-lbl">100%</span></div></td><td style="color:var(--muted);font-size:12px">~$4.6B · ~30K emp</td><td><span class="badge badge-red">Enterprise</span></td></tr>
+            <tr><td style="color:var(--dim);font-size:12px">2</td><td><strong>CSG International</strong></td><td style="font-weight:700;color:var(--orange)">208,313</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:16%;background:var(--orange)"></div></div><span class="bar-lbl">16%</span></div></td><td style="color:var(--muted);font-size:12px">~$4.5B · NEC acq.</td><td><span class="badge badge-red">Enterprise</span></td></tr>
+            <tr><td style="color:var(--dim);font-size:12px">3</td><td><strong>Netcracker</strong></td><td style="font-weight:700;color:var(--yellow)">177,364</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:14%;background:var(--yellow)"></div></div><span class="bar-lbl">14%</span></div></td><td style="color:var(--muted);font-size:12px">NEC subsidiary</td><td><span class="badge badge-red">Enterprise</span></td></tr>
+            <tr class="you-row"><td style="color:var(--dim);font-size:12px">4</td><td><strong style="color:var(--green)">☑ CloudSmartz</strong></td><td style="font-weight:700;color:var(--green)">2,830</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:0.2%;background:var(--green)"></div></div><span class="bar-lbl">&lt;0.3%</span></div></td><td style="color:var(--muted);font-size:12px">~200 emp · growing</td><td><span class="badge badge-green">Mid-Market</span></td></tr>
+            <tr><td style="color:var(--dim);font-size:12px">5</td><td><strong>Amartus</strong></td><td style="font-weight:700;color:var(--green)">1,334</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:0.1%;background:var(--green)"></div></div><span class="bar-lbl">&lt;0.2%</span></div></td><td style="color:var(--muted);font-size:12px">~50 emp · niche NaaS</td><td><span class="badge badge-green">Peer</span></td></tr>
+            <tr><td style="color:var(--dim);font-size:12px">6</td><td><strong>Orchest</strong></td><td style="font-weight:700;color:var(--muted)">&lt;500 est.</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:0.04%;background:var(--dim)"></div></div><span class="bar-lbl">~0%</span></div></td><td style="color:var(--muted);font-size:12px">~50 emp · LATAM</td><td><span class="badge badge-green">Peer</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="divider"></div>
+      <div class="sec-title">Channel Activity Matrix</div>
+      <div class="sec-sub">Where each company invests effort — calibrate your own accordingly</div>
+      <div class="legend">
+        <div class="legend-i"><span class="dot dot-h"></span> Active</div>
+        <div class="legend-i"><span class="dot dot-m"></span> Moderate</div>
+        <div class="legend-i"><span class="dot dot-l"></span> Minimal</div>
+        <div class="legend-i"><span class="dot dot-n"></span> Absent</div>
+      </div>
+      <div class="card" style="overflow-x:auto">
+        <div class="ch-grid" style="min-width:680px">
+          <div class="ch-hd">Channel</div><div class="ch-hd ch-you-hd">CloudSmartz</div><div class="ch-hd">Amartus</div><div class="ch-hd">Orchest</div><div class="ch-hd">CSG</div><div class="ch-hd">Netcracker</div><div class="ch-hd">Amdocs</div>
+          <div class="ch-cell ch-lbl">LinkedIn Organic</div><div class="ch-cell ch-you"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
+          <div class="ch-cell ch-lbl">LinkedIn Paid Ads</div><div class="ch-cell ch-you"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
+          <div class="ch-cell ch-lbl">Blog / Thought Leadership</div><div class="ch-cell ch-you"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
+          <div class="ch-cell ch-lbl">Press Releases / PR</div><div class="ch-cell ch-you"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
+          <div class="ch-cell ch-lbl">Industry Events / MWC</div><div class="ch-cell ch-you"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
+          <div class="ch-cell ch-lbl">Analyst Relations</div><div class="ch-cell ch-you"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
+          <div class="ch-cell ch-lbl">YouTube / Video</div><div class="ch-cell ch-you"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
+          <div class="ch-cell ch-lbl ch-last">Webinars / eBooks</div><div class="ch-cell ch-you ch-last"><span class="dot dot-l"></span></div><div class="ch-cell ch-last"><span class="dot dot-l"></span></div><div class="ch-cell ch-last"><span class="dot dot-n"></span></div><div class="ch-cell ch-last"><span class="dot dot-h"></span></div><div class="ch-cell ch-last"><span class="dot dot-m"></span></div><div class="ch-cell ch-last"><span class="dot dot-h"></span></div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="g2">
+        <div class="card"><h3>🔥 Key Strategic Signals</h3>
+          <div class="sig"><div class="sig-ico ico-r">🏢</div><div><strong>NEC owns both CSG + Netcracker</strong><span>Oct 2025 acquisition of CSG ($2.89B). Integration risk = opportunity for CloudSmartz as the independent alternative.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-r">⚠️</div><div><strong>Orchest Automation CPQ PaaS launch</strong><span>Nov 2025. Direct CPQ + Network Orchestration overlap. Small but watch closely.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-b">🤖</div><div><strong>Agentic AI is the battleground</strong><span>Every enterprise player leads with AI. CloudSmartz IntelliBot needs louder positioning.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-y">🏆</div><div><strong>Amartus — TM Forum Award 2025</strong><span>Peer-level company winning flagship industry awards. Community/standards channel is real.</span></div></div>
+        </div>
+        <div class="card"><h3>✅ CloudSmartz Open Territory</h3>
+          <div class="sig"><div class="sig-ico ico-g">📝</div><div><strong>LinkedIn content at peer tier is wide open</strong><span>Amartus and Orchest are barely active. 2–3×/week owns this channel at this scale.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-g">🎬</div><div><strong>Video / YouTube — under-used by peers</strong><span>Only Amdocs invests. Low-cost, high-differentiation at CloudSmartz's scale.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-g">🏆</div><div><strong>TM Forum / MEF award programs</strong><span>Analyst relations are enterprise-locked. Community recognition programs are open to mid-tier.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-g">🎯</div><div><strong>Practical NaaS/CPQ practitioner content</strong><span>Big players talk macro AI. How-to content for CSP ops teams is a wide-open niche.</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAILY BRIEFS -->
+    <div class="view" id="view-daily">
+      <div id="brief-pane"><div class="loading">Loading history...</div></div>
+    </div>
+
+    <!-- AMARTUS -->
+    <div class="view" id="view-amartus">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><div style="font-size:20px;font-weight:700">Amartus</div><span class="badge badge-yellow">Peer Competitor</span></div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:14px">Network Service &amp; NaaS Automation · amartus.com · Founded 2003 · ~50 emp</div>
+      <div class="kpi-row">
+        <div class="kpi"><div class="v" style="color:var(--accent)">1,334</div><div class="l">LinkedIn</div></div>
+        <div class="kpi"><div class="v">~50</div><div class="l">Employees</div></div>
+        <div class="kpi"><div class="v" style="color:var(--yellow)">25+</div><div class="l">Tier 1-3 Customers</div></div>
+        <div class="kpi"><div class="v" style="color:var(--green)">2025</div><div class="l">TM Forum Award</div></div>
+      </div>
+      <div class="divider"></div>
+      <div class="g2">
+        <div class="card"><h3>Product</h3><p style="font-size:13px;color:var(--muted);margin-bottom:10px">nBrace™ — Open Standards B2B2X Network Automation. MEF LSO / TMF Open APIs, inter-provider NaaS supply chain, SATCOM integration.</p><span class="badge badge-blue">MEF LSO</span> <span class="badge badge-blue">TMF APIs</span> <span class="badge badge-orange">NaaS</span> <span class="badge badge-orange">SATCOM</span></div>
+        <div class="card"><h3>Active Channels</h3><ul class="cl"><li>LinkedIn: occasional posts, award/partnership focus</li><li>TM Forum + MEF events: active participation</li><li>Technical blog: sparse, standards-heavy</li><li>Press: strategic only (major wins)</li><li>No paid ads detected</li></ul></div>
+      </div>
+      <div class="g2" style="margin-top:14px">
+        <div class="card"><h3>Recent Signals</h3>
+          <div class="sig"><div class="sig-ico ico-g">🏆</div><div><strong>TM Forum Outstanding Catalyst 2025</strong><span>SATCOM/EDGE Phase III — DTW Ignite Copenhagen</span></div></div>
+          <div class="sig"><div class="sig-ico ico-b">🤝</div><div><strong>Fiberhub AS (Oct 2025)</strong><span>Wholesale access platform, Norway. First Nordic tier-1 deployment.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-y">📡</div><div><strong>SATCOM/Edge expansion</strong><span>Moving beyond wireline NaaS into satellite automation</span></div></div>
+        </div>
+        <div class="card"><h3>vs. CloudSmartz</h3>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:8px"><span style="color:var(--green);font-weight:600">They win:</span> MEF/TMF credibility, inter-carrier automation depth, SATCOM niche</p>
+          <p style="font-size:12px;color:var(--muted)"><span style="color:var(--accent);font-weight:600">You win:</span> CPQ/quoting layer, marketplace platform, Acumen360 full suite, US market, broader CSP digital transformation scope</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORCHEST -->
+    <div class="view" id="view-orchest">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><div style="font-size:20px;font-weight:700">Orchest Technologies</div><span class="badge badge-red">Direct CPQ Overlap</span></div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:14px">Carrier Connectivity + CPQ + Network Orchestration PaaS · Fort Lauderdale, FL · LATAM/Caribbean · Founded 2011</div>
+      <div class="kpi-row">
+        <div class="kpi"><div class="v" style="color:var(--muted)">&lt;500</div><div class="l">LinkedIn (est.)</div></div>
+        <div class="kpi"><div class="v">~50</div><div class="l">Employees</div></div>
+        <div class="kpi"><div class="v" style="color:var(--yellow)">17</div><div class="l">Countries</div></div>
+        <div class="kpi"><div class="v" style="color:var(--red)">Nov'25</div><div class="l">CPQ PaaS Launch</div></div>
+      </div>
+      <div class="divider"></div>
+      <div class="g2">
+        <div class="card"><h3>Product</h3><p style="font-size:13px;color:var(--muted);margin-bottom:10px">Orchest Automation PaaS: CPQ + Network Orchestration (self-managed). Carrier connectivity across SD-WAN, cloud, NaaS for LATAM/Caribbean.</p><span class="badge badge-red">CPQ ← Direct</span> <span class="badge badge-red">Net. Orchestration ← Direct</span> <span class="badge badge-blue">SD-WAN</span></div>
+        <div class="card"><h3>Active Channels</h3><ul class="cl"><li>LinkedIn: minimal followers, very low volume</li><li>No blog or thought leadership found</li><li>No paid ads detected</li><li>Product announcements only via press release</li><li>Primarily relationship/regional sales</li></ul></div>
+      </div>
+      <div class="g2" style="margin-top:14px">
+        <div class="card"><h3>⚠️ Watch Signals</h3>
+          <div class="sig"><div class="sig-ico ico-r">🚨</div><div><strong>Orchest Automation PaaS — Nov 2025</strong><span>Direct CPQ + Network Orchestration platform launch. Closest product overlap.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-b">📊</div><div><strong>API Business Intelligence layer</strong><span>New BI on OrchestLatam platform — commercial analytics, KPI visibility</span></div></div>
+        </div>
+        <div class="card"><h3>vs. CloudSmartz</h3>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:8px"><span style="color:var(--green);font-weight:600">They win:</span> LATAM regional depth, 17-country carrier relationships, connectivity + software bundle</p>
+          <p style="font-size:12px;color:var(--muted)"><span style="color:var(--accent);font-weight:600">You win:</span> US market, more mature CPQ (IntelliBot/AI), full Acumen360 suite, MEF/TMF standards alignment</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSG -->
+    <div class="view" id="view-csg">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><div style="font-size:20px;font-weight:700">CSG International</div><span class="badge badge-red">Enterprise Tier</span></div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:14px">Customer Engagement, Billing &amp; Payments · csgi.com · Acquired by NEC Oct 2025 ($2.89B)</div>
+      <div class="kpi-row">
+        <div class="kpi"><div class="v" style="color:var(--accent)">208,313</div><div class="l">LinkedIn</div></div>
+        <div class="kpi"><div class="v">~5,000</div><div class="l">Employees</div></div>
+        <div class="kpi"><div class="v" style="color:var(--yellow)">$4.5B</div><div class="l">Revenue</div></div>
+        <div class="kpi"><div class="v" style="color:var(--red)">NEC</div><div class="l">Parent</div></div>
+      </div>
+      <div class="divider"></div>
+      <div class="g2">
+        <div class="card"><h3>Product</h3><p style="font-size:13px;color:var(--muted);margin-bottom:10px">SaaS BSS: Ascendon, Encompass. Subscription management, digital commerce, revenue management. 900+ customers, 120+ countries.</p><span class="badge badge-blue">BSS/Billing</span> <span class="badge badge-orange">Subscription</span> <span class="badge badge-green">IDC Major Player</span></div>
+        <div class="card"><h3>Active Channels</h3><ul class="cl"><li>LinkedIn: 208K — frequent, mixed thought leadership + product</li><li>LinkedIn Paid Ads: active at scale</li><li>Resources hub: eBooks, industry reports, webinars</li><li>Events + analyst briefings</li><li>Podcasts: exec appearances</li></ul></div>
+      </div>
+      <div class="g2" style="margin-top:14px">
+        <div class="card"><h3>Recent Signals</h3>
+          <div class="sig"><div class="sig-ico ico-r">🏢</div><div><strong>NEC Acquisition — Oct 2025</strong><span>Integration with Netcracker underway. Disruption = opportunity.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-b">🎯</div><div><strong>"Radical Simplicity" CX theme 2026</strong><span>AI enablement narrative. Moving upmarket on customer experience messaging.</span></div></div>
+        </div>
+        <div class="card"><h3>vs. CloudSmartz</h3>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:8px"><span style="color:var(--green);font-weight:600">They win:</span> Scale, brand, analyst credibility, managed services model</p>
+          <p style="font-size:12px;color:var(--muted)"><span style="color:var(--accent);font-weight:600">You win:</span> Agility, NaaS marketplace specificity, CPQ depth, easier mid-tier implementation. NEC integration risk = opening.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NETCRACKER -->
+    <div class="view" id="view-netcracker">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><div style="font-size:20px;font-weight:700">Netcracker Technology</div><span class="badge badge-red">Enterprise Tier</span></div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:14px">Digital BSS/OSS, Agentic AI · netcracker.com · NEC subsidiary · Most active content machine</div>
+      <div class="kpi-row">
+        <div class="kpi"><div class="v" style="color:var(--accent)">177,364</div><div class="l">LinkedIn</div></div>
+        <div class="kpi"><div class="v">~5,000</div><div class="l">Employees</div></div>
+        <div class="kpi"><div class="v" style="color:var(--yellow)">NEC</div><div class="l">Parent</div></div>
+        <div class="kpi"><div class="v" style="color:var(--green)">4×</div><div class="l">Major Awards 2025-26</div></div>
+      </div>
+      <div class="divider"></div>
+      <div class="g2">
+        <div class="card"><h3>Product</h3><p style="font-size:13px;color:var(--muted);margin-bottom:10px">Full-stack digital transformation: BSS, OSS, network orchestration, AI/ML ops, omnichannel engagement. Targets tier 1-2 operators globally.</p><span class="badge badge-blue">BSS/OSS</span> <span class="badge badge-orange">Agentic AI</span> <span class="badge badge-green">Revenue Mgmt</span></div>
+        <div class="card"><h3>Active Channels — Most Active</h3><ul class="cl"><li>LinkedIn: 177K — frequent exec thought leadership</li><li>Blog "Netcracker Insights": very active, 30+ topic tags</li><li>Press releases: high frequency, customer wins + awards</li><li>Events: MWC keynotes, FutureNet, SCTE TechExpo</li><li>Analyst: IDC Leader, Frost &amp; Sullivan 3× 2025, Juniper Platinum 2026</li></ul></div>
+      </div>
+      <div class="g2" style="margin-top:14px">
+        <div class="card"><h3>Recent Signals</h3>
+          <div class="sig"><div class="sig-ico ico-g">🤖</div><div><strong>Agentic AI lead narrative — MWC 2026</strong><span>"7× faster service design, 70% faster billing resolution, 2.5× faster TTM"</span></div></div>
+          <div class="sig"><div class="sig-ico ico-b">🏆</div><div><strong>Juniper Platinum + Frost &amp; Sullivan 3× (2025)</strong><span>Heavy award investment = active new-logo acquisition mode</span></div></div>
+        </div>
+        <div class="card"><h3>vs. CloudSmartz</h3>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:8px"><span style="color:var(--green);font-weight:600">They win:</span> Tier-1 scale, AI depth, NEC backing, content volume, analyst credibility</p>
+          <p style="font-size:12px;color:var(--muted)"><span style="color:var(--accent);font-weight:600">You win:</span> Mid-market agility, CPQ/marketplace specificity, implementation speed, cost. NEC consolidation anxiety = position as independent option.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AMDOCS -->
+    <div class="view" id="view-amdocs">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><div style="font-size:20px;font-weight:700">Amdocs</div><span class="badge badge-red">Enterprise — Different League</span></div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:14px">BSS/OSS, GenAI, Managed Services · amdocs.com · NASDAQ: DOX · $4.6B revenue</div>
+      <div class="kpi-row">
+        <div class="kpi"><div class="v" style="color:var(--accent)">1.27M</div><div class="l">LinkedIn</div></div>
+        <div class="kpi"><div class="v">~30,000</div><div class="l">Employees</div></div>
+        <div class="kpi"><div class="v" style="color:var(--yellow)">$4.6B</div><div class="l">Revenue</div></div>
+        <div class="kpi"><div class="v" style="color:var(--green)">85+</div><div class="l">Countries</div></div>
+      </div>
+      <div class="divider"></div>
+      <div class="g2">
+        <div class="card"><h3>Product</h3><p style="font-size:13px;color:var(--muted);margin-bottom:10px">Full-stack BSS/OSS + managed services. aOS platform, Cognitive Core GenAI (amAIz), 5G monetization. Targets AT&amp;T/Vodafone-scale operators.</p><span class="badge badge-blue">BSS/OSS</span> <span class="badge badge-orange">GenAI (amAIz)</span> <span class="badge badge-green">Managed Services</span></div>
+        <div class="card"><h3>Active Channels — Full Stack</h3><ul class="cl"><li>LinkedIn: 1.27M — daily posting, massive organic reach</li><li>LinkedIn Paid Ads: major campaigns</li><li>Blog/Insights: very active, exec bylines</li><li>YouTube: demos, event content</li><li>Twitter/X: active real-time</li><li>Events: MWC keynotes + major sponsorships</li><li>Analyst: Gartner MQ Leader 2× consecutive</li></ul></div>
+      </div>
+      <div class="g2" style="margin-top:14px">
+        <div class="card"><h3>Recent Signals</h3>
+          <div class="sig"><div class="sig-ico ico-b">☁️</div><div><strong>AWS Multi-Year Partnership — MWC 2026</strong><span>aOS + AWS AI for autonomous telecom networks.</span></div></div>
+          <div class="sig"><div class="sig-ico ico-g">🤖</div><div><strong>amAIz at e&amp; UAE (Dec 2025)</strong><span>GenAI at Tier-1 scale. Landmark deployment.</span></div></div>
+        </div>
+        <div class="card"><h3>vs. CloudSmartz</h3>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:8px"><span style="color:var(--yellow);font-weight:600">Honest take:</span> Different category. Targets AT&amp;T-scale. Direct competition is rare.</p>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:8px"><span style="color:var(--accent);font-weight:600">You win:</span> Mid-market speed, agility, cost, CPQ specificity. "Amdocs capability without Amdocs complexity."</p>
+          <p style="font-size:12px;color:var(--muted)"><span style="color:var(--red);font-weight:600">Watch:</span> Any move down-market into mid-tier CSPs.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+let HISTORY = [];
+let currentDate = null;
+
+// Load data.json (same-origin on GitHub Pages, works fine)
+fetch('./data.json?nocache=' + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    HISTORY = data;
+    if (HISTORY.length > 0) {
+      currentDate = HISTORY[HISTORY.length - 1].date;
+      const last = HISTORY[HISTORY.length - 1];
+      document.getElementById('last-updated').textContent = 'Updated ' + last.label;
+    }
+    // If daily view is active, render it
+    if (document.getElementById('view-daily').classList.contains('active')) {
+      renderDateList();
+      if (currentDate) showBrief(currentDate);
+    }
+  })
+  .catch(() => {
+    document.getElementById('last-updated').textContent = 'Data unavailable';
+  });
+
+function showView(name) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('view-' + name).classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b => {
+    if (b.getAttribute('onclick') === "showView('" + name + "')") b.classList.add('active');
+  });
+  const sidebar = document.getElementById('sidebar');
+  sidebar.style.display = name === 'daily' ? 'block' : 'none';
+  if (name === 'daily') {
+    renderDateList();
+    if (currentDate) showBrief(currentDate);
+    else document.getElementById('brief-pane').innerHTML = '<div class="empty"><div class="e-icon">📭</div><div class="e-title">No briefs yet</div><p style="font-size:13px;color:var(--dim)">First run tomorrow morning at 8am.</p></div>';
+  }
+}
+
+function renderDateList() {
+  const el = document.getElementById('date-list');
+  if (!HISTORY || HISTORY.length === 0) {
+    el.innerHTML = '<div style="padding:16px;font-size:12px;color:var(--dim)">No briefs yet.</div>';
+    return;
+  }
+  const sorted = [...HISTORY].reverse();
+  el.innerHTML = sorted.map(entry => {
+    const sigCount = Object.values(entry.competitors || {}).filter(c => c.activity && !c.activity.includes('Nothing detected') && !c.activity.includes('No new')).length;
+    const hasSignals = sigCount > 0;
+    return `<button class="date-btn ${entry.date === currentDate ? 'active' : ''} ${hasSignals ? 'has-signals' : ''}" onclick="showBrief('${entry.date}')">
+      <span>${entry.label}</span>
+      <span class="sig-count">${sigCount > 0 ? sigCount + ' ◆' : '—'}</span>
+    </button>`;
+  }).join('');
+}
+
+function showBrief(date) {
+  currentDate = date;
+  const entry = HISTORY.find(e => e.date === date);
+  if (!entry) return;
+  renderDateList();
+  const coNames = { amartus:'Amartus', orchest:'Orchest', csg:'CSG International', netcracker:'Netcracker', amdocs:'Amdocs' };
+  const coSections = Object.entries(coNames).map(([key, name]) => {
+    const co = (entry.competitors || {})[key] || {};
+    const hasActivity = co.activity && !co.activity.includes('Nothing detected') && !co.activity.includes('No new');
+    return `<div class="card" style="margin-bottom:10px">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <strong style="font-size:14px">${name}</strong>
+        ${hasActivity ? '<span class="badge badge-yellow">New</span>' : '<span style="font-size:11px;color:var(--dim)">No new signals</span>'}
+      </div>
+      ${hasActivity ? `
+        <div class="finding-row"><span class="fkey">Activity</span><span>${co.activity}</span></div>
+        ${co.channel ? `<div class="finding-row"><span class="fkey">Channel</span><span>${co.channel}</span></div>` : ''}
+        ${co.relevance ? `<div class="finding-row"><span class="fkey">Relevance</span><span style="color:var(--muted)">${co.relevance}</span></div>` : ''}
+      ` : `<p class="nothing">Nothing detected in last 48h</p>`}
+    </div>`;
+  }).join('');
+  document.getElementById('brief-pane').innerHTML = `
+    <div class="brief-date">${entry.label}</div>
+    <div class="brief-meta">Daily competitive delta — signals from previous 48h</div>
+    ${entry.topSignal ? `<div class="top-signal"><div class="ts-label">🔥 Top Signal</div><div style="font-size:13px">${entry.topSignal}</div></div>` : ''}
+    <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--dim);margin-bottom:10px">Competitor Snapshots</div>
+    ${coSections}
+    ${entry.channelPulse ? `<div class="card pulse-card"><h3>📊 Channel Pulse</h3><p style="font-size:13px;color:var(--muted)">${entry.channelPulse}</p></div>` : ''}
+    ${entry.actionItem ? `<div class="action-box"><div class="a-label">💡 Suggested Action</div><div style="font-size:13px;margin-top:3px">${entry.actionItem}</div></div>` : ''}
+  `;
+}
+</script>
+</body>
+</html>

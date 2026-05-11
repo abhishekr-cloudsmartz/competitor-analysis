@@ -1,0 +1,36 @@
+[
+  {
+    "date": "2026-05-11",
+    "label": "May 11, 2026",
+    "topSignal": "Baseline report established. No new 24h signals on first run.",
+    "channelPulse": "Netcracker and Amdocs remain most active this week across LinkedIn, PR, and events.",
+    "actionItem": null,
+    "competitors": {
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "Monitor TM Forum channels for follow-on SATCOM announcements."
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "Watch for CPQ PaaS adoption announcements or new LATAM carrier wins."
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "NEC integration progress — any customer migration news could open doors."
+      },
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "Agentic AI narrative dominant. Counter with IntelliBot positioning."
+      },
+      "amdocs": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "AWS partnership rollout continues. Watch for mid-market moves."
+      }
+    }
+  }
+]
