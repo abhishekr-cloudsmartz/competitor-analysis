@@ -37,36 +37,120 @@
   {
     "date": "2026-05-12",
     "label": "May 12, 2026",
-    "timestamp": "16:00",
-    "quote": "When your competitor's paperwork clears, your clock starts ticking.",
-    "topSignal": "CSG/NEC merger clears CFIUS — all regulatory approvals now secured, NEC integration formally unblocked.",
-    "channelPulse": "Press channels dominated today: CSG drew 13 articles on CFIUS clearance; Amdocs covered by financial media on stock hitting 52-week low ahead of earnings.",
+    "timestamp": "17:46",
+    "rssSnapshot": {
+      "amartus": [],
+      "orchest": [],
+      "csg": [
+        "https://www.marketscreener.com/news/csg-systems-international-co-and-nec-corporation-receive-cfius-clearance-for-merger-on-may-7-2026-ce7f5bd9dc80f227",
+        "https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-s-stark-divergence-record-revenues-but-shareholders-staring-at-a-53/69309019",
+        "https://defence-industry.eu/csg-and-fnss-launch-strategic-armoured-vehicle-partnership-and-unveil-cfl-120-karpat-medium-tank/",
+        "https://www.openpr.com/news/4510419/emerging-growth-trends-driving-expansion-in-the-online-charging",
+        "https://finance.yahoo.com/markets/stocks/articles/look-csg-systems-international-csgs-231316809.html",
+        "https://www.investing.com/news/sec-filings/csg-systems-international-receives-cfius-clearance-for-merger-with-nec-93CH-4678642",
+        "https://www.tipranks.com/news/company-announcements/csg-gains-cfius-approval-for-nec-acquisition-deal",
+        "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN41O1DP:0-csg-systems-international-co-and-nec-corporation-receive-cfius-clearance-for-merger-on-may-7-2026-sec-filing/",
+        "https://www.bitget.com/amp/news/detail/12560605407628",
+        "https://www.bitget.com/amp/news/detail/12560605407623",
+        "https://www.stocktitan.net/sec-filings/CSGS/8-k-csg-systems-international-inc-reports-material-event-b2ac764a5857.html",
+        "https://www.tradingview.com/news/tradingview:e78f8842e9807:0-csg-systems-international-receives-cfius-clearance-all-regulatory-approvals-secured-for-merger/",
+        "https://www.aktiencheck.de/news/Artikel-From_IPO_High_to_15_51_Low_CSG_Wrestles_with_1_4_Billion_Shareholder_Claim_and_Short_Seller_Assault-19751727"
+      ],
+      "netcracker": [],
+      "amdocs": [
+        "https://www.chartmill.com/news/DOX/Chartmill-48237-Amdocs-Ltd-NASDAQDOX-Shines-as-a-Top-Dividend-Stock-with-Strong-Financial-Health",
+        "https://www.newser.com/aticles-market/The-opportunity-most-miss-about-Amdocs-DOX-088-20260511-10-10636",
+        "https://www.gurufocus.com/guru-portfolio/LSV%2520GLOBAL%2520MANAGED%2520VOLATILITY%2520FUND/DOX",
+        "https://www.tradingview.com/news/reuters.com,2026:newsml_L8N41O2JU:0-amdocs-ltd-expected-to-post-earnings-of-1-76-a-share-earnings-preview/",
+        "https://www.investing.com/news/company-news/amdocs-stock-hits-52week-low-at-6274-93CH-4677620",
+        "https://www.tradingkey.com/markets/stocks/nasdaq-dox/comments"
+      ],
+      "covalense": [],
+      "beesion": [],
+      "everstage": [],
+      "cerillion": [],
+      "optiva": [],
+      "comarch": [],
+      "wavelo": []
+    },
+    "linkedinSignals": {
+      "amartus": 0,
+      "orchest": 0,
+      "csg": 0,
+      "netcracker": 0,
+      "amdocs": 0,
+      "covalense": 0,
+      "beesion": 0,
+      "everstage": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "comarch": 0,
+      "wavelo": 0
+    },
+    "quote": "In consolidation season, every merger closes a window somewhere — and opens one for you.",
+    "topSignal": "CSG/NEC merger clears CFIUS — all regulatory approvals secured, NEC integration formally unblocked.",
+    "channelPulse": "Press channels dominated today: CSG drew 13 articles on CFIUS clearance; Amdocs covered by financial media ahead of earnings. All other 10 competitors quiet in last 48h.",
     "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty — displacement window is opening now.",
     "competitors": {
       "amartus": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": null
+        "relevance": "Monitor TM Forum/MEF channels for follow-on NaaS announcements post their MEF Award win."
       },
       "orchest": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": null
+        "relevance": "Watch for CPQ PaaS adoption announcements or new LATAM carrier wins."
       },
       "csg": {
-        "activity": "CFIUS clearance confirmed for NEC merger (May 7). All regulatory approvals secured; integration formally unblocked.",
+        "activity": "CFIUS clearance confirmed for NEC merger (May 7). All regulatory approvals secured; integration unblocked.",
         "channel": "press",
         "relevance": "NEC-CSG integration will now accelerate — target CSG customers facing migration uncertainty as a displacement opportunity."
       },
       "netcracker": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": null
+        "relevance": "Juniper Research 2026 Platinum Award for AI Innovation reinforces their Agentic AI lead narrative. Counter with IntelliBot positioning."
       },
       "amdocs": {
-        "activity": "Stock hits 52-week low ($62.74); earnings preview at $1.76/share. Post-earnings analysis flags opportunity.",
+        "activity": "Stock hits 52-week low ($62.74); financial media coverage ahead of earnings at $1.76/share.",
         "channel": "press",
         "relevance": "Market uncertainty pre-earnings; watch for guidance cuts that could open mid-market accounts to alternatives."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "5G Digital BSS (Csmart) and Oracle partnership make them a direct SME overlap; monitor MVNO/MVNE wins."
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "Low-code BSS plays in LATAM/Americas; track for customer announcements in shared geographies."
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "Adjacent SPM/ICM category; relevant if CloudSmartz expands channel incentive automation for telco sales teams."
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "Record £42.5M Omantel contract (Apr) and A2A AI coordination in v26.1 signal rapid upmarket momentum — watch closely."
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "Post-Qvantel merger now spans 70+ CSPs in 40 countries with Gemini AI integration — direct AI narrative competitor."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "TM Forum Platinum Partner (20 API certs) and Telco Republic recognition; strong analyst coverage to monitor."
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": "'Free Your Data' AI initiative targets same data-liberation angle as CloudSmartz's AI narrative — differentiate on BSS depth."
       }
     }
   }

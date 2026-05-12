@@ -267,8 +267,8 @@ ul.cl li:last-child { border-bottom: none; }
       </div>
 
       <!-- CHANNEL ACTIVITY MATRIX -->
-      <div class="sec-title">Channel Activity Matrix</div>
-      <div class="sec-sub">Where each company invests effort — frequency estimates based on observed output. Hover ? for details.</div>
+      <div class="sec-title">Channel Activity Matrix <span class="ch-tip-wrap" style="font-size:12px;font-weight:400;vertical-align:middle"><span class="ch-tip" style="background:#2a2a2a;color:var(--muted);border-radius:50%;width:16px;height:16px;display:inline-flex;align-items:center;justify-content:center;cursor:default;font-size:11px;border:1px solid rgba(255,255,255,0.15)">i</span><div class="ch-tooltip">Channels not tracked — low signal value for B2B enterprise telecom software:<br><br><strong>Twitter/X</strong> — Minimal enterprise BSS/OSS activity; no tracked competitor invests meaningfully.<br><strong>Instagram</strong> — B2C visual platform; no relevance in this space.<br><strong>TikTok</strong> — B2C short-form video; irrelevant for enterprise procurement.<br><strong>Facebook</strong> — B2C/SMB; no tracked competitor uses it for enterprise outreach.<br><strong>Pinterest</strong> — B2C only; not applicable.<br><strong>Reddit</strong> — Occasional developer relations use but no competitive signal.<br><strong>Podcasts</strong> — Emerging channel but no competitor has meaningful output yet.<br><br>If any of these become active for a tracked competitor, they will be added to the matrix.</div></span></div>
+      <div class="sec-sub">Where each company invests effort — frequency estimates based on observed output. Hover ? for channel details, (i) for excluded channels.</div>
       <div class="legend">
         <div class="legend-i"><span class="ch-stat lvl-h">Active</span> 3+ posts/wk or equiv.</div>
         <div class="legend-i"><span class="ch-stat lvl-m">Moderate</span> 1–2/wk</div>
@@ -750,11 +750,28 @@ function showBrief(date) {
   const entry = HISTORY.find(e => e.date === date);
   if (!entry) return;
   renderDateList();
-  const coNames = { amartus:'Amartus', orchest:'Orchest', csg:'CSG International', netcracker:'Netcracker', amdocs:'Amdocs' };
+  const coNames = {
+    amartus:'Amartus', orchest:'Orchest Technologies', csg:'CSG International',
+    netcracker:'Netcracker', amdocs:'Amdocs', covalense:'Covalense Digital',
+    beesion:'Beesion', everstage:'Everstage', cerillion:'Cerillion',
+    optiva:'Optiva', comarch:'Comarch', wavelo:'Wavelo'
+  };
+  const coTiers = {
+    amartus:'Peer', orchest:'Peer', csg:'Mid-Market', netcracker:'Enterprise',
+    amdocs:'Enterprise', covalense:'Mid-Market', beesion:'Peer',
+    everstage:'Peer', cerillion:'Mid-Market', optiva:'Mid-Market',
+    comarch:'Enterprise', wavelo:'Mid-Market'
+  };
   const CH_ICONS = { linkedin: '💼', press: '📰', blog: '✍️', event: '📅', youtube: '▶️' };
   const CH_NAMES = { linkedin: 'LinkedIn', press: 'Press Release', blog: 'Blog', event: 'Event', youtube: 'YouTube' };
 
-  const coSections = Object.entries(coNames).map(([key, name]) => {
+  // Use keys from entry if available (future-proofs new competitors), fall back to coNames
+  const compKeys = Object.keys(entry.competitors || {}).length > 0
+    ? Object.keys(entry.competitors)
+    : Object.keys(coNames);
+
+  const coSections = compKeys.map(key => {
+    const name = coNames[key] || key;
     const co = (entry.competitors || {})[key] || {};
 
     // New per-channel schema
@@ -782,16 +799,19 @@ function showBrief(date) {
 
     // Legacy schema fallback
     const hasActivity = co.activity && !co.activity.includes('Nothing detected') && !co.activity.includes('No new');
+    const tier = coTiers[key] || '';
+    const tierClass = tier === 'Enterprise' ? 'badge-red' : tier === 'Mid-Market' ? 'badge-orange' : 'badge-green';
     return `<div class="card" style="margin-bottom:10px">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap">
         <strong style="font-size:14px">${name}</strong>
+        ${tier ? `<span class="badge ${tierClass}" style="font-size:10px">${tier}</span>` : ''}
         ${hasActivity ? '<span class="badge badge-orange">New</span>' : '<span style="font-size:11px;color:var(--dim)">No new signals</span>'}
       </div>
       ${hasActivity ? `
         <div class="finding-row"><span class="fkey">Activity</span><span>${co.activity}</span></div>
         ${co.channel ? `<div class="finding-row"><span class="fkey">Channel</span><span>${co.channel}</span></div>` : ''}
         ${co.relevance ? `<div class="finding-row"><span class="fkey">Relevance</span><span style="color:var(--muted)">${co.relevance}</span></div>` : ''}
-      ` : `<p class="nothing">Nothing detected in last 48h</p>`}
+      ` : `${co.relevance ? `<p style="font-size:12px;color:var(--dim);margin:0">${co.relevance}</p>` : '<p class="nothing">Nothing detected in last 48h</p>'}`}
     </div>`;
   }).join('');
   document.getElementById('brief-pane').innerHTML = `
