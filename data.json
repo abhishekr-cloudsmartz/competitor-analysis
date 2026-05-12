@@ -33,5 +33,41 @@
         "relevance": "AWS partnership rollout continues. Watch for mid-market moves."
       }
     }
+  },
+  {
+    "date": "2026-05-12",
+    "label": "May 12, 2026",
+    "timestamp": "16:00",
+    "quote": "When your competitor's paperwork clears, your clock starts ticking.",
+    "topSignal": "CSG/NEC merger clears CFIUS — all regulatory approvals now secured, NEC integration formally unblocked.",
+    "channelPulse": "Press channels dominated today: CSG drew 13 articles on CFIUS clearance; Amdocs covered by financial media on stock hitting 52-week low ahead of earnings.",
+    "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty — displacement window is opening now.",
+    "competitors": {
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CFIUS clearance confirmed for NEC merger (May 7). All regulatory approvals secured; integration formally unblocked.",
+        "channel": "press",
+        "relevance": "NEC-CSG integration will now accelerate — target CSG customers facing migration uncertainty as a displacement opportunity."
+      },
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Stock hits 52-week low ($62.74); earnings preview at $1.76/share. Post-earnings analysis flags opportunity.",
+        "channel": "press",
+        "relevance": "Market uncertainty pre-earnings; watch for guidance cuts that could open mid-market accounts to alternatives."
+      }
+    }
   }
 ]
