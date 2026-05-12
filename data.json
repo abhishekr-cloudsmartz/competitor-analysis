@@ -2,7 +2,8 @@
   {
     "date": "2026-05-11",
     "label": "May 11, 2026",
-    "topSignal": "Baseline report established. No new 24h signals on first run.",
+    "timestamp": "08:00",
+    "topSignal": "Baseline report established. No new 48h signals on first run.",
     "channelPulse": "Netcracker and Amdocs remain most active this week across LinkedIn, PR, and events.",
     "actionItem": null,
     "competitors": {

@@ -6,24 +6,37 @@
 <title>CloudSmartz — Competitive Intelligence</title>
 <style>
 :root {
-  --bg: #090d18; --surface: #111827; --card: #1a2236;
-  --border: rgba(255,255,255,0.07); --accent: #3b82f6; --green: #10b981;
-  --red: #ef4444; --yellow: #f59e0b; --orange: #f97316; --purple: #8b5cf6;
+  --bg: #0a0a0a; --surface: #111111; --card: #1a1a1a;
+  --border: rgba(255,255,255,0.07);
+  --accent: #f97316; --accent-dim: rgba(249,115,22,0.12);
+  --green: #10b981; --red: #ef4444; --yellow: #f59e0b;
+  --orange: #f97316; --purple: #8b5cf6;
   --text: #f1f5f9; --muted: #94a3b8; --dim: #475569;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.6; min-height: 100vh; }
 
-.header { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); border-bottom: 1px solid var(--border); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-.header h1 { font-size: 20px; font-weight: 700; letter-spacing: -0.4px; }
-.header h1 span { color: var(--accent); }
-.header p { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.header { background: linear-gradient(135deg, #0d0d0d 0%, #1a0d00 100%); border-bottom: 1px solid var(--border); padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.header-left { display: flex; align-items: center; gap: 16px; }
+.header-logo { height: 42px; width: auto; }
+.header-title h1 { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; color: var(--text); }
+.header-title h1 span { color: var(--accent); }
+.header-title p { color: var(--muted); font-size: 12px; margin-top: 1px; font-style: italic; max-width: 520px; }
+
 .badge { display: inline-block; padding: 3px 9px; border-radius: 20px; font-size: 11px; font-weight: 600; }
-.badge-blue { background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.25); color: #93c5fd; }
-.badge-green { background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.25); color: #6ee7b7; }
+.badge-orange { background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.3); color: #fdba74; }
+.badge-green  { background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.25); color: #6ee7b7; }
 .badge-yellow { background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.25); color: #fcd34d; }
-.badge-red { background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.25); color: #fca5a5; }
-.badge-orange { background: rgba(249,115,22,0.12); border: 1px solid rgba(249,115,22,0.25); color: #fdba74; }
+.badge-red    { background: rgba(239,68,68,0.12);  border: 1px solid rgba(239,68,68,0.25);  color: #fca5a5; }
+.badge-blue   { background: rgba(249,115,22,0.10); border: 1px solid rgba(249,115,22,0.2);  color: #fdba74; }
+
+/* Info icon */
+.info-wrap { position: relative; }
+.info-btn { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: var(--muted); width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+.info-btn:hover { background: var(--accent-dim); border-color: rgba(249,115,22,0.35); color: var(--accent); }
+.info-panel { position: absolute; right: 0; top: 36px; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 14px 16px; font-size: 13px; color: var(--muted); width: 310px; z-index: 200; line-height: 1.65; box-shadow: 0 8px 32px rgba(0,0,0,0.6); }
+.info-panel strong { color: var(--text); }
+.info-panel.hidden { display: none; }
 
 .nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 28px; display: flex; gap: 2px; overflow-x: auto; }
 .nav-btn { background: none; border: none; color: var(--muted); padding: 13px 16px; cursor: pointer; font-size: 13px; font-weight: 500; border-bottom: 2px solid transparent; white-space: nowrap; transition: all 0.15s; }
@@ -35,10 +48,9 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .sidebar-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--dim); padding: 0 16px 8px; }
 .date-btn { width: 100%; background: none; border: none; text-align: left; padding: 8px 16px; cursor: pointer; font-size: 13px; color: var(--muted); transition: all 0.15s; border-left: 3px solid transparent; display: flex; justify-content: space-between; align-items: center; }
 .date-btn:hover { background: rgba(255,255,255,0.03); color: var(--text); }
-.date-btn.active { color: var(--text); background: rgba(59,130,246,0.08); border-left-color: var(--accent); }
-.date-btn .sig-count { font-size: 10px; }
-.date-btn.has-signals .sig-count { color: var(--yellow); }
-.date-btn:not(.has-signals) .sig-count { color: var(--dim); }
+.date-btn.active { color: var(--text); background: rgba(249,115,22,0.07); border-left-color: var(--accent); }
+.date-btn.has-signals .sig-count { color: var(--accent); font-size: 10px; }
+.date-btn:not(.has-signals) .sig-count { color: var(--dim); font-size: 10px; }
 
 .pane { flex: 1; overflow-y: auto; padding: 24px 28px; }
 .view { display: none; }
@@ -48,8 +60,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .card h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--dim); margin-bottom: 12px; }
 
 .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
-@media(max-width:900px) { .g2,.g3 { grid-template-columns:1fr; } }
+@media(max-width:900px) { .g2 { grid-template-columns: 1fr; } }
 
 .tbl { width: 100%; border-collapse: collapse; }
 .tbl th { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--dim); padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--border); }
@@ -60,88 +71,116 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .you-row td:first-child { border-left: 3px solid var(--green); padding-left: 7px; }
 
 .bar { display: flex; align-items: center; gap: 8px; }
-.bar-bg { flex:1; height:5px; background:rgba(255,255,255,0.06); border-radius:3px; overflow:hidden; }
-.bar-fill { height:100%; border-radius:3px; }
-.bar-lbl { font-size:11px; color:var(--muted); min-width:55px; text-align:right; }
+.bar-bg { flex: 1; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 3px; }
+.bar-lbl { font-size: 11px; color: var(--muted); min-width: 55px; text-align: right; }
 
-.dot { width:9px; height:9px; border-radius:50%; display:inline-block; }
-.dot-h { background:var(--green); }
-.dot-m { background:var(--yellow); }
-.dot-l { background:rgba(255,255,255,0.18); }
-.dot-n { background:rgba(239,68,68,0.35); }
+/* Channel matrix */
+.ch-grid { display: grid; grid-template-columns: 196px repeat(6, 1fr); border-radius: 8px; overflow: visible; border: 1px solid var(--border); }
+.ch-hd { background: rgba(255,255,255,0.03); padding: 9px 10px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: var(--dim); border-bottom: 1px solid var(--border); display: flex; align-items: center; }
+.ch-you-hd { color: var(--green) !important; }
+.ch-cell { padding: 8px 6px; border-bottom: 1px solid rgba(255,255,255,0.03); display: flex; align-items: center; justify-content: center; }
+.ch-lbl { justify-content: flex-start; font-size: 12px; color: var(--muted); gap: 6px; padding-left: 10px; }
+.ch-you { background: rgba(16,185,129,0.03); }
+.ch-last { border-bottom: none; }
 
-.ch-grid { display:grid; grid-template-columns: 170px repeat(6,1fr); border-radius:8px; overflow:hidden; border:1px solid var(--border); }
-.ch-hd { background:rgba(255,255,255,0.035); padding:9px 10px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.6px; color:var(--dim); border-bottom:1px solid var(--border); display:flex; align-items:center; }
-.ch-you-hd { color:var(--green) !important; }
-.ch-cell { padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.03); display:flex; align-items:center; justify-content:center; }
-.ch-lbl { justify-content:flex-start; font-weight:600; font-size:12px; color:var(--muted); }
-.ch-you { background:rgba(16,185,129,0.04); }
-.ch-last { border-bottom:none; }
+/* Channel stat chips */
+.ch-stat { font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 4px; text-align: center; white-space: nowrap; line-height: 1.5; }
+.lvl-h { color: #6ee7b7; background: rgba(16,185,129,0.12); }
+.lvl-m { color: #fcd34d; background: rgba(245,158,11,0.10); }
+.lvl-l { color: var(--dim);  background: rgba(255,255,255,0.05); }
+.lvl-n { color: #333; font-size: 12px; }
 
-.sig { display:flex; align-items:flex-start; gap:10px; padding:9px 0; border-bottom:1px solid rgba(255,255,255,0.035); }
-.sig:last-child { border-bottom:none; }
-.sig-ico { width:26px; height:26px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:12px; flex-shrink:0; margin-top:1px; }
-.ico-g { background:rgba(16,185,129,0.12); }
-.ico-b { background:rgba(59,130,246,0.12); }
-.ico-y { background:rgba(245,158,11,0.12); }
-.ico-r { background:rgba(239,68,68,0.12); }
-.sig strong { font-size:13px; display:block; }
-.sig span { font-size:12px; color:var(--muted); }
+/* Channel tooltip */
+.ch-tip-wrap { position: relative; display: inline-flex; flex-shrink: 0; }
+.ch-tip { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,0.05); color: var(--dim); font-size: 9px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; cursor: help; border: 1px solid rgba(255,255,255,0.08); transition: all 0.15s; }
+.ch-tip:hover { background: var(--accent-dim); color: var(--accent); border-color: rgba(249,115,22,0.3); }
+.ch-tip-wrap:hover .ch-tooltip { display: block; }
+.ch-tooltip { display: none; position: absolute; left: 20px; top: -4px; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 7px; padding: 9px 12px; font-size: 11px; color: var(--muted); width: 230px; z-index: 100; line-height: 1.55; box-shadow: 0 4px 20px rgba(0,0,0,0.5); pointer-events: none; }
+.ch-tooltip strong { color: var(--text); }
 
-/* Brief styles */
-.brief-date { font-size:20px; font-weight:700; letter-spacing:-0.4px; margin-bottom:4px; }
-.brief-meta { font-size:12px; color:var(--muted); margin-bottom:18px; }
-.top-signal { background:rgba(245,158,11,0.07); border:1px solid rgba(245,158,11,0.2); border-radius:9px; padding:12px 16px; margin-bottom:16px; }
-.ts-label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--yellow); margin-bottom:4px; }
-.finding-row { display:flex; gap:8px; padding:5px 0; font-size:13px; border-bottom:1px solid rgba(255,255,255,0.03); }
-.finding-row:last-child { border-bottom:none; }
-.fkey { color:var(--muted); min-width:80px; flex-shrink:0; }
-.nothing { color:var(--dim); font-size:12px; font-style:italic; padding:4px 0; }
-.action-box { background:rgba(59,130,246,0.06); border:1px solid rgba(59,130,246,0.18); border-radius:9px; padding:12px 16px; margin-top:14px; }
-.a-label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.8px; color:var(--accent); margin-bottom:4px; }
-.pulse-card { margin-top:14px; }
+/* Signals */
+.sig { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.035); }
+.sig:last-child { border-bottom: none; }
+.sig-ico { width: 26px; height: 26px; border-radius: 7px; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; margin-top: 1px; }
+.ico-g { background: rgba(16,185,129,0.12); }
+.ico-b { background: rgba(249,115,22,0.12); }
+.ico-y { background: rgba(245,158,11,0.12); }
+.ico-r { background: rgba(239,68,68,0.12); }
+.sig strong { font-size: 13px; display: block; }
+.sig span { font-size: 12px; color: var(--muted); }
 
-.empty { text-align:center; padding:60px 20px; color:var(--dim); }
-.empty .e-icon { font-size:40px; margin-bottom:12px; }
-.empty .e-title { font-size:16px; font-weight:600; color:var(--muted); margin-bottom:6px; }
+/* Brief */
+.brief-date { font-size: 20px; font-weight: 700; letter-spacing: -0.4px; margin-bottom: 4px; }
+.brief-meta { font-size: 12px; color: var(--muted); margin-bottom: 18px; }
+.top-signal { background: rgba(249,115,22,0.07); border: 1px solid rgba(249,115,22,0.2); border-radius: 9px; padding: 12px 16px; margin-bottom: 16px; }
+.ts-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--accent); margin-bottom: 4px; }
+.finding-row { display: flex; gap: 8px; padding: 5px 0; font-size: 13px; border-bottom: 1px solid rgba(255,255,255,0.03); }
+.finding-row:last-child { border-bottom: none; }
+.fkey { color: var(--muted); min-width: 80px; flex-shrink: 0; }
+.nothing { color: var(--dim); font-size: 12px; font-style: italic; padding: 4px 0; }
+.action-box { background: rgba(249,115,22,0.06); border: 1px solid rgba(249,115,22,0.18); border-radius: 9px; padding: 12px 16px; margin-top: 14px; }
+.a-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--accent); margin-bottom: 4px; }
+.pulse-card { margin-top: 14px; }
 
-ul.cl { list-style:none; padding:0; }
-ul.cl li { padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.04); font-size:13px; display:flex; align-items:flex-start; gap:8px; }
-ul.cl li::before { content:"→"; color:var(--accent); flex-shrink:0; }
-ul.cl li:last-child { border-bottom:none; }
+/* Timeline */
+.timeline-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 18px 12px; margin-bottom: 14px; }
+.timeline-card h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--dim); margin-bottom: 14px; }
+#timeline-svg { width: 100%; display: block; }
+.tl-sub { font-size: 11px; color: var(--dim); margin-top: 6px; }
 
-.divider { height:1px; background:var(--border); margin:18px 0; }
-.sec-title { font-size:17px; font-weight:700; letter-spacing:-0.3px; margin-bottom:4px; }
-.sec-sub { font-size:12px; color:var(--muted); margin-bottom:16px; }
-.legend { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:12px; }
-.legend-i { display:flex; align-items:center; gap:5px; font-size:12px; color:var(--muted); }
-.kpi-row { display:flex; gap:18px; flex-wrap:wrap; margin:14px 0; }
-.kpi .v { font-size:20px; font-weight:700; }
-.kpi .l { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:0.4px; }
-.notice { background:rgba(59,130,246,0.07); border:1px solid rgba(59,130,246,0.18); border-radius:8px; padding:11px 15px; font-size:13px; color:#93c5fd; margin-bottom:18px; }
-.loading { text-align:center; padding:40px; color:var(--muted); font-size:13px; }
+.empty { text-align: center; padding: 60px 20px; color: var(--dim); }
+.empty .e-icon { font-size: 40px; margin-bottom: 12px; }
+.empty .e-title { font-size: 16px; font-weight: 600; color: var(--muted); margin-bottom: 6px; }
 
-::-webkit-scrollbar { width:5px; height:5px; }
-::-webkit-scrollbar-track { background:transparent; }
-::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.08); border-radius:3px; }
+ul.cl { list-style: none; padding: 0; }
+ul.cl li { padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; display: flex; align-items: flex-start; gap: 8px; }
+ul.cl li::before { content: "→"; color: var(--accent); flex-shrink: 0; }
+ul.cl li:last-child { border-bottom: none; }
+
+.divider { height: 1px; background: var(--border); margin: 20px 0; }
+.sec-title { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 4px; }
+.sec-sub { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 12px; align-items: center; }
+.legend-i { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+.kpi-row { display: flex; gap: 18px; flex-wrap: wrap; margin: 14px 0; }
+.kpi .v { font-size: 20px; font-weight: 700; }
+.kpi .l { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
+.loading { text-align: center; padding: 40px; color: var(--muted); font-size: 13px; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 3px; }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <div>
-    <h1>CloudSmartz — <span>Competitive Intelligence</span></h1>
-    <p>Amartus · Orchest · CSG International · Netcracker · Amdocs &nbsp;|&nbsp; B2B Telecom / BSS / NaaS</p>
+  <div class="header-left">
+    <img src="cloudsmartz-logo.png" alt="CloudSmartz" class="header-logo">
+    <div class="header-title">
+      <h1><span>Competitive Intelligence</span></h1>
+      <p id="quote-line">The best intelligence is the kind your competitor doesn't know you have.</p>
+    </div>
   </div>
   <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
-    <span class="badge badge-green" id="last-updated">Loading...</span>
-    <span class="badge badge-blue">Weekday Updates</span>
+    <span class="badge badge-orange" id="last-updated">Loading...</span>
+    <div class="info-wrap">
+      <button class="info-btn" id="info-btn" onclick="toggleInfo(event)">ⓘ</button>
+      <div class="info-panel hidden" id="info-panel">
+        <strong>Overview</strong> — static channel benchmark + daily market activity timeline.<br><br>
+        <strong>Daily Briefs</strong> — incremental delta, one entry per day. Each run scans the last 48h only.<br><br>
+        <strong>Competitor tabs</strong> — deep profiles with signals and positioning.<br><br>
+        Git history = full rollback to any date.
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="nav">
   <button class="nav-btn active" onclick="showView('overview')">Overview</button>
   <button class="nav-btn" onclick="showView('daily')">Daily Briefs</button>
+  <div style="flex:1"></div>
   <button class="nav-btn" onclick="showView('amartus')">Amartus</button>
   <button class="nav-btn" onclick="showView('orchest')">Orchest</button>
   <button class="nav-btn" onclick="showView('csg')">CSG</button>
@@ -158,7 +197,104 @@ ul.cl li:last-child { border-bottom:none; }
 
     <!-- OVERVIEW -->
     <div class="view active" id="view-overview">
-      <div class="notice"><strong>Reading this:</strong> Overview = static channel benchmark. Daily Briefs = incremental delta, one entry per weekday. Competitor tabs = deep profiles. Git history = full rollback to any date.</div>
+
+      <!-- TIMELINE -->
+      <div class="timeline-card">
+        <h3>📈 Market Activity Timeline — Competitor Signal Volume</h3>
+        <svg id="timeline-svg" viewBox="0 0 800 110" preserveAspectRatio="none" height="110">
+          <text x="400" y="58" text-anchor="middle" font-size="12" fill="#475569">Loading…</text>
+        </svg>
+        <div class="tl-sub">Each point = one daily run. Count of competitors with new signals detected that day (0–5).</div>
+      </div>
+
+      <!-- CHANNEL ACTIVITY MATRIX -->
+      <div class="sec-title">Channel Activity Matrix</div>
+      <div class="sec-sub">Where each company invests effort — frequency estimates based on observed output. Hover ? for details.</div>
+      <div class="legend">
+        <div class="legend-i"><span class="ch-stat lvl-h">Active</span> 3+ posts/wk or equiv.</div>
+        <div class="legend-i"><span class="ch-stat lvl-m">Moderate</span> 1–2/wk</div>
+        <div class="legend-i"><span class="ch-stat lvl-l">Minimal</span> Few/month</div>
+        <div class="legend-i"><span class="lvl-n ch-stat">—</span> Not detected</div>
+      </div>
+      <div class="card" style="overflow-x:auto;padding:0;">
+        <div class="ch-grid" style="min-width:780px;">
+          <div class="ch-hd">Channel</div>
+          <div class="ch-hd ch-you-hd">CloudSmartz</div>
+          <div class="ch-hd">Amartus</div>
+          <div class="ch-hd">Orchest</div>
+          <div class="ch-hd">CSG</div>
+          <div class="ch-hd">Netcracker</div>
+          <div class="ch-hd">Amdocs</div>
+
+          <div class="ch-cell ch-lbl">LinkedIn Organic <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Posts directly to the company LinkedIn page. <strong>Active</strong> = 3+ posts/week with consistent engagement. Drives follower growth and organic reach among CSP decision-makers.</div></div></div>
+          <div class="ch-cell ch-you"><span class="ch-stat lvl-m">~1×/wk</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">~3×/wk</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">~4×/wk</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">~5×/wk</span></div>
+
+          <div class="ch-cell ch-lbl">LinkedIn Paid Ads <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Sponsored / promoted content on LinkedIn. Enterprise players run always-on campaigns targeting specific job titles and industries. Detected via ad library signals and sponsored post indicators.</div></div></div>
+          <div class="ch-cell ch-you"><span class="ch-stat lvl-n">—</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">Always-on</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">Always-on</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">Always-on</span></div>
+
+          <div class="ch-cell ch-lbl">Blog / Thought Leadership <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Long-form articles, exec bylines, and technical whitepapers. High = 4+ per month, indicates serious SEO and inbound investment. Drives organic search traffic from buyers researching BSS/NaaS solutions.</div></div></div>
+          <div class="ch-cell ch-you"><span class="ch-stat lvl-l">~1×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/qtr</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">~6×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">~8×/mo</span></div>
+
+          <div class="ch-cell ch-lbl">Press Releases / PR <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Formal press releases via PR Newswire, Business Wire, or direct media outreach. Each release signals a major deal, partnership, award, or product milestone. High frequency = active deal-close motion.</div></div></div>
+          <div class="ch-cell ch-you"><span class="ch-stat lvl-l">~1×/qtr</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/qtr</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/qtr</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">~3×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">~4×/mo</span></div>
+
+          <div class="ch-cell ch-lbl">Industry Events / MWC <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">MWC, DTW Ignite, MEF, SCTE TechExpo, FutureNet. Sponsorship or speaking slot = high investment signal and brand visibility with tier-1 CSP buyers. Booth presence alone signals intent.</div></div></div>
+          <div class="ch-cell ch-you"><span class="ch-stat lvl-l">1–2/yr</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-m">3–4/yr</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-l">1–2/yr</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-m">4–6/yr</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">8+/yr</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">10+/yr</span></div>
+
+          <div class="ch-cell ch-lbl">Analyst Relations <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Gartner Magic Quadrant, IDC MarketScape, Forrester Wave, Frost & Sullivan awards. Requires a dedicated AR budget and named customers willing to be referenced. Effectively locked to enterprise tier.</div></div></div>
+          <div class="ch-cell ch-you"><span class="ch-stat lvl-n">—</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-l">Occasional</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">IDC / Gartner</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">4× awards</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">Gartner MQ ×2</span></div>
+
+          <div class="ch-cell ch-lbl">YouTube / Video <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Product demos, event sessions, and thought-leadership videos on YouTube or Vimeo. Dramatically under-invested by peer-tier companies — low production cost, high SEO and differentiation value.</div></div></div>
+          <div class="ch-cell ch-you"><span class="ch-stat lvl-l">Sparse</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/mo</span></div>
+          <div class="ch-cell"><span class="ch-stat lvl-h">~4×/mo</span></div>
+
+          <div class="ch-cell ch-lbl ch-last">Webinars / eBooks <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Gated or ungated demand-gen assets: webinars, eBooks, industry reports, research papers. Enterprise players use these to capture buyer intent signals. High = consistent pipeline of nurture content.</div></div></div>
+          <div class="ch-cell ch-you ch-last"><span class="ch-stat lvl-l">~1×/qtr</span></div>
+          <div class="ch-cell ch-last"><span class="ch-stat lvl-l">~1×/qtr</span></div>
+          <div class="ch-cell ch-last"><span class="ch-stat lvl-n">—</span></div>
+          <div class="ch-cell ch-last"><span class="ch-stat lvl-h">Monthly</span></div>
+          <div class="ch-cell ch-last"><span class="ch-stat lvl-m">Quarterly</span></div>
+          <div class="ch-cell ch-last"><span class="ch-stat lvl-h">Monthly</span></div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- LINKEDIN PRESENCE -->
       <div class="sec-title">LinkedIn Presence — Follower Benchmark</div>
       <div class="sec-sub">Audience size on the primary B2B channel. Your real peers are Amartus and Orchest.</div>
       <div class="card">
@@ -174,29 +310,9 @@ ul.cl li:last-child { border-bottom:none; }
           </tbody>
         </table>
       </div>
+
       <div class="divider"></div>
-      <div class="sec-title">Channel Activity Matrix</div>
-      <div class="sec-sub">Where each company invests effort — calibrate your own accordingly</div>
-      <div class="legend">
-        <div class="legend-i"><span class="dot dot-h"></span> Active</div>
-        <div class="legend-i"><span class="dot dot-m"></span> Moderate</div>
-        <div class="legend-i"><span class="dot dot-l"></span> Minimal</div>
-        <div class="legend-i"><span class="dot dot-n"></span> Absent</div>
-      </div>
-      <div class="card" style="overflow-x:auto">
-        <div class="ch-grid" style="min-width:680px">
-          <div class="ch-hd">Channel</div><div class="ch-hd ch-you-hd">CloudSmartz</div><div class="ch-hd">Amartus</div><div class="ch-hd">Orchest</div><div class="ch-hd">CSG</div><div class="ch-hd">Netcracker</div><div class="ch-hd">Amdocs</div>
-          <div class="ch-cell ch-lbl">LinkedIn Organic</div><div class="ch-cell ch-you"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
-          <div class="ch-cell ch-lbl">LinkedIn Paid Ads</div><div class="ch-cell ch-you"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
-          <div class="ch-cell ch-lbl">Blog / Thought Leadership</div><div class="ch-cell ch-you"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
-          <div class="ch-cell ch-lbl">Press Releases / PR</div><div class="ch-cell ch-you"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
-          <div class="ch-cell ch-lbl">Industry Events / MWC</div><div class="ch-cell ch-you"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
-          <div class="ch-cell ch-lbl">Analyst Relations</div><div class="ch-cell ch-you"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
-          <div class="ch-cell ch-lbl">YouTube / Video</div><div class="ch-cell ch-you"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-n"></span></div><div class="ch-cell"><span class="dot dot-m"></span></div><div class="ch-cell"><span class="dot dot-l"></span></div><div class="ch-cell"><span class="dot dot-h"></span></div>
-          <div class="ch-cell ch-lbl ch-last">Webinars / eBooks</div><div class="ch-cell ch-you ch-last"><span class="dot dot-l"></span></div><div class="ch-cell ch-last"><span class="dot dot-l"></span></div><div class="ch-cell ch-last"><span class="dot dot-n"></span></div><div class="ch-cell ch-last"><span class="dot dot-h"></span></div><div class="ch-cell ch-last"><span class="dot dot-m"></span></div><div class="ch-cell ch-last"><span class="dot dot-h"></span></div>
-        </div>
-      </div>
-      <div class="divider"></div>
+
       <div class="g2">
         <div class="card"><h3>🔥 Key Strategic Signals</h3>
           <div class="sig"><div class="sig-ico ico-r">🏢</div><div><strong>NEC owns both CSG + Netcracker</strong><span>Oct 2025 acquisition of CSG ($2.89B). Integration risk = opportunity for CloudSmartz as the independent alternative.</span></div></div>
@@ -362,7 +478,30 @@ ul.cl li:last-child { border-bottom:none; }
 let HISTORY = [];
 let currentDate = null;
 
-// Load data.json (same-origin on GitHub Pages, works fine)
+const FALLBACK_QUOTES = [
+  "The best intelligence is the kind your competitor doesn't know you have.",
+  "Speed of insight beats depth of analysis — if you act on it.",
+  "In competitive markets, the uninformed aren't just behind. They're invisible.",
+  "Every press release your competitor sends is a gift. Read it.",
+  "Knowing what you're not is as valuable as knowing what you are.",
+  "The market rewards those who see around corners, not those who wait for them.",
+  "Your competitor's silence is not rest — it's preparation.",
+];
+
+function toggleInfo(e) {
+  e.stopPropagation();
+  const panel = document.getElementById('info-panel');
+  const isHidden = panel.classList.contains('hidden');
+  panel.classList.toggle('hidden');
+  if (isHidden) {
+    setTimeout(() => document.addEventListener('click', closeInfoOnce), 0);
+  }
+}
+function closeInfoOnce() {
+  document.getElementById('info-panel').classList.add('hidden');
+  document.removeEventListener('click', closeInfoOnce);
+}
+
 fetch('./data.json?nocache=' + Date.now())
   .then(r => r.json())
   .then(data => {
@@ -370,9 +509,12 @@ fetch('./data.json?nocache=' + Date.now())
     if (HISTORY.length > 0) {
       currentDate = HISTORY[HISTORY.length - 1].date;
       const last = HISTORY[HISTORY.length - 1];
-      document.getElementById('last-updated').textContent = 'Updated ' + last.label;
+      const ts = last.timestamp ? ' · ' + last.timestamp : '';
+      document.getElementById('last-updated').textContent = 'Updated ' + last.label + ts;
+      const quote = last.quote || FALLBACK_QUOTES[(HISTORY.length - 1) % FALLBACK_QUOTES.length];
+      document.getElementById('quote-line').textContent = quote;
     }
-    // If daily view is active, render it
+    renderTimeline();
     if (document.getElementById('view-daily').classList.contains('active')) {
       renderDateList();
       if (currentDate) showBrief(currentDate);
@@ -382,6 +524,56 @@ fetch('./data.json?nocache=' + Date.now())
     document.getElementById('last-updated').textContent = 'Data unavailable';
   });
 
+function renderTimeline() {
+  const svg = document.getElementById('timeline-svg');
+  if (!HISTORY || HISTORY.length === 0) {
+    svg.innerHTML = '<text x="400" y="58" text-anchor="middle" font-size="12" fill="#475569">No data yet — runs after first daily brief.</text>';
+    return;
+  }
+  const W = 800, H = 110, PAD = { l: 30, r: 20, t: 8, b: 28 };
+  const plotW = W - PAD.l - PAD.r;
+  const plotH = H - PAD.t - PAD.b;
+  const scores = HISTORY.map(e =>
+    Object.values(e.competitors || {}).filter(c =>
+      c.activity && !c.activity.includes('Nothing detected') && !c.activity.includes('No new')
+    ).length
+  );
+  const maxScore = Math.max(...scores, 1);
+  const n = HISTORY.length;
+  const pts = HISTORY.map((e, i) => ({
+    x: PAD.l + (n === 1 ? plotW / 2 : (i / (n - 1)) * plotW),
+    y: PAD.t + plotH - (scores[i] / maxScore) * plotH,
+    label: e.label, score: scores[i]
+  }));
+
+  let html = '';
+  // Grid lines
+  [0, 1, 2, 3, 4, 5].filter(v => v <= maxScore + 1).forEach(v => {
+    const y = PAD.t + plotH - (v / maxScore) * plotH;
+    if (y >= PAD.t - 2 && y <= PAD.t + plotH + 2) {
+      html += `<line x1="${PAD.l}" y1="${y.toFixed(1)}" x2="${W - PAD.r}" y2="${y.toFixed(1)}" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>`;
+      html += `<text x="${PAD.l - 5}" y="${(y + 3.5).toFixed(1)}" text-anchor="end" font-size="9" fill="#475569">${v}</text>`;
+    }
+  });
+  // Area + line
+  if (pts.length > 1) {
+    const area = `M ${pts[0].x.toFixed(1)} ${(PAD.t + plotH).toFixed(1)} L ${pts.map(p => `${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' L ')} L ${pts[pts.length-1].x.toFixed(1)} ${(PAD.t + plotH).toFixed(1)} Z`;
+    html += `<path d="${area}" fill="rgba(249,115,22,0.07)"/>`;
+    const line = `M ${pts.map(p => `${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' L ')}`;
+    html += `<path d="${line}" fill="none" stroke="#f97316" stroke-width="2" stroke-linejoin="round"/>`;
+  }
+  // Dots + date labels
+  const labelEvery = Math.max(1, Math.ceil(n / 12));
+  pts.forEach((p, i) => {
+    html += `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4" fill="#f97316" stroke="#0a0a0a" stroke-width="2"><title>${p.label}: ${p.score} signal${p.score !== 1 ? 's' : ''} detected</title></circle>`;
+    if (i % labelEvery === 0 || i === n - 1) {
+      const short = p.label.replace(/,?\s*\d{4}$/, '');
+      html += `<text x="${p.x.toFixed(1)}" y="${(PAD.t + plotH + 18).toFixed(1)}" text-anchor="middle" font-size="9" fill="#475569">${short}</text>`;
+    }
+  });
+  svg.innerHTML = html;
+}
+
 function showView(name) {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
@@ -389,8 +581,7 @@ function showView(name) {
   document.querySelectorAll('.nav-btn').forEach(b => {
     if (b.getAttribute('onclick') === "showView('" + name + "')") b.classList.add('active');
   });
-  const sidebar = document.getElementById('sidebar');
-  sidebar.style.display = name === 'daily' ? 'block' : 'none';
+  document.getElementById('sidebar').style.display = name === 'daily' ? 'block' : 'none';
   if (name === 'daily') {
     renderDateList();
     if (currentDate) showBrief(currentDate);
@@ -404,11 +595,11 @@ function renderDateList() {
     el.innerHTML = '<div style="padding:16px;font-size:12px;color:var(--dim)">No briefs yet.</div>';
     return;
   }
-  const sorted = [...HISTORY].reverse();
-  el.innerHTML = sorted.map(entry => {
-    const sigCount = Object.values(entry.competitors || {}).filter(c => c.activity && !c.activity.includes('Nothing detected') && !c.activity.includes('No new')).length;
-    const hasSignals = sigCount > 0;
-    return `<button class="date-btn ${entry.date === currentDate ? 'active' : ''} ${hasSignals ? 'has-signals' : ''}" onclick="showBrief('${entry.date}')">
+  el.innerHTML = [...HISTORY].reverse().map(entry => {
+    const sigCount = Object.values(entry.competitors || {}).filter(c =>
+      c.activity && !c.activity.includes('Nothing detected') && !c.activity.includes('No new')
+    ).length;
+    return `<button class="date-btn ${entry.date === currentDate ? 'active' : ''} ${sigCount > 0 ? 'has-signals' : ''}" onclick="showBrief('${entry.date}')">
       <span>${entry.label}</span>
       <span class="sig-count">${sigCount > 0 ? sigCount + ' ◆' : '—'}</span>
     </button>`;
@@ -427,7 +618,7 @@ function showBrief(date) {
     return `<div class="card" style="margin-bottom:10px">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
         <strong style="font-size:14px">${name}</strong>
-        ${hasActivity ? '<span class="badge badge-yellow">New</span>' : '<span style="font-size:11px;color:var(--dim)">No new signals</span>'}
+        ${hasActivity ? '<span class="badge badge-orange">New</span>' : '<span style="font-size:11px;color:var(--dim)">No new signals</span>'}
       </div>
       ${hasActivity ? `
         <div class="finding-row"><span class="fkey">Activity</span><span>${co.activity}</span></div>
@@ -440,9 +631,9 @@ function showBrief(date) {
     <div class="brief-date">${entry.label}</div>
     <div class="brief-meta">Daily competitive delta — signals from previous 48h</div>
     ${entry.topSignal ? `<div class="top-signal"><div class="ts-label">🔥 Top Signal</div><div style="font-size:13px">${entry.topSignal}</div></div>` : ''}
-    <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--dim);margin-bottom:10px">Competitor Snapshots</div>
-    ${coSections}
     ${entry.channelPulse ? `<div class="card pulse-card"><h3>📊 Channel Pulse</h3><p style="font-size:13px;color:var(--muted)">${entry.channelPulse}</p></div>` : ''}
+    <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--dim);margin:16px 0 10px">Competitor Snapshots</div>
+    ${coSections}
     ${entry.actionItem ? `<div class="action-box"><div class="a-label">💡 Suggested Action</div><div style="font-size:13px;margin-top:3px">${entry.actionItem}</div></div>` : ''}
   `;
 }
