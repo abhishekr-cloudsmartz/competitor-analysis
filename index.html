@@ -573,6 +573,8 @@ function renderTimeline() {
   const W = 800, H = 110, PAD = { l: 30, r: 20, t: 8, b: 28 };
   const plotW = W - PAD.l - PAD.r;
   const plotH = H - PAD.t - PAD.b;
+  const msPerDay = 86400000;
+
   const scores = HISTORY.map(e =>
     Object.values(e.competitors || {}).filter(c =>
       c.activity && !c.activity.includes('Nothing detected') && !c.activity.includes('No new')
@@ -580,13 +582,26 @@ function renderTimeline() {
   );
   const maxScore = Math.max(...scores, 1);
   const n = HISTORY.length;
+
+  // Time-based x-axis with adaptive minimum window so early runs don't stretch to edges
+  const parsedDates = HISTORY.map(e => new Date(e.date + 'T00:00:00'));
+  const dataStart = parsedDates[0];
+  const dataEnd = parsedDates[n - 1];
+  const dataSpanDays = Math.max(1, Math.round((dataEnd - dataStart) / msPerDay));
+  const winDays = Math.max(7, dataSpanDays + 2);
+  const winPadStart = Math.floor((winDays - dataSpanDays) / 2);
+  const winStart = new Date(dataStart.getTime() - winPadStart * msPerDay);
+  const winEnd = new Date(winStart.getTime() + winDays * msPerDay);
+  const toX = d => PAD.l + Math.min(1, Math.max(0, (d - winStart) / (winDays * msPerDay))) * plotW;
+
   const pts = HISTORY.map((e, i) => ({
-    x: PAD.l + (n === 1 ? plotW / 2 : (i / (n - 1)) * plotW),
+    x: toX(parsedDates[i]),
     y: PAD.t + plotH - (scores[i] / maxScore) * plotH,
     label: e.label, score: scores[i]
   }));
 
   let html = '';
+
   // Grid lines
   [0, 1, 2, 3, 4, 5].filter(v => v <= maxScore + 1).forEach(v => {
     const y = PAD.t + plotH - (v / maxScore) * plotH;
@@ -595,6 +610,7 @@ function renderTimeline() {
       html += `<text x="${PAD.l - 5}" y="${(y + 3.5).toFixed(1)}" text-anchor="end" font-size="9" fill="#475569">${v}</text>`;
     }
   });
+
   // Area + line
   if (pts.length > 1) {
     const area = `M ${pts[0].x.toFixed(1)} ${(PAD.t + plotH).toFixed(1)} L ${pts.map(p => `${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' L ')} L ${pts[pts.length-1].x.toFixed(1)} ${(PAD.t + plotH).toFixed(1)} Z`;
@@ -602,15 +618,24 @@ function renderTimeline() {
     const line = `M ${pts.map(p => `${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' L ')}`;
     html += `<path d="${line}" fill="none" stroke="#f97316" stroke-width="2" stroke-linejoin="round"/>`;
   }
-  // Dots + date labels
-  const labelEvery = Math.max(1, Math.ceil(n / 12));
-  pts.forEach((p, i) => {
+
+  // Dots
+  pts.forEach(p => {
     html += `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4" fill="#f97316" stroke="#0a0a0a" stroke-width="2"><title>${p.label}: ${p.score} signal${p.score !== 1 ? 's' : ''} detected</title></circle>`;
+  });
+
+  // X-axis: window boundary labels + per-point labels when few data points
+  const fmt = d => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  html += `<text x="${PAD.l}" y="${(PAD.t + plotH + 18).toFixed(1)}" text-anchor="start" font-size="9" fill="#475569">${fmt(winStart)}</text>`;
+  html += `<text x="${W - PAD.r}" y="${(PAD.t + plotH + 18).toFixed(1)}" text-anchor="end" font-size="9" fill="#475569">${fmt(winEnd)}</text>`;
+  const labelEvery = n <= 14 ? 1 : Math.max(1, Math.ceil(n / 12));
+  pts.forEach((p, i) => {
     if (i % labelEvery === 0 || i === n - 1) {
       const short = p.label.replace(/,?\s*\d{4}$/, '');
-      html += `<text x="${p.x.toFixed(1)}" y="${(PAD.t + plotH + 18).toFixed(1)}" text-anchor="middle" font-size="9" fill="#475569">${short}</text>`;
+      html += `<text x="${p.x.toFixed(1)}" y="${(PAD.t + plotH + 18).toFixed(1)}" text-anchor="middle" font-size="9" fill="#64748b">${short}</text>`;
     }
   });
+
   svg.innerHTML = html;
 }
 
