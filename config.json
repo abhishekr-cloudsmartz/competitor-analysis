@@ -12,7 +12,7 @@
       "domain": "amartus.com",
       "linkedinUrl": "https://www.linkedin.com/company/amartus/",
       "newsroomUrl": "https://amartus.com/news",
-      "googleAlertRssUrl": null,
+      "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/9190046130634409748",
       "notes": "NaaS automation, nBrace platform. TM Forum Outstanding Catalyst 2025."
     },
     {
@@ -21,8 +21,8 @@
       "tier": "peer",
       "domain": "orchest.com",
       "linkedinUrl": "https://www.linkedin.com/company/orchest-technologies/",
-      "newsroomUrl": null,
-      "googleAlertRssUrl": null,
+      "newsroomUrl": "https://orchest.net/automation/news.html",
+      "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/7422432358858706711",
       "notes": "CPQ + Network Orchestration PaaS launched Nov 2025. LATAM/Caribbean focus. Direct CPQ overlap."
     },
     {
@@ -32,7 +32,7 @@
       "domain": "csgi.com",
       "linkedinUrl": "https://www.linkedin.com/company/csg-systems/",
       "newsroomUrl": "https://www.csgi.com/news/press-releases/",
-      "googleAlertRssUrl": "PASTE_CSG_RSS_URL_HERE",
+      "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/7764327933935334323",
       "notes": "BSS/billing. Acquired by NEC Oct 2025 ($2.89B). NEC integration underway."
     },
     {
@@ -42,7 +42,7 @@
       "domain": "netcracker.com",
       "linkedinUrl": "https://www.linkedin.com/company/netcracker/",
       "newsroomUrl": "https://www.netcracker.com/press-releases/",
-      "googleAlertRssUrl": null,
+      "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/2377628566794101216",
       "notes": "Digital BSS/OSS, Agentic AI lead narrative. NEC subsidiary. Most active content machine."
     },
     {
@@ -52,7 +52,7 @@
       "domain": "amdocs.com",
       "linkedinUrl": "https://www.linkedin.com/company/amdocs/",
       "newsroomUrl": "https://www.amdocs.com/news",
-      "googleAlertRssUrl": "PASTE_AMDOCS_RSS_URL_HERE",
+      "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/7764327933935334871",
       "notes": "Enterprise BSS/OSS, GenAI (amAIz). $4.6B revenue. AWS partnership MWC 2026."
     }
   ]
