@@ -84,6 +84,46 @@
       "newsroomUrl": null,
       "googleAlertRssUrl": null,
       "notes": "Sales Performance Management (SPM) / Incentive Compensation for Telco. Integrates with BSS/CRM/ERP. Forrester Strong Performer Q1 2025. Different category — tracks sales channel overlap."
+    },
+    {
+      "id": "cerillion",
+      "name": "Cerillion",
+      "tier": "mid-market",
+      "domain": "cerillion.com",
+      "linkedinUrl": "https://www.linkedin.com/company/cerillion/",
+      "newsroomUrl": "https://www.cerillion.com/Company/News",
+      "googleAlertRssUrl": null,
+      "notes": "BSS/OSS suite. LSE-listed. ~$60M revenue FY2025. TM Forum ODA-ready. Largest deal ever: Omantel 2026. Fastest-growing in mid-market."
+    },
+    {
+      "id": "optiva",
+      "name": "Optiva",
+      "tier": "mid-market",
+      "domain": "optiva.com",
+      "linkedinUrl": "https://www.linkedin.com/company/optiva-inc/",
+      "newsroomUrl": "https://www.optiva.com/press-releases",
+      "googleAlertRssUrl": null,
+      "notes": "Cloud-native BSS + charging. TSX-listed. Merged with Qvantel Sept 2025. Agentic AI (Google Gemini). 70 CSPs, 40 countries, 1000+ staff. Direct AI narrative competitor."
+    },
+    {
+      "id": "comarch",
+      "name": "Comarch",
+      "tier": "enterprise",
+      "domain": "comarch.com",
+      "linkedinUrl": "https://www.linkedin.com/company/comarch/",
+      "newsroomUrl": "https://comarchcommunications.com/about-us/news",
+      "googleAlertRssUrl": null,
+      "notes": "Full BSS/OSS suite. Large Polish IT company, WSE-listed. In 4 Gartner 2025 telecom reports. 30+ years. AI-driven BSS narrative (Telco Republic 2025)."
+    },
+    {
+      "id": "wavelo",
+      "name": "Wavelo",
+      "tier": "mid-market",
+      "domain": "wavelo.com",
+      "linkedinUrl": "https://www.linkedin.com/company/wavelo/",
+      "newsroomUrl": "https://www.wavelo.com/resources/blog",
+      "googleAlertRssUrl": null,
+      "notes": "Cloud-native BSS/OSS. Tucows subsidiary (NASDAQ: TCX). Event-driven architecture. 'Free Your Data' AI initiative Sept 2025. Customers: Boost Mobile, Ting."
     }
   ]
 }
