@@ -52,7 +52,6 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .date-btn.has-signals .sig-count { color: var(--accent); font-size: 10px; }
 .date-btn:not(.has-signals) .sig-count { color: var(--dim); font-size: 10px; }
 
-.pane { flex: 1; overflow-y: auto; padding: 24px 28px; }
 .view { display: none; }
 .view.active { display: block; }
 
@@ -151,6 +150,32 @@ ul.cl li:last-child { border-bottom: none; }
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 3px; }
+
+/* Footer */
+.footer { position: fixed; bottom: 0; left: 0; right: 0; text-align: center; padding: 5px 16px; font-size: 11px; color: var(--dim); background: var(--bg); border-top: 1px solid var(--border); z-index: 50; }
+.pane { flex: 1; overflow-y: auto; padding: 24px 28px 40px; }
+
+/* Nav dropdowns */
+.nav-dropdown { position: relative; display: flex; align-items: stretch; }
+.nav-dropdown-menu { display: none; position: absolute; top: 100%; right: 0; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; min-width: 130px; z-index: 200; padding: 4px 0; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-dropdown-item { display: block; width: 100%; text-align: left; background: none; border: none; color: var(--muted); padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500; white-space: nowrap; transition: color 0.15s; }
+.nav-dropdown-item:hover { color: var(--text); background: rgba(255,255,255,0.04); }
+.nav-dropdown-item.active { color: var(--accent); }
+.nav-dropdown-btn { display: flex; align-items: center; gap: 4px; }
+
+/* Channel matrix header alignment */
+.ch-hd:not(:first-child) { justify-content: center; }
+
+/* Per-channel activity cards in Activity tab */
+.ch-activity { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.ch-activity:last-child { border-bottom: none; }
+.ch-activity-hd { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.ch-activity-label { font-size: 12px; font-weight: 600; color: var(--text); }
+.ch-activity-age { font-size: 10px; color: var(--accent); background: var(--accent-dim); padding: 1px 6px; border-radius: 4px; font-weight: 600; }
+.ch-activity-content { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 4px; }
+.ch-activity-link { font-size: 12px; color: var(--accent); text-decoration: none; }
+.ch-activity-link:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -179,13 +204,28 @@ ul.cl li:last-child { border-bottom: none; }
 
 <div class="nav">
   <button class="nav-btn active" onclick="showView('overview')">Overview</button>
-  <button class="nav-btn" onclick="showView('daily')">Daily Briefs</button>
+  <button class="nav-btn" onclick="showView('daily')">Activity</button>
   <div style="flex:1"></div>
-  <button class="nav-btn" onclick="showView('amartus')">Amartus</button>
-  <button class="nav-btn" onclick="showView('orchest')">Orchest</button>
-  <button class="nav-btn" onclick="showView('csg')">CSG</button>
-  <button class="nav-btn" onclick="showView('netcracker')">Netcracker</button>
-  <button class="nav-btn" onclick="showView('amdocs')">Amdocs</button>
+  <div class="nav-dropdown">
+    <button class="nav-btn nav-dropdown-btn">Peer ▾</button>
+    <div class="nav-dropdown-menu">
+      <button class="nav-dropdown-item" onclick="showView('amartus')">Amartus</button>
+      <button class="nav-dropdown-item" onclick="showView('orchest')">Orchest</button>
+    </div>
+  </div>
+  <div class="nav-dropdown">
+    <button class="nav-btn nav-dropdown-btn">Mid-Market ▾</button>
+    <div class="nav-dropdown-menu">
+      <button class="nav-dropdown-item" onclick="showView('csg')">CSG</button>
+    </div>
+  </div>
+  <div class="nav-dropdown">
+    <button class="nav-btn nav-dropdown-btn">Enterprise ▾</button>
+    <div class="nav-dropdown-menu">
+      <button class="nav-dropdown-item" onclick="showView('netcracker')">Netcracker</button>
+      <button class="nav-dropdown-item" onclick="showView('amdocs')">Amdocs</button>
+    </div>
+  </div>
 </div>
 
 <div class="main">
@@ -574,18 +614,52 @@ function renderTimeline() {
   svg.innerHTML = html;
 }
 
+// Fixed-position tooltips — escapes any overflow:auto ancestor
+(function() {
+  const tip = document.createElement('div');
+  tip.id = 'ch-tooltip-global';
+  Object.assign(tip.style, {
+    display:'none', position:'fixed', background:'#1c1c1c',
+    border:'1px solid rgba(255,255,255,0.1)', borderRadius:'7px',
+    padding:'9px 12px', fontSize:'11px', color:'#94a3b8',
+    width:'230px', zIndex:'999', lineHeight:'1.55',
+    boxShadow:'0 4px 20px rgba(0,0,0,0.5)', pointerEvents:'none'
+  });
+  document.body.appendChild(tip);
+
+  document.querySelectorAll('.ch-tip').forEach(el => {
+    const html = el.closest('.ch-tip-wrap').querySelector('.ch-tooltip').innerHTML;
+    el.addEventListener('mouseenter', function(e) {
+      tip.innerHTML = html;
+      tip.style.display = 'block';
+      const r = el.getBoundingClientRect();
+      let left = r.right + 8;
+      if (left + 238 > window.innerWidth) left = r.left - 246;
+      let top = r.top;
+      if (top + 120 > window.innerHeight) top = window.innerHeight - 130;
+      tip.style.left = left + 'px';
+      tip.style.top = top + 'px';
+    });
+    el.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+  });
+})();
+
 function showView(name) {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.nav-btn, .nav-dropdown-item, .nav-dropdown-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('view-' + name).classList.add('active');
-  document.querySelectorAll('.nav-btn').forEach(b => {
-    if (b.getAttribute('onclick') === "showView('" + name + "')") b.classList.add('active');
+  document.querySelectorAll('.nav-btn, .nav-dropdown-item').forEach(b => {
+    if (b.getAttribute('onclick') === "showView('" + name + "')") {
+      b.classList.add('active');
+      const dd = b.closest('.nav-dropdown');
+      if (dd) dd.querySelector('.nav-dropdown-btn').classList.add('active');
+    }
   });
   document.getElementById('sidebar').style.display = name === 'daily' ? 'block' : 'none';
   if (name === 'daily') {
     renderDateList();
     if (currentDate) showBrief(currentDate);
-    else document.getElementById('brief-pane').innerHTML = '<div class="empty"><div class="e-icon">📭</div><div class="e-title">No briefs yet</div><p style="font-size:13px;color:var(--dim)">First run tomorrow morning at 8am.</p></div>';
+    else document.getElementById('brief-pane').innerHTML = '<div class="empty"><div class="e-icon">📭</div><div class="e-title">No activity yet</div><p style="font-size:13px;color:var(--dim)">First run tomorrow morning at 8am.</p></div>';
   }
 }
 
@@ -612,8 +686,36 @@ function showBrief(date) {
   if (!entry) return;
   renderDateList();
   const coNames = { amartus:'Amartus', orchest:'Orchest', csg:'CSG International', netcracker:'Netcracker', amdocs:'Amdocs' };
+  const CH_ICONS = { linkedin: '💼', press: '📰', blog: '✍️', event: '📅', youtube: '▶️' };
+  const CH_NAMES = { linkedin: 'LinkedIn', press: 'Press Release', blog: 'Blog', event: 'Event', youtube: 'YouTube' };
+
   const coSections = Object.entries(coNames).map(([key, name]) => {
     const co = (entry.competitors || {})[key] || {};
+
+    // New per-channel schema
+    if (co.channels) {
+      const channelEntries = Object.entries(co.channels).filter(([, d]) => d && d.content);
+      const hasActivity = channelEntries.length > 0;
+      return `<div class="card" style="margin-bottom:10px">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:${hasActivity ? 10 : 4}px">
+          <strong style="font-size:14px">${name}</strong>
+          ${hasActivity ? '<span class="badge badge-orange">New</span>' : '<span style="font-size:11px;color:var(--dim)">No new signals</span>'}
+        </div>
+        ${co.summary ? `<p style="font-size:12px;color:var(--muted);margin-bottom:${hasActivity ? 10 : 0}px">${co.summary}</p>` : ''}
+        ${channelEntries.map(([ch, d]) => `
+          <div class="ch-activity">
+            <div class="ch-activity-hd">
+              <span class="ch-activity-label">${CH_ICONS[ch] || '•'} ${CH_NAMES[ch] || ch}</span>
+              ${d.age ? `<span class="ch-activity-age">${d.age} ago</span>` : ''}
+            </div>
+            <div class="ch-activity-content">${d.content}</div>
+            ${d.url ? `<a href="${d.url}" target="_blank" class="ch-activity-link">View →</a>` : ''}
+          </div>`).join('')}
+        ${!hasActivity ? `<p class="nothing">Nothing detected in last 48h</p>` : ''}
+      </div>`;
+    }
+
+    // Legacy schema fallback
     const hasActivity = co.activity && !co.activity.includes('Nothing detected') && !co.activity.includes('No new');
     return `<div class="card" style="margin-bottom:10px">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
@@ -638,5 +740,6 @@ function showBrief(date) {
   `;
 }
 </script>
+<div class="footer">Made by Abhishek (R&amp;G Team) · Claude Sonnet 4.6</div>
 </body>
 </html>
