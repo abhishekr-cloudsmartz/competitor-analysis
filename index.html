@@ -166,6 +166,26 @@ ul.cl li:last-child { border-bottom: none; }
 /* Channel matrix header alignment */
 .ch-hd:not(:first-child) { justify-content: center; }
 
+/* ── Mobile ───────────────────────────────────────────────────────── */
+@media (max-width: 680px) {
+  .header { padding: 10px 14px; }
+  .header-logo { height: 26px; }          /* tagline is sub-pixel at this size */
+  .header-title p { display: none; }      /* hide italic quote on small screens */
+  .header-title h1 { font-size: 15px; }
+  .nav { padding: 0 6px; overflow-x: auto; }
+  .nav-btn { padding: 10px 9px; font-size: 12px; }
+  .main { flex-direction: column; height: auto; min-height: 0; overflow: visible; }
+  .sidebar { display: none; }
+  .pane { padding: 14px 14px 0; overflow-y: visible; }
+  .info-panel { width: min(310px, calc(100vw - 28px)); }
+  .g2 { grid-template-columns: 1fr; }
+  .card { padding: 14px; }
+  .tbl-scroll { overflow-x: auto !important; padding: 0 !important; -webkit-overflow-scrolling: touch; }
+  .tbl-scroll table { min-width: 460px; }
+  .tbl-scroll table th:first-child, .tbl-scroll table td:first-child { padding-left: 14px; }
+  .tbl-scroll table th:last-child,  .tbl-scroll table td:last-child  { padding-right: 14px; }
+}
+
 /* Per-channel activity cards in Activity tab */
 .ch-activity { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
 .ch-activity:last-child { border-bottom: none; }
@@ -336,7 +356,7 @@ ul.cl li:last-child { border-bottom: none; }
       <!-- LINKEDIN PRESENCE -->
       <div class="sec-title">LinkedIn Presence — Follower Benchmark</div>
       <div class="sec-sub">Audience size on the primary B2B channel. Your real peers are Amartus and Orchest.</div>
-      <div class="card">
+      <div class="card tbl-scroll">
         <table class="tbl">
           <thead><tr><th>#</th><th>Company</th><th>LinkedIn Followers</th><th>Relative Scale</th><th>Size / Revenue</th><th>Tier</th></tr></thead>
           <tbody>
@@ -646,7 +666,7 @@ function renderTimeline() {
     display:'none', position:'fixed', background:'#1c1c1c',
     border:'1px solid rgba(255,255,255,0.1)', borderRadius:'7px',
     padding:'9px 12px', fontSize:'11px', color:'#94a3b8',
-    width:'230px', zIndex:'999', lineHeight:'1.55',
+    zIndex:'999', lineHeight:'1.55', maxWidth:'230px',
     boxShadow:'0 4px 20px rgba(0,0,0,0.5)', pointerEvents:'none'
   });
   document.body.appendChild(tip);
@@ -655,16 +675,37 @@ function renderTimeline() {
     const html = el.closest('.ch-tip-wrap').querySelector('.ch-tooltip').innerHTML;
     el.addEventListener('mouseenter', function(e) {
       tip.innerHTML = html;
+      const tipW = Math.min(230, window.innerWidth - 24);
+      tip.style.width = tipW + 'px';
       tip.style.display = 'block';
       const r = el.getBoundingClientRect();
+      const tipH = tip.offsetHeight || 120;
       let left = r.right + 8;
-      if (left + 238 > window.innerWidth) left = r.left - 246;
+      if (left + tipW + 8 > window.innerWidth) left = r.left - tipW - 8;
+      left = Math.max(8, left);
       let top = r.top;
-      if (top + 120 > window.innerHeight) top = window.innerHeight - 130;
+      if (top + tipH + 8 > window.innerHeight) top = window.innerHeight - tipH - 8;
+      top = Math.max(8, top);
       tip.style.left = left + 'px';
       tip.style.top = top + 'px';
     });
     el.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+  });
+})();
+
+// Touch-friendly nav dropdowns (mobile doesn't fire :hover)
+(function() {
+  document.querySelectorAll('.nav-dropdown-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const menu = btn.nextElementSibling;
+      const isOpen = menu.style.display === 'block';
+      document.querySelectorAll('.nav-dropdown-menu').forEach(m => m.style.display = 'none');
+      if (!isOpen) menu.style.display = 'block';
+      e.stopPropagation();
+    });
+  });
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-dropdown-menu').forEach(m => m.style.display = 'none');
   });
 })();
 
