@@ -38,7 +38,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .info-panel strong { color: var(--text); }
 .info-panel.hidden { display: none; }
 
-.nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 28px; display: flex; gap: 2px; overflow-x: auto; }
+.nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 28px; display: flex; gap: 2px; overflow: visible; }
 .nav-btn { background: none; border: none; color: var(--muted); padding: 13px 16px; cursor: pointer; font-size: 13px; font-weight: 500; border-bottom: 2px solid transparent; white-space: nowrap; transition: all 0.15s; }
 .nav-btn:hover { color: var(--text); }
 .nav-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
@@ -56,7 +56,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .view.active { display: block; }
 
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin-bottom: 14px; }
-.card h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--dim); margin-bottom: 12px; }
+.card h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--accent); margin-bottom: 12px; }
 
 .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 @media(max-width:900px) { .g2 { grid-template-columns: 1fr; } }
@@ -94,8 +94,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 .ch-tip-wrap { position: relative; display: inline-flex; flex-shrink: 0; }
 .ch-tip { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,0.05); color: var(--dim); font-size: 9px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; cursor: help; border: 1px solid rgba(255,255,255,0.08); transition: all 0.15s; }
 .ch-tip:hover { background: var(--accent-dim); color: var(--accent); border-color: rgba(249,115,22,0.3); }
-.ch-tip-wrap:hover .ch-tooltip { display: block; }
-.ch-tooltip { display: none; position: absolute; left: 20px; top: -4px; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 7px; padding: 9px 12px; font-size: 11px; color: var(--muted); width: 230px; z-index: 100; line-height: 1.55; box-shadow: 0 4px 20px rgba(0,0,0,0.5); pointer-events: none; }
+.ch-tooltip { display: none; }
 .ch-tooltip strong { color: var(--text); }
 
 /* Signals */
@@ -124,7 +123,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 
 /* Timeline */
 .timeline-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 18px 12px; margin-bottom: 14px; }
-.timeline-card h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--dim); margin-bottom: 14px; }
+.timeline-card h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--accent); margin-bottom: 14px; }
 #timeline-svg { width: 100%; display: block; }
 .tl-sub { font-size: 11px; color: var(--dim); margin-top: 6px; }
 
@@ -240,7 +239,7 @@ ul.cl li:last-child { border-bottom: none; }
 
       <!-- TIMELINE -->
       <div class="timeline-card">
-        <h3>📈 Market Activity Timeline — Competitor Signal Volume</h3>
+        <h3>Market Activity Timeline — Competitor Signal Volume</h3>
         <svg id="timeline-svg" width="100%" height="110">
           <text x="400" y="58" text-anchor="middle" font-size="12" fill="#475569">Loading…</text>
         </svg>
@@ -354,13 +353,13 @@ ul.cl li:last-child { border-bottom: none; }
       <div class="divider"></div>
 
       <div class="g2">
-        <div class="card"><h3>🔥 Key Strategic Signals</h3>
+        <div class="card"><h3>Key Strategic Signals</h3>
           <div class="sig"><div class="sig-ico ico-r">🏢</div><div><strong>NEC owns both CSG + Netcracker</strong><span>Oct 2025 acquisition of CSG ($2.89B). Integration risk = opportunity for CloudSmartz as the independent alternative.</span></div></div>
           <div class="sig"><div class="sig-ico ico-r">⚠️</div><div><strong>Orchest Automation CPQ PaaS launch</strong><span>Nov 2025. Direct CPQ + Network Orchestration overlap. Small but watch closely.</span></div></div>
           <div class="sig"><div class="sig-ico ico-b">🤖</div><div><strong>Agentic AI is the battleground</strong><span>Every enterprise player leads with AI. CloudSmartz IntelliBot needs louder positioning.</span></div></div>
           <div class="sig"><div class="sig-ico ico-y">🏆</div><div><strong>Amartus — TM Forum Award 2025</strong><span>Peer-level company winning flagship industry awards. Community/standards channel is real.</span></div></div>
         </div>
-        <div class="card"><h3>✅ CloudSmartz Open Territory</h3>
+        <div class="card"><h3>CloudSmartz Open Territory</h3>
           <div class="sig"><div class="sig-ico ico-g">📝</div><div><strong>LinkedIn content at peer tier is wide open</strong><span>Amartus and Orchest are barely active. 2–3×/week owns this channel at this scale.</span></div></div>
           <div class="sig"><div class="sig-ico ico-g">🎬</div><div><strong>Video / YouTube — under-used by peers</strong><span>Only Amdocs invests. Low-cost, high-differentiation at CloudSmartz's scale.</span></div></div>
           <div class="sig"><div class="sig-ico ico-g">🏆</div><div><strong>TM Forum / MEF award programs</strong><span>Analyst relations are enterprise-locked. Community recognition programs are open to mid-tier.</span></div></div>
@@ -418,7 +417,7 @@ ul.cl li:last-child { border-bottom: none; }
         <div class="card"><h3>Active Channels</h3><ul class="cl"><li>LinkedIn: minimal followers, very low volume</li><li>No blog or thought leadership found</li><li>No paid ads detected</li><li>Product announcements only via press release</li><li>Primarily relationship/regional sales</li></ul></div>
       </div>
       <div class="g2" style="margin-top:14px">
-        <div class="card"><h3>⚠️ Watch Signals</h3>
+        <div class="card"><h3>Watch Signals</h3>
           <div class="sig"><div class="sig-ico ico-r">🚨</div><div><strong>Orchest Automation PaaS — Nov 2025</strong><span>Direct CPQ + Network Orchestration platform launch. Closest product overlap.</span></div></div>
           <div class="sig"><div class="sig-ico ico-b">📊</div><div><strong>API Business Intelligence layer</strong><span>New BI on OrchestLatam platform — commercial analytics, KPI visibility</span></div></div>
         </div>
@@ -757,11 +756,11 @@ function showBrief(date) {
   document.getElementById('brief-pane').innerHTML = `
     <div class="brief-date">${entry.label}</div>
     <div class="brief-meta">Daily competitive delta — signals from previous 48h</div>
-    ${entry.topSignal ? `<div class="top-signal"><div class="ts-label">🔥 Top Signal</div><div style="font-size:13px">${entry.topSignal}</div></div>` : ''}
-    ${entry.channelPulse ? `<div class="card pulse-card"><h3>📊 Channel Pulse</h3><p style="font-size:13px;color:var(--muted)">${entry.channelPulse}</p></div>` : ''}
+    ${entry.topSignal ? `<div class="top-signal"><div class="ts-label">Top Signal</div><div style="font-size:13px">${entry.topSignal}</div></div>` : ''}
+    ${entry.actionItem ? `<div class="action-box"><div class="a-label">Suggested Action</div><div style="font-size:13px;margin-top:3px">${entry.actionItem}</div></div>` : ''}
+    ${entry.channelPulse ? `<div class="card pulse-card"><h3>Channel Pulse</h3><p style="font-size:13px;color:var(--muted)">${entry.channelPulse}</p></div>` : ''}
     <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--dim);margin:16px 0 10px">Competitor Snapshots</div>
     ${coSections}
-    ${entry.actionItem ? `<div class="action-box"><div class="a-label">💡 Suggested Action</div><div style="font-size:13px;margin-top:3px">${entry.actionItem}</div></div>` : ''}
   `;
 }
 </script>
