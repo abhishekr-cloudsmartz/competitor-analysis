@@ -2,13 +2,12 @@ name: Daily Competitive Brief
 
 on:
   schedule:
-    # 8:01 AM US Eastern (UTC-4 summer / UTC-5 winter)
-    # Runs at 13:01 UTC — adjust cron if your timezone differs
-    - cron: "1 13 * * *"
-  workflow_dispatch:  # Allows manual trigger from GitHub Actions UI
+    # 10:00 AM IST = 04:30 UTC  (IST is UTC+5:30)
+    - cron: "30 4 * * *"
+  workflow_dispatch:  # Manual trigger from GitHub Actions UI
 
 permissions:
-  contents: write  # Required to commit and push data.json
+  contents: write
 
 jobs:
   brief:
@@ -24,11 +23,13 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install anthropic requests
+        run: pip install requests google-generativeai anthropic
 
       - name: Run daily brief
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Gemini is the default free provider for scheduled runs.
+          # If GEMINI_API_KEY is absent but ANTHROPIC_API_KEY is set, falls back to Claude API.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/daily_brief.py
 
       - name: Commit and push data.json
@@ -37,6 +38,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json
           git diff --staged --quiet \
-            && echo "No new data to commit (brief already ran today)" \
+            && echo "No changes to commit (brief already ran today)" \
             || git commit -m "Daily brief $(date -u +%Y-%m-%d)"
           git push
