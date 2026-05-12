@@ -54,6 +54,36 @@
       "newsroomUrl": "https://www.amdocs.com/news",
       "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/7764327933935334871",
       "notes": "Enterprise BSS/OSS, GenAI (amAIz). $4.6B revenue. AWS partnership MWC 2026."
+    },
+    {
+      "id": "covalense",
+      "name": "Covalense Digital",
+      "tier": "mid-market",
+      "domain": "covalensedigital.com",
+      "linkedinUrl": "https://www.linkedin.com/company/covalense-digital/",
+      "newsroomUrl": "https://covalensedigital.com/insights/news",
+      "googleAlertRssUrl": null,
+      "notes": "5G Digital BSS (Csmart). Oracle partner. MVNO/MVNE/IoT focus. 'Digital BSS Trailblazer' Fast Mode 2025. ~$16M revenue, 5 continents."
+    },
+    {
+      "id": "beesion",
+      "name": "Beesion",
+      "tier": "peer",
+      "domain": "beesion.com",
+      "linkedinUrl": "https://www.linkedin.com/company/beesion-technologies-llc/",
+      "newsroomUrl": "https://beesion.com/press-releases/",
+      "googleAlertRssUrl": null,
+      "notes": "Low-code BSS/OSS (BeeFiber). B2B BSS Full Stack. LATAM/Americas focus. 20 countries. Fort Lauderdale FL."
+    },
+    {
+      "id": "everstage",
+      "name": "Everstage",
+      "tier": "peer",
+      "domain": "everstage.com",
+      "linkedinUrl": "https://www.linkedin.com/company/everstage/",
+      "newsroomUrl": null,
+      "googleAlertRssUrl": null,
+      "notes": "Sales Performance Management (SPM) / Incentive Compensation for Telco. Integrates with BSS/CRM/ERP. Forrester Strong Performer Q1 2025. Different category — tracks sales channel overlap."
     }
   ]
 }
