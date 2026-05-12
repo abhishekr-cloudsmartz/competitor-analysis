@@ -1,0 +1,42 @@
+name: Daily Competitive Brief
+
+on:
+  schedule:
+    # 8:01 AM US Eastern (UTC-4 summer / UTC-5 winter)
+    # Runs at 13:01 UTC — adjust cron if your timezone differs
+    - cron: "1 13 * * *"
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions UI
+
+permissions:
+  contents: write  # Required to commit and push data.json
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install anthropic requests
+
+      - name: Run daily brief
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/daily_brief.py
+
+      - name: Commit and push data.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --staged --quiet \
+            && echo "No new data to commit (brief already ran today)" \
+            || git commit -m "Daily brief $(date -u +%Y-%m-%d)"
+          git push
