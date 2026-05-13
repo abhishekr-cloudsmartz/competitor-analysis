@@ -20,7 +20,7 @@
       "csg": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "NEC integration progress — any customer migration news could open doors."
+        "relevance": "NEC integration progress \u2014 any customer migration news could open doors."
       },
       "netcracker": {
         "activity": "Nothing detected in last 48h.",
@@ -87,10 +87,10 @@
       "comarch": 0,
       "wavelo": 0
     },
-    "quote": "In consolidation season, every merger closes a window somewhere — and opens one for you.",
-    "topSignal": "CSG/NEC merger clears CFIUS — all regulatory approvals secured, NEC integration formally unblocked.",
+    "quote": "In consolidation season, every merger closes a window somewhere \u2014 and opens one for you.",
+    "topSignal": "CSG/NEC merger clears CFIUS \u2014 all regulatory approvals secured, NEC integration formally unblocked.",
     "channelPulse": "Press channels dominated today: CSG drew 13 articles on CFIUS clearance; Amdocs covered by financial media ahead of earnings. All other 10 competitors quiet in last 48h.",
-    "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty — displacement window is opening now.",
+    "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty \u2014 displacement window is opening now.",
     "competitors": {
       "amartus": {
         "activity": "Nothing detected in last 48h.",
@@ -105,7 +105,7 @@
       "csg": {
         "activity": "CFIUS clearance confirmed for NEC merger (May 7). All regulatory approvals secured; integration unblocked.",
         "channel": "press",
-        "relevance": "NEC-CSG integration will now accelerate — target CSG customers facing migration uncertainty as a displacement opportunity."
+        "relevance": "NEC-CSG integration will now accelerate \u2014 target CSG customers facing migration uncertainty as a displacement opportunity."
       },
       "netcracker": {
         "activity": "Nothing detected in last 48h.",
@@ -135,12 +135,12 @@
       "cerillion": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "Record £42.5M Omantel contract (Apr) and A2A AI coordination in v26.1 signal rapid upmarket momentum — watch closely."
+        "relevance": "Record \u00a342.5M Omantel contract (Apr) and A2A AI coordination in v26.1 signal rapid upmarket momentum \u2014 watch closely."
       },
       "optiva": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "Post-Qvantel merger now spans 70+ CSPs in 40 countries with Gemini AI integration — direct AI narrative competitor."
+        "relevance": "Post-Qvantel merger now spans 70+ CSPs in 40 countries with Gemini AI integration \u2014 direct AI narrative competitor."
       },
       "comarch": {
         "activity": "Nothing detected in last 48h.",
@@ -150,8 +150,113 @@
       "wavelo": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "'Free Your Data' AI initiative targets same data-liberation angle as CloudSmartz's AI narrative — differentiate on BSS depth."
+        "relevance": "'Free Your Data' AI initiative targets same data-liberation angle as CloudSmartz's AI narrative \u2014 differentiate on BSS depth."
       }
+    }
+  },
+  {
+    "date": "2026-05-13",
+    "label": "May 13, 2026",
+    "timestamp": "12:26",
+    "quote": "While awards showcase innovation, market performance ultimately validates value.",
+    "topSignal": "Netcracker received the 2026 FutureNet Award with Swisscom for scaling autonomous networks, reinforcing their leadership in AI-driven network automation.",
+    "channelPulse": "Netcracker and Amdocs were the only active competitors in the last 48 hours, both through press channels covering awards and financial news respectively.",
+    "actionItem": "Highlight CloudSmartz's unique approach to network automation and AI-driven BSS/OSS to differentiate from Netcracker's recent award, focusing on tangible business outcomes.",
+    "competitors": {
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "netcracker": {
+        "activity": "Received 2026 FutureNet Award with Swisscom for scaling autonomous networks, reinforcing leadership in AI-driven automation.",
+        "channel": "press",
+        "relevance": "This award reinforces Netcracker's lead in autonomous network and Agentic AI narratives. Position IntelliBot to demonstrate tangible network automation ROI."
+      },
+      "amdocs": {
+        "activity": "Ctech interview discusses AI's business impact; financial media covers upcoming earnings, scrutinizing AI investments for growth.",
+        "channel": "press",
+        "relevance": "Amdocs continues to push its AI narrative, while financial markets scrutinize profitability. Monitor earnings for insights into GenAI solution adoption and pricing."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "amartus": [],
+      "orchest": [],
+      "csg": [],
+      "netcracker": [
+        "https://www.google.com/url?rct=j&sa=t&url=https://finance.yahoo.com/sectors/technology/articles/netcracker-swisscom-receive-2026-futurenet-100000734.html&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw3h7PwjSh8uLEz6HJNQQbUL",
+        "https://www.google.com/url?rct=j&sa=t&url=https://www.businesswire.com/news/home/20260512784089/en/Netcracker-and-Swisscom-Receive-2026-FutureNet-Award-for-Scaling-Autonomous-Network-Operations&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw0bUngN6T2Yild-OHVA7NuV"
+      ],
+      "amdocs": [
+        "https://www.google.com/url?rct=j&sa=t&url=https://www.calcalistech.com/ctechnews/article/o25bt872q&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1MR4gH216-H2QH8XXo-lUg",
+        "https://www.google.com/url?rct=j&sa=t&url=https://in.investing.com/news/earnings/amdocs-earnings-ahead-can-ai-investments-fuel-growth-93CH-5399661&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1mrDhUGK6fPb80pQyav_i9"
+      ],
+      "covalense": [],
+      "beesion": [],
+      "everstage": [],
+      "cerillion": [],
+      "optiva": [],
+      "comarch": [],
+      "wavelo": []
+    },
+    "linkedinSignals": {
+      "amartus": 0,
+      "orchest": 0,
+      "csg": 0,
+      "netcracker": 0,
+      "amdocs": 0,
+      "covalense": 0,
+      "beesion": 0,
+      "everstage": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "comarch": 0,
+      "wavelo": 0
     }
   }
 ]
