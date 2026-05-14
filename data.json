@@ -20,7 +20,7 @@
       "csg": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "NEC integration progress — any customer migration news could open doors."
+        "relevance": "NEC integration progress \u2014 any customer migration news could open doors."
       },
       "netcracker": {
         "activity": "Nothing detected in last 48h.",
@@ -87,10 +87,10 @@
       "comarch": 0,
       "wavelo": 0
     },
-    "quote": "In consolidation season, every merger closes a window somewhere — and opens one for you.",
-    "topSignal": "CSG/NEC merger clears CFIUS — all regulatory approvals secured, NEC integration formally unblocked.",
+    "quote": "In consolidation season, every merger closes a window somewhere \u2014 and opens one for you.",
+    "topSignal": "CSG/NEC merger clears CFIUS \u2014 all regulatory approvals secured, NEC integration formally unblocked.",
     "channelPulse": "Press channels dominated today: CSG drew 13 articles on CFIUS clearance; Amdocs covered by financial media ahead of earnings. All other 10 competitors quiet in last 48h.",
-    "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty — displacement window is opening now.",
+    "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty \u2014 displacement window is opening now.",
     "competitors": {
       "amartus": {
         "activity": "Nothing detected in last 48h.",
@@ -105,7 +105,7 @@
       "csg": {
         "activity": "CFIUS clearance confirmed for NEC merger (May 7). All regulatory approvals secured; integration unblocked.",
         "channel": "press",
-        "relevance": "NEC-CSG integration will now accelerate — target CSG customers facing migration uncertainty as a displacement opportunity."
+        "relevance": "NEC-CSG integration will now accelerate \u2014 target CSG customers facing migration uncertainty as a displacement opportunity."
       },
       "netcracker": {
         "activity": "Nothing detected in last 48h.",
@@ -135,12 +135,12 @@
       "cerillion": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "Record £42.5M Omantel contract (Apr) and A2A AI coordination in v26.1 signal rapid upmarket momentum — watch closely."
+        "relevance": "Record \u00a342.5M Omantel contract (Apr) and A2A AI coordination in v26.1 signal rapid upmarket momentum \u2014 watch closely."
       },
       "optiva": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "Post-Qvantel merger now spans 70+ CSPs in 40 countries with Gemini AI integration — direct AI narrative competitor."
+        "relevance": "Post-Qvantel merger now spans 70+ CSPs in 40 countries with Gemini AI integration \u2014 direct AI narrative competitor."
       },
       "comarch": {
         "activity": "Nothing detected in last 48h.",
@@ -150,7 +150,7 @@
       "wavelo": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "'Free Your Data' AI initiative targets same data-liberation angle as CloudSmartz's AI narrative — differentiate on BSS depth."
+        "relevance": "'Free Your Data' AI initiative targets same data-liberation angle as CloudSmartz's AI narrative \u2014 differentiate on BSS depth."
       }
     }
   },
@@ -257,6 +257,131 @@
       "optiva": 0,
       "comarch": 0,
       "wavelo": 0
+    }
+  },
+  {
+    "date": "2026-05-14",
+    "label": "May 14, 2026",
+    "timestamp": "11:35",
+    "quote": "Strong earnings confirm market confidence, but true innovation lies in how deeply you transform customer operations.",
+    "topSignal": "Amdocs reported strong Q2 fiscal year 2026 earnings, with adjusted EPS of $1.78 per share topping estimates and demonstrating robust revenue growth, further solidifying their market position.",
+    "channelPulse": "Amdocs dominated press channels with extensive coverage of their Q2 earnings, while CSG also saw press activity related to its stock performance. Everstage was active on YouTube with a new video.",
+    "actionItem": "Deep-dive into Amdocs' earnings call to understand their GenAI adoption rates and strategic focus. Develop a messaging strategy that highlights CloudSmartz's unique value proposition and proven ROI against Amdocs' recent AI Telco wins.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Reported strong Q2 earnings (FY26) with adjusted EPS of $1.78, beating estimates and showcasing strong Q1 CY2026 sales growth.",
+        "pubDate": "2026-05-14",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://markets.financialcontent.com/stocks/article/stockstory-2026-5-13-amdocss-nasdaqdox-q1-cy2026-sales-top-estimates&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2r5fq_IJBE-fEuRWkZ4KSL",
+        "channel": "press",
+        "relevance": "Amdocs' strong earnings and AI Telco wins indicate robust market performance and continued investment in GenAI. Monitor their guidance for insights into strategic direction."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG Systems International stock hit an all-time high of $80.71 USD.",
+        "pubDate": "2026-05-12",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.investing.com/news/company-news/csg-systems-international-stock-hits-alltime-high-of-8071-usd-93CH-4680794&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1aLLYPMCqjQ8Y14jTvOiEz",
+        "channel": "press",
+        "relevance": "Positive stock performance suggests investor confidence post-NEC acquisition clearance. This could indicate a period of stability or strategic moves for CSG under NEC."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Published a new YouTube video featuring Winnie Maignan on using Everstage for sales comp at McKesson.",
+        "pubDate": "2026-05-14",
+        "url": "https://www.youtube.com/watch?v=M7uL7dGruxQ",
+        "channel": "youtube",
+        "relevance": "Continues to highlight their sales performance management capabilities, which could be an adjacent area for CloudSmartz in telco sales channel enablement."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=M7uL7dGruxQ"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
     }
   }
 ]
