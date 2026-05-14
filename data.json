@@ -20,7 +20,7 @@
       "csg": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "NEC integration progress — any customer migration news could open doors."
+        "relevance": "NEC integration progress \u2014 any customer migration news could open doors."
       },
       "netcracker": {
         "activity": "Nothing detected in last 48h.",
@@ -87,10 +87,10 @@
       "comarch": 0,
       "wavelo": 0
     },
-    "quote": "In consolidation season, every merger closes a window somewhere — and opens one for you.",
-    "topSignal": "CSG/NEC merger clears CFIUS — all regulatory approvals secured, NEC integration formally unblocked.",
+    "quote": "In consolidation season, every merger closes a window somewhere \u2014 and opens one for you.",
+    "topSignal": "CSG/NEC merger clears CFIUS \u2014 all regulatory approvals secured, NEC integration formally unblocked.",
     "channelPulse": "Press channels dominated today: CSG drew 13 articles on CFIUS clearance; Amdocs covered by financial media ahead of earnings. All other 10 competitors quiet in last 48h.",
-    "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty — displacement window is opening now.",
+    "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty \u2014 displacement window is opening now.",
     "competitors": {
       "amartus": {
         "activity": "Nothing detected in last 48h.",
@@ -105,7 +105,7 @@
       "csg": {
         "activity": "CFIUS clearance confirmed for NEC merger (May 7). All regulatory approvals secured; integration unblocked.",
         "channel": "press",
-        "relevance": "NEC-CSG integration will now accelerate — target CSG customers facing migration uncertainty as a displacement opportunity."
+        "relevance": "NEC-CSG integration will now accelerate \u2014 target CSG customers facing migration uncertainty as a displacement opportunity."
       },
       "netcracker": {
         "activity": "Nothing detected in last 48h.",
@@ -135,12 +135,12 @@
       "cerillion": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "Record £42.5M Omantel contract (Apr) and A2A AI coordination in v26.1 signal rapid upmarket momentum — watch closely."
+        "relevance": "Record \u00a342.5M Omantel contract (Apr) and A2A AI coordination in v26.1 signal rapid upmarket momentum \u2014 watch closely."
       },
       "optiva": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "Post-Qvantel merger now spans 70+ CSPs in 40 countries with Gemini AI integration — direct AI narrative competitor."
+        "relevance": "Post-Qvantel merger now spans 70+ CSPs in 40 countries with Gemini AI integration \u2014 direct AI narrative competitor."
       },
       "comarch": {
         "activity": "Nothing detected in last 48h.",
@@ -150,7 +150,7 @@
       "wavelo": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "'Free Your Data' AI initiative targets same data-liberation angle as CloudSmartz's AI narrative — differentiate on BSS depth."
+        "relevance": "'Free Your Data' AI initiative targets same data-liberation angle as CloudSmartz's AI narrative \u2014 differentiate on BSS depth."
       }
     }
   },
@@ -262,37 +262,114 @@
   {
     "date": "2026-05-14",
     "label": "May 14, 2026",
-    "timestamp": "10:41",
-    "quote": "Awards validate execution. Speed decides who gets the next customer.",
-    "topSignal": "Amdocs Q2 FY2026 beats at $1.17B revenue (+3.9% YoY); AOS lands 5 new commercial agreements incl. Bell Canada & PLDT.",
-    "channelPulse": "Amdocs dominated press channels May 13 with Q2 earnings beat and eSIM Azure benchmark. Amartus, Orchest, and CSG silent.",
-    "actionItem": "Amdocs beat expectations but CFO retiring June 1 and stock near 52-week low signals hesitation — target mid-market accounts evaluating alternatives now.",
+    "timestamp": "11:03",
+    "quote": "Financial gains may validate past efforts, but true advantage is built on future-proof innovation.",
+    "topSignal": "Amdocs posted strong Q2 earnings, exceeding sales estimates and providing positive FY2026 guidance, indicating robust market performance in enterprise BSS/OSS.",
+    "channelPulse": "Amdocs generated significant press coverage with its Q2 earnings report and future guidance. CSG's stock reaching an all-time high also gained financial media attention, while Everstage published a new video.",
+    "actionItem": "Analyze Amdocs' earnings call for insights into their GenAI strategy and customer acquisition pipeline to identify any vulnerable areas. For CSG, monitor for any signs of integration friction post-NEC acquisition that could create displacement opportunities.",
     "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Reported strong Q2 results with adjusted EPS of $1.78, sales topping estimates, and positive FY2026 earnings guidance.",
+        "pubDate": "2026-05-14",
+        "channel": "press",
+        "relevance": "Amdocs' robust financial performance and positive outlook reinforce their market leadership, particularly their AI telco wins. Competitors should note their strong momentum."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Stock hit an all-time high of $80.71; also noted in a defense partnership, unrelated to core BSS offering.",
+        "pubDate": "2026-05-12",
+        "channel": "press",
+        "relevance": "The stock reaching an all-time high likely reflects positive market sentiment regarding its integration with NEC, solidifying its position post-acquisition."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "channel": null,
+        "relevance": null
+      },
       "amartus": {
         "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
         "channel": null,
         "relevance": null
       },
       "orchest": {
         "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
         "channel": null,
         "relevance": null
       },
-      "csg": {
+      "beesion": {
         "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
         "channel": null,
         "relevance": null
       },
-      "netcracker": {
-        "activity": "Nothing detected in last 48h. (FutureNet Award covered in May 13 brief.)",
-        "channel": null,
-        "relevance": "Autonomous ops narrative reinforced by FutureNet Award — counter with CloudSmartz business-outcome focus and speed-to-value."
-      },
-      "amdocs": {
-        "activity": "Q2 FY2026: $1.17B revenue (+3.9% YoY), AOS gains 5 deals (Bell Canada, PLDT); eSIM server hits 12K TPS on Azure.",
-        "channel": "press",
-        "relevance": "Strong results but CFO retiring June 1 and stock near 52-week low — displacement window in mid-market opening now."
+      "everstage": {
+        "activity": "Released a YouTube video featuring Winnie Maignan discussing sales compensation for McKesson, emphasizing moving beyond spreadsheets.",
+        "pubDate": "2026-05-14",
+        "channel": "youtube",
+        "relevance": "Reinforces Everstage's focus on Sales Performance Management (SPM) and incentive compensation solutions, an adjacent but potentially overlapping area for telco sales channels."
       }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=M7uL7dGruxQ"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
     }
   }
 ]
