@@ -94,7 +94,7 @@ body { background: var(--bg); color: var(--text); font-family: -apple-system, Bl
 /* Channel & Event matrix table */
 table.ch-tbl { width: 100%; border-collapse: collapse; }
 table.ch-tbl thead th { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: var(--dim); background: rgba(255,255,255,0.03); padding: 10px 8px; text-align: center; border-bottom: 1px solid var(--border); white-space: nowrap; }
-table.ch-tbl thead th:first-child { text-align: left; padding-left: 12px; }
+table.ch-tbl thead tr.tier-band th:first-child { text-align: left; padding-left: 12px; }
 table.ch-tbl thead th.ch-you-hd { color: var(--green); }
 table.ch-tbl tbody td { padding: 8px 6px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.03); vertical-align: middle; }
 table.ch-tbl tbody td.ch-lbl { text-align: left; padding-left: 12px; font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
@@ -179,6 +179,10 @@ ul.cl li:last-child { border-bottom: none; }
 /* Channel matrix header alignment */
 .ch-hd:not(:first-child) { justify-content: center; }
 
+/* Sidebar show/hide (class-based so media queries can override inline style) */
+.sidebar { display: none; }
+.sidebar.sidebar-show { display: block; }
+
 /* ── Mobile ───────────────────────────────────────────────────────── */
 @media (max-width: 680px) {
   .header { padding: 10px 14px; }
@@ -188,7 +192,13 @@ ul.cl li:last-child { border-bottom: none; }
   .nav { padding: 0 6px; overflow-x: auto; }
   .nav-btn { padding: 10px 9px; font-size: 12px; }
   .main { flex-direction: column; height: auto; min-height: 0; overflow: visible; }
-  .sidebar { display: none; }
+  /* Sidebar becomes a horizontal date-chip strip on mobile */
+  .sidebar.sidebar-show { display: flex; flex-direction: column; width: 100%; border-right: none; border-bottom: 1px solid var(--border); padding: 0; overflow: visible; }
+  .sidebar-label { display: none; }
+  #date-list { display: flex; flex-direction: row; overflow-x: auto; padding: 8px 14px; gap: 8px; scrollbar-width: none; }
+  #date-list::-webkit-scrollbar { display: none; }
+  .date-btn { flex-shrink: 0; width: auto; padding: 5px 12px; border-left: none !important; border-radius: 20px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); font-size: 12px; justify-content: flex-start; gap: 6px; }
+  .date-btn.active { background: var(--accent-dim); border-color: rgba(249,115,22,0.35); color: var(--accent); border-left-color: transparent !important; }
   .pane { padding: 14px 14px 0; overflow-y: visible; }
   .info-panel { width: min(310px, calc(100vw - 28px)); }
   .g2 { grid-template-columns: 1fr; }
@@ -214,9 +224,20 @@ table.ch-tbl thead tr.tier-band th { font-size: 9px; font-weight: 700; text-tran
 .tier-col-enterprise  { background: rgba(239,68,68,0.025); }
 .tier-col-midmarket   { background: rgba(249,115,22,0.025); }
 .tier-col-peer        { background: rgba(16,185,129,0.025); }
+table.ch-tbl thead th.tier-col-enterprise { color: #fca5a5; }
+table.ch-tbl thead th.tier-col-midmarket  { color: #fdba74; }
+table.ch-tbl thead th.tier-col-peer       { color: #6ee7b7; }
 
 /* Product tags */
 .prod-tag { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 3px; background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid rgba(255,255,255,0.07); margin: 1px 2px 1px 0; white-space: nowrap; }
+
+/* Channel feed picker */
+.ch-pick { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.ch-pick-btn { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--muted); padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+.ch-pick-btn:hover { background: rgba(255,255,255,0.07); color: var(--text); }
+.ch-pick-btn.active { background: var(--accent-dim); border-color: rgba(249,115,22,0.35); color: var(--accent); }
+.cf-src { color: var(--accent); font-size: 18px; text-decoration: none; line-height: 1; transition: opacity 0.15s; }
+.cf-src:hover { opacity: 0.7; }
 
 /* Event matrix today marker */
 .ev-today-row td { padding: 0; border: none; }
@@ -283,6 +304,7 @@ table.ch-tbl thead tr.tier-band th { font-size: 9px; font-weight: 700; text-tran
 <div class="nav">
   <button class="nav-btn active" onclick="showView('overview')">Overview</button>
   <button class="nav-btn" onclick="showView('daily')">Activity</button>
+  <button class="nav-btn" onclick="showView('channels')">Channels</button>
   <button class="nav-btn" onclick="showView('howitworks')">How It Works</button>
   <div style="flex:1"></div>
   <div class="nav-dropdown" id="nav-peer">
@@ -300,7 +322,7 @@ table.ch-tbl thead tr.tier-band th { font-size: 9px; font-weight: 700; text-tran
 </div>
 
 <div class="main">
-  <div class="sidebar" id="sidebar" style="display:none;">
+  <div class="sidebar" id="sidebar">
     <div class="sidebar-label">History</div>
     <div id="date-list"><div class="loading">Loading...</div></div>
   </div>
@@ -370,6 +392,16 @@ table.ch-tbl thead tr.tier-band th { font-size: 9px; font-weight: 700; text-tran
     <!-- DAILY BRIEFS -->
     <div class="view" id="view-daily">
       <div id="brief-pane"><div class="loading">Loading history...</div></div>
+    </div>
+
+    <!-- CHANNEL FEED -->
+    <div class="view" id="view-channels">
+      <div class="sec-title" id="ch-feed-title">Channel Feed</div>
+      <div class="sec-sub">Latest tracked post or activity per competitor on the selected channel. Sorted by most recent. Click → to open source.</div>
+      <div class="ch-pick" id="ch-pick"></div>
+      <div class="card" style="overflow-x:auto;padding:0" id="channel-feed-table">
+        <div style="padding:20px;font-size:12px;color:var(--dim)">Loading…</div>
+      </div>
     </div>
 
     <!-- AMARTUS -->
@@ -1125,12 +1157,118 @@ function showView(name) {
       if (dd) dd.querySelector('.nav-dropdown-btn').classList.add('active');
     }
   });
-  document.getElementById('sidebar').style.display = name === 'daily' ? 'block' : 'none';
+  document.getElementById('sidebar').classList.toggle('sidebar-show', name === 'daily');
   if (name === 'daily') {
     renderDateList();
     if (currentDate) showBrief(currentDate);
     else document.getElementById('brief-pane').innerHTML = '<div class="empty"><div class="e-icon">📭</div><div class="e-title">No activity yet</div><p style="font-size:13px;color:var(--dim)">First run tomorrow morning at 8am.</p></div>';
   }
+  if (name === 'channels') initChannelFeed();
+}
+
+// ── Channel Feed ─────────────────────────────────────────────────────────────
+const CHANNEL_META = {
+  linkedin:     { label: 'LinkedIn',     urlKey: 'linkedinUrl'  },
+  press:        { label: 'Press / News', urlKey: 'newsroomUrl'  },
+  blog:         { label: 'Blog',         urlKey: 'newsroomUrl'  },
+  youtube:      { label: 'YouTube',      urlKey: null           },
+  webinars:     { label: 'Webinars',     urlKey: null           },
+  analyst:      { label: 'Analyst',      urlKey: null           },
+  linkedinPaid: { label: 'LinkedIn Ads', urlKey: 'linkedinUrl'  },
+  events:       { label: 'Events',       urlKey: null           },
+};
+
+let activeChanId = 'linkedin';
+
+function initChannelFeed() {
+  if (!CONFIG) return;
+  const picker = document.getElementById('ch-pick');
+  if (!picker.children.length) {
+    picker.innerHTML = Object.entries(CHANNEL_META).map(([id, m]) =>
+      `<button class="ch-pick-btn ${id === activeChanId ? 'active' : ''}" onclick="selectChannel('${id}')">${m.label}</button>`
+    ).join('');
+  }
+  renderChannelFeed(activeChanId);
+}
+
+function selectChannel(id) {
+  activeChanId = id;
+  document.querySelectorAll('.ch-pick-btn').forEach(b =>
+    b.classList.toggle('active', b.textContent === CHANNEL_META[id].label)
+  );
+  renderChannelFeed(id);
+}
+
+function renderChannelFeed(channelId) {
+  if (!CONFIG) return;
+  const meta = CHANNEL_META[channelId];
+  document.getElementById('ch-feed-title').textContent = meta.label + ' — Last Tracked Activity';
+
+  // Scan brief history for most recent activity per competitor on this channel
+  const briefMap = {};
+  if (typeof HISTORY !== 'undefined' && HISTORY) {
+    [...HISTORY].reverse().forEach(brief => {
+      Object.entries(brief.competitors || {}).forEach(([cid, cd]) => {
+        if (!briefMap[cid] && cd.channel === channelId && cd.activity &&
+            !cd.activity.includes('Nothing detected') && !cd.activity.includes('No new')) {
+          briefMap[cid] = { date: brief.date, summary: cd.activity };
+        }
+      });
+    });
+  }
+
+  const TIER_COLOR = { enterprise: '#fca5a5', 'mid-market': '#fdba74', peer: '#6ee7b7' };
+  const TIER_ORDER = { enterprise: 0, 'mid-market': 1, peer: 2 };
+  const LVL_BADGE  = { h: '<span class="ch-stat lvl-h">Active</span>', m: '<span class="ch-stat lvl-m">Moderate</span>', l: '<span class="ch-stat lvl-l">Minimal</span>', n: '<span class="ch-stat lvl-n">—</span>' };
+
+  const rows = CONFIG.competitors.map(c => {
+    const ca = (c.channelActivity || {})[channelId] || { level: 'n', text: '—' };
+    const lp = ca.lastPost || briefMap[c.id] || null;
+    const fallbackUrl = meta.urlKey && c[meta.urlKey] ? c[meta.urlKey] : (c.domain ? 'https://' + c.domain : null);
+    return { c, ca, lp, fallbackUrl };
+  });
+
+  rows.sort((a, b) => {
+    if (a.lp && b.lp) return b.lp.date.localeCompare(a.lp.date);
+    if (a.lp) return -1;
+    if (b.lp) return 1;
+    const td = TIER_ORDER[a.c.tier] - TIER_ORDER[b.c.tier];
+    if (td) return td;
+    return ({'h':0,'m':1,'l':2,'n':3}[a.ca.level]||3) - ({'h':0,'m':1,'l':2,'n':3}[b.ca.level]||3);
+  });
+
+  let h = `<table class="tbl" style="min-width:580px"><thead><tr>
+    <th style="width:130px">Competitor</th>
+    <th style="width:90px">Activity</th>
+    <th style="width:90px">Frequency</th>
+    <th style="width:105px">Last Tracked</th>
+    <th>Content</th>
+    <th style="width:52px;text-align:center">Link</th>
+  </tr></thead><tbody>`;
+
+  rows.forEach(({ c, ca, lp, fallbackUrl }) => {
+    const url    = (lp && lp.url) ? lp.url : fallbackUrl;
+    const dateCell = lp
+      ? `<span style="color:var(--muted)">${lp.date}</span>`
+      : `<span style="color:var(--dim)">—</span>`;
+    const summaryCell = lp
+      ? lp.summary
+      : `<span style="color:var(--dim);font-style:italic">Not yet tracked</span>`;
+    const linkCell = url
+      ? `<a class="cf-src" href="${url}" target="_blank" rel="noopener" title="Open source">→</a>`
+      : `<span style="color:var(--dim)">—</span>`;
+    h += `<tr>
+      <td style="font-weight:600;color:${TIER_COLOR[c.tier]||'var(--text)'}">${c.shortName}</td>
+      <td>${LVL_BADGE[ca.level] || LVL_BADGE.n}</td>
+      <td style="font-size:12px;color:var(--muted)">${ca.text}</td>
+      <td style="font-size:12px">${dateCell}</td>
+      <td style="font-size:12px;color:var(--text)">${summaryCell}</td>
+      <td style="text-align:center">${linkCell}</td>
+    </tr>`;
+  });
+
+  h += '</tbody></table>';
+  document.getElementById('channel-feed-table').innerHTML = h;
 }
 
 function renderDateList() {

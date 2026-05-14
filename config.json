@@ -32,7 +32,15 @@
     { "id": "MWC26",     "label": "MWC Barcelona 2026",          "date": "2026-03", "displayDate": "Mar 2026" },
     { "id": "FN26",      "label": "FutureNet World 2026",        "date": "2026-05", "displayDate": "May 2026" },
     { "id": "DTW26",     "label": "TM Forum DTW 2026",           "date": "2026-06", "displayDate": "Jun 2026" },
-    { "id": "MEF26",     "label": "MEF GNE 2026",                "date": "2026-10", "displayDate": "Oct 2026" }
+    { "id": "MVNO26",   "label": "MVNO World Congress 2026",    "date": "2026-06", "displayDate": "Jun 2026" },
+    { "id": "CB26",     "label": "Connected Britain 2026",      "date": "2026-09", "displayDate": "Sep 2026" },
+    { "id": "SCTE26",   "label": "SCTE TechExpo 2026",          "date": "2026-09", "displayDate": "Sep 2026" },
+    { "id": "IMC26",    "label": "India Mobile Congress 2026",  "date": "2026-10", "displayDate": "Oct 2026" },
+    { "id": "MEF26",    "label": "MEF GNE 2026",                "date": "2026-10", "displayDate": "Oct 2026" },
+    { "id": "NX26",     "label": "Network X 2026",              "date": "2026-10", "displayDate": "Oct 2026" },
+    { "id": "CAP26",    "label": "Capacity Europe 2026",        "date": "2026-10", "displayDate": "Oct 2026" },
+    { "id": "ACOM26",   "label": "AfricaCom 2026",              "date": "2026-11", "displayDate": "Nov 2026" },
+    { "id": "INA26",    "label": "TM Forum Innovate Asia 2026", "date": "2026-11", "displayDate": "Nov 2026" }
   ],
   "competitors": [
     {
