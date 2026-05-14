@@ -1,4 +1,78 @@
 {
+  "_guide": {
+    "_about": "config.json drives everything in the Competitive Intelligence Dashboard — competitor profiles, channel activity ratings, event attendance, and RSS data sources for automated daily briefs.",
+
+    "_howToAddACompetitor": [
+      "Copy an existing competitor block from the 'competitors' array.",
+      "Give it a unique 'id' (lowercase, no spaces — used as a key throughout).",
+      "Set tier: 'enterprise' | 'mid-market' | 'peer'.",
+      "Fill in as many data sources as you can (see _dataSources below).",
+      "Set channelActivity levels honestly: h=high, m=medium, l=low, n=none.",
+      "Add event attendance entries for any events they've been seen at."
+    ],
+
+    "_dataSources": {
+      "googleAlertRssUrl": {
+        "what": "The RSS feed URL from a Google Alert you set up for this company.",
+        "why": "This is the primary automated data source — the daily brief script fetches it every day and feeds the headlines to the AI for analysis.",
+        "howToGet": [
+          "Go to google.com/alerts",
+          "Search: \"Company Name\" (use quotes for exact match)",
+          "Optional: refine to 'Only the best results', 'Any source', 'Any language'",
+          "Click 'Show options', select 'RSS feed' as delivery method",
+          "Copy the RSS URL and paste it here"
+        ],
+        "linkedinTip": "Add a second alert: site:linkedin.com \"Company Name\" — this picks up their LinkedIn posts via Google index.",
+        "nullMeans": "No alert set up yet. Script will show 'no RSS' for this competitor."
+      },
+      "youtubeRssUrl": {
+        "what": "YouTube channel RSS feed URL — auto-fetched for new video titles.",
+        "format": "https://www.youtube.com/feeds/videos.xml?channel_id=UC...",
+        "howToGetChannelId": [
+          "Go to their YouTube channel page",
+          "Right-click → View Page Source",
+          "Ctrl+F for 'channel_id' or 'externalId' — copy the UC... value",
+          "Or use a tool like commentpicker.com/youtube-channel-id.php"
+        ],
+        "nullMeans": "No YouTube channel found or not set up yet."
+      },
+      "blogRssUrl": {
+        "what": "RSS feed URL for their blog/news section.",
+        "howToGet": [
+          "Try appending /feed or /rss to their blog URL",
+          "Check page source for <link rel='alternate' type='application/rss+xml'>",
+          "Most enterprise BSS/OSS companies have dropped public RSS — Google Alert is the fallback"
+        ],
+        "nullMeans": "No blog RSS found."
+      },
+      "linkedinUrl": "Their LinkedIn company page — used for channel activity tracking and the channel matrix link.",
+      "newsroomUrl": "Their press releases or news page — used as the link-out for press/blog channel activity."
+    },
+
+    "_channelActivityLevels": {
+      "h": "High — frequent, consistent activity (e.g. 3+/wk for LinkedIn, 4+/mo for blog)",
+      "m": "Medium — regular but not dominant (e.g. 1-2×/wk LinkedIn, 2×/mo blog)",
+      "l": "Low — occasional or sparse (e.g. 1×/mo or quarterly)",
+      "n": "None — no meaningful presence on this channel"
+    },
+
+    "_eventAttendance": {
+      "what": "Record when a competitor appears at a tracked industry event.",
+      "keyFormat": "Use the event 'id' from the 'events' array (e.g. 'MWC26', 'DTW25').",
+      "fields": {
+        "note": "What they did there — keynote, booth, award, session, etc. Keep to 1 sentence.",
+        "url": "Link to a press release, blog post, or Google search confirming their presence."
+      },
+      "tip": "If you spot a competitor at an event (LinkedIn post, press release, conference agenda), add it here. It feeds the Event Presence matrix on the dashboard."
+    },
+
+    "_tierDefinitions": {
+      "enterprise": "Global BSS/OSS vendors with $100M+ revenue — Netcracker, Amdocs, Comarch. Rarely a direct competitor but set the narrative.",
+      "mid-market": "Regional/growing vendors with $20M–$100M revenue — CSG, Covalense, Cerillion, Optiva, Wavelo. Most frequent real competition.",
+      "peer": "Small/niche vendors of similar scale to CloudSmartz — Amartus, Orchest, Beesion, Everstage. Direct pipeline overlap."
+    }
+  },
+
   "dashboard": {
     "title": "Competitive Intelligence",
     "ourCompany": "CloudSmartz",
@@ -49,6 +123,8 @@
       }
     }
   },
+  "_eventsNote": "Add events here to track competitor attendance. Each event gets a column in the Event Presence matrix. Use a short unique 'id' — this is the key used in each competitor's 'eventAttendance' map. 'date' must be YYYY-MM for correct timeline sorting.",
+
   "events": [
     {
       "id": "MWC25",
@@ -177,6 +253,8 @@
       "displayDate": "Nov 2026"
     }
   ],
+  "_competitorsNote": "Each competitor object drives one column in every dashboard table. Required: id, name, tier. Everything else improves signal quality. Add 'googleAlertRssUrl' first — it feeds the automated daily brief. See _guide._dataSources for how to get each URL type.",
+
   "competitors": [
     {
       "id": "netcracker",
@@ -336,6 +414,7 @@
       "linkedinUrl": "https://www.linkedin.com/company/comarch/",
       "newsroomUrl": "https://comarchcommunications.com/about-us/news",
       "googleAlertRssUrl": null,
+      "_googleAlertTodo": "Set up a Google Alert for 'Comarch telecom' and paste the RSS URL here. See _guide._dataSources.googleAlertRssUrl for steps.",
       "notes": "Full BSS/OSS suite. Large Polish IT company, WSE-listed. In 4 Gartner 2025 telecom reports. 30+ years. AI-driven BSS narrative (Telco Republic 2025).",
       "products": [
         "BSS / OSS Suite",
@@ -477,6 +556,8 @@
       "linkedinUrl": "https://www.linkedin.com/company/covalense-digital/",
       "newsroomUrl": "https://covalensedigital.com/insights/news",
       "googleAlertRssUrl": null,
+      "_googleAlertTodo": "Set up a Google Alert for 'Covalense Digital' and paste the RSS URL here.",
+      "_youtubeTodo": "YouTube channel ID unverified. Check youtube.com/@CovalenseDigital — if confirmed, add youtubeRssUrl.",
       "notes": "5G Digital BSS (Csmart). Oracle partner. MVNO/MVNE/IoT focus. 'Digital BSS Trailblazer' Fast Mode 2025. ~$16M revenue, 5 continents.",
       "products": [
         "5G BSS (Csmart)",
@@ -542,6 +623,8 @@
       "linkedinUrl": "https://www.linkedin.com/company/cerillion/",
       "newsroomUrl": "https://www.cerillion.com/Company/News",
       "googleAlertRssUrl": null,
+      "_googleAlertTodo": "Set up a Google Alert for 'Cerillion BSS' and paste the RSS URL here.",
+      "_youtubeTodo": "YouTube channel found but confirmed empty/inactive — skip unless activity observed.",
       "notes": "BSS/OSS suite. LSE-listed. ~£60M revenue FY2025. TM Forum ODA-ready. Largest deal ever: Omantel 2026. Fastest-growing in mid-market.",
       "products": [
         "BSS / OSS Suite",
@@ -608,6 +691,7 @@
       "linkedinUrl": "https://www.linkedin.com/company/optiva-inc/",
       "newsroomUrl": "https://www.optiva.com/press-releases",
       "googleAlertRssUrl": null,
+      "_googleAlertTodo": "Set up a Google Alert for 'Optiva telecom BSS' and paste the RSS URL here.",
       "notes": "Cloud-native BSS + charging. TSX-listed. Merged with Qvantel Sept 2025. Agentic AI (Google Gemini). 70 CSPs, 40 countries, 1000+ staff. Direct AI narrative competitor.",
       "products": [
         "Cloud BSS",
@@ -675,6 +759,8 @@
       "linkedinUrl": "https://www.linkedin.com/company/wavelo/",
       "newsroomUrl": "https://www.wavelo.com/resources/blog",
       "googleAlertRssUrl": null,
+      "_googleAlertTodo": "Set up a Google Alert for 'Wavelo telecom' and paste the RSS URL here.",
+      "_youtubeTodo": "YouTube search 'Wavelo solutions' has name collisions — verify channel ID before adding youtubeRssUrl.",
       "notes": "Cloud-native BSS/OSS. Tucows subsidiary (NASDAQ: TCX). Event-driven architecture. 'Free Your Data' AI initiative Sept 2025. Customers: Boost Mobile, Ting.",
       "products": [
         "Cloud BSS / OSS",
@@ -736,6 +822,7 @@
       "linkedinUrl": "https://www.linkedin.com/company/amartus/",
       "newsroomUrl": "https://amartus.com/news",
       "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/9190046130634409748",
+      "_youtubeTodo": "Handle @amartus_sds confirmed but channel_id UCxxx not found — check their YouTube about page to get the channel ID.",
       "notes": "NaaS automation, nBrace platform. TM Forum Outstanding Catalyst 2025.",
       "products": [
         "NaaS Automation",
@@ -862,6 +949,7 @@
       "linkedinUrl": "https://www.linkedin.com/company/beesion-technologies-llc/",
       "newsroomUrl": "https://beesion.com/press-releases/",
       "googleAlertRssUrl": null,
+      "_googleAlertTodo": "Set up a Google Alert for 'Beesion telecom' and paste the RSS URL here.",
       "notes": "Low-code BSS/OSS (BeeFiber). B2B BSS Full Stack. LATAM/Americas focus. 20 countries. Fort Lauderdale FL.",
       "products": [
         "BSS / OSS (BeeFiber)",
@@ -920,6 +1008,7 @@
       "linkedinUrl": "https://www.linkedin.com/company/everstage/",
       "newsroomUrl": null,
       "googleAlertRssUrl": null,
+      "_googleAlertTodo": "Set up a Google Alert for 'Everstage SPM' or 'Everstage telecom' and paste the RSS URL here.",
       "notes": "Sales Performance Management (SPM) / Incentive Compensation for Telco. Integrates with BSS/CRM/ERP. Forrester Strong Performer Q1 2025. Different category — tracks sales channel overlap.",
       "products": [
         "SPM / ICM",
