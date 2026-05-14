@@ -103,6 +103,10 @@ table.ch-tbl tbody tr:last-child td { border-bottom: none; }
 table.ch-tbl tbody tr:hover td { background: rgba(255,255,255,0.012); }
 table.ch-tbl tbody tr:hover td.ch-you { background: rgba(16,185,129,0.05); }
 
+/* Sticky table headers */
+.tbl thead th { position: sticky; top: 0; z-index: 2; background: var(--card); box-shadow: 0 1px 0 var(--border); }
+table.ch-tbl thead tr:not(.tier-band) th { position: sticky; top: 0; z-index: 3; background: var(--surface); box-shadow: 0 1px 0 var(--border); }
+
 /* Channel tooltip */
 .ch-tip-wrap { position: relative; display: inline-flex; flex-shrink: 0; }
 .ch-tip { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,0.05); color: var(--dim); font-size: 9px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; cursor: help; border: 1px solid rgba(255,255,255,0.08); transition: all 0.15s; }
