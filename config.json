@@ -7,40 +7,175 @@
     "ourLinkedInFollowersLabel": "2,830",
     "ourEmployeesLabel": "~200",
     "ourRevenueLabel": "Growing",
-    "products": ["CPQ", "NaaS Marketplace", "BSS / OSS", "IntelliBot AI", "Acumen360"],
+    "products": [
+      "CPQ",
+      "NaaS Marketplace",
+      "BSS / OSS",
+      "IntelliBot AI",
+      "Acumen360"
+    ],
     "channelActivity": {
-      "linkedin":     { "level": "m", "text": "~1×/wk" },
-      "linkedinPaid": { "level": "n", "text": "—" },
-      "blog":         { "level": "l", "text": "~1×/mo" },
-      "press":        { "level": "l", "text": "~1×/qtr" },
-      "events":       { "level": "l", "text": "1–2/yr" },
-      "analyst":      { "level": "n", "text": "—" },
-      "youtube":      { "level": "l", "text": "Sparse" },
-      "webinars":     { "level": "l", "text": "~1×/qtr" }
+      "linkedin": {
+        "level": "m",
+        "text": "~1×/wk"
+      },
+      "linkedinPaid": {
+        "level": "n",
+        "text": "—"
+      },
+      "blog": {
+        "level": "l",
+        "text": "~1×/mo"
+      },
+      "press": {
+        "level": "l",
+        "text": "~1×/qtr"
+      },
+      "events": {
+        "level": "l",
+        "text": "1–2/yr"
+      },
+      "analyst": {
+        "level": "n",
+        "text": "—"
+      },
+      "youtube": {
+        "level": "l",
+        "text": "Sparse"
+      },
+      "webinars": {
+        "level": "l",
+        "text": "~1×/qtr"
+      }
     }
   },
   "events": [
-    { "id": "MWC25",     "label": "MWC Barcelona 2025",          "date": "2025-03", "displayDate": "Mar 2025" },
-    { "id": "FOR25",     "label": "Forrester Wave SPM Q1 2025",  "date": "2025-03", "displayDate": "Mar 2025" },
-    { "id": "DTW25",     "label": "TM Forum DTW 2025",           "date": "2025-06", "displayDate": "Jun 2025" },
-    { "id": "MEF25",     "label": "MEF GNE 2025",                "date": "2025-10", "displayDate": "Oct 2025" },
-    { "id": "SCTE25",    "label": "SCTE TechExpo 2025",          "date": "2025-10", "displayDate": "Oct 2025" },
-    { "id": "GAR25",     "label": "Gartner Telecom Summit 2025", "date": "2025-11", "displayDate": "Nov 2025" },
-    { "id": "MVNO25",    "label": "MVNO World Congress 2025",    "date": "2025-11", "displayDate": "Nov 2025" },
-    { "id": "NASSCOM26", "label": "NASSCOM / Regional 2026",     "date": "2026-01", "displayDate": "Jan 2026" },
-    { "id": "ATA26",     "label": "Asian Telecom Awards 2026",   "date": "2026-02", "displayDate": "Feb 2026" },
-    { "id": "MWC26",     "label": "MWC Barcelona 2026",          "date": "2026-03", "displayDate": "Mar 2026" },
-    { "id": "FN26",      "label": "FutureNet World 2026",        "date": "2026-05", "displayDate": "May 2026" },
-    { "id": "DTW26",     "label": "TM Forum DTW 2026",           "date": "2026-06", "displayDate": "Jun 2026" },
-    { "id": "MVNO26",   "label": "MVNO World Congress 2026",    "date": "2026-06", "displayDate": "Jun 2026" },
-    { "id": "CB26",     "label": "Connected Britain 2026",      "date": "2026-09", "displayDate": "Sep 2026" },
-    { "id": "SCTE26",   "label": "SCTE TechExpo 2026",          "date": "2026-09", "displayDate": "Sep 2026" },
-    { "id": "IMC26",    "label": "India Mobile Congress 2026",  "date": "2026-10", "displayDate": "Oct 2026" },
-    { "id": "MEF26",    "label": "MEF GNE 2026",                "date": "2026-10", "displayDate": "Oct 2026" },
-    { "id": "NX26",     "label": "Network X 2026",              "date": "2026-10", "displayDate": "Oct 2026" },
-    { "id": "CAP26",    "label": "Capacity Europe 2026",        "date": "2026-10", "displayDate": "Oct 2026" },
-    { "id": "ACOM26",   "label": "AfricaCom 2026",              "date": "2026-11", "displayDate": "Nov 2026" },
-    { "id": "INA26",    "label": "TM Forum Innovate Asia 2026", "date": "2026-11", "displayDate": "Nov 2026" }
+    {
+      "id": "MWC25",
+      "label": "MWC Barcelona 2025",
+      "date": "2025-03",
+      "displayDate": "Mar 2025"
+    },
+    {
+      "id": "FOR25",
+      "label": "Forrester Wave SPM Q1 2025",
+      "date": "2025-03",
+      "displayDate": "Mar 2025"
+    },
+    {
+      "id": "DTW25",
+      "label": "TM Forum DTW 2025",
+      "date": "2025-06",
+      "displayDate": "Jun 2025"
+    },
+    {
+      "id": "MEF25",
+      "label": "MEF GNE 2025",
+      "date": "2025-10",
+      "displayDate": "Oct 2025"
+    },
+    {
+      "id": "SCTE25",
+      "label": "SCTE TechExpo 2025",
+      "date": "2025-10",
+      "displayDate": "Oct 2025"
+    },
+    {
+      "id": "GAR25",
+      "label": "Gartner Telecom Summit 2025",
+      "date": "2025-11",
+      "displayDate": "Nov 2025"
+    },
+    {
+      "id": "MVNO25",
+      "label": "MVNO World Congress 2025",
+      "date": "2025-11",
+      "displayDate": "Nov 2025"
+    },
+    {
+      "id": "NASSCOM26",
+      "label": "NASSCOM / Regional 2026",
+      "date": "2026-01",
+      "displayDate": "Jan 2026"
+    },
+    {
+      "id": "ATA26",
+      "label": "Asian Telecom Awards 2026",
+      "date": "2026-02",
+      "displayDate": "Feb 2026"
+    },
+    {
+      "id": "MWC26",
+      "label": "MWC Barcelona 2026",
+      "date": "2026-03",
+      "displayDate": "Mar 2026"
+    },
+    {
+      "id": "FN26",
+      "label": "FutureNet World 2026",
+      "date": "2026-05",
+      "displayDate": "May 2026"
+    },
+    {
+      "id": "DTW26",
+      "label": "TM Forum DTW 2026",
+      "date": "2026-06",
+      "displayDate": "Jun 2026"
+    },
+    {
+      "id": "MVNO26",
+      "label": "MVNO World Congress 2026",
+      "date": "2026-06",
+      "displayDate": "Jun 2026"
+    },
+    {
+      "id": "CB26",
+      "label": "Connected Britain 2026",
+      "date": "2026-09",
+      "displayDate": "Sep 2026"
+    },
+    {
+      "id": "SCTE26",
+      "label": "SCTE TechExpo 2026",
+      "date": "2026-09",
+      "displayDate": "Sep 2026"
+    },
+    {
+      "id": "IMC26",
+      "label": "India Mobile Congress 2026",
+      "date": "2026-10",
+      "displayDate": "Oct 2026"
+    },
+    {
+      "id": "MEF26",
+      "label": "MEF GNE 2026",
+      "date": "2026-10",
+      "displayDate": "Oct 2026"
+    },
+    {
+      "id": "NX26",
+      "label": "Network X 2026",
+      "date": "2026-10",
+      "displayDate": "Oct 2026"
+    },
+    {
+      "id": "CAP26",
+      "label": "Capacity Europe 2026",
+      "date": "2026-10",
+      "displayDate": "Oct 2026"
+    },
+    {
+      "id": "ACOM26",
+      "label": "AfricaCom 2026",
+      "date": "2026-11",
+      "displayDate": "Nov 2026"
+    },
+    {
+      "id": "INA26",
+      "label": "TM Forum Innovate Asia 2026",
+      "date": "2026-11",
+      "displayDate": "Nov 2026"
+    }
   ],
   "competitors": [
     {
@@ -53,29 +188,73 @@
       "newsroomUrl": "https://www.netcracker.com/press-releases/",
       "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/2377628566794101216",
       "notes": "Digital BSS/OSS, Agentic AI lead narrative. NEC subsidiary. Most active content machine.",
-      "products": ["BSS / OSS", "Network Orchestration", "Agentic AI (NXO)"],
+      "products": [
+        "BSS / OSS",
+        "Network Orchestration",
+        "Agentic AI (NXO)"
+      ],
       "linkedinFollowers": 177364,
       "linkedinFollowersLabel": "177K",
       "employeesLabel": "~5K",
       "revenueLabel": "NEC sub.",
       "channelActivity": {
-        "linkedin":     { "level": "h", "text": "~4×/wk" },
-        "linkedinPaid": { "level": "h", "text": "Always-on" },
-        "blog":         { "level": "h", "text": "~6×/mo" },
-        "press":        { "level": "h", "text": "~3×/mo" },
-        "events":       { "level": "h", "text": "8+/yr" },
-        "analyst":      { "level": "h", "text": "4× awards" },
-        "youtube":      { "level": "l", "text": "~1×/mo" },
-        "webinars":     { "level": "m", "text": "Quarterly" }
+        "linkedin": {
+          "level": "h",
+          "text": "~4×/wk"
+        },
+        "linkedinPaid": {
+          "level": "h",
+          "text": "Always-on"
+        },
+        "blog": {
+          "level": "h",
+          "text": "~6×/mo"
+        },
+        "press": {
+          "level": "h",
+          "text": "~3×/mo"
+        },
+        "events": {
+          "level": "h",
+          "text": "8+/yr"
+        },
+        "analyst": {
+          "level": "h",
+          "text": "4× awards"
+        },
+        "youtube": {
+          "level": "l",
+          "text": "~1×/mo"
+        },
+        "webinars": {
+          "level": "m",
+          "text": "Quarterly"
+        }
       },
       "eventAttendance": {
-        "MWC26":  { "note": "Agentic AI sessions and NXO platform demos on the show floor", "url": "https://www.google.com/search?q=netcracker+MWC+Barcelona+2026" },
-        "FN26":   { "note": "Won 2026 FutureNet Award for Autonomous Network Scaling with Swisscom", "url": "https://www.businesswire.com/news/home/20260512784089/en/Netcracker-and-Swisscom-Receive-2026-FutureNet-Award-for-Scaling-Autonomous-Network-Operations" },
-        "DTW25":  { "note": "TM Forum DTW 2025 — keynote sponsor and Catalyst contributor", "url": "https://www.google.com/search?q=netcracker+TM+Forum+DTW+2025" },
-        "GAR25":  { "note": "Noted in Gartner Telecom 2025 reports and Magic Quadrant", "url": "https://www.google.com/search?q=netcracker+gartner+telecom+2025" },
-        "SCTE25": { "note": "SCTE TechExpo 2025 presenter on BSS transformation", "url": "https://www.google.com/search?q=netcracker+SCTE+TechExpo+2025" }
+        "MWC26": {
+          "note": "Agentic AI sessions and NXO platform demos on the show floor",
+          "url": "https://www.google.com/search?q=netcracker+MWC+Barcelona+2026"
+        },
+        "FN26": {
+          "note": "Won 2026 FutureNet Award for Autonomous Network Scaling with Swisscom",
+          "url": "https://www.businesswire.com/news/home/20260512784089/en/Netcracker-and-Swisscom-Receive-2026-FutureNet-Award-for-Scaling-Autonomous-Network-Operations"
+        },
+        "DTW25": {
+          "note": "TM Forum DTW 2025 — keynote sponsor and Catalyst contributor",
+          "url": "https://www.google.com/search?q=netcracker+TM+Forum+DTW+2025"
+        },
+        "GAR25": {
+          "note": "Noted in Gartner Telecom 2025 reports and Magic Quadrant",
+          "url": "https://www.google.com/search?q=netcracker+gartner+telecom+2025"
+        },
+        "SCTE25": {
+          "note": "SCTE TechExpo 2025 presenter on BSS transformation",
+          "url": "https://www.google.com/search?q=netcracker+SCTE+TechExpo+2025"
+        }
       },
-      "vsCloudSmartz": "Most active content machine in the space. Agentic AI narrative dominant. CloudSmartz wins on mid-market agility, CPQ specificity, and positioning as NEC-independent."
+      "vsCloudSmartz": "Most active content machine in the space. Agentic AI narrative dominant. CloudSmartz wins on mid-market agility, CPQ specificity, and positioning as NEC-independent.",
+      "youtubeRssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCToK8hRc52z38_cIQ_fK-GQ"
     },
     {
       "id": "amdocs",
@@ -87,27 +266,66 @@
       "newsroomUrl": "https://www.amdocs.com/news",
       "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/7764327933935334871",
       "notes": "Enterprise BSS/OSS, GenAI (amAIz). $4.6B revenue. AWS partnership MWC 2026.",
-      "products": ["BSS / OSS", "GenAI (amAIz)", "Managed Services", "aOS Platform"],
+      "products": [
+        "BSS / OSS",
+        "GenAI (amAIz)",
+        "Managed Services",
+        "aOS Platform"
+      ],
       "linkedinFollowers": 1275295,
       "linkedinFollowersLabel": "1.27M",
       "employeesLabel": "~30K",
       "revenueLabel": "$4.6B",
       "channelActivity": {
-        "linkedin":     { "level": "h", "text": "~5×/wk" },
-        "linkedinPaid": { "level": "h", "text": "Always-on" },
-        "blog":         { "level": "h", "text": "~8×/mo" },
-        "press":        { "level": "h", "text": "~4×/mo" },
-        "events":       { "level": "h", "text": "10+/yr" },
-        "analyst":      { "level": "h", "text": "Gartner MQ ×2" },
-        "youtube":      { "level": "h", "text": "~4×/mo" },
-        "webinars":     { "level": "h", "text": "Monthly" }
+        "linkedin": {
+          "level": "h",
+          "text": "~5×/wk"
+        },
+        "linkedinPaid": {
+          "level": "h",
+          "text": "Always-on"
+        },
+        "blog": {
+          "level": "h",
+          "text": "~8×/mo"
+        },
+        "press": {
+          "level": "h",
+          "text": "~4×/mo"
+        },
+        "events": {
+          "level": "h",
+          "text": "10+/yr"
+        },
+        "analyst": {
+          "level": "h",
+          "text": "Gartner MQ ×2"
+        },
+        "youtube": {
+          "level": "h",
+          "text": "~4×/mo"
+        },
+        "webinars": {
+          "level": "h",
+          "text": "Monthly"
+        }
       },
       "eventAttendance": {
-        "MWC26": { "note": "Multi-year AWS partnership announced; aOS platform keynote sessions", "url": "https://www.google.com/search?q=amdocs+AWS+partnership+MWC+2026" },
-        "DTW25": { "note": "TM Forum DTW 2025 participant and sponsor", "url": "https://www.google.com/search?q=amdocs+TM+Forum+DTW+2025" },
-        "GAR25": { "note": "Gartner Magic Quadrant Leader (consecutive) — Telecom 2025", "url": "https://www.google.com/search?q=amdocs+gartner+magic+quadrant+2025" }
+        "MWC26": {
+          "note": "Multi-year AWS partnership announced; aOS platform keynote sessions",
+          "url": "https://www.google.com/search?q=amdocs+AWS+partnership+MWC+2026"
+        },
+        "DTW25": {
+          "note": "TM Forum DTW 2025 participant and sponsor",
+          "url": "https://www.google.com/search?q=amdocs+TM+Forum+DTW+2025"
+        },
+        "GAR25": {
+          "note": "Gartner Magic Quadrant Leader (consecutive) — Telecom 2025",
+          "url": "https://www.google.com/search?q=amdocs+gartner+magic+quadrant+2025"
+        }
       },
-      "vsCloudSmartz": "Different category — targets AT&T-scale operators. Rarely competes directly. CloudSmartz wins: mid-market speed, CPQ specificity, cost. Watch for any down-market moves."
+      "vsCloudSmartz": "Different category — targets AT&T-scale operators. Rarely competes directly. CloudSmartz wins: mid-market speed, CPQ specificity, cost. Watch for any down-market moves.",
+      "youtubeRssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcwacNSSwfg_CHdxomOGLng"
     },
     {
       "id": "comarch",
@@ -119,28 +337,70 @@
       "newsroomUrl": "https://comarchcommunications.com/about-us/news",
       "googleAlertRssUrl": null,
       "notes": "Full BSS/OSS suite. Large Polish IT company, WSE-listed. In 4 Gartner 2025 telecom reports. 30+ years. AI-driven BSS narrative (Telco Republic 2025).",
-      "products": ["BSS / OSS Suite", "Network Services", "AI-BSS", "NFV / SDN"],
+      "products": [
+        "BSS / OSS Suite",
+        "Network Services",
+        "AI-BSS",
+        "NFV / SDN"
+      ],
       "linkedinFollowers": 53000,
       "linkedinFollowersLabel": "~53K",
       "employeesLabel": "~6K",
       "revenueLabel": "~$350M",
       "channelActivity": {
-        "linkedin":     { "level": "m", "text": "~3×/wk" },
-        "linkedinPaid": { "level": "n", "text": "—" },
-        "blog":         { "level": "h", "text": "~4×/mo" },
-        "press":        { "level": "m", "text": "~2×/mo" },
-        "events":       { "level": "h", "text": "6+/yr" },
-        "analyst":      { "level": "h", "text": "4 Gartner rpts" },
-        "youtube":      { "level": "m", "text": "~2×/mo" },
-        "webinars":     { "level": "m", "text": "Quarterly" }
+        "linkedin": {
+          "level": "m",
+          "text": "~3×/wk"
+        },
+        "linkedinPaid": {
+          "level": "n",
+          "text": "—"
+        },
+        "blog": {
+          "level": "h",
+          "text": "~4×/mo"
+        },
+        "press": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "events": {
+          "level": "h",
+          "text": "6+/yr"
+        },
+        "analyst": {
+          "level": "h",
+          "text": "4 Gartner rpts"
+        },
+        "youtube": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "webinars": {
+          "level": "m",
+          "text": "Quarterly"
+        }
       },
       "eventAttendance": {
-        "MWC26": { "note": "Exhibit presence and 5G BSS/OSS sessions at MWC Barcelona 2026", "url": "https://www.google.com/search?q=comarch+MWC+Barcelona+2026" },
-        "DTW25": { "note": "TM Forum DTW 2025 — TM Forum Platinum Partner (20 API certs)", "url": "https://www.google.com/search?q=comarch+TM+Forum+DTW+2025+Platinum" },
-        "ATA26": { "note": "Asian Telecom Awards 2026 — regional BSS presence", "url": "https://www.google.com/search?q=comarch+Asian+Telecom+Awards+2026" },
-        "GAR25": { "note": "Featured in 4 separate Gartner telecom market reports (2025)", "url": "https://www.google.com/search?q=comarch+gartner+telecom+reports+2025" }
+        "MWC26": {
+          "note": "Exhibit presence and 5G BSS/OSS sessions at MWC Barcelona 2026",
+          "url": "https://www.google.com/search?q=comarch+MWC+Barcelona+2026"
+        },
+        "DTW25": {
+          "note": "TM Forum DTW 2025 — TM Forum Platinum Partner (20 API certs)",
+          "url": "https://www.google.com/search?q=comarch+TM+Forum+DTW+2025+Platinum"
+        },
+        "ATA26": {
+          "note": "Asian Telecom Awards 2026 — regional BSS presence",
+          "url": "https://www.google.com/search?q=comarch+Asian+Telecom+Awards+2026"
+        },
+        "GAR25": {
+          "note": "Featured in 4 separate Gartner telecom market reports (2025)",
+          "url": "https://www.google.com/search?q=comarch+gartner+telecom+reports+2025"
+        }
       },
-      "vsCloudSmartz": "Strong analyst presence and full BSS/OSS suite. TM Forum Platinum Partner. CloudSmartz wins on mid-market agility, faster time-to-value, and CPQ/NaaS specificity."
+      "vsCloudSmartz": "Strong analyst presence and full BSS/OSS suite. TM Forum Platinum Partner. CloudSmartz wins on mid-market agility, faster time-to-value, and CPQ/NaaS specificity.",
+      "youtubeRssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCg7FNbfUbsfQ79oMA-emktQ"
     },
     {
       "id": "csg",
@@ -152,26 +412,61 @@
       "newsroomUrl": "https://www.csgi.com/news/press-releases/",
       "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/7764327933935334323",
       "notes": "BSS/billing. Acquired by NEC Oct 2025 ($2.89B). NEC integration underway.",
-      "products": ["BSS / Billing", "Revenue Management", "Customer Engagement (Ascendon)"],
+      "products": [
+        "BSS / Billing",
+        "Revenue Management",
+        "Customer Engagement (Ascendon)"
+      ],
       "linkedinFollowers": 208313,
       "linkedinFollowersLabel": "208K",
       "employeesLabel": "~6K",
       "revenueLabel": "~$4.5B (NEC)",
       "channelActivity": {
-        "linkedin":     { "level": "h", "text": "~3×/wk" },
-        "linkedinPaid": { "level": "h", "text": "Always-on" },
-        "blog":         { "level": "m", "text": "~2×/mo" },
-        "press":        { "level": "m", "text": "~2×/mo" },
-        "events":       { "level": "m", "text": "4–6/yr" },
-        "analyst":      { "level": "h", "text": "IDC / Gartner" },
-        "youtube":      { "level": "n", "text": "—" },
-        "webinars":     { "level": "h", "text": "Monthly" }
+        "linkedin": {
+          "level": "h",
+          "text": "~3×/wk"
+        },
+        "linkedinPaid": {
+          "level": "h",
+          "text": "Always-on"
+        },
+        "blog": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "press": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "events": {
+          "level": "m",
+          "text": "4–6/yr"
+        },
+        "analyst": {
+          "level": "h",
+          "text": "IDC / Gartner"
+        },
+        "youtube": {
+          "level": "n",
+          "text": "—"
+        },
+        "webinars": {
+          "level": "h",
+          "text": "Monthly"
+        }
       },
       "eventAttendance": {
-        "MWC26": { "note": "CSG 'Radical Simplicity' AI CX theme — booth sessions at MWC 2026", "url": "https://www.google.com/search?q=CSG+International+MWC+Barcelona+2026" },
-        "DTW25": { "note": "TM Forum DTW 2025 participant (pre-NEC acquisition finalization)", "url": "https://www.google.com/search?q=CSG+International+TM+Forum+DTW+2025" }
+        "MWC26": {
+          "note": "CSG 'Radical Simplicity' AI CX theme — booth sessions at MWC 2026",
+          "url": "https://www.google.com/search?q=CSG+International+MWC+Barcelona+2026"
+        },
+        "DTW25": {
+          "note": "TM Forum DTW 2025 participant (pre-NEC acquisition finalization)",
+          "url": "https://www.google.com/search?q=CSG+International+TM+Forum+DTW+2025"
+        }
       },
-      "vsCloudSmartz": "Post-NEC acquisition creates customer anxiety — displacement opportunity now. CloudSmartz wins as the independent, agile alternative with no integration risk."
+      "vsCloudSmartz": "Post-NEC acquisition creates customer anxiety — displacement opportunity now. CloudSmartz wins as the independent, agile alternative with no integration risk.",
+      "youtubeRssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCiX5Dwc_Kc10OHaMn_HVMmA"
     },
     {
       "id": "covalense",
@@ -183,24 +478,58 @@
       "newsroomUrl": "https://covalensedigital.com/insights/news",
       "googleAlertRssUrl": null,
       "notes": "5G Digital BSS (Csmart). Oracle partner. MVNO/MVNE/IoT focus. 'Digital BSS Trailblazer' Fast Mode 2025. ~$16M revenue, 5 continents.",
-      "products": ["5G BSS (Csmart)", "Cloud Charging", "MVNO / MVNE / IoT"],
+      "products": [
+        "5G BSS (Csmart)",
+        "Cloud Charging",
+        "MVNO / MVNE / IoT"
+      ],
       "linkedinFollowers": 5200,
       "linkedinFollowersLabel": "~5.2K",
       "employeesLabel": "~800",
       "revenueLabel": "~$16M",
       "channelActivity": {
-        "linkedin":     { "level": "m", "text": "~2×/mo" },
-        "linkedinPaid": { "level": "n", "text": "—" },
-        "blog":         { "level": "l", "text": "~1×/qtr" },
-        "press":        { "level": "l", "text": "~1×/qtr" },
-        "events":       { "level": "l", "text": "1–2/yr" },
-        "analyst":      { "level": "n", "text": "—" },
-        "youtube":      { "level": "n", "text": "—" },
-        "webinars":     { "level": "n", "text": "—" }
+        "linkedin": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "linkedinPaid": {
+          "level": "n",
+          "text": "—"
+        },
+        "blog": {
+          "level": "l",
+          "text": "~1×/qtr"
+        },
+        "press": {
+          "level": "l",
+          "text": "~1×/qtr"
+        },
+        "events": {
+          "level": "l",
+          "text": "1–2/yr"
+        },
+        "analyst": {
+          "level": "n",
+          "text": "—"
+        },
+        "youtube": {
+          "level": "n",
+          "text": "—"
+        },
+        "webinars": {
+          "level": "n",
+          "text": "—"
+        }
       },
       "eventAttendance": {
-        "NASSCOM26": { "note": "NASSCOM / regional India conference 2026 — Oracle partner session", "url": "https://www.google.com/search?q=covalense+digital+NASSCOM+2026" },
-        "MVNO25":    { "note": "MVNO World Congress 2025 — Csmart MVNE/MVNO platform showcase", "url": "https://www.google.com/search?q=covalense+digital+MVNO+World+Congress+2025" }
+        "NASSCOM26": {
+          "note": "NASSCOM / regional India conference 2026 — Oracle partner session",
+          "url": "https://www.google.com/search?q=covalense+digital+NASSCOM+2026"
+        },
+        "MVNO25": {
+          "note": "MVNO World Congress 2025 — Csmart MVNE/MVNO platform showcase",
+          "url": "https://www.google.com/search?q=covalense+digital+MVNO+World+Congress+2025"
+        }
       },
       "vsCloudSmartz": "5G Digital BSS and Oracle partnership create direct SME overlap. CloudSmartz wins on CPQ depth, NaaS specificity, and broader platform scope."
     },
@@ -214,26 +543,61 @@
       "newsroomUrl": "https://www.cerillion.com/Company/News",
       "googleAlertRssUrl": null,
       "notes": "BSS/OSS suite. LSE-listed. ~£60M revenue FY2025. TM Forum ODA-ready. Largest deal ever: Omantel 2026. Fastest-growing in mid-market.",
-      "products": ["BSS / OSS Suite", "Billing & CRM", "5G Monetization"],
+      "products": [
+        "BSS / OSS Suite",
+        "Billing & CRM",
+        "5G Monetization"
+      ],
       "linkedinFollowers": 11000,
       "linkedinFollowersLabel": "~11K",
       "employeesLabel": "~400",
       "revenueLabel": "~£60M",
       "channelActivity": {
-        "linkedin":     { "level": "m", "text": "~2×/wk" },
-        "linkedinPaid": { "level": "n", "text": "—" },
-        "blog":         { "level": "m", "text": "~2×/mo" },
-        "press":        { "level": "h", "text": "~2×/mo" },
-        "events":       { "level": "m", "text": "3–4/yr" },
-        "analyst":      { "level": "m", "text": "LSE + trade" },
-        "youtube":      { "level": "n", "text": "—" },
-        "webinars":     { "level": "n", "text": "—" }
+        "linkedin": {
+          "level": "m",
+          "text": "~2×/wk"
+        },
+        "linkedinPaid": {
+          "level": "n",
+          "text": "—"
+        },
+        "blog": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "press": {
+          "level": "h",
+          "text": "~2×/mo"
+        },
+        "events": {
+          "level": "m",
+          "text": "3–4/yr"
+        },
+        "analyst": {
+          "level": "m",
+          "text": "LSE + trade"
+        },
+        "youtube": {
+          "level": "n",
+          "text": "—"
+        },
+        "webinars": {
+          "level": "n",
+          "text": "—"
+        }
       },
       "eventAttendance": {
-        "DTW25": { "note": "TM Forum DTW 2025 — ODA-ready certification showcase", "url": "https://www.google.com/search?q=cerillion+TM+Forum+DTW+2025+ODA" },
-        "MWC25": { "note": "MWC Barcelona 2025 — BSS/OSS mid-market presence", "url": "https://www.google.com/search?q=cerillion+MWC+Barcelona+2025" }
+        "DTW25": {
+          "note": "TM Forum DTW 2025 — ODA-ready certification showcase",
+          "url": "https://www.google.com/search?q=cerillion+TM+Forum+DTW+2025+ODA"
+        },
+        "MWC25": {
+          "note": "MWC Barcelona 2025 — BSS/OSS mid-market presence",
+          "url": "https://www.google.com/search?q=cerillion+MWC+Barcelona+2025"
+        }
       },
-      "vsCloudSmartz": "Fastest-growing mid-market threat. Record £42.5M Omantel deal and A2A AI in v26.1 signal rapid upmarket momentum. CloudSmartz wins on CPQ/NaaS specificity and implementation speed."
+      "vsCloudSmartz": "Fastest-growing mid-market threat. Record £42.5M Omantel deal and A2A AI in v26.1 signal rapid upmarket momentum. CloudSmartz wins on CPQ/NaaS specificity and implementation speed.",
+      "youtubeRssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxbGHYoOFBwzYU7iQNLToDw"
     },
     {
       "id": "optiva",
@@ -245,26 +609,62 @@
       "newsroomUrl": "https://www.optiva.com/press-releases",
       "googleAlertRssUrl": null,
       "notes": "Cloud-native BSS + charging. TSX-listed. Merged with Qvantel Sept 2025. Agentic AI (Google Gemini). 70 CSPs, 40 countries, 1000+ staff. Direct AI narrative competitor.",
-      "products": ["Cloud BSS", "Cloud Charging", "OSS (Qvantel)", "Gemini AI"],
+      "products": [
+        "Cloud BSS",
+        "Cloud Charging",
+        "OSS (Qvantel)",
+        "Gemini AI"
+      ],
       "linkedinFollowers": 8500,
       "linkedinFollowersLabel": "~8.5K",
       "employeesLabel": "~1,000",
       "revenueLabel": "~$60M merged",
       "channelActivity": {
-        "linkedin":     { "level": "m", "text": "~2×/mo" },
-        "linkedinPaid": { "level": "n", "text": "—" },
-        "blog":         { "level": "m", "text": "~2×/mo" },
-        "press":        { "level": "m", "text": "~2×/mo" },
-        "events":       { "level": "m", "text": "3–4/yr" },
-        "analyst":      { "level": "l", "text": "Trade press" },
-        "youtube":      { "level": "n", "text": "—" },
-        "webinars":     { "level": "n", "text": "—" }
+        "linkedin": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "linkedinPaid": {
+          "level": "n",
+          "text": "—"
+        },
+        "blog": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "press": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "events": {
+          "level": "m",
+          "text": "3–4/yr"
+        },
+        "analyst": {
+          "level": "l",
+          "text": "Trade press"
+        },
+        "youtube": {
+          "level": "n",
+          "text": "—"
+        },
+        "webinars": {
+          "level": "n",
+          "text": "—"
+        }
       },
       "eventAttendance": {
-        "MWC26": { "note": "Post-Qvantel merger presence at MWC 2026; Gemini AI BSS demos", "url": "https://www.google.com/search?q=optiva+qvantel+MWC+2026" },
-        "DTW25": { "note": "TM Forum DTW 2025 participant — pre-merger as Optiva", "url": "https://www.google.com/search?q=optiva+TM+Forum+DTW+2025" }
+        "MWC26": {
+          "note": "Post-Qvantel merger presence at MWC 2026; Gemini AI BSS demos",
+          "url": "https://www.google.com/search?q=optiva+qvantel+MWC+2026"
+        },
+        "DTW25": {
+          "note": "TM Forum DTW 2025 participant — pre-merger as Optiva",
+          "url": "https://www.google.com/search?q=optiva+TM+Forum+DTW+2025"
+        }
       },
-      "vsCloudSmartz": "Post-Qvantel merger spans 70+ CSPs with Gemini AI integration — direct AI narrative threat. CloudSmartz wins on BSS/CPQ depth and implementation agility."
+      "vsCloudSmartz": "Post-Qvantel merger spans 70+ CSPs with Gemini AI integration — direct AI narrative threat. CloudSmartz wins on BSS/CPQ depth and implementation agility.",
+      "youtubeRssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4dnqM2XNpNhEKN9VlXL-hw"
     },
     {
       "id": "wavelo",
@@ -276,23 +676,54 @@
       "newsroomUrl": "https://www.wavelo.com/resources/blog",
       "googleAlertRssUrl": null,
       "notes": "Cloud-native BSS/OSS. Tucows subsidiary (NASDAQ: TCX). Event-driven architecture. 'Free Your Data' AI initiative Sept 2025. Customers: Boost Mobile, Ting.",
-      "products": ["Cloud BSS / OSS", "MVNO Platform", "Event-driven Arch."],
+      "products": [
+        "Cloud BSS / OSS",
+        "MVNO Platform",
+        "Event-driven Arch."
+      ],
       "linkedinFollowers": 6800,
       "linkedinFollowersLabel": "~6.8K",
       "employeesLabel": "~300",
       "revenueLabel": "Tucows div.",
       "channelActivity": {
-        "linkedin":     { "level": "m", "text": "~2×/wk" },
-        "linkedinPaid": { "level": "n", "text": "—" },
-        "blog":         { "level": "h", "text": "~4×/mo" },
-        "press":        { "level": "l", "text": "~1×/qtr" },
-        "events":       { "level": "m", "text": "2–3/yr" },
-        "analyst":      { "level": "n", "text": "—" },
-        "youtube":      { "level": "n", "text": "—" },
-        "webinars":     { "level": "n", "text": "—" }
+        "linkedin": {
+          "level": "m",
+          "text": "~2×/wk"
+        },
+        "linkedinPaid": {
+          "level": "n",
+          "text": "—"
+        },
+        "blog": {
+          "level": "h",
+          "text": "~4×/mo"
+        },
+        "press": {
+          "level": "l",
+          "text": "~1×/qtr"
+        },
+        "events": {
+          "level": "m",
+          "text": "2–3/yr"
+        },
+        "analyst": {
+          "level": "n",
+          "text": "—"
+        },
+        "youtube": {
+          "level": "n",
+          "text": "—"
+        },
+        "webinars": {
+          "level": "n",
+          "text": "—"
+        }
       },
       "eventAttendance": {
-        "MWC26": { "note": "'Free Your Data' AI initiative launch and Boost Mobile case study at MWC 2026", "url": "https://www.google.com/search?q=wavelo+MWC+Barcelona+2026" }
+        "MWC26": {
+          "note": "'Free Your Data' AI initiative launch and Boost Mobile case study at MWC 2026",
+          "url": "https://www.google.com/search?q=wavelo+MWC+Barcelona+2026"
+        }
       },
       "vsCloudSmartz": "'Free Your Data' AI initiative targets same data-liberation angle. Strong blog output. CloudSmartz wins on BSS/CPQ depth and telecom domain expertise vs Wavelo's narrower scope."
     },
@@ -306,24 +737,58 @@
       "newsroomUrl": "https://amartus.com/news",
       "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/9190046130634409748",
       "notes": "NaaS automation, nBrace platform. TM Forum Outstanding Catalyst 2025.",
-      "products": ["NaaS Automation", "nBrace Platform", "Inter-carrier APIs"],
+      "products": [
+        "NaaS Automation",
+        "nBrace Platform",
+        "Inter-carrier APIs"
+      ],
       "linkedinFollowers": 1334,
       "linkedinFollowersLabel": "1,334",
       "employeesLabel": "~50",
       "revenueLabel": "Private",
       "channelActivity": {
-        "linkedin":     { "level": "m", "text": "~2×/mo" },
-        "linkedinPaid": { "level": "n", "text": "—" },
-        "blog":         { "level": "m", "text": "~2×/mo" },
-        "press":        { "level": "l", "text": "~1×/qtr" },
-        "events":       { "level": "m", "text": "3–4/yr" },
-        "analyst":      { "level": "l", "text": "Occasional" },
-        "youtube":      { "level": "n", "text": "—" },
-        "webinars":     { "level": "l", "text": "~1×/qtr" }
+        "linkedin": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "linkedinPaid": {
+          "level": "n",
+          "text": "—"
+        },
+        "blog": {
+          "level": "m",
+          "text": "~2×/mo"
+        },
+        "press": {
+          "level": "l",
+          "text": "~1×/qtr"
+        },
+        "events": {
+          "level": "m",
+          "text": "3–4/yr"
+        },
+        "analyst": {
+          "level": "l",
+          "text": "Occasional"
+        },
+        "youtube": {
+          "level": "n",
+          "text": "—"
+        },
+        "webinars": {
+          "level": "l",
+          "text": "~1×/qtr"
+        }
       },
       "eventAttendance": {
-        "MEF25": { "note": "MEF GNE 2025 — Outstanding Catalyst Award (SATCOM/EDGE Phase III)", "url": "https://www.google.com/search?q=amartus+MEF+GNE+2025+Outstanding+Catalyst" },
-        "DTW25": { "note": "TM Forum DTW 2025 — nBrace platform showcase and Catalyst participation", "url": "https://www.google.com/search?q=amartus+TM+Forum+DTW+2025+nBrace" }
+        "MEF25": {
+          "note": "MEF GNE 2025 — Outstanding Catalyst Award (SATCOM/EDGE Phase III)",
+          "url": "https://www.google.com/search?q=amartus+MEF+GNE+2025+Outstanding+Catalyst"
+        },
+        "DTW25": {
+          "note": "TM Forum DTW 2025 — nBrace platform showcase and Catalyst participation",
+          "url": "https://www.google.com/search?q=amartus+TM+Forum+DTW+2025+nBrace"
+        }
       },
       "vsCloudSmartz": "Peer-level NaaS automation specialist. Winning TM Forum awards = strong community channel. CloudSmartz wins on broader BSS/CPQ scope and Americas footprint."
     },
@@ -337,23 +802,54 @@
       "newsroomUrl": "https://orchest.net/automation/news.html",
       "googleAlertRssUrl": "https://www.google.co.in/alerts/feeds/16783935022737970658/7422432358858706711",
       "notes": "CPQ + Network Orchestration PaaS launched Nov 2025. LATAM/Caribbean focus. Direct CPQ overlap.",
-      "products": ["CPQ", "Network Orchestration", "SD-WAN Connectivity"],
+      "products": [
+        "CPQ",
+        "Network Orchestration",
+        "SD-WAN Connectivity"
+      ],
       "linkedinFollowers": 400,
       "linkedinFollowersLabel": "<500",
       "employeesLabel": "~50",
       "revenueLabel": "Private",
       "channelActivity": {
-        "linkedin":     { "level": "l", "text": "~1×/mo" },
-        "linkedinPaid": { "level": "n", "text": "—" },
-        "blog":         { "level": "l", "text": "~1×/qtr" },
-        "press":        { "level": "l", "text": "~1×/qtr" },
-        "events":       { "level": "l", "text": "1–2/yr" },
-        "analyst":      { "level": "n", "text": "—" },
-        "youtube":      { "level": "n", "text": "—" },
-        "webinars":     { "level": "n", "text": "—" }
+        "linkedin": {
+          "level": "l",
+          "text": "~1×/mo"
+        },
+        "linkedinPaid": {
+          "level": "n",
+          "text": "—"
+        },
+        "blog": {
+          "level": "l",
+          "text": "~1×/qtr"
+        },
+        "press": {
+          "level": "l",
+          "text": "~1×/qtr"
+        },
+        "events": {
+          "level": "l",
+          "text": "1–2/yr"
+        },
+        "analyst": {
+          "level": "n",
+          "text": "—"
+        },
+        "youtube": {
+          "level": "n",
+          "text": "—"
+        },
+        "webinars": {
+          "level": "n",
+          "text": "—"
+        }
       },
       "eventAttendance": {
-        "DTW25": { "note": "TM Forum DTW 2025 — CPQ PaaS platform presence", "url": "https://www.google.com/search?q=orchest+technologies+TM+Forum+DTW+2025" }
+        "DTW25": {
+          "note": "TM Forum DTW 2025 — CPQ PaaS platform presence",
+          "url": "https://www.google.com/search?q=orchest+technologies+TM+Forum+DTW+2025"
+        }
       },
       "vsCloudSmartz": "Smallest direct CPQ overlap — LATAM/Caribbean focus, newly launched PaaS. Watch for customer announcements in shared geographies."
     },
@@ -367,23 +863,53 @@
       "newsroomUrl": "https://beesion.com/press-releases/",
       "googleAlertRssUrl": null,
       "notes": "Low-code BSS/OSS (BeeFiber). B2B BSS Full Stack. LATAM/Americas focus. 20 countries. Fort Lauderdale FL.",
-      "products": ["BSS / OSS (BeeFiber)", "Low-code Platform", "Telco ERP"],
+      "products": [
+        "BSS / OSS (BeeFiber)",
+        "Low-code Platform",
+        "Telco ERP"
+      ],
       "linkedinFollowers": 2100,
       "linkedinFollowersLabel": "~2.1K",
       "employeesLabel": "~200",
       "revenueLabel": "Private",
       "channelActivity": {
-        "linkedin":     { "level": "l", "text": "~1×/mo" },
-        "linkedinPaid": { "level": "n", "text": "—" },
-        "blog":         { "level": "l", "text": "~1×/qtr" },
-        "press":        { "level": "l", "text": "~1×/qtr" },
-        "events":       { "level": "l", "text": "1–2/yr" },
-        "analyst":      { "level": "l", "text": "Gartner Peer" },
-        "youtube":      { "level": "l", "text": "Sparse" },
-        "webinars":     { "level": "n", "text": "—" }
+        "linkedin": {
+          "level": "l",
+          "text": "~1×/mo"
+        },
+        "linkedinPaid": {
+          "level": "n",
+          "text": "—"
+        },
+        "blog": {
+          "level": "l",
+          "text": "~1×/qtr"
+        },
+        "press": {
+          "level": "l",
+          "text": "~1×/qtr"
+        },
+        "events": {
+          "level": "l",
+          "text": "1–2/yr"
+        },
+        "analyst": {
+          "level": "l",
+          "text": "Gartner Peer"
+        },
+        "youtube": {
+          "level": "l",
+          "text": "Sparse"
+        },
+        "webinars": {
+          "level": "n",
+          "text": "—"
+        }
       },
       "eventAttendance": {},
-      "vsCloudSmartz": "Low-code BSS in shared Americas territory. Minimal public activity. CloudSmartz wins on enterprise integration depth and CPQ specificity."
+      "vsCloudSmartz": "Low-code BSS in shared Americas territory. Minimal public activity. CloudSmartz wins on enterprise integration depth and CPQ specificity.",
+      "youtubeRssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4vRCqXiAvNY_Bc8-IZ7GMg",
+      "blogRssUrl": "https://www.beesion.com/feed/"
     },
     {
       "id": "everstage",
@@ -395,25 +921,57 @@
       "newsroomUrl": null,
       "googleAlertRssUrl": null,
       "notes": "Sales Performance Management (SPM) / Incentive Compensation for Telco. Integrates with BSS/CRM/ERP. Forrester Strong Performer Q1 2025. Different category — tracks sales channel overlap.",
-      "products": ["SPM / ICM", "Sales Incentive Automation", "Commission Tracking"],
+      "products": [
+        "SPM / ICM",
+        "Sales Incentive Automation",
+        "Commission Tracking"
+      ],
       "linkedinFollowers": 27000,
       "linkedinFollowersLabel": "~27K",
       "employeesLabel": "~400",
       "revenueLabel": "Series B $30M+",
       "channelActivity": {
-        "linkedin":     { "level": "h", "text": "~5×/wk" },
-        "linkedinPaid": { "level": "m", "text": "Occasional" },
-        "blog":         { "level": "h", "text": "~4×/mo" },
-        "press":        { "level": "m", "text": "~1×/mo" },
-        "events":       { "level": "m", "text": "3–4/yr" },
-        "analyst":      { "level": "h", "text": "Forrester SP" },
-        "youtube":      { "level": "l", "text": "~1×/mo" },
-        "webinars":     { "level": "h", "text": "Monthly" }
+        "linkedin": {
+          "level": "h",
+          "text": "~5×/wk"
+        },
+        "linkedinPaid": {
+          "level": "m",
+          "text": "Occasional"
+        },
+        "blog": {
+          "level": "h",
+          "text": "~4×/mo"
+        },
+        "press": {
+          "level": "m",
+          "text": "~1×/mo"
+        },
+        "events": {
+          "level": "m",
+          "text": "3–4/yr"
+        },
+        "analyst": {
+          "level": "h",
+          "text": "Forrester SP"
+        },
+        "youtube": {
+          "level": "l",
+          "text": "~1×/mo"
+        },
+        "webinars": {
+          "level": "h",
+          "text": "Monthly"
+        }
       },
       "eventAttendance": {
-        "FOR25": { "note": "Forrester Wave™ Sales Performance Management Q1 2025 — Strong Performer", "url": "https://www.google.com/search?q=everstage+forrester+wave+sales+performance+management+2025" }
+        "FOR25": {
+          "note": "Forrester Wave™ Sales Performance Management Q1 2025 — Strong Performer",
+          "url": "https://www.google.com/search?q=everstage+forrester+wave+sales+performance+management+2025"
+        }
       },
-      "vsCloudSmartz": "Adjacent SPM/ICM — not a direct BSS competitor. Relevant if CloudSmartz expands channel incentive automation for telco sales teams. Different buyer persona."
+      "vsCloudSmartz": "Adjacent SPM/ICM — not a direct BSS competitor. Relevant if CloudSmartz expands channel incentive automation for telco sales teams. Different buyer persona.",
+      "youtubeRssUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1Wp3Xem2XOBgGzPqOauYTQ"
     }
   ]
 }
