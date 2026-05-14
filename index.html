@@ -4,6 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>CloudSmartz — Competitive Intelligence</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <style>
 :root {
   --bg: #0a0a0a; --surface: #111111; --card: #1a1a1a;
@@ -198,6 +199,51 @@ ul.cl li:last-child { border-bottom: none; }
   .tbl-scroll table th:last-child,  .tbl-scroll table td:last-child  { padding-right: 14px; }
 }
 
+/* Tier group header rows in tables */
+.tier-group-hd { background: rgba(255,255,255,0.02); }
+.tier-group-hd td { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; padding: 6px 10px; border-bottom: 1px solid var(--border); }
+.tier-hd-enterprise td { color: #fca5a5; border-left: 3px solid #ef4444; }
+.tier-hd-midmarket  td { color: #fdba74; border-left: 3px solid #f97316; }
+.tier-hd-peer       td { color: #6ee7b7; border-left: 3px solid #10b981; }
+
+/* Matrix tier column header bands (double-row header) */
+table.ch-tbl thead tr.tier-band th { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; padding: 4px 6px; border-bottom: 1px solid var(--border); }
+.tier-band-enterprise { color: #fca5a5; background: rgba(239,68,68,0.06); }
+.tier-band-midmarket  { color: #fdba74; background: rgba(249,115,22,0.06); }
+.tier-band-peer       { color: #6ee7b7; background: rgba(16,185,129,0.06); }
+.tier-col-enterprise  { background: rgba(239,68,68,0.025); }
+.tier-col-midmarket   { background: rgba(249,115,22,0.025); }
+.tier-col-peer        { background: rgba(16,185,129,0.025); }
+
+/* Product tags */
+.prod-tag { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 3px; background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid rgba(255,255,255,0.07); margin: 1px 2px 1px 0; white-space: nowrap; }
+
+/* Event matrix today marker */
+.ev-today-row td { padding: 0; border: none; }
+.ev-today-line { display: flex; align-items: center; gap: 8px; padding: 6px 12px; margin: 2px 0; }
+.ev-today-rule { flex: 1; height: 1px; background: var(--accent); opacity: 0.5; }
+.ev-today-label { font-size: 10px; font-weight: 700; color: var(--accent); white-space: nowrap; background: rgba(249,115,22,0.1); border: 1px solid rgba(249,115,22,0.25); border-radius: 4px; padding: 2px 8px; }
+
+/* Event attendance cell — clickable diamond */
+.ev-attend { cursor: pointer; transition: transform 0.1s; }
+.ev-attend:hover { transform: scale(1.25); }
+
+/* How It Works tab */
+.hiw-section { margin-bottom: 28px; }
+.hiw-section h2 { font-size: 15px; font-weight: 700; margin-bottom: 10px; color: var(--text); }
+.hiw-section p, .hiw-section li { font-size: 13px; color: var(--muted); line-height: 1.7; }
+.hiw-section ul { padding-left: 18px; }
+.hiw-section ul li { margin-bottom: 4px; }
+.hiw-flow { display: flex; align-items: stretch; gap: 0; overflow-x: auto; padding: 20px 0; margin-bottom: 4px; }
+.hiw-step { display: flex; flex-direction: column; align-items: center; min-width: 110px; flex: 1; }
+.hiw-step-box { background: var(--card); border: 1px solid var(--border); border-radius: 9px; padding: 12px 10px; text-align: center; width: 100%; position: relative; }
+.hiw-step-icon { font-size: 22px; margin-bottom: 6px; }
+.hiw-step-title { font-size: 11px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+.hiw-step-sub { font-size: 10px; color: var(--dim); line-height: 1.4; }
+.hiw-arrow { display: flex; align-items: center; padding: 0 4px; color: var(--accent); font-size: 16px; flex-shrink: 0; align-self: center; margin-top: -18px; }
+.hiw-feedback-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-dim); border: 1px solid rgba(249,115,22,0.35); color: var(--accent); padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.15s; margin-top: 6px; }
+.hiw-feedback-btn:hover { background: rgba(249,115,22,0.18); border-color: rgba(249,115,22,0.5); }
+
 /* Per-channel activity cards in Activity tab */
 .ch-activity { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
 .ch-activity:last-child { border-bottom: none; }
@@ -225,8 +271,9 @@ ul.cl li:last-child { border-bottom: none; }
       <button class="info-btn" id="info-btn" onclick="toggleInfo(event)">ⓘ</button>
       <div class="info-panel hidden" id="info-panel">
         <strong>Overview</strong> — static channel benchmark + daily market activity timeline.<br><br>
-        <strong>Daily Briefs</strong> — incremental delta, one entry per day. Each run scans the last 48h only.<br><br>
+        <strong>Activity</strong> — incremental delta briefs, one entry per day. Each run scans the last 48h only.<br><br>
         <strong>Competitor tabs</strong> — deep profiles with signals and positioning.<br><br>
+        <strong>How It Works</strong> — pipeline docs, flowchart, and feedback.<br><br>
         Git history = full rollback to any date.
       </div>
     </div>
@@ -236,6 +283,7 @@ ul.cl li:last-child { border-bottom: none; }
 <div class="nav">
   <button class="nav-btn active" onclick="showView('overview')">Overview</button>
   <button class="nav-btn" onclick="showView('daily')">Activity</button>
+  <button class="nav-btn" onclick="showView('howitworks')">How It Works</button>
   <div style="flex:1"></div>
   <div class="nav-dropdown" id="nav-peer">
     <button class="nav-btn nav-dropdown-btn">Peer ▾</button>
@@ -461,6 +509,132 @@ ul.cl li:last-child { border-bottom: none; }
       </div>
     </div>
 
+    <!-- HOW IT WORKS -->
+    <div class="view" id="view-howitworks">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px">
+        <div style="font-size:20px;font-weight:700">How This Works</div>
+        <span class="badge badge-green">Informational</span>
+      </div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:24px">How the competitive intelligence pipeline runs, what it tracks, and how to use this dashboard.</div>
+
+      <!-- PIPELINE FLOWCHART -->
+      <div class="hiw-section">
+        <h2>Pipeline Overview</h2>
+        <div class="hiw-flow">
+          <div class="hiw-step">
+            <div class="hiw-step-box">
+              <div class="hiw-step-icon">🔔</div>
+              <div class="hiw-step-title">Google Alerts</div>
+              <div class="hiw-step-sub">One RSS feed configured per competitor</div>
+            </div>
+          </div>
+          <div class="hiw-arrow">→</div>
+          <div class="hiw-step">
+            <div class="hiw-step-box">
+              <div class="hiw-step-icon">📡</div>
+              <div class="hiw-step-title">RSS Fetch</div>
+              <div class="hiw-step-sub">48h rolling window · Atom XML parsed</div>
+            </div>
+          </div>
+          <div class="hiw-arrow">→</div>
+          <div class="hiw-step">
+            <div class="hiw-step-box">
+              <div class="hiw-step-icon">⚙️</div>
+              <div class="hiw-step-title">GitHub Actions</div>
+              <div class="hiw-step-sub">Auto-runs 10 AM IST or manual trigger</div>
+            </div>
+          </div>
+          <div class="hiw-arrow">→</div>
+          <div class="hiw-step">
+            <div class="hiw-step-box">
+              <div class="hiw-step-icon">🤖</div>
+              <div class="hiw-step-title">AI Analysis</div>
+              <div class="hiw-step-sub">Gemini 2.5 Flash · Claude fallback</div>
+            </div>
+          </div>
+          <div class="hiw-arrow">→</div>
+          <div class="hiw-step">
+            <div class="hiw-step-box">
+              <div class="hiw-step-icon">💾</div>
+              <div class="hiw-step-title">data.json</div>
+              <div class="hiw-step-sub">Auto-committed and pushed to GitHub</div>
+            </div>
+          </div>
+          <div class="hiw-arrow">→</div>
+          <div class="hiw-step">
+            <div class="hiw-step-box" style="border-color:rgba(249,115,22,0.3);background:rgba(249,115,22,0.04)">
+              <div class="hiw-step-icon">📊</div>
+              <div class="hiw-step-title">Dashboard</div>
+              <div class="hiw-step-sub">GitHub Pages · live instantly · no server</div>
+            </div>
+          </div>
+        </div>
+        <div class="tl-sub" style="margin-top:0">All steps are automated and serverless — runs on GitHub's free tier with no infrastructure to manage.</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="g2">
+        <!-- WHEN DOES IT RUN -->
+        <div class="hiw-section">
+          <h2>⏰ When does it run?</h2>
+          <ul>
+            <li><strong style="color:var(--text)">Automatically</strong> — GitHub Actions cron fires every weekday at 10:30 AM IST. The Gemini 2.5 Flash model generates the brief from RSS data.</li>
+            <li><strong style="color:var(--text)">Manually</strong> — Ask Claude Code to "run the brief". This picks up any signals that arrived after the morning run, without duplicating the day's entry.</li>
+            <li><strong style="color:var(--text)">Multi-run safe</strong> — Each run compares new RSS links against the stored <code style="font-size:11px;background:rgba(255,255,255,0.06);padding:1px 4px;border-radius:3px">rssSnapshot</code>. If nothing is new, it exits without writing. Today's entry is <em>replaced</em> (not duplicated) when new signals arrive.</li>
+          </ul>
+        </div>
+
+        <!-- WHAT DOES IT TRACK -->
+        <div class="hiw-section">
+          <h2>🔍 What does it track?</h2>
+          <ul>
+            <li><strong style="color:var(--text)">12 competitors</strong> across 3 tiers (Enterprise, Mid-Market, Peer) — configured in <code style="font-size:11px;background:rgba(255,255,255,0.06);padding:1px 4px;border-radius:3px">config.json</code>.</li>
+            <li><strong style="color:var(--text)">Google Alerts RSS feeds</strong> — one per competitor. Surfaces press releases, news articles, and occasional LinkedIn posts.</li>
+            <li><strong style="color:var(--text)">LinkedIn signal count</strong> — RSS items sourced from linkedin.com are counted separately as a posting-frequency indicator.</li>
+            <li><strong style="color:var(--text)">48-hour delta only</strong> — not a full archive scan. Each day's brief is incremental: what changed since yesterday.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="g2">
+        <!-- HOW TO USE -->
+        <div class="hiw-section">
+          <h2>🗺️ How to use this dashboard</h2>
+          <ul>
+            <li><strong style="color:var(--text)">Overview</strong> — Channel benchmarks, LinkedIn follower rankings, event presence matrix. Static intelligence — updated manually when the competitive landscape shifts.</li>
+            <li><strong style="color:var(--text)">Activity</strong> — Daily briefs. Click any date in the sidebar to see that day's signals, top finding, channel pulse, and suggested action.</li>
+            <li><strong style="color:var(--text)">Competitor tabs</strong> (Peer / Mid-Market / Enterprise) — Deep profiles: products, channel strategy, recent signals, and positioning vs CloudSmartz.</li>
+            <li><strong style="color:var(--text)">Event matrix</strong> — Which competitor attended which conference. Click ◆ to open the source evidence in a new tab.</li>
+          </ul>
+        </div>
+
+        <!-- CONFIG & MAINTENANCE -->
+        <div class="hiw-section">
+          <h2>🛠️ Adding competitors or events</h2>
+          <ul>
+            <li>All competitor data lives in <code style="font-size:11px;background:rgba(255,255,255,0.06);padding:1px 4px;border-radius:3px">config.json</code> — add a new entry there and the nav, matrices, and tables update automatically.</li>
+            <li>Set up a Google Alert for the new competitor at <strong style="color:var(--text)">google.com/alerts</strong>, subscribe via RSS, and paste the feed URL into <code style="font-size:11px;background:rgba(255,255,255,0.06);padding:1px 4px;border-radius:3px">googleAlertRssUrl</code>.</li>
+            <li>Events are defined in the top-level <code style="font-size:11px;background:rgba(255,255,255,0.06);padding:1px 4px;border-radius:3px">config.json → events</code> array. Add an entry and reference the ID in the competitor's <code style="font-size:11px;background:rgba(255,255,255,0.06);padding:1px 4px;border-radius:3px">eventAttendance</code> object.</li>
+            <li>The GitHub repo is private. The dashboard is served via GitHub Pages from the <code style="font-size:11px;background:rgba(255,255,255,0.06);padding:1px 4px;border-radius:3px">main</code> branch.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- FEEDBACK -->
+      <div class="hiw-section" style="text-align:center;padding:10px 0 20px">
+        <div style="font-size:15px;font-weight:700;margin-bottom:6px">Suggest a change or report an issue</div>
+        <p style="max-width:480px;margin:0 auto 16px;color:var(--dim)">Missing a competitor? Wrong data? Have a feature idea? Drop a note directly — no Jira ticket required.</p>
+        <a href="mailto:abhishek.rastogi@cloudsmartz.net?subject=CI%20Dashboard%20Feedback&body=Hi%20Abhishek%2C%0A%0AI%20have%20a%20suggestion%20for%20the%20competitive%20intelligence%20dashboard%3A%0A%0A" class="hiw-feedback-btn">
+          ✉️ Send Feedback
+        </a>
+      </div>
+    </div>
+
     <!-- Dynamic competitor views inserted here by buildCompetitorViews() -->
     <div id="dynamic-views"></div>
 
@@ -566,22 +740,40 @@ const CH_ROWS = [
 function buildChannelMatrix(cfg) {
   const us = cfg.dashboard.channelActivity || {};
   const comps = cfg.competitors;
+  const tiers = ['enterprise', 'mid-market', 'peer'];
+  const tierBandClass = { 'enterprise': 'tier-band-enterprise', 'mid-market': 'tier-band-midmarket', 'peer': 'tier-band-peer' };
+  const tierColClass   = { 'enterprise': 'tier-col-enterprise',  'mid-market': 'tier-col-midmarket',  'peer': 'tier-col-peer' };
+  const tierLabel      = { 'enterprise': 'Enterprise', 'mid-market': 'Mid-Market', 'peer': 'Peer' };
+
+  const grouped = tiers.map(t => comps.filter(c => c.tier === t));
   const colW = Math.max(80, Math.floor((1100 - 160) / (comps.length + 1)));
   const minW = 160 + colW * (comps.length + 1);
 
-  let h = `<table class="ch-tbl" style="min-width:${minW}px"><thead><tr>`;
-  h += `<th style="text-align:left;width:160px;padding-left:10px">Channel</th>`;
-  h += `<th class="ch-you-hd">CloudSmartz</th>`;
-  comps.forEach(c => { h += `<th>${c.shortName}</th>`; });
+  // Row 1: Channel label col (rowspan 2) + CloudSmartz (rowspan 2) + tier band headers
+  let h = `<table class="ch-tbl" style="min-width:${minW}px"><thead>`;
+  h += `<tr class="tier-band"><th rowspan="2" style="text-align:left;width:160px;padding-left:10px">Channel</th>`;
+  h += `<th rowspan="2" class="ch-you-hd">CloudSmartz</th>`;
+  grouped.forEach((grp, gi) => {
+    if (!grp.length) return;
+    h += `<th colspan="${grp.length}" class="${tierBandClass[tiers[gi]]}">${tierLabel[tiers[gi]]}</th>`;
+  });
+  h += '</tr>';
+  // Row 2: individual company headers
+  h += '<tr>';
+  grouped.forEach((grp, gi) => {
+    grp.forEach(c => { h += `<th class="${tierColClass[tiers[gi]]}">${c.shortName}</th>`; });
+  });
   h += '</tr></thead><tbody>';
 
   CH_ROWS.forEach(row => {
     const ua = us[row.id] || { level: 'n', text: '—' };
     h += `<tr><td class="ch-lbl">${row.label} <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">${row.tip}</div></div></td>`;
     h += `<td class="ch-you"><span class="ch-stat lvl-${ua.level}">${ua.text}</span></td>`;
-    comps.forEach(c => {
-      const a = (c.channelActivity || {})[row.id] || { level: 'n', text: '—' };
-      h += `<td><span class="ch-stat lvl-${a.level}">${a.text}</span></td>`;
+    grouped.forEach((grp, gi) => {
+      grp.forEach(c => {
+        const a = (c.channelActivity || {})[row.id] || { level: 'n', text: '—' };
+        h += `<td class="${tierColClass[tiers[gi]]}"><span class="ch-stat lvl-${a.level}">${a.text}</span></td>`;
+      });
     });
     h += '</tr>';
   });
@@ -589,70 +781,157 @@ function buildChannelMatrix(cfg) {
   document.getElementById('channel-matrix-container').innerHTML = h;
 }
 
-const EVENT_ROWS = [
-  { id: 'MWC26',     label: 'MWC Barcelona 2026' },
-  { id: 'DTW25',     label: 'TM Forum DTW 2025' },
-  { id: 'FN26',      label: 'FutureNet World 2026' },
-  { id: 'MEF25',     label: 'MEF GNE 2025' },
-  { id: 'GAR25',     label: 'Gartner Telecom 2025/26' },
-  { id: 'ATA26',     label: 'Asian Telecom Awards 2026' },
-  { id: 'NASSCOM26', label: 'NASSCOM / Regional 2026' },
-  { id: 'SCTE25',    label: 'SCTE TechExpo 2025' },
-];
-
 function buildEventMatrix(cfg) {
+  // Events come from config.json, sorted by date (already sorted, but re-sort to be safe)
+  const evRows = (cfg.events || []).slice().sort((a, b) => a.date.localeCompare(b.date));
   const comps = cfg.competitors;
-  const colW = Math.max(70, Math.floor((1100 - 180) / comps.length));
-  const minW = 180 + colW * comps.length;
+  const tiers = ['enterprise', 'mid-market', 'peer'];
+  const tierBandClass = { 'enterprise': 'tier-band-enterprise', 'mid-market': 'tier-band-midmarket', 'peer': 'tier-band-peer' };
+  const tierColClass   = { 'enterprise': 'tier-col-enterprise',  'mid-market': 'tier-col-midmarket',  'peer': 'tier-col-peer' };
+  const tierLabel      = { 'enterprise': 'Enterprise', 'mid-market': 'Mid-Market', 'peer': 'Peer' };
+  const grouped = tiers.map(t => comps.filter(c => c.tier === t));
 
-  let h = `<table class="ch-tbl" style="min-width:${minW}px"><thead><tr>`;
-  h += `<th style="text-align:left;width:180px;padding-left:10px">Event / Award</th>`;
-  comps.forEach(c => { h += `<th>${c.shortName}</th>`; });
+  const todayStr = new Date().toISOString().slice(0, 7); // YYYY-MM
+  let todayInserted = false;
+
+  const colW = Math.max(70, Math.floor((1100 - 200) / comps.length));
+  const minW = 200 + colW * comps.length;
+  const totalCols = comps.length + 1; // +1 for label col
+
+  let h = `<table class="ch-tbl" style="min-width:${minW}px"><thead>`;
+  h += `<tr class="tier-band"><th rowspan="2" style="text-align:left;width:200px;padding-left:10px">Event / Award</th>`;
+  grouped.forEach((grp, gi) => {
+    if (!grp.length) return;
+    h += `<th colspan="${grp.length}" class="${tierBandClass[tiers[gi]]}">${tierLabel[tiers[gi]]}</th>`;
+  });
+  h += '</tr><tr>';
+  grouped.forEach((grp, gi) => {
+    grp.forEach(c => { h += `<th class="${tierColClass[tiers[gi]]}">${c.shortName}</th>`; });
+  });
   h += '</tr></thead><tbody>';
 
-  EVENT_ROWS.forEach(ev => {
-    h += `<tr><td class="ch-lbl">${ev.label}</td>`;
-    comps.forEach(c => {
-      const attended = (c.events || []).includes(ev.id);
-      h += attended
-        ? `<td><span class="ch-stat lvl-h">◆</span></td>`
-        : `<td><span class="ch-stat lvl-n">—</span></td>`;
+  evRows.forEach(ev => {
+    // Insert "Today" marker between past and upcoming events
+    if (!todayInserted && ev.date > todayStr) {
+      todayInserted = true;
+      const nowFmt = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      h += `<tr class="ev-today-row"><td colspan="${totalCols}"><div class="ev-today-line">
+        <div class="ev-today-rule"></div>
+        <div class="ev-today-label">▶ Today — ${nowFmt}</div>
+        <div class="ev-today-rule"></div>
+      </div></td></tr>`;
+    }
+
+    h += `<tr><td class="ch-lbl" style="display:table-cell;padding-left:12px">
+      <span style="font-size:12px;color:var(--muted)">${ev.label}</span>
+      <span style="font-size:10px;color:var(--dim);margin-left:6px">${ev.displayDate}</span>
+    </td>`;
+
+    grouped.forEach((grp, gi) => {
+      grp.forEach(c => {
+        const att = (c.eventAttendance || {})[ev.id];
+        if (att) {
+          h += `<td class="${tierColClass[tiers[gi]]}">
+            <span class="ch-stat lvl-h ev-attend"
+              data-url="${att.url}"
+              data-note="${att.note.replace(/"/g, '&quot;')}"
+              title="${att.note.replace(/"/g, '&quot;')} — click to verify">◆</span>
+          </td>`;
+        } else {
+          h += `<td class="${tierColClass[tiers[gi]]}"><span class="ch-stat lvl-n">—</span></td>`;
+        }
+      });
     });
     h += '</tr>';
   });
+
+  // If all events are past, insert today marker at the bottom
+  if (!todayInserted) {
+    const nowFmt = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    h += `<tr class="ev-today-row"><td colspan="${totalCols}"><div class="ev-today-line">
+      <div class="ev-today-rule"></div>
+      <div class="ev-today-label">▶ Today — ${nowFmt}</div>
+      <div class="ev-today-rule"></div>
+    </div></td></tr>`;
+  }
+
   h += '</tbody></table>';
   document.getElementById('event-matrix-container').innerHTML = h;
+
+  // Click handler for ◆ diamonds
+  document.getElementById('event-matrix-container').addEventListener('click', function(e) {
+    const el = e.target.closest('.ev-attend');
+    if (!el) return;
+    const url = el.getAttribute('data-url');
+    if (url) window.open(url, '_blank', 'noopener');
+  });
+
+  // Hover tooltip for ◆ diamonds (reuse global tooltip)
+  const tip = document.getElementById('ch-tooltip-global');
+  document.querySelectorAll('.ev-attend').forEach(el => {
+    el.addEventListener('mouseenter', function() {
+      const note = el.getAttribute('data-note');
+      tip.innerHTML = `<strong style="color:var(--text)">Confirmed attendance</strong><br>${note}<br><span style="color:var(--accent);font-size:10px;margin-top:4px;display:block">Click to open source →</span>`;
+      tip.style.width = '220px';
+      tip.style.display = 'block';
+      const r = el.getBoundingClientRect();
+      const tipH = tip.offsetHeight || 80;
+      let left = r.right + 8;
+      if (left + 228 > window.innerWidth) left = r.left - 228;
+      left = Math.max(8, left);
+      let top = r.top;
+      if (top + tipH + 8 > window.innerHeight) top = window.innerHeight - tipH - 8;
+      tip.style.left = left + 'px';
+      tip.style.top = top + 'px';
+    });
+    el.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+  });
 }
 
 function buildLinkedInTable(cfg) {
   const d = cfg.dashboard;
-  const all = [
-    { name: cfg.dashboard.ourCompany, followers: d.ourLinkedInFollowers, label: d.ourLinkedInFollowersLabel, size: `${d.ourEmployeesLabel} emp · ${d.ourRevenueLabel}`, tier: 'mid-market', isUs: true },
-    ...cfg.competitors.map(c => ({ name: c.name, followers: c.linkedinFollowers || 0, label: c.linkedinFollowersLabel || 'N/A', size: `${c.employeesLabel} emp · ${c.revenueLabel}`, tier: c.tier, isUs: false }))
-  ].sort((a, b) => b.followers - a.followers);
+  const usRow = { name: cfg.dashboard.ourCompany, followers: d.ourLinkedInFollowers, label: d.ourLinkedInFollowersLabel, size: `${d.ourEmployeesLabel} emp · ${d.ourRevenueLabel}`, tier: 'mid-market', products: d.products || [], isUs: true };
+  const compRows = cfg.competitors.map(c => ({
+    name: c.name, followers: c.linkedinFollowers || 0, label: c.linkedinFollowersLabel || 'N/A',
+    size: `${c.employeesLabel} emp · ${c.revenueLabel}`, tier: c.tier,
+    products: c.products || [], isUs: false
+  }));
 
-  const max = Math.max(...all.map(r => r.followers), 1);
-  const tierCls  = { 'enterprise': 'badge-red', 'mid-market': 'badge-orange', 'peer': 'badge-green' };
-  const tierLbl  = { 'enterprise': 'Enterprise', 'mid-market': 'Mid-Market', 'peer': 'Peer' };
-  const follClr  = (f, isUs) => {
+  const tiers = [
+    { key: 'enterprise', label: 'Enterprise',  hdClass: 'tier-hd-enterprise' },
+    { key: 'mid-market', label: 'Mid-Market',   hdClass: 'tier-hd-midmarket' },
+    { key: 'peer',       label: 'Peer',         hdClass: 'tier-hd-peer' },
+  ];
+
+  const max = Math.max(...[usRow, ...compRows].map(r => r.followers), 1);
+  const follClr = (f, isUs) => {
     if (isUs) return 'var(--green)';
     const pct = f / max;
     return pct > 0.5 ? 'var(--red)' : pct > 0.15 ? 'var(--orange)' : pct > 0.01 ? 'var(--yellow)' : 'var(--muted)';
   };
+  const prodTags = (arr) => (arr || []).map(p => `<span class="prod-tag">${p}</span>`).join('');
 
-  let h = '<thead><tr><th>#</th><th>Company</th><th>LinkedIn Followers</th><th>Relative Scale</th><th>Size / Revenue</th><th>Tier</th></tr></thead><tbody>';
-  all.forEach((r, i) => {
-    const pct = (r.followers / max * 100);
-    const pctLbl = pct < 1 ? '<1%' : pct.toFixed(0) + '%';
-    const clr = follClr(r.followers, r.isUs);
-    h += `<tr${r.isUs ? ' class="you-row"' : ''}>
-      <td style="color:var(--dim);font-size:12px">${i + 1}</td>
-      <td><strong${r.isUs ? ' style="color:var(--green)"' : ''}>${r.isUs ? '☑ ' : ''}${r.name}</strong></td>
-      <td style="font-weight:700;color:${clr}">${r.label}</td>
-      <td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:${Math.max(0.2, pct).toFixed(2)}%;background:${clr}"></div></div><span class="bar-lbl">${pctLbl}</span></div></td>
-      <td style="color:var(--muted);font-size:12px">${r.size}</td>
-      <td><span class="badge ${tierCls[r.tier] || 'badge-green'}">${tierLbl[r.tier] || r.tier}</span></td>
-    </tr>`;
+  let rank = 0;
+  let h = '<thead><tr><th>#</th><th>Company</th><th>Products / Competes On</th><th>LinkedIn Followers</th><th>Relative Scale</th><th>Size / Revenue</th></tr></thead><tbody>';
+
+  tiers.forEach(({ key, label, hdClass }) => {
+    const rows = [usRow, ...compRows].filter(r => r.tier === key).sort((a, b) => b.followers - a.followers);
+    if (!rows.length) return;
+    h += `<tr class="tier-group-hd ${hdClass}"><td colspan="6">${label} Tier</td></tr>`;
+    rows.forEach(r => {
+      rank++;
+      const pct = (r.followers / max * 100);
+      const pctLbl = pct < 1 ? '<1%' : pct.toFixed(0) + '%';
+      const clr = follClr(r.followers, r.isUs);
+      h += `<tr${r.isUs ? ' class="you-row"' : ''}>
+        <td style="color:var(--dim);font-size:12px">${rank}</td>
+        <td><strong${r.isUs ? ' style="color:var(--green)"' : ''}>${r.isUs ? '☑ ' : ''}${r.name}</strong></td>
+        <td style="line-height:1.8">${prodTags(r.products)}</td>
+        <td style="font-weight:700;color:${clr}">${r.label}</td>
+        <td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:${Math.max(0.2, pct).toFixed(2)}%;background:${clr}"></div></div><span class="bar-lbl">${pctLbl}</span></div></td>
+        <td style="color:var(--muted);font-size:12px">${r.size}</td>
+      </tr>`;
+    });
   });
   h += '</tbody>';
   const container = document.getElementById('linkedin-table-container');
@@ -682,24 +961,32 @@ function renderCompView(c) {
     const a = c.channelActivity[row.id];
     return `<li>${row.label}: <span style="color:var(--accent)">${a.text}</span></li>`;
   }).join('');
-  const eventsHtml = (c.events || []).length
-    ? (c.events || []).map(eid => {
-        const ev = EVENT_ROWS.find(e => e.id === eid);
-        return `<li>${ev ? ev.label : eid}</li>`;
+  const attended = Object.entries(c.eventAttendance || {});
+  const eventsHtml = attended.length
+    ? attended.map(([eid, att]) => {
+        const evDef = CONFIG && (CONFIG.events || []).find(e => e.id === eid);
+        const evLabel = evDef ? evDef.label : eid;
+        return `<li><a href="${att.url}" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">${evLabel}</a> — <span style="color:var(--dim);font-size:12px">${att.note}</span></li>`;
       }).join('')
     : '<li style="color:var(--dim)">None detected in tracked period</li>';
-  const lastEvent = (c.events || []).length ? (() => { const ev = EVENT_ROWS.find(e => e.id === c.events[c.events.length - 1]); return ev ? ev.label : c.events[c.events.length - 1]; })() : '—';
+  const lastAttended = attended.length ? (() => {
+    const eid = attended[attended.length - 1][0];
+    const evDef = CONFIG && (CONFIG.events || []).find(e => e.id === eid);
+    return evDef ? evDef.label : eid;
+  })() : '—';
+  const prodTags = (c.products || []).map(p => `<span class="prod-tag" style="margin:2px">${p}</span>`).join('');
   return `
     <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;flex-wrap:wrap">
       <div style="font-size:20px;font-weight:700">${c.name}</div>
       <span class="badge ${tierCls}">${tierLbl} Tier</span>
     </div>
     <div style="font-size:13px;color:var(--muted);margin-bottom:14px">${c.notes} · <a href="https://${c.domain}" target="_blank" style="color:var(--dim)">${c.domain}</a></div>
+    ${prodTags ? `<div style="margin-bottom:14px">${prodTags}</div>` : ''}
     <div class="kpi-row">
       <div class="kpi"><div class="v" style="color:var(--accent)">${c.linkedinFollowersLabel || 'N/A'}</div><div class="l">LinkedIn</div></div>
       <div class="kpi"><div class="v">${c.employeesLabel || '?'}</div><div class="l">Employees</div></div>
       <div class="kpi"><div class="v">${c.revenueLabel || '?'}</div><div class="l">Revenue / Size</div></div>
-      <div class="kpi"><div class="v" style="font-size:12px;color:var(--muted)">${lastEvent}</div><div class="l">Last Event</div></div>
+      <div class="kpi"><div class="v" style="font-size:12px;color:var(--muted)">${lastAttended}</div><div class="l">Last Event</div></div>
     </div>
     <div class="divider"></div>
     <div class="g2">
