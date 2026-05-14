@@ -33,6 +33,7 @@ jobs:
         run: python scripts/daily_brief.py
 
       - name: Commit and push data.json
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

@@ -3,7 +3,7 @@
 Daily competitive brief generator for CloudSmartz.
 
 Provider selection (first key found wins):
-  GEMINI_API_KEY   → Gemini 2.5 Flash (primary), Flash-Lite (fallback after retry)
+  GEMINI_API_KEY   → Gemini 3.1 Pro Preview (primary), 2.5 Flash (fallback)
   ANTHROPIC_API_KEY → Claude claude-sonnet-4-6
 
 Dedup logic (multiple runs per day supported):
@@ -11,13 +11,15 @@ Dedup logic (multiple runs per day supported):
   - Compares fetched links against rssSnapshot stored in the last entry for today
   - If new links exist → regenerates brief and replaces today's entry
   - If no new links → skips (prints summary of current entry)
+  - If previous run wrote an error entry → always retries regardless of RSS state
   This allows the Gemini cron to run at 10 AM and a manual Claude run later in the day
   to pick up afternoon signals without doubling entries.
 
 Retry logic (Gemini only):
-  Attempt 1: gemini-2.5-flash
-  Attempt 2: gemini-2.5-flash  (after 30s delay)
-  Attempt 3: gemini-2.5-flash-lite (immediate fallback)
+  Attempt 1: gemini-3.1-pro-preview       (primary)
+  Attempt 2: gemini-3.1-pro-preview       (retry after 30s — transient errors only)
+  Attempt 3: gemini-2.5-flash             (fallback — immediate)
+  All fail  → writes error entry to data.json and exits 0 so the commit step runs
 """
 
 import json
@@ -37,8 +39,8 @@ DATA_PATH   = os.path.join(REPO_ROOT, "data.json")
 ATOM_NS  = {"atom": "http://www.w3.org/2005/Atom"}
 HEADERS  = {"User-Agent": "Mozilla/5.0 (compatible; CloudSmartz-CI/1.0)"}
 
-GEMINI_PRIMARY  = "gemini-2.5-flash"
-GEMINI_FALLBACK = "gemini-2.5-flash-lite"
+GEMINI_PRIMARY  = "gemini-3.1-pro-preview"
+GEMINI_FALLBACK = "gemini-2.5-flash"
 
 
 # ── RSS ──────────────────────────────────────────────────────────────────────
@@ -198,29 +200,25 @@ def call_gemini(prompt: str) -> dict:
     genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
     attempts = [
-        (GEMINI_PRIMARY,  0),   # first try
-        (GEMINI_PRIMARY,  30),  # retry same model after 30s
-        (GEMINI_FALLBACK, 0),   # fall back to lighter model
+        (GEMINI_PRIMARY,  0),   # 1st try: gemini-3.1-pro-preview
+        (GEMINI_PRIMARY,  30),  # 2nd try: same model, wait 30s first
+        (GEMINI_FALLBACK, 0),   # 3rd try: gemini-2.5-flash, immediate
     ]
 
     last_err = None
-    for model_id, delay in attempts:
+    for i, (model_id, delay) in enumerate(attempts):
         if delay:
-            print(f"  [{model_id}] transient error — waiting {delay}s before retry...")
+            print(f"  [{model_id}] waiting {delay}s before retry...")
             time.sleep(delay)
         try:
-            print(f"  Calling {model_id}...")
+            print(f"  Calling {model_id} (attempt {i+1}/{len(attempts)})...")
             model    = genai.GenerativeModel(model_id)
             response = model.generate_content(prompt)
             return _parse_json(response.text)
         except Exception as exc:
             last_err = exc
-            err_str = str(exc).lower()
-            transient = any(code in err_str for code in ("503", "500", "502", "504",
-                                                          "unavailable", "internal"))
-            print(f"  {model_id} failed ({'transient' if transient else 'non-transient'}): {exc}")
-            if not transient:
-                raise
+            print(f"  {model_id} failed: {exc}")
+            # Always continue to next attempt — let the chain decide
 
     raise RuntimeError(f"All Gemini attempts exhausted. Last error: {last_err}")
 
@@ -299,17 +297,36 @@ def main():
     today_entry = next((e for e in history if e["date"] == today), None)
 
     if today_entry:
-        if not has_new_rss_content(rss_snapshot, today_entry):
+        if today_entry.get("error"):
+            print(f"Previous run failed ({today_entry['error'][:80]}) — retrying...")
+            history = [e for e in history if e["date"] != today]
+        elif not has_new_rss_content(rss_snapshot, today_entry):
             print(f"No new RSS content since last run at {today_entry['timestamp']} — skipping.")
             print(f"Top signal: {today_entry.get('topSignal') or 'None'}")
             sys.exit(0)
-        print(f"New RSS content detected since {today_entry['timestamp']} — regenerating brief...")
-        history = [e for e in history if e["date"] != today]
+        else:
+            print(f"New RSS content detected since {today_entry['timestamp']} — regenerating brief...")
+            history = [e for e in history if e["date"] != today]
 
     print("Generating brief...")
-    prompt    = build_prompt(config, history, rss_data, today, today_label, timestamp,
-                             yt_data=yt_data, blog_data=blog_data)
-    new_entry = call_llm(prompt)
+    prompt = build_prompt(config, history, rss_data, today, today_label, timestamp,
+                          yt_data=yt_data, blog_data=blog_data)
+    try:
+        new_entry = call_llm(prompt)
+    except Exception as exc:
+        err_msg = str(exc)
+        print(f"\n❌ Brief generation failed: {err_msg}")
+        error_entry = {
+            "date":      today,
+            "label":     today_label,
+            "timestamp": timestamp,
+            "error":     err_msg,
+        }
+        history.append(error_entry)
+        with open(DATA_PATH, "w") as f:
+            json.dump(history, f, indent=2)
+        print("Error entry written to data.json — UI will display failure notice.")
+        sys.exit(0)  # exit 0 so the workflow commit step still runs
 
     # Attach metadata not generated by the LLM
     new_entry["rssSnapshot"]     = rss_snapshot

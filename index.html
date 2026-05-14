@@ -1073,7 +1073,7 @@ function renderTimeline() {
   const msPerDay = 86400000;
 
   const scores = HISTORY.map(e =>
-    Object.values(e.competitors || {}).filter(c =>
+    e.error ? 0 : Object.values(e.competitors || {}).filter(c =>
       c.activity && !c.activity.includes('Nothing detected') && !c.activity.includes('No new')
     ).length
   );
@@ -1295,6 +1295,12 @@ function renderDateList() {
     return;
   }
   el.innerHTML = [...HISTORY].reverse().map(entry => {
+    if (entry.error) {
+      return `<button class="date-btn ${entry.date === currentDate ? 'active' : ''}" onclick="showBrief('${entry.date}')" style="border-left:2px solid #f87171">
+        <span>${entry.label}</span>
+        <span class="sig-count" style="color:#f87171">⚠</span>
+      </button>`;
+    }
     const sigCount = Object.values(entry.competitors || {}).filter(c =>
       c.activity && !c.activity.includes('Nothing detected') && !c.activity.includes('No new')
     ).length;
@@ -1310,6 +1316,20 @@ function showBrief(date) {
   const entry = HISTORY.find(e => e.date === date);
   if (!entry) return;
   renderDateList();
+
+  if (entry.error) {
+    document.getElementById('brief-pane').innerHTML = `
+      <div class="brief-date">${entry.label}</div>
+      <div style="margin-top:16px;padding:16px;border:1px solid #f87171;border-radius:8px;background:rgba(248,113,113,0.08)">
+        <div style="font-size:12px;font-weight:700;color:#f87171;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px">⚠ Brief generation failed</div>
+        <p style="font-size:13px;color:var(--muted);margin:0 0 8px">The automated brief could not be completed at ${entry.timestamp} UTC. The next scheduled run will retry automatically.</p>
+        <details style="font-size:11px;color:var(--dim)">
+          <summary style="cursor:pointer;color:var(--accent)">Error details</summary>
+          <pre style="margin:8px 0 0;white-space:pre-wrap;word-break:break-all">${entry.error}</pre>
+        </details>
+      </div>`;
+    return;
+  }
   const coNames = {
     amartus:'Amartus', orchest:'Orchest Technologies', csg:'CSG International',
     netcracker:'Netcracker', amdocs:'Amdocs', covalense:'Covalense Digital',
