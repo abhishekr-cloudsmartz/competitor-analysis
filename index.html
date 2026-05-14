@@ -1381,6 +1381,7 @@ function showBrief(date) {
   `;
 }
 </script>
-<div class="footer">Made by Abhishek (R&amp;G Team) · Claude Sonnet 4.6</div>
+<div class="footer">Made by Abhishek (R&amp;G Team) · Claude Sonnet 4.6 · <span id="footer-ts"></span></div>
+<script>document.getElementById('footer-ts').textContent = new Date().toLocaleString('en-GB', { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit' });</script>
 </body>
 </html>
