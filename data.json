@@ -20,7 +20,7 @@
       "csg": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "NEC integration progress \u2014 any customer migration news could open doors."
+        "relevance": "NEC integration progress — any customer migration news could open doors."
       },
       "netcracker": {
         "activity": "Nothing detected in last 48h.",
@@ -87,10 +87,10 @@
       "comarch": 0,
       "wavelo": 0
     },
-    "quote": "In consolidation season, every merger closes a window somewhere \u2014 and opens one for you.",
-    "topSignal": "CSG/NEC merger clears CFIUS \u2014 all regulatory approvals secured, NEC integration formally unblocked.",
+    "quote": "In consolidation season, every merger closes a window somewhere — and opens one for you.",
+    "topSignal": "CSG/NEC merger clears CFIUS — all regulatory approvals secured, NEC integration formally unblocked.",
     "channelPulse": "Press channels dominated today: CSG drew 13 articles on CFIUS clearance; Amdocs covered by financial media ahead of earnings. All other 10 competitors quiet in last 48h.",
-    "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty \u2014 displacement window is opening now.",
+    "actionItem": "Develop a CSG migration play targeting customers facing NEC integration uncertainty — displacement window is opening now.",
     "competitors": {
       "amartus": {
         "activity": "Nothing detected in last 48h.",
@@ -105,7 +105,7 @@
       "csg": {
         "activity": "CFIUS clearance confirmed for NEC merger (May 7). All regulatory approvals secured; integration unblocked.",
         "channel": "press",
-        "relevance": "NEC-CSG integration will now accelerate \u2014 target CSG customers facing migration uncertainty as a displacement opportunity."
+        "relevance": "NEC-CSG integration will now accelerate — target CSG customers facing migration uncertainty as a displacement opportunity."
       },
       "netcracker": {
         "activity": "Nothing detected in last 48h.",
@@ -135,12 +135,12 @@
       "cerillion": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "Record \u00a342.5M Omantel contract (Apr) and A2A AI coordination in v26.1 signal rapid upmarket momentum \u2014 watch closely."
+        "relevance": "Record £42.5M Omantel contract (Apr) and A2A AI coordination in v26.1 signal rapid upmarket momentum — watch closely."
       },
       "optiva": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "Post-Qvantel merger now spans 70+ CSPs in 40 countries with Gemini AI integration \u2014 direct AI narrative competitor."
+        "relevance": "Post-Qvantel merger now spans 70+ CSPs in 40 countries with Gemini AI integration — direct AI narrative competitor."
       },
       "comarch": {
         "activity": "Nothing detected in last 48h.",
@@ -150,7 +150,7 @@
       "wavelo": {
         "activity": "Nothing detected in last 48h.",
         "channel": null,
-        "relevance": "'Free Your Data' AI initiative targets same data-liberation angle as CloudSmartz's AI narrative \u2014 differentiate on BSS depth."
+        "relevance": "'Free Your Data' AI initiative targets same data-liberation angle as CloudSmartz's AI narrative — differentiate on BSS depth."
       }
     }
   },
@@ -257,6 +257,42 @@
       "optiva": 0,
       "comarch": 0,
       "wavelo": 0
+    }
+  },
+  {
+    "date": "2026-05-14",
+    "label": "May 14, 2026",
+    "timestamp": "10:41",
+    "quote": "Awards validate execution. Speed decides who gets the next customer.",
+    "topSignal": "Amdocs Q2 FY2026 beats at $1.17B revenue (+3.9% YoY); AOS lands 5 new commercial agreements incl. Bell Canada & PLDT.",
+    "channelPulse": "Amdocs dominated press channels May 13 with Q2 earnings beat and eSIM Azure benchmark. Amartus, Orchest, and CSG silent.",
+    "actionItem": "Amdocs beat expectations but CFO retiring June 1 and stock near 52-week low signals hesitation — target mid-market accounts evaluating alternatives now.",
+    "competitors": {
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "channel": null,
+        "relevance": null
+      },
+      "netcracker": {
+        "activity": "Nothing detected in last 48h. (FutureNet Award covered in May 13 brief.)",
+        "channel": null,
+        "relevance": "Autonomous ops narrative reinforced by FutureNet Award — counter with CloudSmartz business-outcome focus and speed-to-value."
+      },
+      "amdocs": {
+        "activity": "Q2 FY2026: $1.17B revenue (+3.9% YoY), AOS gains 5 deals (Bell Canada, PLDT); eSIM server hits 12K TPS on Azure.",
+        "channel": "press",
+        "relevance": "Strong results but CFO retiring June 1 and stock near 52-week low — displacement window in mid-market opening now."
+      }
     }
   }
 ]

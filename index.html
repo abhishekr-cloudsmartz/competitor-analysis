@@ -225,25 +225,17 @@ ul.cl li:last-child { border-bottom: none; }
   <button class="nav-btn active" onclick="showView('overview')">Overview</button>
   <button class="nav-btn" onclick="showView('daily')">Activity</button>
   <div style="flex:1"></div>
-  <div class="nav-dropdown">
+  <div class="nav-dropdown" id="nav-peer">
     <button class="nav-btn nav-dropdown-btn">Peer ▾</button>
-    <div class="nav-dropdown-menu">
-      <button class="nav-dropdown-item" onclick="showView('amartus')">Amartus</button>
-      <button class="nav-dropdown-item" onclick="showView('orchest')">Orchest</button>
-    </div>
+    <div class="nav-dropdown-menu" id="nav-peer-menu"></div>
   </div>
-  <div class="nav-dropdown">
+  <div class="nav-dropdown" id="nav-midmarket">
     <button class="nav-btn nav-dropdown-btn">Mid-Market ▾</button>
-    <div class="nav-dropdown-menu">
-      <button class="nav-dropdown-item" onclick="showView('csg')">CSG</button>
-    </div>
+    <div class="nav-dropdown-menu" id="nav-midmarket-menu"></div>
   </div>
-  <div class="nav-dropdown">
+  <div class="nav-dropdown" id="nav-enterprise">
     <button class="nav-btn nav-dropdown-btn">Enterprise ▾</button>
-    <div class="nav-dropdown-menu">
-      <button class="nav-dropdown-item" onclick="showView('netcracker')">Netcracker</button>
-      <button class="nav-dropdown-item" onclick="showView('amdocs')">Amdocs</button>
-    </div>
+    <div class="nav-dropdown-menu" id="nav-enterprise-menu"></div>
   </div>
 </div>
 
@@ -275,99 +267,26 @@ ul.cl li:last-child { border-bottom: none; }
         <div class="legend-i"><span class="ch-stat lvl-l">Minimal</span> Few/month</div>
         <div class="legend-i"><span class="lvl-n ch-stat">—</span> Not detected</div>
       </div>
-      <div class="card" style="overflow-x:auto;padding:0;">
-        <div class="ch-grid" style="min-width:780px;">
-          <div class="ch-hd">Channel</div>
-          <div class="ch-hd ch-you-hd">CloudSmartz</div>
-          <div class="ch-hd">Amartus</div>
-          <div class="ch-hd">Orchest</div>
-          <div class="ch-hd">CSG</div>
-          <div class="ch-hd">Netcracker</div>
-          <div class="ch-hd">Amdocs</div>
-
-          <div class="ch-cell ch-lbl">LinkedIn Organic <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Posts directly to the company LinkedIn page. <strong>Active</strong> = 3+ posts/week with consistent engagement. Drives follower growth and organic reach among CSP decision-makers.</div></div></div>
-          <div class="ch-cell ch-you"><span class="ch-stat lvl-m">~1×/wk</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">~3×/wk</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">~4×/wk</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">~5×/wk</span></div>
-
-          <div class="ch-cell ch-lbl">LinkedIn Paid Ads <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Sponsored / promoted content on LinkedIn. Enterprise players run always-on campaigns targeting specific job titles and industries. Detected via ad library signals and sponsored post indicators.</div></div></div>
-          <div class="ch-cell ch-you"><span class="ch-stat lvl-n">—</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">Always-on</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">Always-on</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">Always-on</span></div>
-
-          <div class="ch-cell ch-lbl">Blog / Thought Leadership <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Long-form articles, exec bylines, and technical whitepapers. High = 4+ per month, indicates serious SEO and inbound investment. Drives organic search traffic from buyers researching BSS/NaaS solutions.</div></div></div>
-          <div class="ch-cell ch-you"><span class="ch-stat lvl-l">~1×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/qtr</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">~6×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">~8×/mo</span></div>
-
-          <div class="ch-cell ch-lbl">Press Releases / PR <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Formal press releases via PR Newswire, Business Wire, or direct media outreach. Each release signals a major deal, partnership, award, or product milestone. High frequency = active deal-close motion.</div></div></div>
-          <div class="ch-cell ch-you"><span class="ch-stat lvl-l">~1×/qtr</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/qtr</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/qtr</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">~3×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">~4×/mo</span></div>
-
-          <div class="ch-cell ch-lbl">Industry Events / MWC <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">MWC, DTW Ignite, MEF, SCTE TechExpo, FutureNet. Sponsorship or speaking slot = high investment signal and brand visibility with tier-1 CSP buyers. Booth presence alone signals intent.</div></div></div>
-          <div class="ch-cell ch-you"><span class="ch-stat lvl-l">1–2/yr</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-m">3–4/yr</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-l">1–2/yr</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-m">4–6/yr</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">8+/yr</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">10+/yr</span></div>
-
-          <div class="ch-cell ch-lbl">Analyst Relations <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Gartner Magic Quadrant, IDC MarketScape, Forrester Wave, Frost & Sullivan awards. Requires a dedicated AR budget and named customers willing to be referenced. Effectively locked to enterprise tier.</div></div></div>
-          <div class="ch-cell ch-you"><span class="ch-stat lvl-n">—</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-l">Occasional</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">IDC / Gartner</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">4× awards</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">Gartner MQ ×2</span></div>
-
-          <div class="ch-cell ch-lbl">YouTube / Video <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Product demos, event sessions, and thought-leadership videos on YouTube or Vimeo. Dramatically under-invested by peer-tier companies — low production cost, high SEO and differentiation value.</div></div></div>
-          <div class="ch-cell ch-you"><span class="ch-stat lvl-l">Sparse</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-n">—</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-m">~2×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-l">~1×/mo</span></div>
-          <div class="ch-cell"><span class="ch-stat lvl-h">~4×/mo</span></div>
-
-          <div class="ch-cell ch-lbl ch-last">Webinars / eBooks <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">Gated or ungated demand-gen assets: webinars, eBooks, industry reports, research papers. Enterprise players use these to capture buyer intent signals. High = consistent pipeline of nurture content.</div></div></div>
-          <div class="ch-cell ch-you ch-last"><span class="ch-stat lvl-l">~1×/qtr</span></div>
-          <div class="ch-cell ch-last"><span class="ch-stat lvl-l">~1×/qtr</span></div>
-          <div class="ch-cell ch-last"><span class="ch-stat lvl-n">—</span></div>
-          <div class="ch-cell ch-last"><span class="ch-stat lvl-h">Monthly</span></div>
-          <div class="ch-cell ch-last"><span class="ch-stat lvl-m">Quarterly</span></div>
-          <div class="ch-cell ch-last"><span class="ch-stat lvl-h">Monthly</span></div>
-        </div>
+      <div id="channel-matrix-container" class="card" style="overflow-x:auto;padding:0;">
+        <div style="padding:20px;font-size:12px;color:var(--dim)">Loading channel matrix…</div>
       </div>
 
       <div class="divider"></div>
 
       <!-- LINKEDIN PRESENCE -->
       <div class="sec-title">LinkedIn Presence — Follower Benchmark</div>
-      <div class="sec-sub">Audience size on the primary B2B channel. Your real peers are Amartus and Orchest.</div>
-      <div class="card tbl-scroll">
-        <table class="tbl">
-          <thead><tr><th>#</th><th>Company</th><th>LinkedIn Followers</th><th>Relative Scale</th><th>Size / Revenue</th><th>Tier</th></tr></thead>
-          <tbody>
-            <tr><td style="color:var(--dim);font-size:12px">1</td><td><strong>Amdocs</strong></td><td style="font-weight:700;color:var(--red)">1,275,295</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:100%;background:var(--red)"></div></div><span class="bar-lbl">100%</span></div></td><td style="color:var(--muted);font-size:12px">~$4.6B · ~30K emp</td><td><span class="badge badge-red">Enterprise</span></td></tr>
-            <tr><td style="color:var(--dim);font-size:12px">2</td><td><strong>CSG International</strong></td><td style="font-weight:700;color:var(--orange)">208,313</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:16%;background:var(--orange)"></div></div><span class="bar-lbl">16%</span></div></td><td style="color:var(--muted);font-size:12px">~$4.5B · NEC acq.</td><td><span class="badge badge-red">Enterprise</span></td></tr>
-            <tr><td style="color:var(--dim);font-size:12px">3</td><td><strong>Netcracker</strong></td><td style="font-weight:700;color:var(--yellow)">177,364</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:14%;background:var(--yellow)"></div></div><span class="bar-lbl">14%</span></div></td><td style="color:var(--muted);font-size:12px">NEC subsidiary</td><td><span class="badge badge-red">Enterprise</span></td></tr>
-            <tr class="you-row"><td style="color:var(--dim);font-size:12px">4</td><td><strong style="color:var(--green)">☑ CloudSmartz</strong></td><td style="font-weight:700;color:var(--green)">2,830</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:0.2%;background:var(--green)"></div></div><span class="bar-lbl">&lt;0.3%</span></div></td><td style="color:var(--muted);font-size:12px">~200 emp · growing</td><td><span class="badge badge-green">Mid-Market</span></td></tr>
-            <tr><td style="color:var(--dim);font-size:12px">5</td><td><strong>Amartus</strong></td><td style="font-weight:700;color:var(--green)">1,334</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:0.1%;background:var(--green)"></div></div><span class="bar-lbl">&lt;0.2%</span></div></td><td style="color:var(--muted);font-size:12px">~50 emp · niche NaaS</td><td><span class="badge badge-green">Peer</span></td></tr>
-            <tr><td style="color:var(--dim);font-size:12px">6</td><td><strong>Orchest</strong></td><td style="font-weight:700;color:var(--muted)">&lt;500 est.</td><td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:0.04%;background:var(--dim)"></div></div><span class="bar-lbl">~0%</span></div></td><td style="color:var(--muted);font-size:12px">~50 emp · LATAM</td><td><span class="badge badge-green">Peer</span></td></tr>
-          </tbody>
-        </table>
+      <div class="sec-sub" id="linkedin-sec-sub">Audience size on the primary B2B channel. Enterprise tier dominates; peer tier is wide open.</div>
+      <div id="linkedin-table-container" class="card tbl-scroll">
+        <div style="padding:20px;font-size:12px;color:var(--dim)">Loading…</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- EVENT PRESENCE MATRIX -->
+      <div class="sec-title">Event Presence — Conference &amp; Awards</div>
+      <div class="sec-sub">Conference attendance and award recognition in last 12–18 months. ◆ = confirmed presence / award.</div>
+      <div id="event-matrix-container" class="card" style="overflow-x:auto;padding:0;">
+        <div style="padding:20px;font-size:12px;color:var(--dim)">Loading event matrix…</div>
       </div>
 
       <div class="divider"></div>
@@ -530,11 +449,15 @@ ul.cl li:last-child { border-bottom: none; }
       </div>
     </div>
 
+    <!-- Dynamic competitor views inserted here by buildCompetitorViews() -->
+    <div id="dynamic-views"></div>
+
   </div>
 </div>
 
 <script>
 let HISTORY = [];
+let CONFIG = null;
 let currentDate = null;
 
 const FALLBACK_QUOTES = [
@@ -561,27 +484,247 @@ function closeInfoOnce() {
   document.removeEventListener('click', closeInfoOnce);
 }
 
-fetch('./data.json?nocache=' + Date.now())
-  .then(r => r.json())
-  .then(data => {
-    HISTORY = data;
-    if (HISTORY.length > 0) {
-      currentDate = HISTORY[HISTORY.length - 1].date;
-      const last = HISTORY[HISTORY.length - 1];
-      const ts = last.timestamp ? ' · ' + last.timestamp : '';
-      document.getElementById('last-updated').textContent = 'Updated ' + last.label + ts;
-      const quote = last.quote || FALLBACK_QUOTES[(HISTORY.length - 1) % FALLBACK_QUOTES.length];
-      document.getElementById('quote-line').textContent = quote;
-    }
-    renderTimeline();
-    if (document.getElementById('view-daily').classList.contains('active')) {
-      renderDateList();
-      if (currentDate) showBrief(currentDate);
-    }
-  })
-  .catch(() => {
-    document.getElementById('last-updated').textContent = 'Data unavailable';
+Promise.all([
+  fetch('./config.json?nc=' + Date.now()).then(r => r.json()),
+  fetch('./data.json?nc=' + Date.now()).then(r => r.json())
+]).then(([cfg, data]) => {
+  CONFIG = cfg;
+  HISTORY = data;
+  buildNav(cfg);
+  buildChannelMatrix(cfg);
+  buildLinkedInTable(cfg);
+  buildEventMatrix(cfg);
+  buildCompetitorViews(cfg);
+  initTooltips();
+  if (HISTORY.length > 0) {
+    currentDate = HISTORY[HISTORY.length - 1].date;
+    const last = HISTORY[HISTORY.length - 1];
+    const ts = last.timestamp ? ' · ' + last.timestamp : '';
+    document.getElementById('last-updated').textContent = 'Updated ' + last.label + ts;
+    const quote = last.quote || FALLBACK_QUOTES[(HISTORY.length - 1) % FALLBACK_QUOTES.length];
+    document.getElementById('quote-line').textContent = quote;
+  }
+  renderTimeline();
+  if (document.getElementById('view-daily').classList.contains('active')) {
+    renderDateList();
+    if (currentDate) showBrief(currentDate);
+  }
+}).catch(() => {
+  document.getElementById('last-updated').textContent = 'Data unavailable';
+});
+
+// ── Config-driven builders ────────────────────────────────────────────────────
+
+function buildNav(cfg) {
+  const tierMenus = { 'peer': 'nav-peer-menu', 'mid-market': 'nav-midmarket-menu', 'enterprise': 'nav-enterprise-menu' };
+  Object.entries(tierMenus).forEach(([tier, menuId]) => {
+    const menu = document.getElementById(menuId);
+    if (!menu) return;
+    menu.innerHTML = cfg.competitors
+      .filter(c => c.tier === tier)
+      .map(c => `<button class="nav-dropdown-item" onclick="showView('${c.id}')">${c.name}</button>`)
+      .join('');
   });
+  // Event delegation for touch-friendly dropdowns (works with dynamic buttons)
+  document.querySelector('.nav').addEventListener('click', function(e) {
+    const btn = e.target.closest('.nav-dropdown-btn');
+    if (!btn) return;
+    const menu = btn.nextElementSibling;
+    const isOpen = menu.style.display === 'block';
+    document.querySelectorAll('.nav-dropdown-menu').forEach(m => m.style.display = 'none');
+    if (!isOpen) menu.style.display = 'block';
+    e.stopPropagation();
+  });
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-dropdown-menu').forEach(m => m.style.display = 'none');
+  });
+}
+
+const CH_ROWS = [
+  { id: 'linkedin',     label: 'LinkedIn Organic',          tip: 'Posts directly to the company LinkedIn page. <strong>Active</strong> = 3+ posts/week. Drives follower growth and organic reach among CSP decision-makers.' },
+  { id: 'linkedinPaid', label: 'LinkedIn Paid Ads',         tip: 'Sponsored content on LinkedIn. Enterprise players run always-on campaigns targeting specific job titles. Detected via ad library signals.' },
+  { id: 'blog',         label: 'Blog / Thought Leadership', tip: 'Long-form articles, exec bylines, technical whitepapers. High = 4+/month. Serious SEO and inbound investment.' },
+  { id: 'press',        label: 'Press Releases / PR',       tip: 'Formal press releases via PR Newswire, Business Wire, or direct media. Each release signals a major deal, partnership, or milestone.' },
+  { id: 'events',       label: 'Industry Events / MWC',     tip: 'MWC, DTW Ignite, MEF, SCTE TechExpo, FutureNet. Speaking slot or sponsorship = high investment signal and brand visibility with tier-1 CSP buyers.' },
+  { id: 'analyst',      label: 'Analyst Relations',         tip: 'Gartner MQ, IDC MarketScape, Forrester Wave, Frost &amp; Sullivan. Requires dedicated AR budget and named customer references. Effectively locked to enterprise tier.' },
+  { id: 'youtube',      label: 'YouTube / Video',           tip: 'Product demos, event sessions, thought-leadership videos. Dramatically under-invested by peer-tier companies — low cost, high SEO value.' },
+  { id: 'webinars',     label: 'Webinars / eBooks',         tip: 'Gated or ungated demand-gen assets. Enterprise players use these to capture buyer intent. High = consistent pipeline of nurture content.' },
+];
+
+function buildChannelMatrix(cfg) {
+  const us = cfg.dashboard.channelActivity || {};
+  const comps = cfg.competitors;
+  const colW = Math.max(80, Math.floor((1100 - 160) / (comps.length + 1)));
+  const minW = 160 + colW * (comps.length + 1);
+
+  let h = `<table class="ch-tbl" style="min-width:${minW}px"><thead><tr>`;
+  h += `<th style="text-align:left;width:160px;padding-left:10px">Channel</th>`;
+  h += `<th class="ch-you-hd">CloudSmartz</th>`;
+  comps.forEach(c => { h += `<th>${c.shortName}</th>`; });
+  h += '</tr></thead><tbody>';
+
+  CH_ROWS.forEach(row => {
+    const ua = us[row.id] || { level: 'n', text: '—' };
+    h += `<tr><td class="ch-lbl">${row.label} <div class="ch-tip-wrap"><span class="ch-tip">?</span><div class="ch-tooltip">${row.tip}</div></div></td>`;
+    h += `<td class="ch-you"><span class="ch-stat lvl-${ua.level}">${ua.text}</span></td>`;
+    comps.forEach(c => {
+      const a = (c.channelActivity || {})[row.id] || { level: 'n', text: '—' };
+      h += `<td><span class="ch-stat lvl-${a.level}">${a.text}</span></td>`;
+    });
+    h += '</tr>';
+  });
+  h += '</tbody></table>';
+  document.getElementById('channel-matrix-container').innerHTML = h;
+}
+
+const EVENT_ROWS = [
+  { id: 'MWC26',     label: 'MWC Barcelona 2026' },
+  { id: 'DTW25',     label: 'TM Forum DTW 2025' },
+  { id: 'FN26',      label: 'FutureNet World 2026' },
+  { id: 'MEF25',     label: 'MEF GNE 2025' },
+  { id: 'GAR25',     label: 'Gartner Telecom 2025/26' },
+  { id: 'ATA26',     label: 'Asian Telecom Awards 2026' },
+  { id: 'NASSCOM26', label: 'NASSCOM / Regional 2026' },
+  { id: 'SCTE25',    label: 'SCTE TechExpo 2025' },
+];
+
+function buildEventMatrix(cfg) {
+  const comps = cfg.competitors;
+  const colW = Math.max(70, Math.floor((1100 - 180) / comps.length));
+  const minW = 180 + colW * comps.length;
+
+  let h = `<table class="ch-tbl" style="min-width:${minW}px"><thead><tr>`;
+  h += `<th style="text-align:left;width:180px;padding-left:10px">Event / Award</th>`;
+  comps.forEach(c => { h += `<th>${c.shortName}</th>`; });
+  h += '</tr></thead><tbody>';
+
+  EVENT_ROWS.forEach(ev => {
+    h += `<tr><td class="ch-lbl">${ev.label}</td>`;
+    comps.forEach(c => {
+      const attended = (c.events || []).includes(ev.id);
+      h += attended
+        ? `<td><span class="ch-stat lvl-h">◆</span></td>`
+        : `<td><span class="ch-stat lvl-n">—</span></td>`;
+    });
+    h += '</tr>';
+  });
+  h += '</tbody></table>';
+  document.getElementById('event-matrix-container').innerHTML = h;
+}
+
+function buildLinkedInTable(cfg) {
+  const d = cfg.dashboard;
+  const all = [
+    { name: cfg.dashboard.ourCompany, followers: d.ourLinkedInFollowers, label: d.ourLinkedInFollowersLabel, size: `${d.ourEmployeesLabel} emp · ${d.ourRevenueLabel}`, tier: 'mid-market', isUs: true },
+    ...cfg.competitors.map(c => ({ name: c.name, followers: c.linkedinFollowers || 0, label: c.linkedinFollowersLabel || 'N/A', size: `${c.employeesLabel} emp · ${c.revenueLabel}`, tier: c.tier, isUs: false }))
+  ].sort((a, b) => b.followers - a.followers);
+
+  const max = Math.max(...all.map(r => r.followers), 1);
+  const tierCls  = { 'enterprise': 'badge-red', 'mid-market': 'badge-orange', 'peer': 'badge-green' };
+  const tierLbl  = { 'enterprise': 'Enterprise', 'mid-market': 'Mid-Market', 'peer': 'Peer' };
+  const follClr  = (f, isUs) => {
+    if (isUs) return 'var(--green)';
+    const pct = f / max;
+    return pct > 0.5 ? 'var(--red)' : pct > 0.15 ? 'var(--orange)' : pct > 0.01 ? 'var(--yellow)' : 'var(--muted)';
+  };
+
+  let h = '<thead><tr><th>#</th><th>Company</th><th>LinkedIn Followers</th><th>Relative Scale</th><th>Size / Revenue</th><th>Tier</th></tr></thead><tbody>';
+  all.forEach((r, i) => {
+    const pct = (r.followers / max * 100);
+    const pctLbl = pct < 1 ? '<1%' : pct.toFixed(0) + '%';
+    const clr = follClr(r.followers, r.isUs);
+    h += `<tr${r.isUs ? ' class="you-row"' : ''}>
+      <td style="color:var(--dim);font-size:12px">${i + 1}</td>
+      <td><strong${r.isUs ? ' style="color:var(--green)"' : ''}>${r.isUs ? '☑ ' : ''}${r.name}</strong></td>
+      <td style="font-weight:700;color:${clr}">${r.label}</td>
+      <td><div class="bar"><div class="bar-bg"><div class="bar-fill" style="width:${Math.max(0.2, pct).toFixed(2)}%;background:${clr}"></div></div><span class="bar-lbl">${pctLbl}</span></div></td>
+      <td style="color:var(--muted);font-size:12px">${r.size}</td>
+      <td><span class="badge ${tierCls[r.tier] || 'badge-green'}">${tierLbl[r.tier] || r.tier}</span></td>
+    </tr>`;
+  });
+  h += '</tbody>';
+  const container = document.getElementById('linkedin-table-container');
+  container.innerHTML = `<table class="tbl">${h}</table>`;
+}
+
+function buildCompetitorViews(cfg) {
+  const staticViews = new Set(['amartus', 'orchest', 'csg', 'netcracker', 'amdocs']);
+  const container = document.getElementById('dynamic-views');
+  cfg.competitors.forEach(comp => {
+    if (staticViews.has(comp.id)) return;
+    const div = document.createElement('div');
+    div.className = 'view';
+    div.id = 'view-' + comp.id;
+    div.innerHTML = renderCompView(comp);
+    container.appendChild(div);
+  });
+}
+
+function renderCompView(c) {
+  const tierLbl = { peer: 'Peer', 'mid-market': 'Mid-Market', enterprise: 'Enterprise' }[c.tier] || c.tier;
+  const tierCls = c.tier === 'enterprise' ? 'badge-red' : c.tier === 'mid-market' ? 'badge-orange' : 'badge-green';
+  const activeChannels = CH_ROWS.filter(row => {
+    const a = (c.channelActivity || {})[row.id];
+    return a && a.level !== 'n';
+  }).map(row => {
+    const a = c.channelActivity[row.id];
+    return `<li>${row.label}: <span style="color:var(--accent)">${a.text}</span></li>`;
+  }).join('');
+  const eventsHtml = (c.events || []).length
+    ? (c.events || []).map(eid => {
+        const ev = EVENT_ROWS.find(e => e.id === eid);
+        return `<li>${ev ? ev.label : eid}</li>`;
+      }).join('')
+    : '<li style="color:var(--dim)">None detected in tracked period</li>';
+  const lastEvent = (c.events || []).length ? (() => { const ev = EVENT_ROWS.find(e => e.id === c.events[c.events.length - 1]); return ev ? ev.label : c.events[c.events.length - 1]; })() : '—';
+  return `
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;flex-wrap:wrap">
+      <div style="font-size:20px;font-weight:700">${c.name}</div>
+      <span class="badge ${tierCls}">${tierLbl} Tier</span>
+    </div>
+    <div style="font-size:13px;color:var(--muted);margin-bottom:14px">${c.notes} · <a href="https://${c.domain}" target="_blank" style="color:var(--dim)">${c.domain}</a></div>
+    <div class="kpi-row">
+      <div class="kpi"><div class="v" style="color:var(--accent)">${c.linkedinFollowersLabel || 'N/A'}</div><div class="l">LinkedIn</div></div>
+      <div class="kpi"><div class="v">${c.employeesLabel || '?'}</div><div class="l">Employees</div></div>
+      <div class="kpi"><div class="v">${c.revenueLabel || '?'}</div><div class="l">Revenue / Size</div></div>
+      <div class="kpi"><div class="v" style="font-size:12px;color:var(--muted)">${lastEvent}</div><div class="l">Last Event</div></div>
+    </div>
+    <div class="divider"></div>
+    <div class="g2">
+      <div class="card"><h3>Profile</h3><p style="font-size:13px;color:var(--muted);margin-bottom:10px">${c.notes}</p><span class="badge ${tierCls}">${tierLbl}</span></div>
+      <div class="card"><h3>Active Channels</h3><ul class="cl">${activeChannels || '<li style="color:var(--dim)">Minimal detected activity</li>'}</ul></div>
+    </div>
+    <div class="g2" style="margin-top:14px">
+      <div class="card"><h3>Events Attended</h3><ul class="cl">${eventsHtml}</ul></div>
+      <div class="card"><h3>vs. CloudSmartz</h3><p style="font-size:12px;color:var(--muted)">${c.vsCloudSmartz || c.notes}</p></div>
+    </div>`;
+}
+
+// ── Tooltips ──────────────────────────────────────────────────────────────────
+function initTooltips() {
+  const tip = document.getElementById('ch-tooltip-global');
+  document.querySelectorAll('.ch-tip').forEach(el => {
+    if (el._tipInited) return;
+    el._tipInited = true;
+    el.addEventListener('mouseenter', function() {
+      tip.innerHTML = el.closest('.ch-tip-wrap').querySelector('.ch-tooltip').innerHTML;
+      const tipW = Math.min(230, window.innerWidth - 24);
+      tip.style.width = tipW + 'px';
+      tip.style.display = 'block';
+      const r = el.getBoundingClientRect();
+      const tipH = tip.offsetHeight || 120;
+      let left = r.right + 8;
+      if (left + tipW + 8 > window.innerWidth) left = r.left - tipW - 8;
+      left = Math.max(8, left);
+      let top = r.top;
+      if (top + tipH + 8 > window.innerHeight) top = window.innerHeight - tipH - 8;
+      top = Math.max(8, top);
+      tip.style.left = left + 'px';
+      tip.style.top = top + 'px';
+    });
+    el.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+  });
+}
 
 function renderTimeline() {
   const svg = document.getElementById('timeline-svg');
@@ -658,7 +801,7 @@ function renderTimeline() {
   svg.innerHTML = html;
 }
 
-// Fixed-position tooltips — escapes any overflow:auto ancestor
+// Global tooltip element — created once, positioned by initTooltips()
 (function() {
   const tip = document.createElement('div');
   tip.id = 'ch-tooltip-global';
@@ -670,43 +813,6 @@ function renderTimeline() {
     boxShadow:'0 4px 20px rgba(0,0,0,0.5)', pointerEvents:'none'
   });
   document.body.appendChild(tip);
-
-  document.querySelectorAll('.ch-tip').forEach(el => {
-    const html = el.closest('.ch-tip-wrap').querySelector('.ch-tooltip').innerHTML;
-    el.addEventListener('mouseenter', function(e) {
-      tip.innerHTML = html;
-      const tipW = Math.min(230, window.innerWidth - 24);
-      tip.style.width = tipW + 'px';
-      tip.style.display = 'block';
-      const r = el.getBoundingClientRect();
-      const tipH = tip.offsetHeight || 120;
-      let left = r.right + 8;
-      if (left + tipW + 8 > window.innerWidth) left = r.left - tipW - 8;
-      left = Math.max(8, left);
-      let top = r.top;
-      if (top + tipH + 8 > window.innerHeight) top = window.innerHeight - tipH - 8;
-      top = Math.max(8, top);
-      tip.style.left = left + 'px';
-      tip.style.top = top + 'px';
-    });
-    el.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
-  });
-})();
-
-// Touch-friendly nav dropdowns (mobile doesn't fire :hover)
-(function() {
-  document.querySelectorAll('.nav-dropdown-btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      const menu = btn.nextElementSibling;
-      const isOpen = menu.style.display === 'block';
-      document.querySelectorAll('.nav-dropdown-menu').forEach(m => m.style.display = 'none');
-      if (!isOpen) menu.style.display = 'block';
-      e.stopPropagation();
-    });
-  });
-  document.addEventListener('click', () => {
-    document.querySelectorAll('.nav-dropdown-menu').forEach(m => m.style.display = 'none');
-  });
 })();
 
 function showView(name) {
