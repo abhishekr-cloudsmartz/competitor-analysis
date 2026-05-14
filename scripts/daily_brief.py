@@ -128,6 +128,7 @@ def build_prompt(config: dict, history: list, rss_data: dict,
 
     comp_schema = ",\n".join(
         f'    "{c["id"]}": {{"activity": "≤120 chars", '
+        f'"pubDate": "YYYY-MM-DD|null", '
         f'"channel": "press|blog|linkedin|event|youtube|null", "relevance": "string|null"}}'
         for c in config["competitors"]
     )
@@ -144,8 +145,9 @@ RECENT HISTORY (last 3 entries — for deduplication and quote rotation):
 
 Generate a single JSON object. Rules:
 - Only report activity that appears in the RSS data above. Do not invent.
-- Competitors with no RSS or 0 entries: activity = "Nothing detected in last 48h.", channel = null, relevance = null
+- Competitors with no RSS or 0 entries: activity = "Nothing detected in last 48h.", channel = null, pubDate = null, relevance = null
 - activity ≤ 120 characters
+- pubDate: the published date (YYYY-MM-DD) of the RSS article being summarised; null if nothing detected
 - channel must be exactly: press, blog, linkedin, event, youtube, or null
 - quote: sharp, original, not repeated from recent history
 - topSignal / channelPulse / actionItem: 1–2 sentences or null

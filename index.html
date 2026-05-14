@@ -1211,7 +1211,7 @@ function renderChannelFeed(channelId) {
       Object.entries(brief.competitors || {}).forEach(([cid, cd]) => {
         if (!briefMap[cid] && cd.channel === channelId && cd.activity &&
             !cd.activity.includes('Nothing detected') && !cd.activity.includes('No new')) {
-          briefMap[cid] = { date: brief.date, summary: cd.activity };
+          briefMap[cid] = { detectedDate: brief.date, pubDate: cd.pubDate || null, summary: cd.activity };
         }
       });
     });
@@ -1223,45 +1223,58 @@ function renderChannelFeed(channelId) {
 
   const rows = CONFIG.competitors.map(c => {
     const ca = (c.channelActivity || {})[channelId] || { level: 'n', text: '—' };
-    const lp = ca.lastPost || briefMap[c.id] || null;
+    let lp = null;
+    if (ca.lastPost) {
+      lp = { pubDate: ca.lastPost.date || null, detectedDate: null, summary: ca.lastPost.summary, url: ca.lastPost.url || null };
+    } else if (briefMap[c.id]) {
+      const b = briefMap[c.id];
+      lp = { pubDate: b.pubDate || null, detectedDate: b.detectedDate, summary: b.summary, url: null };
+    }
     const fallbackUrl = meta.urlKey && c[meta.urlKey] ? c[meta.urlKey] : (c.domain ? 'https://' + c.domain : null);
     return { c, ca, lp, fallbackUrl };
   });
 
+  const sortKey = lp => lp ? (lp.pubDate || lp.detectedDate || '') : '';
   rows.sort((a, b) => {
-    if (a.lp && b.lp) return b.lp.date.localeCompare(a.lp.date);
-    if (a.lp) return -1;
-    if (b.lp) return 1;
+    const da = sortKey(a.lp), db = sortKey(b.lp);
+    if (da && db) return db.localeCompare(da);
+    if (da) return -1;
+    if (db) return 1;
     const td = TIER_ORDER[a.c.tier] - TIER_ORDER[b.c.tier];
     if (td) return td;
     return ({'h':0,'m':1,'l':2,'n':3}[a.ca.level]||3) - ({'h':0,'m':1,'l':2,'n':3}[b.ca.level]||3);
   });
 
-  let h = `<table class="tbl" style="min-width:580px"><thead><tr>
+  let h = `<table class="tbl" style="min-width:640px"><thead><tr>
     <th style="width:130px">Competitor</th>
     <th style="width:90px">Activity</th>
     <th style="width:90px">Frequency</th>
-    <th style="width:105px">Last Tracked</th>
+    <th style="width:100px">Published</th>
+    <th style="width:100px">Detected</th>
     <th>Content</th>
     <th style="width:52px;text-align:center">Link</th>
   </tr></thead><tbody>`;
 
   rows.forEach(({ c, ca, lp, fallbackUrl }) => {
-    const url    = (lp && lp.url) ? lp.url : fallbackUrl;
-    const dateCell = lp
-      ? `<span style="color:var(--muted)">${lp.date}</span>`
+    const url          = (lp && lp.url) ? lp.url : fallbackUrl;
+    const pubCell      = lp && lp.pubDate
+      ? `<span style="color:var(--muted)">${lp.pubDate}</span>`
       : `<span style="color:var(--dim)">—</span>`;
-    const summaryCell = lp
+    const detectedCell = lp && lp.detectedDate
+      ? `<span style="color:var(--dim);font-size:11px">${lp.detectedDate}</span>`
+      : `<span style="color:var(--dim)">—</span>`;
+    const summaryCell  = lp
       ? lp.summary
       : `<span style="color:var(--dim);font-style:italic">Not yet tracked</span>`;
-    const linkCell = url
+    const linkCell     = url
       ? `<a class="cf-src" href="${url}" target="_blank" rel="noopener" title="Open source">→</a>`
       : `<span style="color:var(--dim)">—</span>`;
     h += `<tr>
       <td style="font-weight:600;color:${TIER_COLOR[c.tier]||'var(--text)'}">${c.shortName}</td>
       <td>${LVL_BADGE[ca.level] || LVL_BADGE.n}</td>
       <td style="font-size:12px;color:var(--muted)">${ca.text}</td>
-      <td style="font-size:12px">${dateCell}</td>
+      <td style="font-size:12px">${pubCell}</td>
+      <td style="font-size:12px">${detectedCell}</td>
       <td style="font-size:12px;color:var(--text)">${summaryCell}</td>
       <td style="text-align:center">${linkCell}</td>
     </tr>`;
