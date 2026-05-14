@@ -128,21 +128,22 @@ def build_prompt(config: dict, history: list, rss_data: dict,
         lines.append(f"Notes: {comp.get('notes', '')}")
         if isinstance(entries, list):
             for e in entries[:6]:
-                lines.append(f"  - {e['published'][:10]}: {e['title']}")
+                lines.append(f"  - {e['published'][:10]}: {e['title']} [{e['link']}]")
         yt = yt_data.get(cid)
         if isinstance(yt, list) and yt:
             lines.append(f"  YouTube ({len(yt)} new videos):")
             for e in yt[:3]:
-                lines.append(f"    - {e['published'][:10]}: {e['title']}")
+                lines.append(f"    - {e['published'][:10]}: {e['title']} [{e['link']}]")
         blog = blog_data.get(cid)
         if isinstance(blog, list) and blog:
             lines.append(f"  Blog ({len(blog)} new posts):")
             for e in blog[:3]:
-                lines.append(f"    - {e['published'][:10]}: {e['title']}")
+                lines.append(f"    - {e['published'][:10]}: {e['title']} [{e['link']}]")
 
     comp_schema = ",\n".join(
         f'    "{c["id"]}": {{"activity": "≤120 chars", '
         f'"pubDate": "YYYY-MM-DD|null", '
+        f'"url": "https://...|null", '
         f'"channel": "press|blog|linkedin|event|youtube|null", "relevance": "string|null"}}'
         for c in config["competitors"]
     )
@@ -162,6 +163,7 @@ Generate a single JSON object. Rules:
 - Competitors with no RSS or 0 entries: activity = "Nothing detected in last 48h.", channel = null, pubDate = null, relevance = null
 - activity ≤ 120 characters
 - pubDate: the published date (YYYY-MM-DD) of the RSS article being summarised; null if nothing detected
+- url: the direct link (from the RSS entry in brackets above) to the specific article/video being summarised; null if nothing detected
 - channel must be exactly: press, blog, linkedin, event, youtube, or null — match the source section (YouTube section → youtube, Blog section → blog, Google Alert → press)
 - quote: sharp, original, not repeated from recent history
 - topSignal / channelPulse / actionItem: 1–2 sentences or null

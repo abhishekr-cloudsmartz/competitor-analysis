@@ -1215,7 +1215,7 @@ function renderChannelFeed(channelId) {
       Object.entries(brief.competitors || {}).forEach(([cid, cd]) => {
         if (!briefMap[cid] && cd.channel === channelId && cd.activity &&
             !cd.activity.includes('Nothing detected') && !cd.activity.includes('No new')) {
-          briefMap[cid] = { detectedDate: brief.date, pubDate: cd.pubDate || null, summary: cd.activity };
+          briefMap[cid] = { detectedDate: brief.date, pubDate: cd.pubDate || null, summary: cd.activity, url: cd.url || null };
         }
       });
     });
@@ -1232,7 +1232,7 @@ function renderChannelFeed(channelId) {
       lp = { pubDate: ca.lastPost.date || null, detectedDate: null, summary: ca.lastPost.summary, url: ca.lastPost.url || null };
     } else if (briefMap[c.id]) {
       const b = briefMap[c.id];
-      lp = { pubDate: b.pubDate || null, detectedDate: b.detectedDate, summary: b.summary, url: null };
+      lp = { pubDate: b.pubDate || null, detectedDate: b.detectedDate, summary: b.summary, url: b.url || null };
     }
     const fallbackUrl = meta.urlKey && c[meta.urlKey] ? c[meta.urlKey] : (c.domain ? 'https://' + c.domain : null);
     return { c, ca, lp, fallbackUrl };
@@ -1368,7 +1368,7 @@ function showBrief(date) {
         ${hasActivity ? '<span class="badge badge-orange">New</span>' : '<span style="font-size:11px;color:var(--dim)">No new signals</span>'}
       </div>
       ${hasActivity ? `
-        <div class="finding-row"><span class="fkey">Activity</span><span>${co.activity}</span></div>
+        <div class="finding-row"><span class="fkey">Activity</span><span>${co.activity}${co.url ? ` <a href="${co.url}" target="_blank" rel="noopener" class="ch-activity-link" style="margin-left:6px;white-space:nowrap">View →</a>` : ''}</span></div>
         ${co.channel ? `<div class="finding-row"><span class="fkey">Channel</span><span>${co.channel}</span></div>` : ''}
         ${co.relevance ? `<div class="finding-row"><span class="fkey">Relevance</span><span style="color:var(--muted)">${co.relevance}</span></div>` : ''}
       ` : `${co.relevance ? `<p style="font-size:12px;color:var(--dim);margin:0">${co.relevance}</p>` : '<p class="nothing">Nothing detected in last 48h</p>'}`}
