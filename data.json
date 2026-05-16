@@ -508,5 +508,132 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-16",
+    "label": "May 16, 2026",
+    "timestamp": "09:56",
+    "quote": "Industry consolidation reshapes the playing field, emphasizing the critical role of agile innovation and proven financial health.",
+    "topSignal": "NEC has officially completed its acquisition of CSG Systems, with Netcracker positioned to lead the integration, significantly expanding their combined BSS/OSS market capabilities.",
+    "channelPulse": "Press channels were highly active with extensive coverage of the NEC/Netcracker acquisition of CSG and Amdocs' Q2 earnings. CSG and Everstage also had new content on YouTube.",
+    "actionItem": "Analyze the implications of the Netcracker-CSG integration on customer retention and market share. Leverage CloudSmartz's agility and specialized NaaS/CPQ offerings to target potential churn from the integration, and differentiate our Agentic AI value proposition against Amdocs' recent earnings and messaging.",
+    "competitors": {
+      "netcracker": {
+        "activity": "NEC completed its acquisition of CSG Systems; Netcracker will lead the unified AI-driven digital platform integration.",
+        "pubDate": "2026-05-15",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.mobileworldlive.com/north-america/netcracker-to-lead-csg-tie-up-as-nec-deal-closes/&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw2iSZL9tlrhhnFeXmOn6_ZW",
+        "channel": "press",
+        "relevance": "This acquisition significantly expands Netcracker's market share and BSS/OSS capabilities, particularly in billing, and strengthens their AI-driven platform narrative."
+      },
+      "amdocs": {
+        "activity": "Reported solid Q2 2026 financial results, with ongoing analyst discussions and a strategic focus on the 'Agentic Telco Era'.",
+        "pubDate": "2026-05-15",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.theglobeandmail.com/investing/markets/stocks/DOX-Q/pressreleases/1954068/amdocs-posts-solid-q2-2026-results-and-names-new-cfo-as-it-pushes-into-agentic-telco-era/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw3q_d7EJmCTT_u4dOaIZxer",
+        "channel": "press",
+        "relevance": "Amdocs continues to perform strongly financially and emphasize its Agentic AI narrative, directly competing with CloudSmartz's AI-driven solutions."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": "Full BSS/OSS suite, 4 Gartner 2025 reports, and AI-driven BSS narrative make them a broad competitor; monitor for new client wins."
+      },
+      "csg": {
+        "activity": "News continues around NEC's acquisition of CSG Systems and its financial implications. CSG also released a new YouTube video on financial services.",
+        "pubDate": "2026-05-16",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://finance.yahoo.com/markets/stocks/articles/nec-expands-telecom-software-reach-012024978.html&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1J5hcIUogDJjiHQixNYnoy",
+        "channel": "press",
+        "relevance": "The integration into Netcracker alters the competitive landscape. Their move into financial services via YouTube might indicate diversification or a new vertical focus."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": "Their 5G Digital BSS (Csmart) and MVNO/MVNE focus positions them as a challenger in niche market segments."
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": "Fastest-growing mid-market BSS/OSS provider with recent Omantel deal; watch for continued expansion and ODA readiness."
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": "Their cloud-native BSS, Gemini AI integration, and Qvantel merger make them a direct AI narrative competitor in key markets."
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": "'Free Your Data' AI initiative and cloud-native BSS/OSS challenge CloudSmartz's AI and cloud modernization narratives."
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": "NaaS automation and nBrace platform position them as a specialist in network orchestration, a complementary or competitive area."
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": "Their CPQ + Network Orchestration PaaS, especially in LATAM/Caribbean, creates a direct CPQ overlap."
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": "Low-code BSS/OSS (BeeFiber) for B2B, strong in LATAM/Americas, competes in agile solution delivery."
+      },
+      "everstage": {
+        "activity": "Released a YouTube video on Salesforce as an operating system, forecasts, and the rise of GTM engineers.",
+        "pubDate": "2026-05-15",
+        "url": "https://www.youtube.com/watch?v=aQ6e4C9JnsQ",
+        "channel": "youtube",
+        "relevance": "This content supports their focus on sales performance management and GTM strategies, an adjacent area that could interest telcos for channel optimization."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [
+        "https://www.youtube.com/watch?v=W1GeX5yewos"
+      ],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=aQ6e4C9JnsQ"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
