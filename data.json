@@ -635,5 +635,132 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-17",
+    "label": "May 17, 2026",
+    "timestamp": "10:12",
+    "quote": "In a market redefined by consolidation, agility in securing strategic client wins and exploring new verticals becomes paramount.",
+    "topSignal": "NEC's Netcracker has officially completed its acquisition of CSG Systems, taking them private and significantly expanding their combined BSS/OSS market capabilities.",
+    "channelPulse": "Press channels were highly active with news of Netcracker's CSG acquisition finalization and Amdocs' new client wins. Both CSG and Everstage released new content on YouTube.",
+    "actionItem": "Evaluate the potential impact of the Netcracker-CSG integration on shared client bases and target messaging to highlight CloudSmartz's differentiation. Analyze Amdocs' client wins to strengthen CloudSmartz's cloud and network transformation value proposition.",
+    "competitors": {
+      "netcracker": {
+        "activity": "NEC's Netcracker officially completes the acquisition, taking CSG Systems private and solidifying market presence.",
+        "pubDate": "2026-05-16",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.theglobeandmail.com/investing/markets/stocks/CSGS-Q/pressreleases/1967705/necs-netcracker-completes-acquisition-taking-csg-systems-private/&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw0dMkMs8lLMsbaBRGKBHBMO",
+        "channel": "press",
+        "relevance": "This finalizes a major industry consolidation, expanding Netcracker's BSS/OSS capabilities and market footprint, especially in billing, creating a larger competitor."
+      },
+      "amdocs": {
+        "activity": "Vodafone Ireland goes live and Lumen accelerates cloud strategy with Amdocs, showcasing strong client momentum.",
+        "pubDate": "2026-05-16",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.pipelinepub.com/news/vodafone-ireland-goes-live-with-amdocs-network&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw3A-NIiS0UU9hNtlVJbYATq",
+        "channel": "press",
+        "relevance": "These key customer wins demonstrate Amdocs' continued success in securing large CSP deals and advancing cloud-first strategies, directly competing with CloudSmartz's focus."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Released a YouTube video showcasing CSG solutions tailored for the financial services sector.",
+        "pubDate": "2026-05-15",
+        "url": "https://www.youtube.com/watch?v=W1GeX5yewos",
+        "channel": "youtube",
+        "relevance": "This video indicates CSG's potential diversification or expansion into new vertical markets beyond core telecom, leveraging its existing billing and customer interaction capabilities."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Published a YouTube video discussing Salesforce as an operating system and the rise of GTM engineers.",
+        "pubDate": "2026-05-15",
+        "url": "https://www.youtube.com/watch?v=aQ6e4C9JnsQ",
+        "channel": "youtube",
+        "relevance": "Everstage continues its thought leadership in sales performance management and go-to-market strategies, an adjacent area that can influence telco sales operations."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [
+        "https://www.youtube.com/watch?v=W1GeX5yewos"
+      ],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=aQ6e4C9JnsQ"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
