@@ -762,5 +762,134 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-18",
+    "label": "May 18, 2026",
+    "timestamp": "16:39",
+    "quote": "AI-driven customer experience takes center stage, while market shifts underscore the dynamic nature of our competitive landscape.",
+    "topSignal": "Amdocs announced their 'Telco Agents for CX' and secured a significant deployment with PLDT Home, emphasizing AI in customer support. Meanwhile, CSG International was dropped from the S&P Global BMI Index, reflecting ongoing post-acquisition market adjustments.",
+    "channelPulse": "Press channels were highly active today with Amdocs' AI announcements and CSG's market index news. Everstage and CSG also released new content on YouTube.",
+    "actionItem": "Analyze Amdocs' 'Telco Agents for CX' to understand their approach to generative AI in customer service and identify areas for CloudSmartz differentiation. Additionally, monitor CSG's market perception post-index removal for potential shifts in customer confidence.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Announced 'Telco Agents for CX'; PLDT Home deployed Amdocs' AI-powered support to cut customer wait times.",
+        "pubDate": "2026-05-18",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.pipelinepub.com/news/amdocs-announces-availability-of-telco-agents-for-cx&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1EdNzkf_TMY71ZDipbO73B",
+        "channel": "press",
+        "relevance": "Amdocs' new AI agents for CX and successful deployment with PLDT Home directly compete with CloudSmartz's AI and customer experience solutions."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Dropped from S&P Global BMI Index; also released a YouTube video on their Forte payment platform.",
+        "pubDate": "2026-05-18",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.marketscreener.com/news/csg-systems-international-inc-nasdaqgs-csgs-dropped-from-s-p-global-bmi-index-ce7f5bd3d088f623&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1Z8LESQLZcmCEHESksjlVr",
+        "channel": "press",
+        "relevance": "The S&P Global BMI Index drop reflects the ongoing market adjustments post-acquisition, while their payment platform video shows continued focus on BSS capabilities."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Published new YouTube videos on ICM maturity, RevOps, and stabilizing compensation plans after rollout.",
+        "pubDate": "2026-05-18",
+        "url": "https://www.youtube.com/watch?v=RmXa-Gh6lpo",
+        "channel": "youtube",
+        "relevance": "Everstage continues to build thought leadership in sales performance and incentive compensation, an area that could be integrated into CloudSmartz's BSS/CPQ offerings."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [
+        "https://www.youtube.com/watch?v=Ja8Cu8mhhVw"
+      ],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=RmXa-Gh6lpo",
+        "https://www.youtube.com/watch?v=_zBKpCtVmdg",
+        "https://www.youtube.com/watch?v=_w9c4_G-TC0"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
