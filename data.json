@@ -891,5 +891,135 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-19",
+    "label": "May 19, 2026",
+    "timestamp": "14:16",
+    "quote": "External market analyses and focused content releases provide crucial insights into competitors' strategic positioning and emerging vertical interests.",
+    "topSignal": "Amdocs was the subject of an Investing.com SWOT analysis, detailing its stock performance amid AI transition and telecom challenges. Meanwhile, CSG and Everstage expanded their YouTube content with new videos focusing on specialized solutions.",
+    "channelPulse": "Press channels were active with an in-depth analysis of Amdocs' market standing. YouTube also saw significant activity from CSG and Everstage, highlighting their specific solution areas and thought leadership.",
+    "actionItem": "Review Amdocs' SWOT analysis to understand market perceptions of their AI and telecom strategy, identifying potential vulnerabilities or areas for CloudSmartz differentiation. Additionally, examine the new YouTube content from CSG and Everstage to gauge their latest product narratives and target markets.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Investing.com published a SWOT analysis for Amdocs, detailing its stock navigation through AI transition and telecom pressures.",
+        "pubDate": "2026-05-19",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.investing.com/news/swot-analysis/amdocs-swot-analysis-stock-navigates-ai-transition-and-telecom-pressures-93CH-4697560&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw3VefYaBpxX_JlzjNlTqKmT",
+        "channel": "press",
+        "relevance": "This SWOT analysis offers valuable insights into Amdocs' market perception, financial health, and strategic challenges regarding AI adoption and telecom pressures, crucial for CloudSmartz's competitive strategy."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Released two YouTube videos covering hospital reimbursement workflow reduction and their CSG Forte payment platform.",
+        "pubDate": "2026-05-18",
+        "url": "https://www.youtube.com/watch?v=_LgJ_X35TEw",
+        "channel": "youtube",
+        "relevance": "CSG's videos indicate a focus on expanding into healthcare workflow solutions and promoting their payment platform, suggesting diversification beyond traditional BSS."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Published three YouTube videos discussing ICM maturity, ending manual RevOps, and stabilizing compensation plans.",
+        "pubDate": "2026-05-18",
+        "url": "https://www.youtube.com/watch?v=RmXa-Gh6lpo",
+        "channel": "youtube",
+        "relevance": "Everstage continues its thought leadership in sales performance management, offering insights into incentive compensation and revenue operations crucial for telco sales channels."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [
+        "https://www.youtube.com/watch?v=_LgJ_X35TEw",
+        "https://www.youtube.com/watch?v=Ja8Cu8mhhVw"
+      ],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=RmXa-Gh6lpo",
+        "https://www.youtube.com/watch?v=_zBKpCtVmdg",
+        "https://www.youtube.com/watch?v=_w9c4_G-TC0"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
