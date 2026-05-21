@@ -1027,5 +1027,130 @@
     "label": "May 20, 2026",
     "timestamp": "14:18",
     "error": "All Gemini attempts exhausted. Last error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 28.218123633s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 28\n}\n]"
+  },
+  {
+    "date": "2026-05-21",
+    "label": "May 21, 2026",
+    "timestamp": "16:24",
+    "quote": "Strategic cloud alliances and strong financial performance define today's competitive landscape, underscoring the rapid evolution of BSS/OSS solutions.",
+    "topSignal": "Amdocs significantly strengthened its cloud and AI partnerships with Alphabet (Gemini) and Microsoft (Azure). Meanwhile, CSG's stock saw a notable surge, driven by a record backlog and the introduction of its new CFL-120 Karpat product.",
+    "channelPulse": "Press channels were highly active with Amdocs' major partnership announcements and CSG's financial news and product launch. Everstage also published new thought leadership content on YouTube.",
+    "actionItem": "Deep-dive into Amdocs' expanded partnerships with Alphabet and Microsoft to assess their comprehensive strategy for generative AI and cloud BSS/OSS. Additionally, evaluate CSG's new CFL-120 Karpat product for potential competitive features and market traction.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Expanded Gemini Enterprise Agent Marketplace partnership with Alphabet and strengthened ties with Microsoft on Azure for AI/cloud solutions.",
+        "pubDate": "2026-05-21",
+        "url": "https://sg.finance.yahoo.com/news/alphabet-inc-googl-expands-gemini-084143397.html",
+        "channel": "press",
+        "relevance": "These expanded cloud and AI partnerships elevate Amdocs' GenAI and BSS/OSS capabilities, posing a strong challenge to CloudSmartz's cloud-native offerings."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Stock surged 17.2% driven by a record backlog and the launch of their new CFL-120 Karpat product.",
+        "pubDate": "2026-05-21",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/stocks/nl/capital-goods/ams-csg/csg-shares/news/csg-enxtamcsg-is-up-172-after-record-backlog-and-cfl-120-kar&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw3IVzSziIa9dRGAIebMEri2",
+        "channel": "press",
+        "relevance": "CSG's significant stock increase and new product launch demonstrate strong market confidence and product development, signaling intensified competition in BSS."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Released a YouTube video titled \"The #2 Cost Line Breaking Your Margins: Why Your 2020 Comp Plan Can't Survive 2026\".",
+        "pubDate": "2026-05-20",
+        "url": "https://www.youtube.com/watch?v=SXKrZnm77dQ",
+        "channel": "youtube",
+        "relevance": "Everstage continues to position itself as a thought leader in sales compensation, relevant for CloudSmartz's engagement with telco sales channels."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=SXKrZnm77dQ"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
