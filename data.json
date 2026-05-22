@@ -1152,5 +1152,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-22",
+    "label": "May 22, 2026",
+    "timestamp": "12:39",
+    "quote": "Financial transparency and strategic cloud-AI integrations are defining the current competitive movements in BSS/OSS.",
+    "topSignal": "Amdocs reported its Q2 results and deepened strategic partnerships with Alphabet (Gemini) and Microsoft (Azure), emphasizing advanced AI and cloud integration. Meanwhile, CSG's stock performance continues to draw market analysis and scrutiny after its recent gains.",
+    "channelPulse": "Press channels were active, covering Amdocs' quarterly financial disclosures and significant cloud/AI partnership announcements, alongside ongoing analytical pieces concerning CSG's market valuation.",
+    "actionItem": "Review Amdocs' Q2 earnings call for detailed insights into their financial performance and assess the strategic impact of their expanded partnerships with Alphabet and Microsoft on AI and cloud BSS/OSS solutions. Additionally, monitor how CSG's continued market scrutiny might influence their competitive positioning.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Reported Q2 results and expanded strategic partnerships with Alphabet (Gemini Enterprise Agent Marketplace) and Microsoft (Azure).",
+        "pubDate": "2026-05-21",
+        "url": "https://sg.finance.yahoo.com/news/alphabet-inc-googl-expands-gemini-084143397.html",
+        "channel": "press",
+        "relevance": "Amdocs' Q2 results, coupled with strengthened cloud and AI partnerships, signify aggressive moves in AI-driven cloud BSS/OSS, intensifying competition."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Market analysis from Simply Wall St. questions CSG's stock valuation after strong multi-year performance.",
+        "pubDate": "2026-05-22",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/stocks/us/commercial-services/nasdaq-csgs/csg-systems-international/news/has-the-market-gone-too-far-with-csg-systems-international-c&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw0BmYpEAjQt3GvvCFgdpK70",
+        "channel": "press",
+        "relevance": "This market analysis provides insight into investor sentiment and potential overvaluation of CSG, which could affect its strategic flexibility."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=SXKrZnm77dQ"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
