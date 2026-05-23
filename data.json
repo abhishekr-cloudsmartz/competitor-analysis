@@ -1277,5 +1277,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-23",
+    "label": "May 23, 2026",
+    "timestamp": "10:15",
+    "quote": "Market volatility and robust financial gains paint a contrasting picture in the BSS/OSS sector, highlighting the dynamic forces shaping competitor landscapes.",
+    "topSignal": "Amdocs faced market scrutiny with a reported stock plummet and mixed earnings guidance, while CSG demonstrated exceptional financial strength, announcing a 95% net profit surge and record order backlog alongside new mandates in Southeast Asia.",
+    "channelPulse": "Press channels were highly active with significant financial news from both Amdocs and CSG, covering valuation concerns and record-breaking performance respectively. Everstage released new thought leadership on YouTube.",
+    "actionItem": "Evaluate the implications of Amdocs' recent stock plummet and valuation shifts on its competitive strategy and market perception. Simultaneously, analyze CSG's impressive financial growth, record backlog, and Southeast Asian expansion to understand its aggressive market positioning and potential impact on regional opportunities.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Market analysis on valuation after mixed earnings guidance and CFO transition; reported stock plummet.",
+        "pubDate": "2026-05-23",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/stocks/us/software/nasdaq-dox/amdocs/news/a-look-at-amdocs-dox-valuation-after-mixed-earnings-guidance/amp&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw3o5p3J4bGDmm5XN0aMQMQP",
+        "channel": "press",
+        "relevance": "Highlights investor sentiment and financial challenges, which could impact Amdocs' strategic investments and market position in BSS/OSS."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Reported a 95% surge in net profit, record \u20ac17bn order backlog, and $2.8bn in Southeast Asian mandates.",
+        "pubDate": "2026-05-22",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-s-net-profit-surges-95-percent-as-order-backlog-hits-record/69400865&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw3VqkAwGvGEoDEC4rtKfSiL",
+        "channel": "press",
+        "relevance": "CSG's robust financial results and strategic expansion into Southeast Asia demonstrate strong market dominance and competitive pressure."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Published a video discussing RevOps change management and AI's role with Colin Brown (DDN).",
+        "pubDate": "2026-05-22",
+        "url": "https://www.youtube.com/watch?v=KMp4rQATNtg",
+        "channel": "youtube",
+        "relevance": "Everstage continues its thought leadership in sales performance, aligning with CloudSmartz's interest in telco sales channel optimization."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=KMp4rQATNtg"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
