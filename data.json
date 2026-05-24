@@ -1402,5 +1402,131 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-24",
+    "label": "May 24, 2026",
+    "timestamp": "10:22",
+    "quote": "Financial performance and market sentiment continue to drive competitive narratives, with Amdocs' stock timing and CSG's Q1 earnings shaping the BSS/OSS landscape.",
+    "topSignal": "CSG reported a solid EPS beat in its Q1 2026 earnings and underwent market analysis on its stock valuation. Meanwhile, Amdocs' stock performance was evaluated for rotational strategy timing.",
+    "channelPulse": "Press channels were active with financial reports and analyses concerning both CSG's Q1 earnings and Amdocs' stock. Everstage also released new thought leadership videos on YouTube.",
+    "actionItem": "Review CSG's Q1 2026 earnings report for detailed financial performance and analyze the market sentiment influencing Amdocs' stock valuation for strategic insights. Additionally, monitor Everstage's latest YouTube content for trends in sales compensation and RevOps.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Market analysis on Amdocs Limited (DOX) and how it affects rotational strategy timing.",
+        "pubDate": "2026-05-23",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://news.stocktradersdaily.com/news_release/24/How_Amdocs_Limited_DOX_Affects_Rotational_Strategy_Timing_052326050202_1779570122.html&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw0r9pr3ugXb9_9mcw7VGRqA",
+        "channel": "press",
+        "relevance": "Financial analysis of Amdocs' stock performance provides insights into investor sentiment and market valuation, which could influence their strategic direction."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Reported solid EPS beat in Q1 2026 earnings amidst flat market reaction; market analysis on valuation after stock decline.",
+        "pubDate": "2026-05-23",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.newser.com/expert-time/CSGS-Q1-2026-Earnings-Solid-EPS-Beat-Amidst-Flat-Market-Reaction-22-3585&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw37LBnf39DugZ9OHS0AzEC4",
+        "channel": "press",
+        "relevance": "CSG's Q1 2026 earnings and ongoing stock valuation analysis provide insight into their financial stability and market perception within the BSS market."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Released two YouTube videos on compensation, recruiter burnout, and the role of AI in RevOps.",
+        "pubDate": "2026-05-23",
+        "url": "https://www.youtube.com/watch?v=_30ODjY-riA",
+        "channel": "youtube",
+        "relevance": "Everstage continues to offer thought leadership on sales compensation and RevOps, relevant for CloudSmartz's engagement with telco sales channels."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=_30ODjY-riA",
+        "https://www.youtube.com/watch?v=KMp4rQATNtg"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
