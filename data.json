@@ -1528,5 +1528,131 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-25",
+    "label": "May 25, 2026",
+    "timestamp": "14:24",
+    "quote": "Mixed financial signals and ongoing acquisition impacts characterize the BSS/OSS market, while strategic sales insights remain a key differentiator.",
+    "topSignal": "Amdocs reported a slim EPS miss in its Q1 2026 earnings, indicating steady but not spectacular performance. Meanwhile, CSG cancelled its Q3 earnings call post-NEC acquisition while its stock saw varied analyses, including a Q1 profit surge and a separate report linking its stock to defense spending.",
+    "channelPulse": "Press channels were highly active, focusing on financial disclosures, acquisition impacts, and stock performance for both Amdocs and CSG. Everstage continued its thought leadership with new videos on sales compensation strategies on YouTube.",
+    "actionItem": "Review Amdocs' Q1 earnings for detailed insights into their operational performance following the EPS miss. Investigate the implications of CSG canceling its Q3 earnings call during the NEC integration and reconcile the conflicting financial reports for their Q1 to understand market stability. Additionally, assess Everstage's new content on sales compensation for potential strategic takeaways in channel optimization.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Reported Q1 2026 earnings, noting a slim EPS miss and steady operational performance.",
+        "pubDate": "2026-05-24",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.newser.com/expert-time/Amdocs-DOX-Q1-2026-Earnings-Slim-EPS-Miss-Masks-Steady-Operational-Performance-22-4911&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw0eNJ_60cCmkP2zlRfgQQh",
+        "channel": "press",
+        "relevance": "Amdocs' Q1 earnings provide insight into their financial health and market position in BSS/OSS."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Cancelled Q3 earnings call amid NEC acquisition, with stock up 14%. Reported Q1 profit surge despite a 69% plunge in \"Ammo+ Earnings.\" Stock performance analyzed in context of record defence spending, sitting 45% below high.",
+        "pubDate": "2026-05-24",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=http://www.msn.com/en-us/money/companies/csg-systems-cancels-q3-earnings-call-amid-nec-acquisition-stock-up-14/ar-AA1PpPaP%3Fapiversion%3Dv2%26domshim%3D1%26noservercache%3D1%26noservertelemetry%3D1%26batchservertelemetry%3D1%26renderwebcomponents%3D1%26wcseo%3D1&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1ir67j-tcQs_plT1b8BEv6",
+        "channel": "press",
+        "relevance": "The cancellation indicates deep integration with NEC, while conflicting financial reports and stock analysis highlight market volatility around CSG."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Released a video on compensation design for direct reps, distributors, and OEM partners in 2026. Published a video discussing compensation, recruiter burnout, and \"Old Soul Operators.\"",
+        "pubDate": "2026-05-25",
+        "url": "https://www.youtube.com/watch?v=z4W-p9it--Y",
+        "channel": "youtube",
+        "relevance": "Everstage continues to provide thought leadership in sales performance management, relevant for CloudSmartz's sales channel optimization."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=z4W-p9it--Y",
+        "https://www.youtube.com/watch?v=_30ODjY-riA"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
