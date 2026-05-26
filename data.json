@@ -1654,5 +1654,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-26",
+    "label": "May 26, 2026",
+    "timestamp": "14:18",
+    "quote": "Strategic AI acquisitions and dynamic financial shifts are reshaping market positions, underscoring both growth opportunities and valuation pressures in the BSS/OSS sector.",
+    "topSignal": "Amdocs expanded its AI ambitions by acquiring Israeli startup Yess, signaling a direct strengthening of its GenAI capabilities. Meanwhile, CSG reported a strong Q1 revenue of \u20ac1.544bn and announced a strategic Polish deal with an IPO bounce, despite facing a shareholder feud over valuation.",
+    "channelPulse": "Press channels were highly active with significant financial news and strategic updates from both Amdocs and CSG, covering AI acquisitions, Q1 earnings, and market expansion. Everstage continued its thought leadership on YouTube with new content on sales compensation strategies.",
+    "actionItem": "Investigate Amdocs' acquisition of Yess to assess its impact on their AI-driven BSS/OSS offerings and how this strengthens their competitive edge. Analyze CSG's Q1 financial results and the details of its Polish deal and IPO bounce to understand its European market expansion and the implications of its ongoing valuation challenges.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Expanded AI ambitions through acquisition of Israeli startup Yess; reported unusual charge, guidance shift, and executive changes.",
+        "pubDate": "2026-05-25",
+        "url": "https://www.calcalistech.com/ctechnews/article/b10diozegl",
+        "channel": "press",
+        "relevance": "Amdocs' acquisition of Yess directly enhances its GenAI capabilities, impacting its competitive position in AI-driven BSS/OSS solutions. Internal changes signal potential volatility."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Reported Q1 revenue of \u20ac1.544bn, facing a shareholder feud over valuation; announced Polish deal and IPO bounce.",
+        "pubDate": "2026-05-26",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-s-polish-deal-and-ipo-bounce-how-a-1-5bn-quarter-and-supply-chain/69418296&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1aOqtC2n_fnkxUAh7FUwVE",
+        "channel": "press",
+        "relevance": "CSG's strong Q1 revenue and strategic moves in Poland demonstrate market expansion and financial activity, despite valuation challenges."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Released a video on compensation design for direct reps, distributors & OEM partners in 2026.",
+        "pubDate": "2026-05-25",
+        "url": "https://www.youtube.com/watch?v=z4W-p9it--Y",
+        "channel": "youtube",
+        "relevance": "Everstage continues its thought leadership in sales performance management, offering insights relevant to CloudSmartz's sales channel optimization."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=z4W-p9it--Y"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
