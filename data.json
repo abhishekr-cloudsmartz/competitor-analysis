@@ -1779,5 +1779,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-27",
+    "label": "May 27, 2026",
+    "timestamp": "16:50",
+    "quote": "AI leadership claims and solid financial growth define the current competitive landscape, emphasizing innovation alongside sustained market strength.",
+    "topSignal": "Netcracker is actively promoting its leadership in telecom AI at the CommsDay Summit 2026, positioning itself at the forefront of AI-driven solutions. Amdocs reported strong Q2 FY2026 financial results with notable revenue growth and a substantial backlog. CSG also received positive market analysis, highlighting its stable position as an industrial compounder in a growing market.",
+    "channelPulse": "Press channels and financial news outlets were highly active, focusing on Netcracker's AI conference presence, Amdocs' robust quarterly financial performance, and market analysis regarding CSG's valuation and operational strength.",
+    "actionItem": "Monitor Netcracker's messaging and announcements from the CommsDay Summit 2026 for specific AI solution updates or strategic directions. Review Amdocs' Q2 FY2026 financial filings to understand the drivers behind their revenue growth and backlog expansion. Analyze the detailed market analysis on CSG to gauge its perceived stability and growth trajectory in the competitive BSS space.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Brings leadership in Telecom AI to CommsDay Summit 2026, highlighting their expertise in this critical area.",
+        "pubDate": "2026-05-26",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.businesswire.com/news/home/20260525537078/en/Netcracker-Brings-Leadership-in-Telecom-AI-to-CommsDay-Summit-2026&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw3pH9P-sDNwWPcdPDy-5PQw",
+        "channel": "press",
+        "relevance": "Netcracker's continued promotion of AI leadership in telecom events underscores the industry's focus on AI and directly challenges CloudSmartz's AI capabilities."
+      },
+      "amdocs": {
+        "activity": "Reported Q2 FY2026 results with higher assets, 4% revenue growth, and a backlog of $4.28 billion.",
+        "pubDate": "2026-05-26",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.tipranks.com/news/company-announcements/amdocs-posts-higher-assets-and-revenue-in-q2-fy2026-form-6-k-filing&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2Ptb06uzPfzAhmVzoK6aAy",
+        "channel": "press",
+        "relevance": "Amdocs' strong financial performance in Q2 FY2026, including revenue growth and backlog, indicates robust market demand and solidifies its position as a major BSS/OSS player."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Market analysis identifies CSG as a high-quality industrial compounder operating in a structurally growing market.",
+        "pubDate": "2026-05-26",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/community/narratives/nl/capital-goods/ams-csg/csg-shares/mo7kbu25-csg-represents-a-high-quality-industrial-compounder-operating-in-a-structurally-growing-and-geopolitically-reinforced-market&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1w7MDlJnNi8KBbOsQU_x1U",
+        "channel": "press",
+        "relevance": "Positive market analysis of CSG highlights its perceived stability and growth potential, influencing investor confidence and competitive positioning post-acquisition by NEC."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
