@@ -1902,5 +1902,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-28",
+    "label": "May 28, 2026",
+    "timestamp": "08:26",
+    "quote": "Financial scrutiny of major players and fundamental market metrics indicate an evolving landscape for BSS/OSS firms.",
+    "topSignal": "Amdocs faced scrutiny over margin stability as its Q2 2026 EPS softened, highlighting potential profitability challenges. Meanwhile, CSG saw reporting on its shares outstanding, reflecting ongoing investor interest post-acquisition.",
+    "channelPulse": "Press channels were active, focusing on the financial performance and market metrics of key BSS/OSS players like Amdocs and CSG.",
+    "actionItem": "Analyze Amdocs' Q2 2026 financial details to understand the reasons behind the softening EPS and margin scrutiny. Monitor CSG's latest financial reporting on shares outstanding to assess investor perception and market valuation following its acquisition.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Reported that its Q2 2026 EPS softened, leading to scrutiny over its margin stability.",
+        "pubDate": "2026-05-27",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/stocks/us/software/nasdaq-dox/amdocs/news/amdocs-dox-margin-stability-faces-scrutiny-as-eps-softens-in&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw0AxwAhDMA8Gugxg9JUNmwT",
+        "channel": "press",
+        "relevance": "This signals potential challenges in Amdocs' profitability and operational efficiency, vital for competitive analysis."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Financial news outlet reported on CSG Systems International Inc's shares outstanding.",
+        "pubDate": "2026-05-27",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://au.investing.com/pro/XNAS:CSGS/explorer/shares_out&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2aaq_7BBfCBBM92ieetAPX",
+        "channel": "press",
+        "relevance": "Insights into CSG's share structure can affect valuation and investor sentiment during its NEC integration."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
