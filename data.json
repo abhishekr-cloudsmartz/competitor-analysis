@@ -2025,5 +2025,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-29",
+    "label": "May 29, 2026",
+    "timestamp": "08:13",
+    "quote": "Significant strategic workforce adjustments and ongoing AI solution promotion at Amdocs underscore a dynamic competitive landscape shaped by both operational recalibration and technological advancement.",
+    "topSignal": "Amdocs announced plans to cut 7-10% of its global workforce amid strategic restructuring and leadership changes, reflecting broader industry shifts driven by AI. Concurrently, Amdocs is actively promoting its Agentic OS as a key AI solution for the $60B telco market.",
+    "channelPulse": "Press channels were highly active with news of Amdocs' significant workforce reductions and strategic restructuring, which is part of a wider trend impacting Israeli tech firms due to AI. Amdocs also engaged on YouTube to highlight its AI-driven Agentic OS.",
+    "actionItem": "Analyze the strategic implications of Amdocs' workforce reduction and leadership changes on its BSS/OSS offerings and market strategy. Review Amdocs' Agentic OS content on YouTube to understand their messaging and competitive positioning in the AI-driven telco market.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Plans to cut 7-10% of global workforce amid strategic restructuring; stock ticks up; promoting Agentic OS for AI telco market.",
+        "pubDate": "2026-05-29",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.latestly.com/technology/amdocs-layoffs-software-giant-to-cut-7-to-10-of-global-workforce-amid-strategic-restructuring-and-leadership-change-7450344.html&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2P8wbsuZuNsXnvq1eEnzzY",
+        "channel": "press",
+        "relevance": "Amdocs' significant workforce reduction and strategic restructuring indicate major operational shifts. Its Agentic OS promotion highlights its continued push in AI for telcos."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
