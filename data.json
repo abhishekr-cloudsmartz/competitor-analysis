@@ -2148,5 +2148,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-30",
+    "label": "May 30, 2026",
+    "timestamp": "07:25",
+    "quote": "Operational recalibrations and significant ownership disputes among key BSS/OSS providers underscore a dynamic market landscape ripe with both challenges and potential shifts.",
+    "topSignal": "Amdocs is undergoing a significant workforce reduction, laying off approximately 3,000 employees as part of a strategic restructuring. Concurrently, CSG International is embroiled in a substantial \u20ac1.4 billion ownership dispute, overshadowing its recent solid earnings and market activities.",
+    "channelPulse": "Press channels heavily reported on Amdocs' extensive layoffs and strategic internal changes. News outlets also highlighted CSG's financial updates and the developing story around its major ownership dispute.",
+    "actionItem": "Analyze the strategic implications of Amdocs' workforce reduction on its BSS/OSS product roadmap, service delivery, and overall competitive strength. Investigate the specifics of CSG's \u20ac1.4 billion ownership dispute to understand its potential impact on leadership stability, strategic direction, and market position.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs announces plans to lay off approximately 3,000 employees, representing about 10% of its global workforce, due to restructuring.",
+        "pubDate": "2026-05-29",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.globes.co.il/news/article.aspx%3Fdid%3D1001544263&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2Kd6Q3_c1pyJAVqirwVJF7",
+        "channel": "press",
+        "relevance": "This significant workforce reduction indicates a major operational recalibration, potentially impacting Amdocs' capacity, project delivery, and competitive positioning."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG faces a \u20ac1.4 billion ownership dispute, overshadowing recent solid earnings and a Polish engine deal.",
+        "pubDate": "2026-05-29",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/polish-engine-deal-and-solid-earnings-can-t-mask-csg-s-1-4-billion/69444463&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw05R2VtnQwSPnpfNEcAIm6n",
+        "channel": "press",
+        "relevance": "A substantial ownership dispute could lead to leadership instability, strategic shifts, or legal battles, impacting CSG's market focus and investor confidence."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
