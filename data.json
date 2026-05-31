@@ -2271,5 +2271,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-05-31",
+    "label": "May 31, 2026",
+    "timestamp": "07:56",
+    "quote": "The evolving telecom landscape sees rising digital service adoption, like eSIMs, necessitating adaptable BSS solutions and innovative go-to-market strategies.",
+    "topSignal": "Amdocs is featured in an article discussing the increasing adoption of eSIM technology and the challenges telecoms face regarding security and awareness, signaling a key area for BSS/OSS providers. Concurrently, a video by Sendoso, relevant to Everstage's domain, explored evolving sales roles like BDRs and Go-to-Market Engineers.",
+    "channelPulse": "Press channels covered market trends relevant to Amdocs, while a YouTube video provided insights into evolving sales strategies impacting players like Everstage.",
+    "actionItem": "Review the Amdocs-related article on eSIM adoption to understand market drivers and potential solution requirements in digital connectivity. Analyze the Sendoso video to gain insights into emerging sales roles and strategies that might influence Everstage's target market or partnership opportunities.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Article highlights rising eSIM adoption and related security/awareness challenges for telecoms.",
+        "pubDate": "2026-05-30",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.manilatimes.net/2026/05/31/business/sunday-business-it/esim-adoption-rises-as-telecoms-face-security-awareness-hurdles/2355047&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw3HyioKV4FJFT5Vk_v5FGao",
+        "channel": "press",
+        "relevance": "This trend in digital service delivery directly impacts the demand for agile BSS/OSS solutions that Amdocs provides, particularly in regions like the Philippines mentioned in the article."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Sendoso published a video discussing hiring BDRs in 2026 and the rise of the Go-to-Market Engineer.",
+        "pubDate": "2026-05-30",
+        "url": "https://www.youtube.com/watch?v=_1vh4Ezume4",
+        "channel": "youtube",
+        "relevance": "While not directly by Everstage, this content on sales hiring and GTM strategies is relevant to the broader sales performance management market Everstage operates within."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=_1vh4Ezume4"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
