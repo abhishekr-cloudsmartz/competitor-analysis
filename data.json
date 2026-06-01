@@ -2396,5 +2396,131 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-01",
+    "label": "June 1, 2026",
+    "timestamp": "09:40",
+    "quote": "Telecom solution providers navigate internal restructuring driven by AI while simultaneously refining external sales strategies to adapt to market shifts.",
+    "topSignal": "Amdocs continues its strategic workforce reduction, emphasizing AI-driven restructuring, while content relevant to Everstage's domain explores building trust in sales compensation plans.",
+    "channelPulse": "Press channels highlight Amdocs' ongoing AI-driven organizational shifts, while a YouTube video offers insights into sales performance strategies relevant to Everstage's market.",
+    "actionItem": "Track the progression of Amdocs' AI-driven restructuring for insights into their operational efficiency and product focus. Review the Everstage-relevant YouTube content to understand current trends in sales compensation plan design and their implications for CloudSmartz's sales and partner strategies.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs is cutting 3,000 jobs as part of an AI-driven restructuring effort.",
+        "pubDate": "2026-05-31",
+        "url": "https://letsdatascience.com/news/amdocs-cuts-3000-jobs-in-ai-restructuring-a79dca78",
+        "channel": "press",
+        "relevance": "This ongoing significant workforce reduction signals a major strategic shift towards AI efficiency, impacting Amdocs' resource allocation and future product development."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "A new video discusses building trust in sales compensation plans, a key area for Sales Performance Management.",
+        "pubDate": "2026-05-31",
+        "url": "https://www.youtube.com/watch?v=es8kxZClwZo",
+        "channel": "youtube",
+        "relevance": "This content highlights industry best practices and challenges in sales compensation, directly relevant to Everstage's offerings and the needs of their target market."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=es8kxZClwZo",
+        "https://www.youtube.com/watch?v=_1vh4Ezume4"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
