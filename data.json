@@ -2522,5 +2522,131 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-02",
+    "label": "June 2, 2026",
+    "timestamp": "08:51",
+    "quote": "Market sentiment is reflected in major share movements among BSS/OSS providers, while specialized content strategies underscore competitive positioning in the dynamic telecom landscape.",
+    "topSignal": "Morgan Stanley Smith Barney has filed to sell a substantial block of Amdocs shares, while Everstage released a '2026 Telecom Sales Comp Playbook' video, featuring a collaboration with Telstra.",
+    "channelPulse": "Financial news outlets reported on Amdocs' share activity, and Everstage used its YouTube channel to publish new, sector-specific content.",
+    "actionItem": "Evaluate the implications of the Amdocs share sale on investor confidence and market valuation. Analyze Everstage's collaboration with Telstra to identify strategic takeaways on competitive positioning and industry partnerships within the telecom BSS/OSS ecosystem.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Morgan Stanley Smith Barney files to sell 50,000 shares.",
+        "pubDate": "2026-06-01",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.stocktitan.net/sec-filings/DOX/144-amdocs-ltd-sec-filing-52d2e4722221.html&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw032USn_CXyN0FBwS_T-Hvt",
+        "channel": "press",
+        "relevance": "An institutional investor selling a significant block of shares could signal market sentiment or portfolio adjustments regarding Amdocs."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Released '2026 Telecom Sales Comp Playbook' video featuring Telstra.",
+        "pubDate": "2026-06-01",
+        "url": "https://www.youtube.com/watch?v=NZiE9XLChLA",
+        "channel": "youtube",
+        "relevance": "This direct collaboration with a major telecom operator highlights Everstage's focused expansion and deep engagement within the telecom sales sector."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=NZiE9XLChLA",
+        "https://www.youtube.com/watch?v=es8kxZClwZo"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 1,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
