@@ -2648,5 +2648,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-03",
+    "label": "June 3, 2026",
+    "timestamp": "09:13",
+    "quote": "AI continues to drive the narrative in telecom solutions, with industry recognition highlighting key innovations while financial market indicators provide a pulse on investor sentiment.",
+    "topSignal": "Netcracker's Agentic AI Solution received an AI Excellence Award, while Amdocs published an article detailing its vision for autonomous and AI-native ecosystems.",
+    "channelPulse": "Press channels were active, reporting on Netcracker's industry recognition, Amdocs' strategic vision, and financial movements for both Amdocs and CSG.",
+    "actionItem": "Analyze Netcracker's Agentic AI capabilities and Amdocs' AI-native ecosystem strategy to benchmark CloudSmartz's own AI offerings and identify competitive differentiators. Monitor Amdocs' stock performance and CSG's insider transactions for broader market sentiment and internal strategic cues.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Netcracker Agentic AI Solution Recognized with AI Excellence Award",
+        "pubDate": "2026-06-02",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.businesswire.com/news/home/20260602558023/en/Netcracker-Agentic-AI-Solution-Recognized-with-AI-Excellence-Award&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw3fnEsrg0CAbVWtLU7OIKaj",
+        "channel": "press",
+        "relevance": "This award solidifies Netcracker's position as an AI leader in BSS/OSS, a key area for CloudSmartz."
+      },
+      "amdocs": {
+        "activity": "Amdocs discusses enabling autonomous and AI-native ecosystems, reinforcing its GenAI focus.",
+        "pubDate": "2026-06-02",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://tele.net.in/amdocs-enabling-autonomous-and-ai-native-ecosystems/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1jYbD2QRXDpZCat8jWgebqK",
+        "channel": "press",
+        "relevance": "Amdocs' emphasis on AI-native ecosystems showcases their strategic direction, directly competing with CloudSmartz's advanced NaaS and AI capabilities."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG Systems International reported insider transactions.",
+        "pubDate": "2026-06-02",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.marketscreener.com/quote/stock/CSG-SYSTEMS-INTERNATIONAL-132327935/company-insider-trading/&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1kyEqWGBrhOqYSegPbGlGe",
+        "channel": "press",
+        "relevance": "Insider transactions for CSG, especially amidst its NEC integration, could hint at internal strategic shifts or confidence levels."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=NZiE9XLChLA"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
