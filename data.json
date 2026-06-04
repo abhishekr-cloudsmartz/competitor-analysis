@@ -2773,5 +2773,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-04",
+    "label": "June 4, 2026",
+    "timestamp": "08:37",
+    "quote": "Investor sentiment and market valuations define a critical backdrop against which BSS/OSS firms showcase their AI-driven innovation.",
+    "topSignal": "Netcracker's Agentic AI Solution continues to gain industry recognition with an AI Excellence Award, while Amdocs faces investor scrutiny over share price weakness despite reported cloud and AI achievements.",
+    "channelPulse": "Press channels are busy with reports of Netcracker's latest AI recognition and a flurry of financial articles analyzing Amdocs' market valuation and insider transactions.",
+    "actionItem": "Evaluate Netcracker's Agentic AI capabilities in light of their recent award to benchmark CloudSmartz's own AI offerings. Closely monitor Amdocs' investor sentiment and share price performance for insights into market expectations for AI and cloud solutions.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Netcracker Agentic AI Solution Recognized with AI Excellence Award by 01net, reinforcing its AI leadership.",
+        "pubDate": "2026-06-03",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.01net.it/netcracker-agentic-ai-solution-recognized-with-ai-excellence-award/&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw1PVRPX4MvjYKqjmGTkdajr",
+        "channel": "press",
+        "relevance": "This continued recognition for Netcracker's Agentic AI reinforces their strong position and ongoing market focus in a key competitive area for CloudSmartz."
+      },
+      "amdocs": {
+        "activity": "Amdocs' stock faces investor scrutiny, with articles analyzing its valuation after a prolonged decline, despite cloud and AI wins.",
+        "pubDate": "2026-06-03",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/stocks/us/software/nasdaq-dox/amdocs/news/how-investors-are-reacting-to-amdocs-dox-cloud-and-ai-wins-a&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2XNivG3UQAW8DGNBXntiE8",
+        "channel": "press",
+        "relevance": "The extensive financial reporting on Amdocs, including share price weakness and insider sales, offers insight into market confidence and potential financial strategies, relevant to CloudSmartz's competitive landscape."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG secures major ammunition fuze contracts worth in the high tens of millions of Euros in two NATO countries.",
+        "pubDate": "2026-06-03",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.edrmagazine.eu/csg-secures-major-ammunition-fuze-contracts-worth-in-the-high-tens-of-millions-of-euros-in-two-nato-countries&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2vroGcLPZPVcapHicsuTv",
+        "channel": "press",
+        "relevance": "While not directly related to telecom BSS, this substantial contract indicates CSG's continued diversification and capital allocation, which can indirectly affect their telecom focus and resources."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
