@@ -2896,5 +2896,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-05",
+    "label": "June 5, 2026",
+    "timestamp": "08:29",
+    "quote": "Market dynamics in the BSS/OSS sector are shaped by financial performance and strategic investments in critical areas like fiber expansion and advanced AI.",
+    "topSignal": "Amdocs reported a strong $1.17 billion quarter, emphasizing continued growth in fiber expansion and a new strategic bet on Agentic AI, though its shares experienced a 3.4% decline.",
+    "channelPulse": "Financial news outlets and telecom industry publications extensively covered Amdocs' quarterly results, strategic growth initiatives in fiber, and market performance, including share price analysis.",
+    "actionItem": "Analyze Amdocs' financial reporting for insights into its Agentic AI strategy and fiber expansion plans to benchmark CloudSmartz's market positioning and growth initiatives. Monitor the impact of its share price movements on overall investor sentiment in the BSS/OSS sector.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs reports $1.17B quarter, eyes fiber growth & Agentic AI; shares fall 3.4% amid market analysis.",
+        "pubDate": "2026-06-04",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.smartkarma.com/insights/amdocs-1-17-billion-quarter-steady-growth-meets-a-new-agentic-ai-bet%3Futm_medium%3Dfeed%26utm_source%3DRSS&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw0nSyQObIhqXwKOn27ZmMfP",
+        "channel": "press",
+        "relevance": "Amdocs' Q1 financial performance, strategic focus on Agentic AI, and emphasis on fiber expansion directly impact CloudSmartz's competitive landscape."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
