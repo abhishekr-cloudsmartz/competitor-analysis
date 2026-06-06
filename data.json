@@ -3019,5 +3019,132 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-06",
+    "label": "June 6, 2026",
+    "timestamp": "07:30",
+    "quote": "Amidst ongoing financial scrutiny of market leaders, the BSS/OSS sector continues to explore new applications for technology, from patient experience to sales performance.",
+    "topSignal": "Amdocs is experiencing intensified analyst scrutiny regarding Q3 earnings estimates and overall market valuation. Simultaneously, CSG has released new video content showcasing the application of its solutions in patient experience.",
+    "channelPulse": "Financial press channels are actively publishing detailed analyses of Amdocs' market position and earnings outlook. Additionally, new video content has emerged from CSG and Everstage, highlighting diverse solution applications.",
+    "actionItem": "Closely monitor Amdocs' Q3 earnings reports and analyst commentary for shifts in BSS/OSS market sentiment and strategic direction. Evaluate CSG's demonstrated capability to apply its technology in new sectors, such as healthcare, to identify potential diversification opportunities for CloudSmartz.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs faces analyst scrutiny over Q3 earnings estimates and market valuation amidst cloud and AI contract impact.",
+        "pubDate": "2026-06-05",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.marketbeat.com/instant-alerts/what-is-zacks-researchs-estimate-for-amdocs-q3-earnings-2026-06-05/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2jOaThU8qqVBBuICtTa3m9",
+        "channel": "press",
+        "relevance": "Continued financial analysis of Amdocs' performance, including Q3 earnings estimates and valuation, offers insight into market sentiment for major BSS/OSS players."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG publishes video demonstrating solutions for creating a more connected patient experience.",
+        "pubDate": "2026-06-05",
+        "url": "https://www.youtube.com/watch?v=xPdyzY8Usg8",
+        "channel": "youtube",
+        "relevance": "CSG's application of its solutions in healthcare highlights potential diversification strategies and market reach beyond traditional telecom."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Everstage releases a video discussing lending compensation, clawbacks, and the quality of sales volume.",
+        "pubDate": "2026-06-05",
+        "url": "https://www.youtube.com/watch?v=6zwmZGlHKpg",
+        "channel": "youtube",
+        "relevance": "Everstage's focus on sales performance management in the financial sector, as highlighted in this video, remains relevant for monitoring sales channel overlap."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [
+        "https://www.youtube.com/watch?v=xPdyzY8Usg8"
+      ],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=6zwmZGlHKpg"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
