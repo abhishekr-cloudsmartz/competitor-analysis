@@ -3287,5 +3287,130 @@
     "label": "June 9, 2026",
     "timestamp": "08:06",
     "error": "All Gemini attempts exhausted. Last error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 31.545543417s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 31\n}\n]"
+  },
+  {
+    "date": "2026-06-10",
+    "label": "June 10, 2026",
+    "timestamp": "08:31",
+    "quote": "Market volatility for established players can reveal opportunities for agile solutions, while strategic partnerships affirm the value of specialized expertise.",
+    "topSignal": "Netcracker strengthens its OSS partnership with Lightpath and advances its AI-native CSP narrative. Meanwhile, Amdocs' stock hits a 52-week low, and CSG experiences a significant stock slide amidst governance concerns.",
+    "channelPulse": "Press channels are busy reporting on Netcracker's renewed partnership with Lightpath and the financial challenges faced by Amdocs and CSG. Netcracker also published an AI thought leadership piece on a blog, and Everstage released new video content.",
+    "actionItem": "Review Netcracker's expanded partnership details with Lightpath to understand their go-to-market and professional service evolution. Investigate the drivers behind the stock performance of Amdocs and CSG to assess broader market and investor sentiment in the BSS/OSS space. Analyze Everstage's new video content for current best practices in sales compensation management.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Deepens long-standing partnership with Lightpath for modernized OSS and publishes article on AI-native era for CSPs.",
+        "pubDate": "2026-06-09",
+        "url": "https://www.businesswire.com/news/home/20260609672608/en/Lightpath-Deepens-Long-Standing-Partnership-with-Netcracker-for-Modernized-OSS-and-Enhanced-Professional-Services",
+        "channel": "press",
+        "relevance": "Demonstrates continued trust and expansion in core OSS services with a key customer, and reinforces Netcracker's lead narrative around Agentic AI and thought leadership."
+      },
+      "amdocs": {
+        "activity": "Amdocs stock hit a 52-week low at $57.85 USD, reflecting market concerns.",
+        "pubDate": "2026-06-09",
+        "url": "https://in.investing.com/news/company-news/amdocs-stock-hits-52week-low-at-5785-usd-93CH-5447074",
+        "channel": "press",
+        "relevance": "This indicates potential financial challenges or investor skepticism despite their high revenue and AI focus, worth monitoring for market sentiment."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Experiences a significant 59% stock slide amidst governance battle and waning Ukraine support despite record backlog.",
+        "pubDate": "2026-06-09",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/governance-battle-and-waning-ukraine-support-deepen-csg-s-59-percent/69505242&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw0BucKQDJ0AgEzxtv4ds35l",
+        "channel": "press",
+        "relevance": "The substantial stock drop and internal governance issues could signal instability, relevant for market perception and potential competitive advantage."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Releases new expert panel video on sales compensation stability, covering plan go-live to plan lock.",
+        "pubDate": "2026-06-09",
+        "url": "https://www.youtube.com/watch?v=EPDKcIR0P4M",
+        "channel": "youtube",
+        "relevance": "Reinforces their specialization in Sales Performance Management, indicating a focus on practical implementation challenges for sales compensation."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=EPDKcIR0P4M"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
