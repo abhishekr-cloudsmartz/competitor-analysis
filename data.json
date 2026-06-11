@@ -3412,5 +3412,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-11",
+    "label": "June 11, 2026",
+    "timestamp": "08:58",
+    "quote": "In a rapidly evolving market, financial turbulence for some can highlight opportunities for others, while strategic customer wins remain a constant benchmark of innovation.",
+    "topSignal": "Netcracker strengthens its OSS deployment with Lightpath, showcasing continued client expansion. Amdocs' stock plummets to a 52-week low, yet they continue to push a narrative of agentic acceleration in core modernization. CSG reports record profits and major contracts but is embroiled in a legal deadlock and shareholder feud.",
+    "channelPulse": "Press channels are actively reporting on client expansions and financial health for major BSS/OSS players, with a focus on both market performance and strategic technology narratives like agentic AI. Financial news sources are detailing stock performance and governance challenges.",
+    "actionItem": "Review Netcracker's expanded Lightpath deployment to understand specific feature adoption and solution depth. Analyze Amdocs' 'agentic acceleration' claims in light of their financial challenges to identify potential disconnects or opportunities. Monitor CSG's internal disputes for any signs of instability that could create market openings.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Lightpath expands Digital OSS deployment to accelerate network automation and service delivery.",
+        "pubDate": "2026-06-11",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.thefastmode.com/technology-solutions/48942-lightpath-expands-netcracker-digital-oss-deployment-to-accelerate-network-automation-service-delivery&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw35Yzxt9gQ3SDghvyj_5Ldn",
+        "channel": "press",
+        "relevance": "Demonstrates continued customer confidence and expansion in core OSS, aligning with Netcracker's automation and digital transformation narrative."
+      },
+      "amdocs": {
+        "activity": "Stock plummeted to new 52-week low ($57.63); highlights end-to-end core modernization and agentic acceleration strategy.",
+        "pubDate": "2026-06-10",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.mexc.com/news/1137572&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2wZ3wBM3usPnbJCA4-WpP2",
+        "channel": "press",
+        "relevance": "Persistent financial market challenges for a large competitor, coupled with a renewed emphasis on AI-driven core modernization, signaling direct competition in the agentic AI space."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Reports strong profits and large orders (NATO, German boost) but remains hampered by legal deadlock and shareholder disputes.",
+        "pubDate": "2026-06-10",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/news/ueberblick/csg-s-record-profits-and-300m-german-boost-can-t-break-the-legal/69515338&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2xU_RFvcrQu19ri4PLP_2X",
+        "channel": "press",
+        "relevance": "Highlights a competitor's ability to secure significant deals while simultaneously struggling with internal and governance issues, potentially affecting long-term stability and focus."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Releases expert panel video on sales compensation stability, covering plan go-live to plan lock.",
+        "pubDate": "2026-06-09",
+        "url": "https://www.youtube.com/watch?v=EPDKcIR0P4M",
+        "channel": "youtube",
+        "relevance": "Continues to provide thought leadership in the specialized SPM area, demonstrating expertise in practical sales compensation challenges."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=EPDKcIR0P4M"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
