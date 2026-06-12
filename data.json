@@ -3537,5 +3537,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-12",
+    "label": "June 12, 2026",
+    "timestamp": "08:45",
+    "quote": "Navigating market skepticism requires clear communication and demonstrable value, especially as competitors highlight critical aspects like AI trust and stability.",
+    "topSignal": "Amdocs advances its AI narrative by focusing on trust and assurance for scaled deployment. Meanwhile, CSG faces significant stock depreciation despite a large order book and dividend declaration, signaling investor concerns.",
+    "channelPulse": "Financial news outlets are keenly reporting on CSG's substantial stock decline, drawing attention to market sentiment. Amdocs is also generating thought leadership content around the critical aspects of AI deployment.",
+    "actionItem": "Review Amdocs' content on AI trust and assurance to understand evolving industry requirements for scalable AI solutions. Investigate the ongoing reasons behind CSG's stock performance issues, contrasting it with their reported order book, to assess potential market vulnerabilities.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Highlights AI trust and assurance as keys for large-scale AI deployment; CFO Tal Rozenfeld reports stock ownership.",
+        "pubDate": "2026-06-11",
+        "url": "https://inform.tmforum.org/webinars-and-podcasts/webinars/ai-trust-and-ai-assurance-the-keys-to-ai-deployment-at-scale",
+        "channel": "press",
+        "relevance": "Reinforces their commitment to practical, scalable AI solutions, addressing key concerns for CSPs deploying GenAI. The financial disclosure is routine."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Experiences significant stock wipeout (60%) despite large order book (\u20ac17B) and index promotion. Declares $0.32 dividend.",
+        "pubDate": "2026-06-11",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-s-high-tech-pivot-and-index-upgrade-collide-with-a-60-percent-stock/69518717",
+        "channel": "press",
+        "relevance": "Repeated negative financial news indicates deep investor skepticism despite operational wins, potentially creating market instability or opening for competitors."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
