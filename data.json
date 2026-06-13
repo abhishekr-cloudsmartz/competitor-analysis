@@ -3660,5 +3660,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-13",
+    "label": "June 13, 2026",
+    "timestamp": "08:01",
+    "quote": "Persistent market pressures on industry giants underscore the value of nimble, innovative solutions and robust financial health.",
+    "topSignal": "Amdocs' stock continues its sharp decline, hitting a new 52-week low and dropping significantly since its last earnings report. In contrast, CSG's parent company, NEC, is highlighted for its positive financial performance.",
+    "channelPulse": "Financial news outlets are heavily reporting on Amdocs' sustained stock performance issues, indicating market skepticism. Related financial reports also cover NEC's overall market strength.",
+    "actionItem": "Monitor Amdocs' continued financial challenges to understand broader market sentiment and identify potential vulnerabilities or opportunities. Evaluate how the stability of larger players like NEC (CSG's parent) contrasts with the market volatility experienced by others.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Stock plummeted to a new 52-week low of $56.77, down 9.5% since last earnings report.",
+        "pubDate": "2026-06-12",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.marketsmojo.com/news/stocks-in-action/amdocs-ltd-stock-plummets-to-new-52-week-low-of-5677-4046977&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1LN9EpfGeZksszdozWAtbE",
+        "channel": "press",
+        "relevance": "Deepens concerns about Amdocs' market valuation and investor confidence, consistent with recent negative trends."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "NEC (CSG's acquirer) highlighted as a 'Low-Risk Leader' in Japan's earnings surprise.",
+        "pubDate": "2026-06-12",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/stocks/jp/software/tse-6701/nec-shares/news/low-risk-leaders-quietly-powering-japans-earnings-surprise/amp&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw0zbvc8Cas0Pz4fShz1viep",
+        "channel": "press",
+        "relevance": "Positive mention for NEC, which acquired CSG, suggests overall financial stability of the parent company, indirectly relevant to CSG's market perception."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
