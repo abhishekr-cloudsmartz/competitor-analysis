@@ -3783,5 +3783,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-14",
+    "label": "June 14, 2026",
+    "timestamp": "08:32",
+    "quote": "Strategic overhauls and workforce adjustments define a new competitive landscape, where efficiency and AI integration drive future valuations.",
+    "topSignal": "Amdocs announces significant job cuts (3,000) as part of an AI-era restructuring, signaling a strategic shift towards efficiency while also reporting an earnings beat.",
+    "channelPulse": "Financial and general news outlets are actively covering Amdocs' major workforce restructuring and its latest financial performance, reflecting market interest in strategic adaptations to AI.",
+    "actionItem": "Assess the implications of Amdocs' AI-era restructuring and job cuts on their market position and product roadmap, particularly how this impacts their GenAI narrative. Investigate the specifics of their earnings beat to understand areas of growth amidst this change.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Cuts 3,000 jobs in AI-era restructuring; stock valuation analyzed after earnings beat & guidance update.",
+        "pubDate": "2026-06-13",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://easternherald.com/2026/06/13/amdocs-3000-layoffs-ai-restructuring-hortig-2026/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2Lj2MHEq2Td_g4Rgrykw5J",
+        "channel": "press",
+        "relevance": "Amdocs initiates significant job cuts as part of an AI-driven restructuring, indicating a strategic shift despite an earnings beat and guidance update. This suggests a focus on operational efficiency and adaptation to AI."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
