@@ -4152,5 +4152,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-17",
+    "label": "June 17, 2026",
+    "timestamp": "09:18",
+    "quote": "The pursuit of AI-native operations and emergent network integration defines the frontier where innovation meets competitive leadership.",
+    "topSignal": "Netcracker is showcasing its leadership in AI-native telecom and autonomous network operations at DTW Ignite 2026, also touching upon satellite integration efforts.",
+    "channelPulse": "Press releases from Netcracker are highlighting their strategic focus on AI and advanced network technologies, indicating active promotion of their next-gen solutions.",
+    "actionItem": "Analyze Netcracker's specific AI-native telecom and autonomous network operations capabilities unveiled at DTW Ignite 2026 to identify competitive differentiators and potential areas for CloudSmartz to innovate or counter.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Showcased AI-native telecom and autonomous network ops leadership at DTW Ignite 2026; TM Forum also tackles satellite integration.",
+        "pubDate": "2026-06-16",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.businesswire.com/news/home/20260616119072/en/Netcracker-Takes-Center-Stage-at-DTW-Ignite-2026-With-Leadership-in-AI-Native-Telecom-and-Autonomous-Network-Operations&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw3XMthNFd5CtpqADegJoKD5",
+        "channel": "press",
+        "relevance": "Netcracker is positioning itself as a leader in AI-native telecom and autonomous network operations, highlighted at DTW Ignite. Their participation in TM Forum's satellite integration initiative also shows focus on emerging network technologies."
+      },
+      "amdocs": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [
+        "https://www.google.com/url?rct=j&sa=t&url=https://www.mk.co.kr/en/business/12075090&ct=ga&cd=CAIyHGNkZDliMWFlOWExMWZiYWE6Y28uaW46ZW46SU4&usg=AOvVaw0iNa_FbRlg5RNvfidjq9YN"
+      ],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
