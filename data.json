@@ -4277,5 +4277,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-18",
+    "label": "June 18, 2026",
+    "timestamp": "09:01",
+    "quote": "While market leaders navigate financial headwinds, agility and strategic positioning become paramount for sustained growth.",
+    "topSignal": "Amdocs' stock has fallen to a new 52-week low at $55.11, indicating significant investor concern or market pressure.",
+    "channelPulse": "Financial news sources are actively reporting on Amdocs' recent stock performance.",
+    "actionItem": "Evaluate the factors contributing to Amdocs' 52-week low and assess potential impacts on the broader BSS/OSS market and its competitive positioning.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Stock hits 52-week low at $55.11.",
+        "pubDate": "2026-06-17",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.investing.com/news/company-news/amdocs-stock-hits-52week-low-at-5511-93CH-4747558&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw0xekTZr3etfuWfyPbjqWJx",
+        "channel": "press",
+        "relevance": "Amdocs' stock performance indicates potential investor concerns or market volatility, hitting a new 52-week low."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [
+        "https://www.google.com/url?rct=j&sa=t&url=https://www.washingtontechnology.com/contracts/2026/06/army-unveils-first-sketch-commercial-tech-contract-test-evaluation/414245/%3Foref%3Dwt-homepage-river&ct=ga&cd=CAIyHGNkZDliMWFlOWExMWZiYWE6Y28uaW46ZW46SU4&usg=AOvVaw2COlWSl4gXxKI5BtCXZs34"
+      ],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
