@@ -4402,5 +4402,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-19",
+    "label": "June 19, 2026",
+    "timestamp": "09:18",
+    "quote": "Market shifts and financial valuations reflect both immediate pressures and long-term strategic plays in the competitive telecom BSS/OSS landscape.",
+    "topSignal": "Amdocs' shares continue a downward trend, falling 6.3% today amid a cautious market outlook, while simultaneously promoting its capabilities in helping telcos scale agentic AI.",
+    "channelPulse": "Financial news outlets are heavily reporting on Amdocs' stock performance and outlook, alongside industry publication coverage of their AI strategies.",
+    "actionItem": "Analyze the latest financial reports concerning Amdocs' stock decline and cautious outlook to understand potential market concerns. Review Amdocs' TM Forum article on agentic AI to benchmark their strategic positioning in this critical area.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Shares fall 6.3% due to cautious outlook; Amdocs also details how to scale agentic AI for telcos.",
+        "pubDate": "2026-06-19",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.gurufocus.com/news/8923631/amdocs-ltd-dox-shares-fall-63-what-gf-score-of-74-tells-investors&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1SZQnyPcHcASE2KmuWWkDF",
+        "channel": "press",
+        "relevance": "Amdocs is facing significant stock declines and a cautious market sentiment. Simultaneously, they are advancing their narrative on agentic AI, indicating a strategic focus despite financial headwinds."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Financial reports detail CSG Systems International's revenue breakdown, dividends, and stock splits.",
+        "pubDate": "2026-06-17",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.tradingkey.com/markets/stocks/nasdaq-csgs/revenue&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw34giRK_sg-H0JdAG1b4J9x",
+        "channel": "press",
+        "relevance": "Provides current financial health indicators for CSG Systems International, including revenue performance and shareholder distributions. Note: Articles on 'CSG' defense systems are unrelated."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
