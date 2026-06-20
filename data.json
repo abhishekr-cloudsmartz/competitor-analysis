@@ -4525,5 +4525,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-20",
+    "label": "June 20, 2026",
+    "timestamp": "08:02",
+    "quote": "Amidst market fluctuations, AI innovation remains the steadfast north star for telecom BSS/OSS leaders.",
+    "topSignal": "Netcracker is reinforcing its leadership in AI-native telecom with a new update featured in The Mobile Network, showcasing their strategic focus.",
+    "channelPulse": "Industry publications are spotlighting Netcracker's AI advancements, while financial news outlets continue to report on market volatility affecting Amdocs and CSG.",
+    "actionItem": "Deep dive into Netcracker's \"AI-Native Telco Update 2026\" to identify specific innovations and compare with CloudSmartz's AI strategy. Simultaneously, monitor the financial performance of Amdocs and CSG for potential market shifts or vulnerabilities.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Featured in The Mobile Network's 'AI-Native Telco Update 2026'.",
+        "pubDate": "2026-06-19",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://the-mobile-network.com/2026/06/new-ai-native-telco-update-2026/&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw3pCwttESDamy_RTyX1ChDp",
+        "channel": "press",
+        "relevance": "Netcracker is being highlighted for its work in AI-native telecom, reinforcing its lead narrative and competitive positioning in AI."
+      },
+      "amdocs": {
+        "activity": "Shares fluctuate pre-market amid mixed news; Seeking Alpha discusses 'hidden AI upside'.",
+        "pubDate": "2026-06-19",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://news.futunn.com/en/post/74827012/pre-market-movement-amdocs-shares-fluctuate-amid-mixed-news&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw3F7CYfaJfFuetAmhz4cOKb",
+        "channel": "press",
+        "relevance": "Ongoing market fluctuation for Amdocs shares suggests continued financial scrutiny, while an article highlights potential positive long-term view on its AI strategy."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Stock slide continues despite an FBI deal and index promotion, indicating market skepticism.",
+        "pubDate": "2026-06-19",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-s-stock-slide-continues-despite-fbi-deal-and-index-promotion/69578864&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw0bk_vwgZboyEMK04A7bfiW",
+        "channel": "press",
+        "relevance": "CSG's stock performance reflects investor concerns despite positive business developments, which may relate to the ongoing NEC integration."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
