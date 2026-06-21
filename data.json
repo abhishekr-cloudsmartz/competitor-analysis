@@ -4648,5 +4648,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-21",
+    "label": "June 21, 2026",
+    "timestamp": "08:45",
+    "quote": "As market confidence tests established players, strategic resilience and clear value communication become critical amidst paradoxical financial signals.",
+    "topSignal": "CSG International faces a significant market paradox, with its stock declining by 60% from its high despite achieving operational records, securing a \u20ac17B backlog, and announcing new defense system contracts.",
+    "channelPulse": "Financial news outlets are heavily focused on the contrasting performance of CSG's stock against its operational successes, while also tracking Amdocs' executive changes and financial outlook, particularly its AI potential. Everstage continues thought leadership on AI in sales compensation via YouTube.",
+    "actionItem": "Investigate the factors driving investor skepticism towards CSG despite strong business fundamentals and strategic diversification, to understand broader market sentiment and competitive positioning.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs is mentioned in executive moves of the week. Financial news covers its long-term growth story & hidden AI potential.",
+        "pubDate": "2026-06-21",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.financemagnates.com/executives/iforex-bitgo-cme-and-more-executive-moves-of-the-week/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw36voROtqiX5s3IM-gGDlvW",
+        "channel": "press",
+        "relevance": "Amdocs is reported to have executive changes, while financial analysis highlights its long-term potential in telecom software, driven by AI, despite current low P/E."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG's stock continues significant decline (down 60% from high) despite operational records, \u20ac17B backlog, and new defense system contracts.",
+        "pubDate": "2026-06-20",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-s-stock-drops-60-percent-from-high-despite-soaring-orders-and-new/69589832&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2EAuKgJcnqGoaDDppETV5T",
+        "channel": "press",
+        "relevance": "CSG's stock is under severe pressure despite strong operational performance and new strategic initiatives, indicating a significant disconnect in market valuation."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Released a YouTube video featuring an interview on global compensation design, AI Reality & Comp Transparency.",
+        "pubDate": "2026-06-20",
+        "url": "https://www.youtube.com/watch?v=qeg2hazSgA",
+        "channel": "youtube",
+        "relevance": "Everstage is actively promoting thought leadership in sales performance management, discussing critical topics like AI's role and transparency."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=qeg2haz1SgA"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
