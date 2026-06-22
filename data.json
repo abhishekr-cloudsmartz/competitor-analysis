@@ -4773,5 +4773,131 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-22",
+    "label": "June 22, 2026",
+    "timestamp": "10:20",
+    "quote": "In a market marked by financial volatility, brand resilience and strategic community engagement become as vital as core product innovation.",
+    "topSignal": "Amdocs' shares continue to experience a slide despite recent layoffs, indicating persistent market skepticism, even as the company is screened as a 'Best Dividend Stock'.",
+    "channelPulse": "Financial news outlets are providing mixed signals on Amdocs, detailing both ongoing share decline and positive financial screening. Meanwhile, Netcracker engages in local community support, and Everstage maintains its thought leadership presence on YouTube.",
+    "actionItem": "Analyze the financial reports concerning Amdocs to reconcile the contrasting signals of a continued stock slide versus a 'Best Dividend Stock' rating. Investigate Netcracker's CSR initiative to understand its local market engagement strategy.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Partnered with Aahwahan Foundation to distribute safety and welfare kits to Bangalore traffic police.",
+        "pubDate": "2026-06-22",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://businessnewsthisweek.com/news/aahwahan-foundation-in-association-with-netcracker-distributed-safety-and-welfare-kits-to-the-200-bangalore-traffic-police/&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw281smYG1bRkEOBy6BVS9E8",
+        "channel": "press",
+        "relevance": "Netcracker engages in local CSR initiatives, potentially enhancing brand image and community ties in key operational regions."
+      },
+      "amdocs": {
+        "activity": "Shares continue to slide despite recent layoffs, though one report identifies Amdocs as a 'Best Dividend Stock'.",
+        "pubDate": "2026-06-22",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.chartmill.com/news/DOX/Chartmill-50108-Amdocs-Ltd-NASDAQDOX-Screens-as-a-Best-Dividend-Stock-with-Attractive-Valuation-and-High-Yield&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw0oVTgueI0vLl7KOcsCTN7K",
+        "channel": "press",
+        "relevance": "Amdocs faces ongoing market skepticism despite cost-cutting and some positive financial indicators, highlighting continued investor pressure."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Released two new YouTube videos discussing leadership, compensation design, AI in sales, and transparency.",
+        "pubDate": "2026-06-21",
+        "url": "https://www.youtube.com/watch?v=h-kxamNvPm8",
+        "channel": "youtube",
+        "relevance": "Everstage continues its thought leadership on sales performance management and broader leadership, touching on AI's impact on compensation."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=h-kxamNvPm8",
+        "https://www.youtube.com/watch?v=qeg2haz1SgA"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
