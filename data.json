@@ -5159,5 +5159,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-27",
+    "label": "June 27, 2026",
+    "timestamp": "07:34",
+    "quote": "Market confidence and robust financial health are critical indicators of a competitor's strategic resilience and capacity for future innovation in the dynamic BSS/OSS sector.",
+    "topSignal": "Amdocs is prominently featured in multiple financial news analyses, undergoing detailed valuation discussions and being highlighted as a potential investment, reflecting significant market attention.",
+    "channelPulse": "Financial news outlets are closely examining Amdocs' market valuation and investor appeal, signaling a strong focus on its financial health and strategic positioning.",
+    "actionItem": "Monitor Amdocs' financial reports and investor sentiment trends to understand its market perception and potential strategic implications for investment in new technologies or acquisitions.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Featured in multiple financial analyses regarding enterprise valuation (EV/Revenue, EV/EBITDA) and identified as a 'hidden gem' investment.",
+        "pubDate": "2026-06-26",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.tradingview.com/symbols/LSX-915119/financials-statistics-and-ratios/enterprise-value-sales-fwd/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1XDTiqqFkoq9m6P2gMeaWI",
+        "channel": "press",
+        "relevance": "Amdocs' strong financial visibility and investor interest could signal robust funding and strategic flexibility for competitive initiatives."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
