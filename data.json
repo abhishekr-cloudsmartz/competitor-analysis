@@ -5282,5 +5282,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-28",
+    "label": "June 28, 2026",
+    "timestamp": "08:02",
+    "quote": "Significant downturns in competitor stock values offer a window into shifting market sentiment and reveal potential areas of vulnerability within the BSS/OSS sector.",
+    "topSignal": "Major competitors Amdocs and CSG are experiencing significant stock price declines, with both hitting new lows, signaling heightened market concerns about their financial performance.",
+    "channelPulse": "Financial news outlets are actively reporting on the stock performance of Amdocs and CSG, indicating intense market scrutiny of financial health within the telecom BSS/OSS provider space.",
+    "actionItem": "Analyze the immediate and underlying reasons for Amdocs' and CSG's stock price drops to understand broader market sentiment and potential vulnerabilities in their current strategies or offerings. This could inform our competitive positioning and messaging.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs' stock plummets to a new 52-week low of $49.80, reflecting significant investor concern.",
+        "pubDate": "2026-06-27",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.marketsmojo.com/news/stocks-in-action/amdocs-ltd-stock-plummets-to-new-52-week-low-of-4980-4074446&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw34nE4Pt7BizBCDVOqba8Sb",
+        "channel": "press",
+        "relevance": "A significant drop in stock price indicates investor skepticism or market challenges, potentially impacting future strategic investments or acquisitions."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG stock sinks to within 4% of its record low, overshadowed by other market news.",
+        "pubDate": "2026-06-27",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-stock-sinks-to-within-4-percent-of-record-low-as-tatra-spat/69639890&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2bMqEEeahUgfUk92qQVEV8",
+        "channel": "press",
+        "relevance": "Persistent low stock performance for CSG suggests ongoing market pressures or investor doubts about its competitive position and future growth."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=DLUsoNknD-w"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
