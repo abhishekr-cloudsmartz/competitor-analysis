@@ -5532,5 +5532,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-06-30",
+    "label": "June 30, 2026",
+    "timestamp": "08:05",
+    "quote": "A strong customer win validates a vendor's market leadership, yet analyst scrutiny on growth forecasts reminds us to constantly assess both opportunity and risk in the telecom BSS/OSS landscape.",
+    "topSignal": "Amdocs announced a new customer engagement transformation project with Three Scandinavia, while also receiving a 'Sector Weight' rating from KeyBanc due to flagged growth risks from customer spending pressures.",
+    "channelPulse": "Industry and financial news are covering Amdocs' recent customer acquisition alongside analyst reports that evaluate its market standing and potential headwinds from cautious customer spending.",
+    "actionItem": "Examine the details of Amdocs' deal with Three Scandinavia to identify competitive advantages, and analyze the 'growth risk' assessment to anticipate broader market trends in CSP investment.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Three Scandinavia selected Amdocs for a major customer engagement transformation, showcasing a significant new BSS/OSS deal.",
+        "pubDate": "2026-06-29",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.pipelinepub.com/news/Three-Scandinavia-to-transform-customer-engagement&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2QaBGWFoKAmlYyIVsEmuEP",
+        "channel": "press",
+        "relevance": "Amdocs' new contract with Three Scandinavia demonstrates continued success in securing large-scale BSS/OSS transformation projects, reinforcing its market position."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
