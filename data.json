@@ -5780,5 +5780,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-02",
+    "label": "July 2, 2026",
+    "timestamp": "07:49",
+    "quote": "As AI continues to redefine telecom operations, companies demonstrating agentic capabilities and enabling autonomous networks are setting new industry benchmarks.",
+    "topSignal": "Amdocs is aggressively pushing its AI-driven telecom vision, with executives discussing AI that 'thinks, acts, and heals networks alone' and contributing to the development of 'knowledge planes to scale autonomous networks.'",
+    "channelPulse": "Industry publications like Analytics Insight and TM Forum Inform are featuring Amdocs' thought leadership on the integration of AI into network operations and automation, signaling a significant strategic focus.",
+    "actionItem": "Analyze Amdocs' specific AI and autonomous network capabilities and messaging to identify potential gaps or opportunities for CloudSmartz to differentiate its own NaaS and BSS/OSS AI-driven solutions.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs is publishing thought leadership on AI for autonomous networks, discussing AI that thinks, acts, and heals networks.",
+        "pubDate": "2026-07-01",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.analyticsinsight.net/amp/story/podcast/the-end-of-manual-telecom-amdocs-samit-banerjee-on-ai-that-thinks-acts-and-heals-networks-alone&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1iFtjz_Y8giSnMqwoQVONE",
+        "channel": "press",
+        "relevance": "Highlights Amdocs' strong narrative around AI and autonomous networks, a direct competitive space for CloudSmartz's NaaS and BSS/OSS AI solutions."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG is shaking up management amidst a \u20ac17 billion pipeline that has failed to boost its stock from near-year lows.",
+        "pubDate": "2026-07-01",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-shakes-up-management-as-17-billion-pipeline-fails-to-lift-stock/69665699&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2GsebPg1S3e-olDuawDqc",
+        "channel": "press",
+        "relevance": "Indicates potential internal challenges or market skepticism for CSG, which could impact their focus or investment in their core BSS/OSS offerings."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
