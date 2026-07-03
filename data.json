@@ -5903,5 +5903,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-03",
+    "label": "July 3, 2026",
+    "timestamp": "07:45",
+    "quote": "Collaborative validation of next-generation AI technologies in the RAN signifies strategic advancements, underscoring the importance of partnerships in shaping the future of telecom infrastructure.",
+    "topSignal": "Amdocs, in partnership with 1Finity, Supermicro, and NVIDIA, has validated an AI-RAN blueprint, showcasing tangible progress in integrating AI into radio access networks.",
+    "channelPulse": "Financial technology news outlets are reporting on Amdocs' latest technical validation, highlighting their collaborative efforts in pushing AI capabilities within the telecom RAN ecosystem.",
+    "actionItem": "Investigate the specific technical aspects and partnership dynamics of Amdocs' AI-RAN blueprint validation to identify implications for CloudSmartz's NaaS and BSS/OSS AI integration strategies.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs validated an AI-RAN blueprint with 1Finity, Supermicro, and NVIDIA, and received a mixed earnings update reshape analysis.",
+        "pubDate": "2026-07-02",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://finance.yahoo.com/technology/ai/articles/amdocs-dox-1finity-supermicro-smci-221252522.html&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2WYoCwQiGnJT9peKZlBcjR",
+        "channel": "press",
+        "relevance": "Amdocs' AI-RAN validation with key partners demonstrates advancements in their AI strategy, directly impacting the future of network services and CloudSmartz's NaaS offerings."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG is pursuing US defense inroads with a Michigan subsidiary, forging US artillery push, and betting on US manufacturing and defense.",
+        "pubDate": "2026-07-02",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-pursues-us-defence-inroads-with-michigan-subsidiary-as-stock-stages/69672431&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2BJ1cOndPAQQ5PQvDcjDkn",
+        "channel": "press",
+        "relevance": "CSG's consistent focus on the US defense and manufacturing sectors highlights a significant strategic diversification, which may shift resources away from their core BSS/OSS offerings."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
