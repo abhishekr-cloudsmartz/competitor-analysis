@@ -6026,5 +6026,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-04",
+    "label": "July 4, 2026",
+    "timestamp": "07:21",
+    "quote": "The rapid evolution of AI in network infrastructure highlights the imperative for strategic partnerships and tangible validation to drive next-generation telecom solutions.",
+    "topSignal": "Amdocs, in collaboration with 1Finity, Supermicro, and NVIDIA, has successfully validated an AI-RAN blueprint, demonstrating concrete advancements in integrating AI into radio access networks.",
+    "channelPulse": "Industry and financial news outlets are reporting on Amdocs' latest technical validation, emphasizing their collaborative approach to pushing AI capabilities within the telecom RAN ecosystem.",
+    "actionItem": "Investigate the specific technical components and partnership structure of Amdocs' AI-RAN blueprint to identify implications for CloudSmartz's own NaaS and BSS/OSS AI integration strategies.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Validated an AI-RAN blueprint with 1Finity, Supermicro, and NVIDIA, showcasing progress in AI integration for RAN.",
+        "pubDate": "2026-07-03",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.foreignpolicyjournal.com/2026/07/03/amdocs-nasdaq-dox-1finity-and-supermicro-nasdaq-smci-validate-ai-ran-blueprint-built-on-nvidia-nasdaq-nvda-infrastructure/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw3sSpUMrH9Jiq8H8DMb5rId",
+        "channel": "press",
+        "relevance": "Amdocs' AI-RAN blueprint validation with key partners demonstrates advancements in their AI strategy, directly impacting network services and CloudSmartz's NaaS offerings."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Continued its strategic diversification into US defense and manufacturing, with leadership targeting new ventures amidst stock struggles.",
+        "pubDate": "2026-07-04",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-s-strnad-targets-italian-tyre-maker-pirelli-while-ramping-up-us/69684077&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw0CX79hAPRmMVfOfGRphfPC",
+        "channel": "press",
+        "relevance": "CSG's sustained focus on defense and manufacturing diversification suggests a potential shift in resource allocation away from their core BSS/OSS telecom offerings."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Published a video discussing RevOps, playbooks, and compensation design, featuring Jelle Berends from Oyster.",
+        "pubDate": "2026-07-03",
+        "url": "https://www.youtube.com/watch?v=FeVLtaz0d0Q",
+        "channel": "youtube",
+        "relevance": "This video provides insights into sales operations and compensation strategies, which could inform CloudSmartz's approach to partner incentives and sales channel management."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=FeVLtaz0d0Q"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
