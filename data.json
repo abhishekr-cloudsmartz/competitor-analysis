@@ -6399,5 +6399,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-07",
+    "label": "July 7, 2026",
+    "timestamp": "07:57",
+    "quote": "Strategic diversifications, especially into non-core sectors, can significantly alter competitive landscapes, revealing both new opportunities and shifts in market focus.",
+    "topSignal": "CSG continues its aggressive strategic pivot into the defense sector, showcasing a new medium tank at Eurosatory 2026, reinforcing their commitment to non-telecom markets.",
+    "channelPulse": "Defense industry news outlets are actively covering CSG's presence and product showcase at Eurosatory 2026. Separately, financial news reports on investor activity related to Amdocs.",
+    "actionItem": "Analyze the long-term implications of CSG's sustained and significant resource allocation towards defense for their competitive posture in the telecom BSS/OSS market, identifying potential strategic voids for CloudSmartz.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "CAMBIAR SMID FUND's Amdocs Ltd(DOX) Holding History was published by GuruFocus.",
+        "pubDate": "2026-07-06",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.gurufocus.com/guru-portfolio/CAMBIAR%2520SMID%2520FUND/DOX&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw3NRHVnI92FRpmWNjQzGxvD",
+        "channel": "press",
+        "relevance": "This financial activity indicates continued market presence and investor attention for Amdocs, providing general insight into their financial standing."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Showcased KARPAT CFL-120 Medium Tank with FNSS at Eurosatory 2026, reinforcing its defense diversification.",
+        "pubDate": "2026-07-06",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.armyrecognition.com/archives/archives-defense-exhibitions/2026-archives-news-defense-exhibitions/eurosatory-2026/csg-and-fnss-showcase-karpat-cfl-120-medium-tank-as-new-european-armor-solution-at-eurosatory-2026&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1Mqgl6lVRcCz4pMo9YTQ6L",
+        "channel": "press",
+        "relevance": "CSG's participation in a major defense exhibition confirms their deep and ongoing strategic shift into non-telecom sectors, potentially reducing focus on core BSS/OSS."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
