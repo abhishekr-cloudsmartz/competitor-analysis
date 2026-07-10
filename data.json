@@ -6770,5 +6770,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-10",
+    "label": "July 10, 2026",
+    "timestamp": "07:58",
+    "quote": "Customer wins remain a fundamental benchmark of market strength, while persistent financial pressures elsewhere highlight the dynamic nature of competitive focus and resource allocation.",
+    "topSignal": "Amdocs secures a significant digital transformation project with Three Scandinavia, reinforcing its market position, while CSG continues to grapple with financial pressures despite its manufacturing pivot.",
+    "channelPulse": "Telecom industry news is covering Amdocs' recent customer acquisition, while financial news outlets report on CSG's attempts to stabilize its stock through non-telecom initiatives.",
+    "actionItem": "Analyze the scope and technology stack of Amdocs' Three Scandinavia deal to identify specific areas of competitive overlap and differentiate CloudSmartz's value proposition. Evaluate the long-term impact of CSG's sustained stock decline and diversification on their telecom BSS/OSS market focus.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Selected by Three Scandinavia for digital transformation project.",
+        "pubDate": "2026-07-09",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.insidermonkey.com/blog/amdocs-dox-selected-by-three-scandinavia-for-digital-transformation-1799021/%3Famp%3D1&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1ZZsaqZwZrQ89pf22LWJ6z",
+        "channel": "press",
+        "relevance": "Amdocs' win with Three Scandinavia highlights their continued strength in large-scale digital transformation projects within the telecom sector, demonstrating ongoing market demand for their BSS/OSS solutions."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Manufacturing blitz aims to reverse 60% stock slide, indicating continued financial pressure and diversification efforts.",
+        "pubDate": "2026-07-09",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-s-transatlantic-manufacturing-blitz-aims-to-reverse-60-percent-stock/69729970&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2cn7aal9_Iuqqxo3jK059m",
+        "channel": "press",
+        "relevance": "CSG's efforts to counteract a significant stock decline through manufacturing initiatives suggests continued strategic focus outside core telecom BSS/OSS, potentially diverting resources."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
