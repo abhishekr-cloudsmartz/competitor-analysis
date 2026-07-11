@@ -6893,5 +6893,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-11",
+    "label": "July 11, 2026",
+    "timestamp": "06:33",
+    "quote": "In a dynamic market, understanding the financial resilience and strategic pivots of competitors provides critical insights into their core focus and long-term sustainability.",
+    "topSignal": "Financial analysts are scrutinizing Amdocs' long-term telecom market durability and future valuations, questioning if current AI pessimism overshadows their underlying competitive strengths. This follows recent reports of their AI challenges.",
+    "channelPulse": "Financial news outlets are featuring in-depth analyses and forecasts for Amdocs, while CSG released a new product explainer video, indicating continued focus on core telecom offerings.",
+    "actionItem": "Investigate the specific arguments regarding Amdocs' telecom moat and AI strategy to understand potential vulnerabilities or competitive advantages. Separately, review CSG's 'Encompass' explainer to assess their current BSS product messaging and market positioning.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Financial analysis questions if AI pessimism masks Amdocs' telecom moat; new 2027 price target forecast released.",
+        "pubDate": "2026-07-10",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/stocks/us/software/nasdaq-dox/amdocs/news/is-ai-pessimism-masking-the-durability-of-amdocs-telecom-moa&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1PKbpvHpZWJz1PcmnsMJB",
+        "channel": "press",
+        "relevance": "These analyses provide insight into financial market sentiment and strategic perceptions of Amdocs' long-term competitive position and AI strategy, directly impacting their perceived strength and future."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Released an explainer video for its 'CSG Encompass' solution.",
+        "pubDate": "2026-07-10",
+        "url": "https://www.youtube.com/watch?v=m_Ea9XeG3y0",
+        "channel": "youtube",
+        "relevance": "This video showcases CSG's direct BSS product messaging and highlights their ongoing investment in promoting core telecom solutions, despite recent diversification signals."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [
+        "https://www.youtube.com/watch?v=m_Ea9XeG3y0"
+      ],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
