@@ -7018,5 +7018,132 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-12",
+    "label": "July 12, 2026",
+    "timestamp": "07:06",
+    "quote": "As competitors refine their product communication and sales enablement, understanding these efforts can reveal key strategic focuses and potential areas for differentiation.",
+    "topSignal": "CSG is continuing to invest in product messaging, releasing a video explaining its 'CSG Encompass' BSS solution, while Everstage highlights the importance of clear sales compensation plans.",
+    "channelPulse": "YouTube activity shows CSG's renewed focus on core BSS solutions with a product explainer, alongside Everstage's expert discussion on sales performance management.",
+    "actionItem": "Review CSG's 'Encompass' video to analyze its current BSS messaging and compare it with CloudSmartz's value proposition for cloud-native solutions. Additionally, assess Everstage's video for insights into sales channel optimization that could inform CPQ strategies.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Published a video detailing the 'CSG Encompass' solution.",
+        "pubDate": "2026-07-10",
+        "url": "https://www.youtube.com/watch?v=m_Ea9XeG3y0",
+        "channel": "youtube",
+        "relevance": "CSG's latest video for 'Encompass' highlights their ongoing product promotion and strategic focus on core BSS offerings, providing insight into their messaging and positioning against CloudSmartz."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Published an interview discussing challenges in explaining sales compensation plans.",
+        "pubDate": "2026-07-11",
+        "url": "https://www.youtube.com/watch?v=dK2-tvqTuyM",
+        "channel": "youtube",
+        "relevance": "Everstage's focus on clear sales compensation reinforces their SPM expertise, which indirectly affects sales channel effectiveness in telecom and potentially overlaps with CPQ considerations."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [
+        "https://www.youtube.com/watch?v=m_Ea9XeG3y0"
+      ],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=dK2-tvqTuyM"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
