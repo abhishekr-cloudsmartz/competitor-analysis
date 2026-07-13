@@ -7145,5 +7145,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-13",
+    "label": "July 13, 2026",
+    "timestamp": "07:47",
+    "quote": "The interplay of financial market scrutiny and strategic pivots dictates competitive standing and future investment trajectories within the evolving BSS/OSS landscape.",
+    "topSignal": "CSG continues to face significant stock challenges and scrutiny over its financial strategies, including controversial 'Transatlantic Artillery Push' and 'Defence Expansion' initiatives.",
+    "channelPulse": "Financial news outlets are extensively covering CSG's ongoing stock performance and strategic developments, highlighting their diversification efforts and associated controversies.",
+    "actionItem": "Monitor CSG's financial news closely to understand the long-term impact of its non-telecom diversification on core BSS/OSS market commitment and resource allocation, identifying any potential shifts in focus.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Faces stock declines and controversies around financing for 'Transatlantic Artillery Push' and 'Defence Expansion' initiatives.",
+        "pubDate": "2026-07-12",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-fortifies-transatlantic-artillery-push-as-governance-cloud-hovers-over/69749088&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2hGHIutZuIJMOhBhjnCyrT",
+        "channel": "press",
+        "relevance": "CSG's ongoing financial challenges and strategic pivots into defense/manufacturing suggest potential resource diversion from its core telecom BSS/OSS offerings, creating market instability."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Stacey Mangold discusses importance of clear sales comp plans for reps.",
+        "pubDate": "2026-07-11",
+        "url": "https://www.youtube.com/watch?v=dK2-tvqTuyM",
+        "channel": "youtube",
+        "relevance": "Everstage's continued focus on sales performance management highlights the importance of effective sales channel enablement, relevant to CloudSmartz's CPQ offerings."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=dK2-tvqTuyM"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
