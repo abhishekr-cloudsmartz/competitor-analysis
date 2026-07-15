@@ -7393,5 +7393,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-15",
+    "label": "July 15, 2026",
+    "timestamp": "06:35",
+    "quote": "Ongoing financial analysis and investor sentiment regarding competitors' growth prospects provide key insights into their market stability and future strategic direction.",
+    "topSignal": "Amdocs is under financial scrutiny, with various reports analyzing its stock performance and noting a modest growth outlook.",
+    "channelPulse": "Financial news outlets are actively covering Amdocs' market position and investor sentiment.",
+    "actionItem": "Analyze how Amdocs' perceived 'modest growth' could influence its competitive strategies and investment in BSS/OSS, identifying potential vulnerabilities or shifts in market focus.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Multiple financial news outlets are analyzing Amdocs' stock performance and bond profiles, with some noting modest growth prospects.",
+        "pubDate": "2026-07-14",
+        "url": "https://news.alphastreet.com/amdocs-dox-has-a-sticky-telecom-software-engine-but-growth-still-looks-modest/amp/",
+        "channel": "press",
+        "relevance": "Amdocs' ongoing financial performance and investor sentiment can influence its strategic investments and perceived market stability in the BSS/OSS space."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
