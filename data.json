@@ -7516,5 +7516,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-16",
+    "label": "July 16, 2026",
+    "timestamp": "06:41",
+    "quote": "The dual focus on investor confidence and practical cloud-based payments highlights key strategic vectors in the evolving BSS landscape.",
+    "topSignal": "Amdocs is signaling a strategic focus on cloud-based payments via LinkedIn, while concurrently drawing significant investor attention, with multiple financial outlets discussing potential undervaluation and increased institutional holdings.",
+    "channelPulse": "LinkedIn showcases Amdocs' latest solution narratives, complementing extensive financial news coverage from Yahoo Finance, Zacks.com, and Stock Titan on Amdocs' stock performance and investor sentiment.",
+    "actionItem": "Analyze Amdocs' messaging on cloud payments to discern competitive differentiation and product roadmap. Monitor the investor sentiment and financial movements to anticipate potential strategic shifts or aggressive market plays.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Promoting cloud-based payments solutions on LinkedIn, emphasizing #amdocs and #cloud capabilities.",
+        "pubDate": "2026-07-15",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.linkedin.com/posts/amdocs_payments-amdocs-cloud-activity-7483197482018058240-fyJx&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw26_xh4QgFfZnAlLJQSPyMl",
+        "channel": "linkedin",
+        "relevance": "Amdocs' direct promotion of cloud payments solutions highlights a key area of competitive focus within BSS/OSS."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Financial news reports on CSG Systems International Inc. (CSGS) stock performance on MSN Money.",
+        "pubDate": "2026-07-15",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.msn.com/en-ie/money/stockdetails/csgs-us-stock-financials/fi-a1qek2%3Focid%3Dbhea000&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1c9Orrwfx7LcGNImAu6Yl2",
+        "channel": "press",
+        "relevance": "CSG's financial performance provides insight into its market stability and potential resource allocation for BSS/OSS."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 1,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
