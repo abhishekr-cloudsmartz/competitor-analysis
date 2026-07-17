@@ -7639,5 +7639,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-17",
+    "label": "July 17, 2026",
+    "timestamp": "06:36",
+    "quote": "Examining how competitors address the foundational elements of AI deployment, such as trust and assurance, reveals their depth of strategic thinking in emerging technologies.",
+    "topSignal": "Amdocs is actively contributing to the industry dialogue on critical AI adoption factors, evidenced by a TM Forum article on trust and assurance for scaling AI deployments.",
+    "channelPulse": "TM Forum Inform features Amdocs' insights into AI, highlighting their thought leadership, while various financial news outlets continue to track Amdocs' stock performance.",
+    "actionItem": "Review Amdocs' perspective on AI trust and assurance within the TM Forum article to identify specific angles or solutions they emphasize, which could inform our own AI strategy and messaging.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Contributed to TM Forum article discussing trust and assurance as key to scaling AI deployments, reinforcing their GenAI narrative.",
+        "pubDate": "2026-07-16",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://inform.tmforum.org/research-and-analysis/reports/trust-and-assurance-the-key-to-scaling-ai-deployments&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw0F_nuKazXkuNacWYxhxW1r",
+        "channel": "press",
+        "relevance": "Amdocs' engagement in discussions about AI ethics and scalability directly influences their GenAI product positioning and market trust."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [
+        "https://www.google.com/url?rct=j&sa=t&url=https://thiis.co.uk/inclusive-music-technology-helps-special-school-in-wales-launch-first-orchestra/&ct=ga&cd=CAIyHGNkZDliMWFlOWExMWZiYWE6Y28uaW46ZW46SU4&usg=AOvVaw1ruenluzPWwehKrNy59JkG"
+      ],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
