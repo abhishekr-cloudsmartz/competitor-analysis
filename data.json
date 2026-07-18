@@ -7764,5 +7764,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-18",
+    "label": "July 18, 2026",
+    "timestamp": "06:27",
+    "quote": "Examining how competitors frame the intersection of IT reinvention and AI reveals their strategic positioning for future market leadership.",
+    "topSignal": "Cerillion is actively promoting its vision for 'Reinventing IT for the AI era' through a new webinar, signaling a strategic emphasis on integrating AI into their BSS/OSS solutions.",
+    "channelPulse": "Cerillion's new webinar on AI-era IT is prominently featured on their YouTube channel, while financial news outlets report on CSG's continued stock struggles despite operational progress.",
+    "actionItem": "Analyze Cerillion's 'Reinventing IT for the AI era' webinar to understand their specific AI adoption messaging and proposed transformation pathways, identifying potential differentiation points for CloudSmartz.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "News outlet reports that CSG's Iowa groundwork shows progress, but share price remains deep in the red.",
+        "pubDate": "2026-07-17",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ad-hoc-news.de/boerse/news/ueberblick/csg-s-iowa-groundwork-offers-tangible-progress-yet-share-price-stays/69787343&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw36AOwNiqWAqi5qQx7WXpU",
+        "channel": "press",
+        "relevance": "CSG's financial performance, particularly its stock value despite operational news, offers insight into market confidence post-acquisition by NEC."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Published a new webinar titled 'Reinventing IT for the AI era'.",
+        "pubDate": "2026-07-17",
+        "url": "https://www.youtube.com/watch?v=zM58N2g7OSs",
+        "channel": "youtube",
+        "relevance": "Cerillion's focus on AI-driven IT reinvention directly competes with CloudSmartz's narrative around BSS/OSS and NaaS solutions."
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [
+        "https://www.youtube.com/watch?v=zM58N2g7OSs"
+      ],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
