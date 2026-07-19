@@ -7889,5 +7889,132 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-19",
+    "label": "July 19, 2026",
+    "timestamp": "07:04",
+    "quote": "Tracking both financial market signals and AI-centric content reveals the strategic battlegrounds for BSS/OSS leadership.",
+    "topSignal": "Cerillion is promoting its vision for 'Reinventing IT for the AI era' through a new webinar, signaling a strategic emphasis on integrating AI into their BSS/OSS solutions. Concurrently, CSG's bond profile highlights continued financial market activity.",
+    "channelPulse": "Cerillion and Everstage both leverage YouTube for content, with Cerillion focusing on AI-driven IT and Everstage discussing revenue models. Financial platform TradingView provides an update on CSG's bond coupon profile.",
+    "actionItem": "Analyze Cerillion's 'Reinventing IT for the AI era' webinar to understand their specific AI adoption messaging and proposed transformation pathways. Monitor CSG's financial indicators for insights into its market stability and strategic resource allocation.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "TradingView reports on CSG's bond coupon profile, indicating financial market activity.",
+        "pubDate": "2026-07-17",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.tradingview.com/symbols/FINRA-CSGS4474564/profile-coupon/&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw3uSSQ1SLwpYGLocDqCupQD",
+        "channel": "press",
+        "relevance": "Monitoring CSG's bond market activity provides insights into its financial health and investor confidence post-acquisition by NEC."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Released a new webinar titled 'Reinventing IT for the AI era' on their YouTube channel.",
+        "pubDate": "2026-07-17",
+        "url": "https://www.youtube.com/watch?v=zM58N2g7OSs",
+        "channel": "youtube",
+        "relevance": "Cerillion's focus on AI-driven IT reinvention directly competes with CloudSmartz's narrative around BSS/OSS and NaaS solutions, particularly their AI strategy."
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Published a video discussing consumption revenue, compensation challenges, and the end of renewals.",
+        "pubDate": "2026-07-18",
+        "url": "https://www.youtube.com/watch?v=i17RUtmFzPU",
+        "channel": "youtube",
+        "relevance": "Everstage's content on consumption revenue models and compensation strategies offers insight into trends impacting sales performance management for telcos."
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [
+        "https://www.youtube.com/watch?v=zM58N2g7OSs"
+      ],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": [
+        "https://www.youtube.com/watch?v=i17RUtmFzPU"
+      ]
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
