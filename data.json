@@ -8147,5 +8147,132 @@
     "label": "July 21, 2026",
     "timestamp": "07:05",
     "error": "All Gemini attempts exhausted. Last error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 59.662449773s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 59\n}\n]"
+  },
+  {
+    "date": "2026-07-22",
+    "label": "July 22, 2026",
+    "timestamp": "07:08",
+    "quote": "Competitors' strategic diversification and customer success narratives reveal evolving market priorities beyond core BSS/OSS solutions.",
+    "topSignal": "CSG International continues its aggressive diversification strategy, moving further into defense manufacturing with plans for jet engine production for drones. Simultaneously, Amdocs faces investor scrutiny over slowing sales despite rising earnings, while Cerillion showcases customer success through new video case studies.",
+    "channelPulse": "Press releases are actively tracking CSG's industrial pivot and Amdocs' financial performance and investor sentiment. Cerillion, on the other hand, utilizes YouTube to highlight customer success stories and showcase its BSS/OSS capabilities.",
+    "actionItem": "Investigate the implications of CSG's expanding non-telecom ventures on its long-term commitment to BSS/OSS. Additionally, analyze Cerillion's latest case studies to understand their targeted customer segments and solution strengths, informing our own market positioning and content strategy.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs' financial performance is under investor scrutiny, with strategic share acquisitions reported amid discussions of slowing sales.",
+        "pubDate": "2026-07-22",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.gurufocus.com/news/8970531/richard-pzenas-strategic-acquisition-of-amdocs-ltd-shares&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1TNYh7ydU1MUIpr91jLLYZ",
+        "channel": "press",
+        "relevance": "Fluctuations in Amdocs' stock performance and investor sentiment can impact its market position and resource allocation for BSS/OSS innovations."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG is expanding into defense manufacturing, planning Wisconsin jet engine production for drones as part of AviaNera's strategy.",
+        "pubDate": "2026-07-21",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://ground.news/article/pbs-group-and-airlogix-partner-to-launch-jet-engine-production-in-ukraine_32ec25&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw3TwoG7s0VffpYH4LkB0JbW",
+        "channel": "press",
+        "relevance": "CSG's significant diversification into defense manufacturing suggests a potential shift in strategic focus away from its core BSS/billing offerings."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Cerillion released three new YouTube case study videos featuring Valde Ferradaz, Cyrille Joffre (Sure), and Gert Rieder (Norlys.",
+        "pubDate": "2026-07-21",
+        "url": "https://www.youtube.com/watch?v=FNWkGJRdGo8",
+        "channel": "youtube",
+        "relevance": "New case studies highlight Cerillion's customer acquisition and success stories in the mid-market, showcasing their BSS/OSS capabilities and market traction."
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [
+        "https://www.youtube.com/watch?v=FNWkGJRdGo8",
+        "https://www.youtube.com/watch?v=YAR2MTVoN7c",
+        "https://www.youtube.com/watch?v=qXDHsNbvsrc"
+      ],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
