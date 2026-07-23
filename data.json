@@ -8274,5 +8274,132 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-23",
+    "label": "July 23, 2026",
+    "timestamp": "07:03",
+    "quote": "Competitors' diversification into new sectors and continuous showcasing of customer success highlight evolving market strategies and the enduring value of proven solutions.",
+    "topSignal": "CSG International continues its aggressive diversification into defense manufacturing with plans for a new U.S. jet engine production hub. Meanwhile, Cerillion highlights customer success through new video case studies, and Amdocs receives positive financial recognition.",
+    "channelPulse": "Press outlets are actively covering CSG's industrial expansion and Amdocs' financial mentions, while Cerillion leverages YouTube to publicize multiple customer success stories.",
+    "actionItem": "Analyze the long-term impact of CSG's non-telecom ventures on its BSS/OSS focus and market share. Review Cerillion's latest customer case studies to identify successful client profiles and solution messaging that could inform our own content and sales strategies.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Mentioned as a 'Large Cap Value Stock' for quality investors by Simply Wall St.",
+        "pubDate": "2026-07-22",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/stocks/gb/retail/lse-inch/inchcape-shares/news/3-large-cap-value-stocks-for-investors-seeking-quality-over&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw0EsBLDOzUBDPXOWOSmQNeJ",
+        "channel": "press",
+        "relevance": "This financial media mention indicates external market perception and investment interest in Amdocs as a stable, quality stock, impacting brand reputation."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG is building a U.S. jet engine production hub focused on unmanned systems, expanding its defense manufacturing presence.",
+        "pubDate": "2026-07-22",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.tipranks.com/news/company-announcements/csg-builds-u-s-jet-engine-production-hub-for-unmanned-systems&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw2OH2dT288M9geZOc9uwEBt",
+        "channel": "press",
+        "relevance": "This signifies CSG's continued, deep strategic pivot into defense manufacturing, raising questions about its long-term focus on telecom BSS/billing."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Released an MVNX case study video featuring Valde Ferradaz.",
+        "pubDate": "2026-07-21",
+        "url": "https://www.youtube.com/watch?v=FNWkGJRdGo8",
+        "channel": "youtube",
+        "relevance": "Showcases customer success stories, particularly in the MVNO/MVNE space, validating their BSS/OSS solutions and market traction."
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [
+        "https://www.youtube.com/watch?v=FNWkGJRdGo8",
+        "https://www.youtube.com/watch?v=YAR2MTVoN7c",
+        "https://www.youtube.com/watch?v=qXDHsNbvsrc"
+      ],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
