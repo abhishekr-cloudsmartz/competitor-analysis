@@ -8530,5 +8530,133 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-25",
+    "label": "July 25, 2026",
+    "timestamp": "06:36",
+    "quote": "Fluctuating financial market interest and analyst valuations for key competitors underscore the dynamic interplay between market perception and strategic positioning in the BSS/OSS sector.",
+    "topSignal": "Amdocs is experiencing diverse investor activity, with multiple firms adjusting their stakes. Simultaneously, CSG International's stock is being analyzed for potential undervaluation, highlighting ongoing financial scrutiny across major BSS/OSS players.",
+    "channelPulse": "Financial news outlets and investment analysis platforms are actively reporting on the stock movements, valuation metrics, and institutional investor changes for both Amdocs and CSG.",
+    "actionItem": "Closely monitor the financial health indicators and investor sentiment surrounding Amdocs and CSG, as these can influence their strategic priorities and investment capacity in the BSS/OSS/CPQ/NaaS market. Assess if their current valuations present any opportunities or risks.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Multiple investment firms adjusted their stakes in Amdocs Limited; stock statistics and valuation metrics were also published.",
+        "pubDate": "2026-07-24",
+        "url": "https://www.tipranks.com/stocks/mx:doxn/statistics",
+        "channel": "press",
+        "relevance": "Investor sentiment and institutional holdings can influence Amdocs' financial stability, market valuation, and strategic flexibility for BSS/OSS investments."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Stock performance analysis indicates CSG (ENXTAM:CSG) might be undervalued despite debt risk, with bond coupon profile also released.",
+        "pubDate": "2026-07-24",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/csg-enxtam-csg-stock-trades-051403742.html",
+        "channel": "press",
+        "relevance": "Insights into CSG's financial health and market perception are crucial, especially given its recent acquisition by NEC and ongoing integration within the BSS space."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [
+        "https://www.google.com/url?rct=j&sa=t&url=https://discover.ticketmaster.co.uk/theatre/wicked-announces-film-screenings-in-concert-with-full-orchestra-78889/&ct=ga&cd=CAIyHGNkZDliMWFlOWExMWZiYWE6Y28uaW46ZW46SU4&usg=AOvVaw1aQdkDT7qLbZbu11Ipikne",
+        "https://www.google.com/url?rct=j&sa=t&url=https://intellectia.ai/news/stock/wetour-robotics-launches-orchestra-portable-ai-hub-for-realtime-coordination&ct=ga&cd=CAIyHGNkZDliMWFlOWExMWZiYWE6Y28uaW46ZW46SU4&usg=AOvVaw1kXJyo7sY6768QUnkQTQhl",
+        "https://www.google.com/url?rct=j&sa=t&url=https://finance.yahoo.com/technology/ai/articles/wetour-robotics-outlines-orchestra-platform-090000112.html&ct=ga&cd=CAIyHGNkZDliMWFlOWExMWZiYWE6Y28uaW46ZW46SU4&usg=AOvVaw1xFQIPWWNLHoHLcfTs7agz",
+        "https://www.google.com/url?rct=j&sa=t&url=https://www.moomoo.com/news/post/73491574/wetour-robotics-outlines-orchestra-platform-for-wearable-robotics-powered-by&ct=ga&cd=CAIyHGNkZDliMWFlOWExMWZiYWE6Y28uaW46ZW46SU4&usg=AOvVaw30RtgKayQjk65rZTZhezeZ"
+      ],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
