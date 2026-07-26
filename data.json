@@ -8658,5 +8658,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-26",
+    "label": "July 26, 2026",
+    "timestamp": "07:09",
+    "quote": "Investor confidence in BSS/OSS leaders is continuously weighed against the perceived impact of AI, driving discussions around fundamental value and talent.",
+    "topSignal": "Amdocs is seeing continued financial scrutiny, with market discussions highlighting its investment appeal despite AI-related concerns, while a key executive emphasizes Cyprus as a talent hub.",
+    "channelPulse": "Financial news outlets and investment platforms are actively publishing analyses on Amdocs' market valuation and investor sentiment, complemented by business press interviews with its executives.",
+    "actionItem": "Deep-dive into the factors driving Amdocs' financial analysis, particularly how market 'AI fears' are impacting valuations, and assess any implications for our own AI narrative and investor outreach. Additionally, note their focus on talent hubs for potential strategic insights.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Amdocs' investment appeal is highlighted by analysts despite AI fears; an executive discussed Cyprus' supportive talent environment.",
+        "pubDate": "2026-07-25",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://seekingalpha.com/article/4925554-amdocs-ai-fears-created-this-shareholder-yield-monster&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2wSmEkhr-CIIRV1xOR9nf5",
+        "channel": "press",
+        "relevance": "These signals indicate ongoing investor attention to Amdocs' financial health and its positioning relative to the evolving AI landscape, alongside strategic insights into their talent sourcing."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
