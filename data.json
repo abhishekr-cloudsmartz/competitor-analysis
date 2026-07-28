@@ -8904,5 +8904,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-28",
+    "label": "July 28, 2026",
+    "timestamp": "07:11",
+    "quote": "Financial metrics and investment firm activities continue to shape market perceptions of established BSS/OSS providers, emphasizing the importance of strong value propositions.",
+    "topSignal": "Amdocs is being highlighted as a value stock with a strong dividend, even as institutional investors adjust their holdings. Separately, CSG's stock performance is under analysis, alongside a potentially unrelated report on drone jet engine manufacturing under the same name.",
+    "channelPulse": "Financial news outlets, stock analysis platforms, and market alert services are actively reporting on investor sentiment, dividend prospects, and stock movements for major BSS/OSS players.",
+    "actionItem": "Monitor the financial analysis and investor activities surrounding Amdocs and CSG to understand how market valuation and shareholder sentiment might impact their strategic decisions and investment capacity within the BSS/OSS/CPQ/NaaS landscape.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Highlighted as a value stock with a 4% dividend; Sei Investments Co. sold shares of Amdocs Limited.",
+        "pubDate": "2026-07-27",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.chartmill.com/news/DOX/Chartmill-51691-Amdocs-Ltd-NASDAQDOX-A-Value-Stock-with-a-4-Dividend-and-Single-Digit-PE&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw3jVMwCaIyNUq9dENjr8wa-",
+        "channel": "press",
+        "relevance": "These financial signals offer insight into Amdocs' market valuation, investor appeal, and the strategic decisions of institutional holders, which can influence its BSS/OSS investments."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSGS stock is analyzed for price-sensitive allocations; separate report mentions 'CSG' manufacturing drone jet engines.",
+        "pubDate": "2026-07-27",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://news.stocktradersdaily.com/news_release/14/CSGS_and_the_Role_of_Price-Sensitive_Allocations_072726044001_1785184801.html&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw0qNFMn9lwmUZSgRtzAWcd-",
+        "channel": "press",
+        "relevance": "Analysis of CSG's stock performance is relevant to its financial health. The drone manufacturing news is likely from a different entity and less relevant to BSS/OSS."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
