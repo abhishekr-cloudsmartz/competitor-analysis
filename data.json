@@ -9150,5 +9150,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-30",
+    "label": "July 30, 2026",
+    "timestamp": "07:09",
+    "quote": "Anticipated financial disclosures are set to reveal the current performance trajectories of key players in the telecom solutions market.",
+    "topSignal": "Amdocs is poised to report its quarterly earnings, with expectations of growth, while its parent company, NEC, reports strong Q1 financial results, impacting subsidiary CSG.",
+    "channelPulse": "Financial news outlets and stock analysis platforms are actively covering upcoming earnings reports and corporate financial performance for major BSS/OSS providers.",
+    "actionItem": "Analyze Amdocs' upcoming earnings report for insights into its operational health and investment capacity, and monitor NEC's performance as it indicates the financial backing for CSG's BSS/OSS initiatives.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Earnings expected to grow; scheduled to post quarterly earnings on Wednesday.",
+        "pubDate": "2026-07-29",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.zacks.com/stock/news/2963302/amdocs-dox-earnings-expected-to-grow-should-you-buy%3Fcid%3DCS-ZC-FT-tale_of_the_tape%7Cyseop_template_9-2963302&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw2vq2cAfZl2VwaNj-HSTvnH",
+        "channel": "press",
+        "relevance": "Upcoming earnings reports signal the financial health and potential growth outlook for a major BSS/OSS competitor."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "NEC, CSG's parent company, delivered strong Q1 earnings and tightened focus on non-GAAP profit metrics.",
+        "pubDate": "2026-07-29",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.tipranks.com/news/company-announcements/nec-delivers-strong-q1-earnings-and-tightens-focus-on-non-gaap-profit-metrics&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1LZR3J1ilRSEie9yexKcsP",
+        "channel": "press",
+        "relevance": "NEC's strong earnings provide insight into the financial health of CSG's parent company and potential resources for BSS/OSS investment."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
