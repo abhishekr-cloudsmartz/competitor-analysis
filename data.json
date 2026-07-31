@@ -9273,5 +9273,130 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-07-31",
+    "label": "July 31, 2026",
+    "timestamp": "07:21",
+    "quote": "Financial assessments continue to shape market perceptions, while strategic discussions around AI and network autonomy highlight evolving industry priorities.",
+    "topSignal": "Financial analysts have issued a 'Hold' recommendation for Amdocs, citing softer EPS revisions that challenge its growth narrative, even as it promotes autonomous network operations. Netcracker continues to position itself as a thought leader in integrating telco capabilities into the physical AI value chain.",
+    "channelPulse": "Financial news outlets are keenly tracking stock recommendations and growth forecasts, alongside industry publications featuring strategic insights into AI and network automation.",
+    "actionItem": "Analyze Amdocs' financial outlook and industry content on autonomous networks to gauge its strategic balance. Monitor Netcracker's emphasis on telco's role in the physical AI value chain to understand its competitive messaging and market positioning.",
+    "competitors": {
+      "netcracker": {
+        "activity": "John Byrne discusses solidifying the telco role in the Physical AI Value Chain in an interview with The Fast Mode.",
+        "pubDate": "2026-07-30",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.thefastmode.com/q-a-series/49925-beyond-the-pipe-solidifying-the-telco-role-in-the-physical-ai-value-chain&ct=ga&cd=CAIyHGMzM2M2ZjlhNGY3ZDNhZjU6Y28uaW46ZW46SU4&usg=AOvVaw3ABP90KlMyl4DLpLmobrtF",
+        "channel": "press",
+        "relevance": "Highlights Netcracker's focus on thought leadership and strategic positioning in the evolving AI landscape for telcos."
+      },
+      "amdocs": {
+        "activity": "Received a 'Hold' recommendation from brokerages; EPS revisions challenge growth narrative. Also posted on autonomous network operations and CSR activity.",
+        "pubDate": "2026-07-30",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.marketbeat.com/instant-alerts/amdocs-limited-nasdaqdox-given-consensus-recommendation-of-hold-by-brokerages-2026-07-30/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1gg3Pu4FxsbJ1Pb5c9uBXH",
+        "channel": "press",
+        "relevance": "Financial analysis provides insight into Amdocs' market perception, while content on autonomous networks and CSR showcases strategic focus areas."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [
+        "https://www.google.com/url?rct=j&sa=t&url=https://www.hospitalitynet.org/news/4133718/travelsoft-announces-the-acquisition-of-afidium-by-orchestra-strengthening-product-synergies-for-french-travel-professionals&ct=ga&cd=CAIyHGNkZDliMWFlOWExMWZiYWE6Y28uaW46ZW46SU4&usg=AOvVaw2MmC0WRg3Ag6rpqEe3cMzO"
+      ],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
