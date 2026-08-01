@@ -9398,5 +9398,132 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-08-01",
+    "label": "August 1, 2026",
+    "timestamp": "07:01",
+    "quote": "Market confidence is being signaled through institutional investments, while competitors are actively shaping thought leadership around AI and customer experience to define future BSS/OSS narratives.",
+    "topSignal": "Amdocs received a significant share acquisition by Renaissance Technologies, indicating strong institutional interest. Meanwhile, CSG released new YouTube content focusing on AI trends, customer experience, and event highlights from CCW Vegas 2026.",
+    "channelPulse": "Financial news outlets are reporting on institutional investment activities, and corporate YouTube channels are being utilized for thought leadership and event dissemination.",
+    "actionItem": "Investigate the implications of Renaissance Technologies' investment in Amdocs for market sentiment, and analyze CSG's recent video content to understand their strategic messaging around AI and CX within the telecom BSS/OSS space.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Renaissance Technologies LLC acquired shares of Amdocs Limited ($DOX), signaling significant institutional investor activity.",
+        "pubDate": "2026-07-31",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.marketbeat.com/instant-alerts/filing-amdocs-limited-dox-shares-acquired-by-renaissance-technologies-llc-2026-07-31/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw14n0zGh6TydellFVMhbm1",
+        "channel": "press",
+        "relevance": "Significant institutional investment activity in Amdocs indicates ongoing market interest and confidence in a major BSS/OSS competitor."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "CSG published three new YouTube videos on AI, CX market trends, and highlights from CCW Vegas 2026.",
+        "pubDate": "2026-07-31",
+        "url": "https://www.youtube.com/watch?v=QpzgOWyUyEo",
+        "channel": "youtube",
+        "relevance": "CSG's content on AI, CX trends, and event presence highlights their strategic focus on key industry themes relevant to BSS/OSS."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [
+        "https://www.youtube.com/watch?v=QpzgOWyUyEo",
+        "https://www.youtube.com/watch?v=N-k96bvB808",
+        "https://www.youtube.com/shorts/g6NYLlN79gQ"
+      ],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
