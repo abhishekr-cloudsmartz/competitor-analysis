@@ -9525,5 +9525,132 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-08-02",
+    "label": "August 2, 2026",
+    "timestamp": "07:06",
+    "quote": "Financial market movements and thought leadership in AI and customer experience are defining current competitive landscapes.",
+    "topSignal": "SummitTX Capital L.P. sold shares of Amdocs, drawing market attention to investor sentiment. Meanwhile, CSG is actively publishing YouTube content on AI trends, customer experience, and event highlights.",
+    "channelPulse": "Financial news outlets are reporting on stock transactions and investment analyses, while corporate YouTube channels serve as platforms for thought leadership and event recaps.",
+    "actionItem": "Monitor Amdocs' stock performance and related financial analyses for shifts in investor confidence, and analyze CSG's recent video content to understand their strategic messaging around AI and CX initiatives.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "SummitTX Capital L.P. sold Amdocs shares. Zacks.com published an analysis on buying DOX stock.",
+        "pubDate": "2026-08-01",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.marketbeat.com/instant-alerts/filing-amdocs-limited-dox-shares-sold-by-summittx-capital-lp-2026-08-01/&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1Iftn3F9SoxVznF5Ou66T8",
+        "channel": "press",
+        "relevance": "Institutional selling activity and financial analysis indicate market perception and investment considerations for a key competitor."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Published three new YouTube videos on AI trends, CX market landscape, and highlights from CCW Vegas 2026.",
+        "pubDate": "2026-07-31",
+        "url": "https://www.youtube.com/watch?v=QpzgOWyUyEo",
+        "channel": "youtube",
+        "relevance": "CSG's content on AI and CX trends, along with event presence, highlights their strategic focus on key industry themes."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [
+        "https://www.youtube.com/watch?v=QpzgOWyUyEo",
+        "https://www.youtube.com/watch?v=N-k96bvB808",
+        "https://www.youtube.com/shorts/g6NYLlN79gQ"
+      ],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
