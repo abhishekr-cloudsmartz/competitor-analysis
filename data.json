@@ -9652,5 +9652,128 @@
       "beesion": 0,
       "everstage": 0
     }
+  },
+  {
+    "date": "2026-08-03",
+    "label": "August 3, 2026",
+    "timestamp": "07:56",
+    "quote": "Financial indicators and strategic AI initiatives continue to shape market confidence and competitive positioning in the BSS/OSS sector.",
+    "topSignal": "Amdocs is attracting market focus due to its strong backlog and AI push, reinforced by significant institutional investment. CSG also appears in financial competitor comparisons, highlighting its market presence.",
+    "channelPulse": "Financial news outlets and investment platforms are the primary sources for current competitor intelligence, indicating a strong focus on market valuation and investor sentiment.",
+    "actionItem": "Review Amdocs' strategic focus on AI and its project backlog to understand its competitive traction and market valuation. Analyze CSG's financial standing in competitive comparisons to gauge its overall market health.",
+    "competitors": {
+      "netcracker": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amdocs": {
+        "activity": "Simply Wall St News highlights Amdocs' backlog and AI push influencing its valuation. Edgestream Partners L.P. acquired $3.27M in holdings.",
+        "pubDate": "2026-08-02",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://simplywall.st/stocks/us/software/nasdaq-dox/amdocs/news/amdocs-dox-backlog-and-ai-push-put-valuation-back-in-focus&ct=ga&cd=CAIyHDM2YjMwZjM5OWZhMGQwZWI6Y28uaW46ZW46SU4&usg=AOvVaw1JSelbdyLf4y_Z5nE84Xxi",
+        "channel": "press",
+        "relevance": "These signals indicate market perception of Amdocs' strategic drivers, including AI and its project pipeline, alongside significant investor confidence."
+      },
+      "comarch": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "csg": {
+        "activity": "Investing.com features Teleperformance SE compared against competitors, including CSG (DB:CSN).",
+        "pubDate": "2026-08-01",
+        "url": "https://www.google.com/url?rct=j&sa=t&url=https://ng.investing.com/pro/BATS-CHIXE:TEPP/compare/DB:CO8,DB:35G,DB:CSN,DB:TSQ,DB:TH1,ENXTPA:ASY&ct=ga&cd=CAIyHGZhODAxNzY1NDg5Njg1MzI6Y28uaW46ZW46SU4&usg=AOvVaw1J7W-0XPkd_jsaOzcVuwnb",
+        "channel": "press",
+        "relevance": "This indicates CSG's presence in financial comparisons, reflecting its market positioning and financial visibility among other large companies."
+      },
+      "covalense": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "cerillion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "optiva": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "wavelo": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "amartus": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "orchest": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "beesion": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      },
+      "everstage": {
+        "activity": "Nothing detected in last 48h.",
+        "pubDate": null,
+        "url": null,
+        "channel": null,
+        "relevance": null
+      }
+    },
+    "rssSnapshot": {
+      "netcracker": [],
+      "amdocs": [],
+      "comarch": [],
+      "csg": [],
+      "covalense": [],
+      "cerillion": [],
+      "optiva": [],
+      "wavelo": [],
+      "amartus": [],
+      "orchest": [],
+      "beesion": [],
+      "everstage": []
+    },
+    "linkedinSignals": {
+      "netcracker": 0,
+      "amdocs": 0,
+      "comarch": 0,
+      "csg": 0,
+      "covalense": 0,
+      "cerillion": 0,
+      "optiva": 0,
+      "wavelo": 0,
+      "amartus": 0,
+      "orchest": 0,
+      "beesion": 0,
+      "everstage": 0
+    }
   }
 ]
